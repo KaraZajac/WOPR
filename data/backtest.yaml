@@ -1,10 +1,10 @@
 country/deaths/sb≥25:
   n: 5547
   base_rate: 0.1673
-  brier_engine: 0.0411
+  brier_engine: 0.0415
   brier_climatology: 0.1397
-  skill_vs_climatology: 0.7062
-  log_engine: -0.1563
+  skill_vs_climatology: 0.7033
+  log_engine: -0.1572
   calibration:
   - bin: 0–10%
     n: 4232
@@ -15,43 +15,58 @@ country/deaths/sb≥25:
     mean_p: 0.15
     observed: 0.104
   - bin: 20–30%
-    n: 135
-    mean_p: 0.242
-    observed: 0.23
+    n: 148
+    mean_p: 0.239
+    observed: 0.291
   - bin: 30–40%
     n: 28
     mean_p: 0.333
     observed: 0.214
   - bin: 40–50%
-    n: 8
-    mean_p: 0.454
-    observed: 0.25
+    n: 6
+    mean_p: 0.443
+    observed: 0.333
   - bin: 50–60%
-    n: 29
-    mean_p: 0.571
-    observed: 0.586
+    n: 27
+    mean_p: 0.573
+    observed: 0.667
   - bin: 60–70%
-    n: 52
-    mean_p: 0.652
-    observed: 0.692
+    n: 122
+    mean_p: 0.646
+    observed: 0.582
   - bin: 70–80%
-    n: 126
-    mean_p: 0.758
-    observed: 0.722
+    n: 78
+    mean_p: 0.752
+    observed: 0.731
   - bin: 80–90%
-    n: 286
-    mean_p: 0.858
-    observed: 0.846
+    n: 151
+    mean_p: 0.85
+    observed: 0.887
   - bin: 90–100%
-    n: 440
-    mean_p: 0.947
-    observed: 0.934
+    n: 544
+    mean_p: 0.954
+    observed: 0.928
   by_bucket:
-    active:
-      n: 931
-      mean_p: 0.867
-      observed: 0.855
-      brier: 0.1149
+    active-1:
+      n: 139
+      mean_p: 0.648
+      observed: 0.561
+      brier: 0.2607
+    active-2-3:
+      n: 134
+      mean_p: 0.768
+      observed: 0.791
+      brier: 0.169
+    active-4-9:
+      n: 289
+      mean_p: 0.912
+      observed: 0.903
+      brier: 0.0916
+    active-10+:
+      n: 369
+      mean_p: 0.933
+      observed: 0.951
+      brier: 0.0646
     recent:
       n: 248
       mean_p: 0.24
@@ -70,19 +85,19 @@ country/deaths/sb≥25:
 country/deaths/sb+ns+os≥100:
   n: 5547
   base_rate: 0.1595
-  brier_engine: 0.0372
+  brier_engine: 0.0369
   brier_climatology: 0.1344
-  skill_vs_climatology: 0.723
-  log_engine: -0.1472
+  skill_vs_climatology: 0.7251
+  log_engine: -0.1467
   calibration:
   - bin: 0–10%
     n: 4278
     mean_p: 0.015
     observed: 0.016
   - bin: 10–20%
-    n: 249
-    mean_p: 0.148
-    observed: 0.076
+    n: 259
+    mean_p: 0.15
+    observed: 0.108
   - bin: 20–30%
     n: 123
     mean_p: 0.241
@@ -92,35 +107,50 @@ country/deaths/sb+ns+os≥100:
     mean_p: 0.334
     observed: 0.1
   - bin: 40–50%
-    n: 1
-    mean_p: 0.404
-    observed: 0.0
+    n: 2
+    mean_p: 0.433
+    observed: 0.5
   - bin: 50–60%
-    n: 9
-    mean_p: 0.576
-    observed: 0.667
+    n: 8
+    mean_p: 0.561
+    observed: 0.625
   - bin: 60–70%
-    n: 43
-    mean_p: 0.661
-    observed: 0.628
+    n: 108
+    mean_p: 0.651
+    observed: 0.565
   - bin: 70–80%
-    n: 157
-    mean_p: 0.759
-    observed: 0.771
+    n: 97
+    mean_p: 0.752
+    observed: 0.763
   - bin: 80–90%
-    n: 337
-    mean_p: 0.851
-    observed: 0.855
+    n: 115
+    mean_p: 0.857
+    observed: 0.904
   - bin: 90–100%
-    n: 340
-    mean_p: 0.951
-    observed: 0.959
+    n: 547
+    mean_p: 0.963
+    observed: 0.94
   by_bucket:
-    active:
-      n: 886
-      mean_p: 0.861
-      observed: 0.867
-      brier: 0.1079
+    active-1:
+      n: 121
+      mean_p: 0.664
+      observed: 0.529
+      brier: 0.2711
+    active-2-3:
+      n: 122
+      mean_p: 0.758
+      observed: 0.828
+      brier: 0.1465
+    active-4-9:
+      n: 289
+      mean_p: 0.92
+      observed: 0.913
+      brier: 0.083
+    active-10+:
+      n: 354
+      mean_p: 0.951
+      observed: 0.958
+      brier: 0.0546
     recent:
       n: 220
       mean_p: 0.212
@@ -139,57 +169,72 @@ country/deaths/sb+ns+os≥100:
 country/acd-active:
   n: 11274
   base_rate: 0.1703
-  brier_engine: 0.0506
+  brier_engine: 0.0491
   brier_climatology: 0.1414
-  skill_vs_climatology: 0.6421
-  log_engine: -0.19
+  skill_vs_climatology: 0.6529
+  log_engine: -0.1866
   calibration:
   - bin: 0–10%
     n: 8498
     mean_p: 0.024
     observed: 0.028
   - bin: 10–20%
-    n: 761
-    mean_p: 0.138
-    observed: 0.116
+    n: 779
+    mean_p: 0.139
+    observed: 0.125
   - bin: 20–30%
-    n: 94
-    mean_p: 0.232
-    observed: 0.17
+    n: 100
+    mean_p: 0.231
+    observed: 0.16
   - bin: 30–40%
-    n: 14
+    n: 10
     mean_p: 0.353
-    observed: 0.214
+    observed: 0.1
   - bin: 40–50%
-    n: 28
-    mean_p: 0.456
-    observed: 0.536
+    n: 145
+    mean_p: 0.459
+    observed: 0.51
   - bin: 50–60%
-    n: 124
-    mean_p: 0.56
-    observed: 0.613
+    n: 148
+    mean_p: 0.549
+    observed: 0.574
   - bin: 60–70%
-    n: 275
-    mean_p: 0.653
-    observed: 0.691
+    n: 145
+    mean_p: 0.646
+    observed: 0.724
   - bin: 70–80%
-    n: 413
-    mean_p: 0.753
-    observed: 0.799
+    n: 217
+    mean_p: 0.755
+    observed: 0.797
   - bin: 80–90%
-    n: 523
-    mean_p: 0.853
-    observed: 0.862
+    n: 277
+    mean_p: 0.858
+    observed: 0.877
   - bin: 90–100%
-    n: 544
-    mean_p: 0.947
-    observed: 0.947
+    n: 955
+    mean_p: 0.955
+    observed: 0.932
   by_bucket:
-    active:
-      n: 1907
-      mean_p: 0.804
-      observed: 0.827
-      brier: 0.132
+    active-1:
+      n: 359
+      mean_p: 0.509
+      observed: 0.54
+      brier: 0.2445
+    active-2-3:
+      n: 329
+      mean_p: 0.752
+      observed: 0.784
+      brier: 0.1746
+    active-4-9:
+      n: 510
+      mean_p: 0.878
+      observed: 0.888
+      brier: 0.1018
+    active-10+:
+      n: 709
+      mean_p: 0.958
+      observed: 0.948
+      brier: 0.0527
     recent:
       n: 600
       mean_p: 0.137
@@ -208,57 +253,72 @@ country/acd-active:
 dyad/acd-active:
   n: 24876
   base_rate: 0.1153
-  brier_engine: 0.0421
+  brier_engine: 0.0408
   brier_climatology: 0.1028
-  skill_vs_climatology: 0.5909
-  log_engine: -0.1529
+  skill_vs_climatology: 0.6027
+  log_engine: -0.1504
   calibration:
   - bin: 0–10%
     n: 20733
     mean_p: 0.011
     observed: 0.017
   - bin: 10–20%
-    n: 750
-    mean_p: 0.127
-    observed: 0.105
+    n: 754
+    mean_p: 0.128
+    observed: 0.107
   - bin: 20–30%
-    n: 44
-    mean_p: 0.233
-    observed: 0.159
+    n: 49
+    mean_p: 0.236
+    observed: 0.224
   - bin: 30–40%
-    n: 23
-    mean_p: 0.341
-    observed: 0.261
+    n: 57
+    mean_p: 0.327
+    observed: 0.298
   - bin: 40–50%
-    n: 23
-    mean_p: 0.463
-    observed: 0.522
+    n: 89
+    mean_p: 0.455
+    observed: 0.573
   - bin: 50–60%
-    n: 139
-    mean_p: 0.565
-    observed: 0.568
+    n: 539
+    mean_p: 0.549
+    observed: 0.501
   - bin: 60–70%
-    n: 475
-    mean_p: 0.663
-    observed: 0.596
+    n: 470
+    mean_p: 0.654
+    observed: 0.645
   - bin: 70–80%
-    n: 979
-    mean_p: 0.75
-    observed: 0.65
+    n: 438
+    mean_p: 0.752
+    observed: 0.712
   - bin: 80–90%
-    n: 1016
-    mean_p: 0.849
-    observed: 0.794
+    n: 988
+    mean_p: 0.854
+    observed: 0.827
   - bin: 90–100%
-    n: 694
-    mean_p: 0.932
-    observed: 0.883
+    n: 759
+    mean_p: 0.936
+    observed: 0.87
   by_bucket:
-    active:
-      n: 3340
-      mean_p: 0.794
-      observed: 0.73
-      brier: 0.1895
+    active-1:
+      n: 948
+      mean_p: 0.556
+      observed: 0.526
+      brier: 0.2527
+    active-2-3:
+      n: 829
+      mean_p: 0.758
+      observed: 0.721
+      brier: 0.2036
+    active-4-9:
+      n: 972
+      mean_p: 0.871
+      observed: 0.842
+      brier: 0.135
+    active-10+:
+      n: 591
+      mean_p: 0.917
+      observed: 0.883
+      brier: 0.1069
     recent:
       n: 1666
       mean_p: 0.079

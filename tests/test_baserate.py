@@ -1,6 +1,18 @@
 import unittest
 
-from wopr.engine.baserate import M_DEFAULT, M_MAX, Spec, Unit, bucket_of, eb_strength, hit, rate, unit_bucket_years
+from wopr.engine.baserate import (
+    M_DEFAULT,
+    M_MAX,
+    Spec,
+    Unit,
+    bucket_of,
+    coarse,
+    eb_strength,
+    hit,
+    nowcast_bucket,
+    rate,
+    unit_bucket_years,
+)
 
 
 def unit(uid, region, first, years):
@@ -26,17 +38,32 @@ class TestHitAndBuckets(unittest.TestCase):
     def test_bucket_transitions(self):
         u = unit(1, "Africa", 2000, {2005: 30})
         s = spec(1)
-        self.assertEqual(bucket_of(u, 2006, s), "active")
+        self.assertEqual(bucket_of(u, 2006, s), "active-1")
         self.assertEqual(bucket_of(u, 2008, s), "recent")
         self.assertEqual(bucket_of(u, 2012, s), "dormant")
         self.assertEqual(bucket_of(u, 2016, s), "cold")
         self.assertEqual(bucket_of(u, 2004, s), "cold")  # never hit before
 
+    def test_episode_age_bands(self):
+        u = unit(1, "Africa", 2000, {y: 30 for y in range(2005, 2016)})  # 11-year run
+        s = spec(1)
+        self.assertEqual(bucket_of(u, 2006, s), "active-1")
+        self.assertEqual(bucket_of(u, 2007, s), "active-2-3")
+        self.assertEqual(bucket_of(u, 2009, s), "active-4-9")
+        self.assertEqual(bucket_of(u, 2016, s), "active-10+")
+        self.assertEqual(coarse("active-10+"), "active")
+        self.assertEqual(coarse("dormant"), "dormant")
+
+    def test_run_broken_by_quiet_year_restarts_age(self):
+        u = unit(1, "Africa", 2000, {2005: 30, 2006: 30, 2008: 30})
+        s = spec(1)
+        self.assertEqual(bucket_of(u, 2009, s), "active-1")  # 2007 broke the run
+
     def test_unit_bucket_years_counts_transitions(self):
-        # hits 2005 and 2006: the year entered "active" and hit again is 2006
+        # hits 2005 and 2006: 2006 entered active-1, 2007 entered active-2-3
         u = unit(1, "Africa", 2000, {2005: 30, 2006: 40})
-        k, n = unit_bucket_years(u, spec(1), "active")
-        self.assertEqual((k, n), (1, 2))  # 2006 (hit) and 2007 (no) entered active
+        self.assertEqual(unit_bucket_years(u, spec(1), "active-1"), (1, 1))
+        self.assertEqual(unit_bucket_years(u, spec(1), "active-2-3"), (0, 1))
 
 
 class TestEB(unittest.TestCase):
@@ -69,7 +96,8 @@ class TestRate(unittest.TestCase):
 
     def test_rate_shape_and_bounds(self):
         r = rate(spec(1), self.substrate())
-        self.assertEqual(r["bucket"], "active")
+        self.assertEqual(r["bucket"], "active-1")
+        self.assertEqual(r["bucket_coarse"], "active")
         self.assertGreater(r["p"], 0.0)
         self.assertLess(r["p"], 1.0)
         self.assertEqual(r["levels"]["self"]["years"], 0)  # 2021 not in period
@@ -87,10 +115,36 @@ class TestRate(unittest.TestCase):
         sub = self.substrate()
         near = rate(spec(1, as_of=2021), sub)
         far = rate(spec(1, as_of=2022), sub)
-        self.assertEqual(near["bucket"], "active")
-        self.assertEqual(far["bucket"], "active")
+        self.assertEqual(near["bucket"], "active-1")
+        self.assertEqual(far["bucket"], "active-1")
         self.assertEqual(near["p"], far["p"])
         self.assertTrue(any("past the substrate" in n for n in far["notes"]))
+
+    def test_nowcast_promotes_but_never_demotes_or_leaks(self):
+        sub = self.substrate()
+        partial = {"year": 2021, "months": 5, "country": {3: {"sb": 40, "ns": 0, "os": 0}}, "dyad": {}}
+        sub["partial"] = partial
+        s_next = spec(3, as_of=2022)  # question about the year AFTER the partial one
+        promoted = rate(s_next, sub)
+        self.assertEqual(promoted["bucket"], "active-1")
+        self.assertIn("nowcast", promoted)
+        self.assertTrue(any("nowcast" in n for n in promoted["notes"]))
+        # the partial year's own question must not see its own data
+        same_year = rate(spec(3, as_of=2021), sub)
+        self.assertEqual(same_year["bucket"], "cold")
+        self.assertNotIn("nowcast", same_year)
+        # a quiet partial year demotes nothing
+        partial["country"][1] = {"sb": 3, "ns": 0, "os": 0}
+        still_active = rate(spec(1, as_of=2022), sub)
+        self.assertEqual(still_active["bucket"], "active-1")
+        self.assertNotIn("nowcast", still_active)
+
+    def test_nowcast_extends_episode_age(self):
+        sub = self.substrate()
+        sub["partial"] = {"year": 2021, "months": 5, "country": {2: {"sb": 60, "ns": 0, "os": 0}}, "dyad": {}}
+        r = rate(spec(2, as_of=2022), sub)  # unit 2 has hit every year 2000–2020
+        self.assertEqual(r["bucket"], "active-10+")
+        self.assertEqual(nowcast_bucket(sub["country"][2], spec(2, as_of=2022).normalized(2020), sub["partial"])["bucket"], "active-10+")
 
     def test_unknown_unit_raises(self):
         with self.assertRaises(KeyError):

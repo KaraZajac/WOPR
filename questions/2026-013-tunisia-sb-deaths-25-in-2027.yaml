@@ -24,8 +24,8 @@ resolution_policy:
 forecasts: []
 prior:
   p: 0.0462
-  computed: '2026-07-16T04:28:01Z'
-  engine: 0.1.0
+  computed: '2026-07-16T12:42:36Z'
+  engine: 0.2.0
   detail:
     spec:
       grain: country
@@ -40,6 +40,7 @@ prior:
       - 2025
     unit_name: Tunisia
     bucket: dormant
+    bucket_coarse: dormant
     bucket_data_end: 2025
     levels:
       self:

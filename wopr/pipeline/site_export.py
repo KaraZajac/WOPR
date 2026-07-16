@@ -172,7 +172,9 @@ def build_countries(meta, states, conflicts, substrate):
             "abbrev": st["abbrev"],
             "region": st["region"],
             "p": r["p"],
-            "bucket": r["bucket"],
+            "bucket": r["bucket_coarse"],
+            "bucket_detail": r["bucket"],
+            "nowcast": r.get("nowcast", {}).get("year"),
             "level": r["headline_level"],
             "ladder": {
                 lvl: {k: e.get(k) for k in ("units", "years", "hits", "rate", "posterior")}
@@ -436,7 +438,12 @@ def main() -> None:
                 "tags": q.get("tags", []),
                 "criteria": q["criteria"],
                 "prior": (
-                    {"p": q["prior"]["p"], "bucket": d.get("bucket"), "level": d.get("headline_level")}
+                    {
+                        "p": q["prior"]["p"],
+                        "bucket": d.get("bucket_coarse") or d.get("bucket"),
+                        "bucket_detail": d.get("bucket"),
+                        "level": d.get("headline_level"),
+                    }
                     if q.get("prior")
                     else None
                 ),

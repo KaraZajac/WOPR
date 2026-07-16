@@ -9,13 +9,15 @@ single number:
   region  units sharing u's region
   global  all units of the grain
 
-and every level is *conditioned on recency* — the strongest predictor of
-conflict is recent conflict, so class-years are matched to u's current bucket
-(``active``: hit last year; ``recent``: 2–3 years ago; ``dormant``: 4–10;
+and every level is *conditioned on recency and episode age* — class-years are
+matched to u's current bucket (``active-1/2-3/4-9/10+``: hit last year, banded
+by consecutive hit-years; ``recent``: 2–3 years ago; ``dormant``: 4–10;
 ``cold``: >10 or never). The headline probability is u's own bucket history
 shrunk toward the class rate by an approximate empirical-Bayes prior strength
 M estimated from between-unit dispersion (see docs/method.md), clamped away
-from 0/1 by a Jeffreys floor.
+from 0/1 by a Jeffreys floor. When candidate months show the current partial
+year already meeting the measure, next-year questions get the bucket promoted
+and aged (promote-only nowcast; see nowcast_bucket).
 
 Honesty notes baked into the output: the dyad universe contains only dyads
 UCDP ever observed in conflict, so dyad-grain rates are recurrence rates, not
@@ -29,12 +31,22 @@ from pathlib import Path
 
 from wopr.paths import TABLES
 
-BUCKETS = ("active", "recent", "dormant", "cold")
+# `active` is split by episode age (consecutive hit-years so far): fresh
+# flares and decade-old wars continue at very different rates, and pooling
+# them was the engine's one measured calibration defect (dyad top bins ~5–6
+# points overconfident). Buckets are ordered youngest-episode first.
+AGE_BANDS = ((1, 1, "active-1"), (2, 3, "active-2-3"), (4, 9, "active-4-9"), (10, 10_000, "active-10+"))
+BUCKETS = ("active-1", "active-2-3", "active-4-9", "active-10+", "recent", "dormant", "cold")
 MIN_CLASS_YEARS = 30  # fall from region to global below this
 M_DEFAULT = 50.0
 M_MIN, M_MAX = 5.0, 1000.0
 DEATHS_START = 1989  # UCDP death counts begin with GED
 ACD_START = 1946
+
+
+def coarse(bucket: str) -> str:
+    """active-2-3 -> active; anything else unchanged (for badges/map keys)."""
+    return "active" if bucket.startswith("active") else bucket
 
 
 @dataclass
@@ -75,6 +87,39 @@ class Unit:
     years: dict = field(default_factory=dict)  # year -> {"acd": int, "sb": int|None, ...}
 
 
+def load_partial(tables: Path, last_year: int) -> dict | None:
+    """Candidate-month totals for the first year past the annual substrate —
+    the nowcasting input. Returns {"year", "months", "country": {gwno:
+    {sb,ns,os}}, "dyad": {id: deaths}} or None when no partial year exists."""
+    years = set()
+    country: dict[int, dict] = {}
+    dyad: dict[int, int] = {}
+    months = set()
+    with open(tables / "country-month.csv", newline="") as f:
+        for r in csv.DictReader(f):
+            y = int(r["year"])
+            if y <= last_year:
+                continue
+            years.add(y)
+    if not years:
+        return None
+    target = min(years)  # only the first partial year can nowcast buckets
+    with open(tables / "country-month.csv", newline="") as f:
+        for r in csv.DictReader(f):
+            if int(r["year"]) != target:
+                continue
+            months.add(int(r["month"]))
+            c = country.setdefault(int(r["gwno"]), {"sb": 0, "ns": 0, "os": 0})
+            for t in ("sb", "ns", "os"):
+                c[t] += int(r[f"{t}_deaths"])
+    with open(tables / "dyad-month.csv", newline="") as f:
+        for r in csv.DictReader(f):
+            if int(r["year"]) != target or r["type"] != "sb":
+                continue
+            dyad[int(r["dyad_id"])] = dyad.get(int(r["dyad_id"]), 0) + int(r["deaths"])
+    return {"year": target, "months": len(months), "country": country, "dyad": dyad}
+
+
 def load_substrate(tables: Path = TABLES) -> dict:
     """Read the committed year tables into Unit maps keyed by grain."""
     countries: dict[int, Unit] = {}
@@ -105,7 +150,7 @@ def load_substrate(tables: Path = TABLES) -> dict:
                 "sb": int(r["ged_deaths"]) if r["ged_deaths"] != "" else None,
             }
     last = max(u.last_year for u in countries.values())
-    return {"country": countries, "dyad": dyads, "last_year": last}
+    return {"country": countries, "dyad": dyads, "last_year": last, "partial": load_partial(tables, last)}
 
 
 def hit(u: Unit, year: int, spec: Spec) -> bool | None:
@@ -126,7 +171,10 @@ def hit(u: Unit, year: int, spec: Spec) -> bool | None:
 
 
 def bucket_of(u: Unit, year: int, spec: Spec) -> str | None:
-    """Recency bucket entering `year`, from history strictly before it."""
+    """Recency/episode-age bucket entering `year`, from history strictly
+    before it. Active units are banded by consecutive hit-years (episode
+    age); runs touching the substrate start are left-censored (age reads
+    low — documented in docs/method.md)."""
     lo, _ = spec.period
     start = max(lo, u.first_year if spec.measure == "acd-active" else max(u.first_year, DEATHS_START))
     if year <= start:  # no observable history yet
@@ -140,7 +188,14 @@ def bucket_of(u: Unit, year: int, spec: Spec) -> str | None:
         return "cold"
     gap = year - last_hit
     if gap == 1:
-        return "active"
+        age = 1
+        y = year - 2
+        while y >= start and hit(u, y, spec):
+            age += 1
+            y -= 1
+        for a_lo, a_hi, name in AGE_BANDS:
+            if a_lo <= age <= a_hi:
+                return name
     if gap <= 3:
         return "recent"
     if gap <= 10:
@@ -213,16 +268,22 @@ def rate(spec: Spec, substrate: dict) -> dict:
     # years between the substrate end and as_of must not decay it toward cold
     bucket_year = min(spec.as_of, spec.period[1] + 1)
     bucket = bucket_of(me, bucket_year, spec) or "cold"
+    nowcast = nowcast_bucket(me, spec, substrate.get("partial"))
+    if nowcast:
+        bucket = nowcast["bucket"]
     k_self, n_self = unit_bucket_years(me, spec, bucket)
 
     out = {
         "spec": spec.to_dict(),
         "unit_name": me.name or str(me.id),
         "bucket": bucket,
+        "bucket_coarse": coarse(bucket),
         "bucket_data_end": min(spec.as_of - 1, spec.period[1]),
         "levels": {},
         "unconditional": {},
     }
+    if nowcast:
+        out["nowcast"] = nowcast
     posteriors = {}
     for level in ("self", "region", "global"):
         members = class_units(spec, substrate, level)
@@ -258,7 +319,42 @@ def rate(spec: Spec, substrate: dict) -> dict:
     out["headline_level"] = use
     out["p"] = round(min(max(p, floor), 1 - floor), 4)
     out["notes"] = notes(spec)
+    if nowcast:
+        out["notes"].append(
+            f"bucket nowcast: {nowcast['year']} already meets the measure "
+            f"({nowcast['total']} in {nowcast['months']} candidate months, provisional)"
+        )
     return out
+
+
+def nowcast_bucket(u: Unit, spec: Spec, partial: dict | None) -> dict | None:
+    """Promote the target's bucket when the current partial year has already
+    met the measure in candidate months. Promote-only: a quiet partial year
+    is never treated as a quiet year. Applies only to questions about years
+    strictly after the partial year — a question about the partial year
+    itself must not see that year's own data in its prior."""
+    if not partial or spec.as_of <= partial["year"] or spec.period[1] != partial["year"] - 1:
+        return None
+    if spec.measure == "acd-active":
+        got = (partial[spec.grain].get(u.id, {}) or {}).get("sb", 0) if spec.grain == "country" else partial["dyad"].get(u.id, 0)
+        met = got >= 25
+    else:
+        if spec.grain == "country":
+            c = partial["country"].get(u.id, {})
+            got = sum(c.get(t, 0) for t in spec.types)
+        else:
+            got = partial["dyad"].get(u.id, 0)
+        met = got >= spec.threshold
+    if not met:
+        return None
+    # age = run of hit-years through the substrate end, plus the partial year
+    age = 1
+    y = spec.period[1]
+    while hit(u, y, spec):
+        age += 1
+        y -= 1
+    band = next(name for a_lo, a_hi, name in AGE_BANDS if a_lo <= age <= a_hi)
+    return {"bucket": band, "year": partial["year"], "months": partial["months"], "total": got}
 
 
 def notes(spec: Spec) -> list[str]:

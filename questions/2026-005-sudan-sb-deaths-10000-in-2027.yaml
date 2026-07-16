@@ -24,9 +24,9 @@ resolution_policy:
   method: auto
 forecasts: []
 prior:
-  p: 0.5118
-  computed: '2026-07-16T04:28:00Z'
-  engine: 0.1.0
+  p: 0.463
+  computed: '2026-07-16T12:42:34Z'
+  engine: 0.2.0
   detail:
     spec:
       grain: country
@@ -40,7 +40,8 @@ prior:
       - 1989
       - 2025
     unit_name: Sudan
-    bucket: active
+    bucket: active-1
+    bucket_coarse: active
     bucket_data_end: 2025
     levels:
       self:
@@ -50,18 +51,18 @@ prior:
         rate: 0.0
       region:
         units: 52
-        years: 12
-        hits: 5
-        rate: 0.4167
-        M: 1000.0
-        posterior: 0.4163
+        years: 7
+        hits: 3
+        rate: 0.4286
+        M: 5.0
+        posterior: 0.3571
       global:
         units: 181
-        years: 41
-        hits: 25
-        rate: 0.6098
-        M: 5.2
-        posterior: 0.5118
+        years: 18
+        hits: 9
+        rate: 0.5
+        M: 12.5
+        posterior: 0.463
     unconditional:
       self:
         years: 37
@@ -76,7 +77,7 @@ prior:
         hits: 44
         rate: 0.0067
     headline_level: global
-    p: 0.5118
+    p: 0.463
     notes:
     - annual-hit probability; sub-annual or cross-year windows approximated by the calendar-year rate
     - 'as_of 2027 is 1 year(s) past the substrate (2025): bucket taken at the data edge, one-step rate

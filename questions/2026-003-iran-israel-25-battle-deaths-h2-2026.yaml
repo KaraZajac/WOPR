@@ -24,9 +24,9 @@ resolution_policy:
   method: auto
 forecasts: []
 prior:
-  p: 0.8872
-  computed: '2026-07-16T04:27:59Z'
-  engine: 0.1.0
+  p: 0.9339
+  computed: '2026-07-16T12:42:33Z'
+  engine: 0.2.0
   detail:
     spec:
       grain: dyad
@@ -40,28 +40,29 @@ prior:
       - 1989
       - 2025
     unit_name: Government of Iran - Government of Israel
-    bucket: active
+    bucket: active-4-9
+    bucket_coarse: active
     bucket_data_end: 2025
     levels:
       self:
         units: 1
-        years: 7
-        hits: 7
+        years: 4
+        hits: 4
         rate: 1.0
       region:
         units: 96
-        years: 303
-        hits: 221
-        rate: 0.7294
+        years: 84
+        hits: 74
+        rate: 0.881
         M: 5.0
-        posterior: 0.8872
+        posterior: 0.9339
       global:
         units: 697
-        years: 2003
-        hits: 1396
-        rate: 0.697
-        M: 5.0
-        posterior: 0.8737
+        years: 528
+        hits: 433
+        rate: 0.8201
+        M: 5.3
+        posterior: 0.8974
     unconditional:
       self:
         years: 9
@@ -76,7 +77,7 @@ prior:
         hits: 2081
         rate: 0.1067
     headline_level: region
-    p: 0.8872
+    p: 0.9339
     notes:
     - annual-hit probability; sub-annual or cross-year windows approximated by the calendar-year rate
     - dyad universe = dyads UCDP ever observed; this is a recurrence rate, not a rate for arbitrary pairs

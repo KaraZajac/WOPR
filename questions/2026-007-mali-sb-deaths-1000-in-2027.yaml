@@ -23,9 +23,9 @@ resolution_policy:
   method: auto
 forecasts: []
 prior:
-  p: 0.8034
-  computed: '2026-07-16T04:28:00Z'
-  engine: 0.1.0
+  p: 0.8211
+  computed: '2026-07-16T12:42:35Z'
+  engine: 0.2.0
   detail:
     spec:
       grain: country
@@ -39,28 +39,29 @@ prior:
       - 1989
       - 2025
     unit_name: Mali
-    bucket: active
+    bucket: active-4-9
+    bucket_coarse: active
     bucket_data_end: 2025
     levels:
       self:
         units: 1
-        years: 3
-        hits: 3
-        rate: 1.0
+        years: 0
+        hits: 0
+        rate: null
       region:
         units: 52
-        years: 124
-        hits: 85
-        rate: 0.6855
-        M: 5.0
-        posterior: 0.8034
+        years: 29
+        hits: 25
+        rate: 0.8621
+        M: 1000.0
+        posterior: 0.8621
       global:
         units: 181
-        years: 315
-        hits: 225
-        rate: 0.7143
-        M: 5.8
-        posterior: 0.8112
+        years: 95
+        hits: 78
+        rate: 0.8211
+        M: 11.4
+        posterior: 0.8211
     unconditional:
       self:
         years: 37
@@ -74,8 +75,8 @@ prior:
         years: 6556
         hits: 330
         rate: 0.0503
-    headline_level: region
-    p: 0.8034
+    headline_level: global
+    p: 0.8211
     notes:
     - annual-hit probability; sub-annual or cross-year windows approximated by the calendar-year rate
     - 'as_of 2027 is 1 year(s) past the substrate (2025): bucket taken at the data edge, one-step rate

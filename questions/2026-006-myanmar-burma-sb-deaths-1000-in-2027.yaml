@@ -24,9 +24,9 @@ resolution_policy:
   method: auto
 forecasts: []
 prior:
-  p: 0.7495
-  computed: '2026-07-16T04:28:00Z'
-  engine: 0.1.0
+  p: 0.8529
+  computed: '2026-07-16T12:42:34Z'
+  engine: 0.2.0
   detail:
     spec:
       grain: country
@@ -40,28 +40,29 @@ prior:
       - 1989
       - 2025
     unit_name: Myanmar (Burma)
-    bucket: active
+    bucket: active-4-9
+    bucket_coarse: active
     bucket_data_end: 2025
     levels:
       self:
         units: 1
-        years: 6
-        hits: 4
-        rate: 0.6667
+        years: 1
+        hits: 1
+        rate: 1.0
       region:
         units: 37
-        years: 93
-        hits: 76
-        rate: 0.8172
-        M: 7.3
-        posterior: 0.7495
+        years: 34
+        hits: 28
+        rate: 0.8235
+        M: 5.0
+        posterior: 0.8529
       global:
         units: 181
-        years: 315
-        hits: 225
-        rate: 0.7143
-        M: 5.8
-        posterior: 0.6902
+        years: 95
+        hits: 78
+        rate: 0.8211
+        M: 11.4
+        posterior: 0.8355
     unconditional:
       self:
         years: 37
@@ -76,7 +77,7 @@ prior:
         hits: 330
         rate: 0.0503
     headline_level: region
-    p: 0.7495
+    p: 0.8529
     notes:
     - annual-hit probability; sub-annual or cross-year windows approximated by the calendar-year rate
     - 'as_of 2027 is 1 year(s) past the substrate (2025): bucket taken at the data edge, one-step rate

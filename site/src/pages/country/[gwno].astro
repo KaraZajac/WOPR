@@ -34,7 +34,7 @@ const ladderRows = ["self", "region", "global"].map((lvl) => ({ lvl, ...c.ladder
   </p>
 
   <div class="kpis">
-    <StatTile label={`P(≥25 sb deaths in ${nextYear})`} value={pct(c.p, 1)} sub={`bucket: ${c.bucket} · ${c.level} posterior`}>
+    <StatTile label={`P(≥25 sb deaths in ${nextYear})`} value={pct(c.p, 1)} sub={`bucket: ${c.bucket_detail} · ${c.level} posterior${c.nowcast ? ` · nowcast from ${c.nowcast} candidate months` : ""}`}>
       <Meter p={c.p} label={c.name} />
     </StatTile>
     <StatTile
@@ -49,7 +49,7 @@ const ladderRows = ["self", "region", "global"].map((lvl) => ({ lvl, ...c.ladder
     <h3>The reference-class ladder</h3>
     <p class="viz-sub">
       P(≥25 state-based deaths in a calendar year), conditional on entering a
-      <b> {c.bucket}</b> year — each level shows the class the estimate borrows from
+      <b> {c.bucket_detail}</b> year — each level shows the class the estimate borrows from
     </p>
     <table class="data">
       <thead><tr><th>level</th><th class="n">units</th><th class="n">unit-years</th><th class="n">hits</th><th class="n">rate</th><th class="n">posterior</th></tr></thead>

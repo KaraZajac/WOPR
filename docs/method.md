@@ -19,27 +19,33 @@ excluded); dyads count from their first observed year.
 
 ## Recency conditioning
 
-Conflict is sticky: the unconditional global rate of a ≥25-death country-year
-is ~0.17, but ~0.85 for countries that had one *last year*. Every ladder level
-is therefore conditioned on the target's **bucket** — years since the measure
-was last met, evaluated as of the forecast year:
+Conflict is sticky — the unconditional global rate of a ≥25-death country-year
+is ~0.17 versus ~0.85 for countries that had one last year — and *how long* it
+has been sticky matters too. Every ladder level is conditioned on the target's
+**bucket**, evaluated as of the forecast year:
 
-- `active` — met last year
-- `recent` — 2–3 years ago
+- `active-1` / `active-2-3` / `active-4-9` / `active-10+` — met the measure
+  last year, banded by the run of consecutive hit-years (episode age). The
+  bands are worth ~35 points: fresh dyad flares continue ≈53%, decade-old
+  wars ≈88% (walk-forward, dyad grain).
+- `recent` — last met 2–3 years ago
 - `dormant` — 4–10 years ago
 - `cold` — 11+ years ago, or never within the substrate
 
 Class-years are counted only when they entered the same bucket the target is
-in now. The first substrate year is skipped (no observable history), and
-"never" is left-censored: a country quiet since 1989 may not truly be `cold`
-in the long-run sense.
+in now. The first substrate year is skipped (no observable history); "never"
+and episode ages are left-censored at the substrate start (a run touching
+1989 reads younger than it is); a country quiet since 1989 may not truly be
+`cold` in the long-run sense.
 
 The target's bucket is taken **at the edge of observation** (substrate end +
 1). A question about a year beyond that — e.g. calendar 2027 asked in
 mid-2026 with annual data through 2025 — does not decay the bucket for years
-nobody has observed; the one-step conditional rate is applied at the longer
-horizon, with a note, which slightly overstates persistence. Nowcasting the
-bucket from candidate months is on the roadmap.
+nobody has observed. If candidate months show the partial current year
+**already meeting the measure**, the bucket is promoted and its age extended
+(**nowcast, promote-only** — a quiet partial year never demotes, because five
+candidate months can't prove a quiet year). A question about the partial year
+itself never sees that year's own data in its prior.
 
 ## The ladder and shrinkage
 
@@ -70,12 +76,14 @@ globally, it falls back to the global unconditional rate and says so.
 
 `wopr backtest` replays the engine over every observable unit-year using only
 prior data (~47k pseudo-forecasts; results in `data/backtest.yaml`). As of
-UCDP 26.1: country-grain priors are well calibrated end to end (sb≥25 skill
-+71% vs climatology; 90–100% bin predicts .947, observes .934). **Dyad-grain
-priors run overconfident at the top** (active-bucket continuation predicted
-.79, observed .73; 70–90% bins ~5–6 points high) — dyad episodes terminate
-more than pooled persistence implies. Until duration-dependent hazards land
-(roadmap), shade active-dyad continuation priors down a few points.
+UCDP 26.1 with episode-age buckets (engine 0.2.0): country-grain priors are
+well calibrated end to end (sb≥25 skill +70%; acd-active +65%); dyad-grain
+skill +60% with the former pooled-active defect largely repaired (the 70–80%
+bin was 10 points hot under 4-bucket conditioning, now 4; 80–90% from 5.5 to
+2.7). **Residual bias:** all active bands still run ~3 points optimistic at
+dyad grain, and fresh onsets (`active-1`) are the least predictable class
+(country sb: predicted .65, observed .56) — when your question sits in
+`active-1`, treat the prior as soft and lean on your inside view.
 
 ## Known approximations (read before trusting a prior)
 

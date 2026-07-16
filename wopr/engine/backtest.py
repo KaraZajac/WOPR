@@ -19,6 +19,7 @@ Run: wopr backtest [--burn-in 5] — writes data/backtest.yaml.
 from collections import defaultdict
 
 from wopr.engine.baserate import (
+    BUCKETS,
     MIN_CLASS_YEARS,
     Spec,
     bucket_of,
@@ -142,7 +143,7 @@ def summarize(records: list[dict]) -> dict:
                     "observed": round(sum(r["outcome"] for r in got) / len(got), 3),
                 }
             )
-    for b in ("active", "recent", "dormant", "cold"):
+    for b in BUCKETS:
         got = [r for r in records if r["bucket"] == b]
         if got:
             out["by_bucket"][b] = {
