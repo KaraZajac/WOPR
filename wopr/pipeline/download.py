@@ -32,9 +32,11 @@ ZIPS = {
     "ucdp-onesided": ("nsos", "ucdp-onesided"),
     "ucdp-cy": ("organizedviolencecy", "organizedviolencecy"),
 }
+# v7 of the Gleditsch–Ward list (ksgmdw.txt, through 2020); the old
+# iisystem.dat/microstatessystem.dat URLs are frozen at the 2017 revision.
 GW_FILES = {
-    "gw-iisystem.dat": f"{GW}/iisystem.dat",
-    "gw-microstates.dat": f"{GW}/microstatessystem.dat",
+    "gw-states.tsv": f"{GW}/ksgmdw.txt",
+    "gw-microstates.tsv": f"{GW}/microstates.txt",
 }
 
 
@@ -120,7 +122,7 @@ def main() -> None:
 
     for name, url in GW_FILES.items():
         dest = SOURCES / name
-        manifest["files"][name.removesuffix(".dat")] = dest.name
+        manifest["files"][name.removesuffix(".tsv")] = dest.name
         if dest.exists() and not force:
             print(f"  cached {dest.relative_to(ROOT)}")
             continue

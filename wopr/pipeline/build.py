@@ -107,17 +107,18 @@ def load_states(cy_rows: list[dict]) -> list[dict]:
     region = {int(r["country_id"]): r["region"] for r in cy_rows}
     name = {int(r["country_id"]): r["country"] for r in cy_rows}
     states: dict[int, dict] = {}
-    for fn, micro in (("gw-iisystem.dat", False), ("gw-microstates.dat", True)):
+    year_re = re.compile(r"\d{4}")
+    for fn, micro in (("gw-states.tsv", False), ("gw-microstates.tsv", True)):
         text = (SOURCES / fn).read_text(encoding="latin-1")
         ends = []
         rows = []
         for line in text.splitlines():
             parts = [p.strip() for p in line.strip().split("\t")]
-            if len(parts) != 5:
+            if len(parts) != 5 or not parts[0].isdigit():  # header row / blanks
                 continue
             gwno, abbrev, gw_name = int(parts[0]), parts[1], parts[2]
-            start = int(parts[3][-4:])
-            end = int(parts[4][-4:])
+            start = int(year_re.search(parts[3]).group())
+            end = int(year_re.search(parts[4]).group())
             rows.append((gwno, abbrev, gw_name, start, end))
             ends.append(end)
         sentinel = max(ends)  # the list's last revision year marks ongoing members
