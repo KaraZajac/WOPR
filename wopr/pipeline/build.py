@@ -44,8 +44,8 @@ VIOLENCE = {"1": "sb", "2": "ns", "3": "os"}  # state-based / non-state / one-si
 YEAR_MIN = 1946
 
 
-def read_csv(path: Path) -> list[dict]:
-    with open(path, newline="", encoding="utf-8-sig") as f:
+def read_csv(path: Path, encoding: str = "utf-8-sig") -> list[dict]:
+    with open(path, newline="", encoding=encoding) as f:
         return list(csv.DictReader(f))
 
 
@@ -80,6 +80,23 @@ def to_gw(gwno: int, year: int) -> int:
     if target and year >= target[1]:
         return target[0]
     return gwno
+
+
+# COW country codes that differ from G-W in the 1946+ window. Germany and
+# Yemen apply to the post-1990 unified states only (the divided-era codes
+# match); the Pacific microstates differ outright — note COW 970 is Nauru
+# while G-W 970 is Kiribati, so this must be a single dict lookup, never
+# chained. Serbia (COW keeps 345 after 2006, G-W moves to 340) is handled by
+# the year-aware to_gw alias afterwards.
+COW_TO_GW = {255: (260, 1990), 679: (678, 1990), 946: (970, 0), 947: (973, 0), 955: (972, 0), 970: (971, 0)}
+
+
+def cow_to_gw(ccode: int, year: int) -> int:
+    """Translate a COW country code to the G-W state for that year."""
+    target = COW_TO_GW.get(ccode)
+    if target and year >= target[1]:
+        return to_gw(target[0], year)
+    return to_gw(ccode, year)
 
 
 def candidate_version(name: str) -> tuple[int, ...]:
@@ -527,8 +544,79 @@ WB_NAMES = {
     "Timor-Leste": "East Timor",
 }
 
-COVARIATE_COLS = ["gdp_pc", "inflation", "pop_0014", "pop_1564", "urban_pct", "infant_mort", "pop_growth", "excluded_share"]
+COVARIATE_COLS = ["gdp_pc", "inflation", "pop_0014", "pop_1564", "urban_pct", "infant_mort", "pop_growth", "excluded_share", "cinc"]
 EPR_EXCLUDED = {"POWERLESS", "DISCRIMINATED", "SELF-EXCLUSION"}  # out of central power
+
+
+def cow_cinc() -> dict:
+    """(gwno, year) -> CINC composite capability index (COW NMC v7, through
+    2022). The share of world material capability — six components: military
+    expenditure/personnel, iron & steel, energy, total/urban population."""
+    path = SOURCES / "cow" / "nmc.csv"
+    if not path.exists():
+        return {}
+    out = {}
+    for r in read_csv(path, encoding="latin-1"):
+        year = int(r["year"])
+        if year < YEAR_MIN or not r["cinc"] or r["cinc"] == "-9":
+            continue
+        out[(cow_to_gw(int(r["ccode"]), year), year)] = float(r["cinc"])
+    return out
+
+
+def build_mids(states) -> list[list]:
+    """data/tables/mids.csv: militarized interstate disputes per undirected
+    country pair-year (COW dyadic MID 4.03, 1946–2014). The sub-war friction
+    record — disputes, threats, shows and uses of force — that the UCDP
+    ≥25-death threshold never sees. hostility is the dyad-year max on COW's
+    1–5 scale (4 = use of force, 5 = war); fatal marks any recorded deaths."""
+    path = SOURCES / "cow" / "dyadic-mid.csv"
+    if not path.exists():
+        return [["gwno_a", "gwno_b", "year", "disputes", "hostility", "fatal"]]
+    known = {s["gwno"] for s in states}
+    agg: dict[tuple, dict] = {}
+    dropped = set()
+    for r in read_csv(path, encoding="latin-1"):
+        year = int(r["year"])
+        if year < YEAR_MIN:
+            continue
+        a, b = cow_to_gw(int(r["statea"]), year), cow_to_gw(int(r["stateb"]), year)
+        if a not in known or b not in known:
+            dropped.add((a, b, year))
+            continue
+        key = (min(a, b), max(a, b), year)
+        cur = agg.setdefault(key, {"disputes": set(), "hostility": 0, "fatal": 0})
+        cur["disputes"].add(r["disno"])
+        if r["hihost"].isdigit():
+            cur["hostility"] = max(cur["hostility"], int(r["hihost"]))
+        if r["fatlev"].isdigit() and int(r["fatlev"]) > 0:
+            cur["fatal"] = 1
+    if dropped:
+        print(f"  mids: dropped {len(dropped)} pair-years with non-registry states")
+    rows = [[a, b, y, len(v["disputes"]), v["hostility"], v["fatal"]] for (a, b, y), v in sorted(agg.items())]
+    return [["gwno_a", "gwno_b", "year", "disputes", "hostility", "fatal"]] + rows
+
+
+def build_alliances(states) -> list[list]:
+    """data/tables/alliances.csv: formal alliance membership per undirected
+    country pair-year (COW v4.1, 1946–2012). defense=1 marks a defense pact
+    (the strongest commitment class); row presence marks any alliance."""
+    path = SOURCES / "cow" / "alliances-directed.csv"
+    if not path.exists():
+        return [["gwno_a", "gwno_b", "year", "defense"]]
+    known = {s["gwno"] for s in states}
+    agg: dict[tuple, int] = {}
+    for r in read_csv(path, encoding="latin-1"):
+        year = int(r["year"])
+        if year < YEAR_MIN:
+            continue
+        a, b = cow_to_gw(int(r["ccode1"]), year), cow_to_gw(int(r["ccode2"]), year)
+        if a not in known or b not in known or a == b:
+            continue
+        key = (min(a, b), max(a, b), year)
+        agg[key] = max(agg.get(key, 0), 1 if r["defense"] == "1" else 0)
+    rows = [[a, b, y, d] for (a, b, y), d in sorted(agg.items())]
+    return [["gwno_a", "gwno_b", "year", "defense"]] + rows
 
 
 def epr_excluded_share() -> dict:
@@ -581,10 +669,14 @@ def build_covariates(states, last_year: int) -> list[list]:
     for (gwno, year), share in epr_excluded_share().items():
         if year <= last_year:
             cells[(gwno, year)]["excluded_share"] = round(share, 3)
+    for (gwno, year), cinc in cow_cinc().items():
+        if year <= last_year:
+            cells[(gwno, year)]["cinc"] = round(cinc, 5)
 
     rows = []
     for (gwno, year), vals in sorted(cells.items()):
-        rows.append([gwno, year] + [round(vals[c], 3) if c in vals else "" for c in COVARIATE_COLS])
+        # cinc is a world share (small states ~1e-5), so it keeps more precision
+        rows.append([gwno, year] + [round(vals[c], 6 if c == "cinc" else 3) if c in vals else "" for c in COVARIATE_COLS])
     return [["gwno", "year"] + COVARIATE_COLS] + rows
 
 
@@ -976,6 +1068,8 @@ def main() -> None:
     population_table = build_population(states, last_year)
     covariate_table = build_covariates(states, last_year)
     bdh_table = build_battle_deaths_history()
+    mids_table = build_mids(states)
+    alliance_table = build_alliances(states)
     peace = build_peace_agreements(states)
     if peace:
         dump_yaml(REGISTRY / "peace-agreements.yaml", peace)
@@ -991,6 +1085,10 @@ def main() -> None:
     write_csv(TABLES / "covariates.csv", covariate_table[0], covariate_table[1:])
     if len(bdh_table) > 1:
         write_csv(TABLES / "battle-deaths-history.csv", bdh_table[0], bdh_table[1:])
+    if len(mids_table) > 1:
+        write_csv(TABLES / "mids.csv", mids_table[0], mids_table[1:])
+    if len(alliance_table) > 1:
+        write_csv(TABLES / "alliances.csv", alliance_table[0], alliance_table[1:])
 
     meta = {
         "ucdp_release": manifest["ucdp_release"],

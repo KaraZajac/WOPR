@@ -10,6 +10,7 @@ sources/manifest.yaml for the rest of the pipeline.
 import datetime
 import io
 import re
+import ssl
 import sys
 import zipfile
 from pathlib import Path
@@ -58,6 +59,70 @@ def _get(url: str, timeout: int = 300) -> bytes:
             return resp.read()
     except (HTTPError, URLError, TimeoutError) as e:
         raise SystemExit(f"download failed: {url} ({e})")
+
+
+# ------------------------------------------------------------ Correlates of War
+
+COW = "https://correlatesofwar.org/wp-content/uploads"
+# archive -> (inner CSV basename, sources/cow/ destination)
+COW_FILES = {
+    "dyadic_mid_4.03_update.zip": ("dyadic_mid_4.03.csv", "dyadic-mid.csv"),
+    "version4.1_csv.zip": ("alliance_v4.1_by_directed_yearly.csv", "alliances-directed.csv"),
+}
+
+
+def _cow_context() -> ssl.SSLContext:
+    """correlatesofwar.org serves its leaf certificate without the InCommon
+    intermediate, so default verification fails ('unable to verify the first
+    certificate'). We complete the chain with a pinned copy of the public
+    intermediate (wopr/pipeline/cow-ca.pem, verified against the system
+    USERTrust root; see the file header) on top of the default trust store."""
+    ctx = ssl.create_default_context()
+    ctx.load_verify_locations(cafile=str(Path(__file__).parent / "cow-ca.pem"))
+    return ctx
+
+
+def _get_cow(url: str, timeout: int = 300) -> bytes:
+    try:
+        req = Request(url, headers={"User-Agent": UA})
+        with urlopen(req, timeout=timeout, context=_cow_context()) as resp:
+            return resp.read()
+    except (HTTPError, URLError, TimeoutError) as e:
+        raise SystemExit(f"download failed: {url} ({e})")
+
+
+def _zip_member(zf: zipfile.ZipFile, basename: str) -> str:
+    hits = [m for m in zf.namelist() if m.endswith(basename) and not m.startswith("__MACOSX")]
+    if len(hits) != 1:
+        raise SystemExit(f"expected one {basename} in archive, found {hits}")
+    return hits[0]
+
+
+def pull_cow(force: bool = False) -> None:
+    """Correlates of War: dyadic MIDs (militarized disputes short of war,
+    1816–2014), NMC v7 material capabilities (CINC, through 2022), and formal
+    alliances (through 2012). Freely downloadable; citation required."""
+    dest_dir = SOURCES / "cow"
+    dest_dir.mkdir(exist_ok=True)
+    for archive, (inner, out_name) in COW_FILES.items():
+        dest = dest_dir / out_name
+        if dest.exists() and not force:
+            print(f"  cached {dest.relative_to(ROOT)}")
+            continue
+        print(f"  GET {COW}/{archive}")
+        with zipfile.ZipFile(io.BytesIO(_get_cow(f"{COW}/{archive}"))) as zf:
+            dest.write_bytes(zf.read(_zip_member(zf, inner)))
+        print(f"  -> {dest.relative_to(ROOT)} ({dest.stat().st_size:,} bytes)")
+    # NMC v7 nests its data zip inside the distribution zip
+    dest = dest_dir / "nmc.csv"
+    if dest.exists() and not force:
+        print(f"  cached {dest.relative_to(ROOT)}")
+        return
+    print(f"  GET {COW}/NMCv7.zip")
+    with zipfile.ZipFile(io.BytesIO(_get_cow(f"{COW}/NMCv7.zip"))) as outer:
+        inner_zip = zipfile.ZipFile(io.BytesIO(outer.read(_zip_member(outer, "NMC-v7-supplemental.zip"))))
+        dest.write_bytes(inner_zip.read(_zip_member(inner_zip, "NMC-70-wsupplementary.csv")))
+    print(f"  -> {dest.relative_to(ROOT)} ({dest.stat().st_size:,} bytes)")
 
 
 def scrape_downloads_page() -> tuple[str, list[str], dict]:
@@ -254,6 +319,9 @@ def main() -> None:
         with _u.urlopen(req, timeout=60) as r:
             countries.write_bytes(r.read())
         print(f"  -> {countries.relative_to(ROOT)}")
+
+    print("Correlates of War (MIDs, capabilities, alliances):")
+    pull_cow(force=force)
 
     with open(SOURCES / "manifest.yaml", "w") as f:
         yaml.safe_dump(manifest, f, sort_keys=False)

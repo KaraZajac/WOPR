@@ -36,11 +36,13 @@ const fmtCov = {
   excluded_share: (v) => `${(v * 100).toFixed(0)}%`,
   infant_mort: (v) => v.toFixed(0),
   urban_pct: (v) => `${v.toFixed(0)}%`,
+  cinc: (v) => `${(v * 100).toFixed(2)}% of world`,
 };
 const factorKey = {
   "young population": "pop_0014", "ethnically excluded population": "excluded_share",
   "low income": "gdp_pc", "high infant mortality": "infant_mort",
   "high inflation": "inflation", "urbanization": "urban_pct",
+  "material capability (CINC)": "cinc",
 };
 const seriesCharts = [
   ["gdp_pc", "GDP per capita (US$)"],

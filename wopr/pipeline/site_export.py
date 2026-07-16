@@ -153,7 +153,7 @@ def build_countries(meta, states, conflicts, substrate):
                 coups[int(r["gwno"])].append([int(r["year"]), int(r["attempts"]), int(r["successes"])])
 
     # structural covariates per country — full recent series + latest value
-    cov_cols = ["gdp_pc", "inflation", "pop_0014", "urban_pct", "infant_mort", "excluded_share"]
+    cov_cols = ["gdp_pc", "inflation", "pop_0014", "urban_pct", "infant_mort", "excluded_share", "cinc"]
     cov_series = defaultdict(lambda: defaultdict(list))
     covariates = defaultdict(dict)
     with open(TABLES / "covariates.csv", newline="") as f:
@@ -184,6 +184,7 @@ def build_countries(meta, states, conflicts, substrate):
         "infant_mort": ("high infant mortality", True, "a development/state-capacity proxy"),
         "inflation": ("high inflation", True, "NOT predictive of onset in our test — shown for context only"),
         "urban_pct": ("urbanization", True, "context only"),
+        "cinc": ("material capability (CINC)", True, "share of world material capability (COW NMC, 2022) — great-power context, not an onset covariate"),
     }
 
     def risk_factors(g):
@@ -523,6 +524,19 @@ def build_trends(conflicts, dyads):
         for y in range(1946, max(ged_sb) + 1)
     ]
 
+    # 1c. militarized interstate disputes (COW dyadic MID) — the sub-war
+    # friction the ≥25-death threshold never sees; series ends at MID's 2014
+    mids_series = []
+    if (TABLES / "mids.csv").exists():
+        mid_any = defaultdict(int)
+        mid_force = defaultdict(int)
+        for r in rows_of("mids.csv"):
+            y = int(r["year"])
+            mid_any[y] += 1
+            if int(r["hostility"]) >= 4:
+                mid_force[y] += 1
+        mids_series = [[y, mid_any[y], mid_force[y]] for y in range(1946, max(mid_any) + 1)]
+
     # 2. deaths by region over time (1989–), + global per-capita
     region_year = defaultdict(lambda: defaultdict(int))
     global_deaths = defaultdict(int)
@@ -581,6 +595,7 @@ def build_trends(conflicts, dyads):
     return {
         "long_peace": long_peace,
         "battle_deaths_long": battle_long,
+        "mids": mids_series,
         "deaths_by_region": {"regions": regions, "series": deaths_region},
         "per_capita": per_capita,
         "coups_decade": coups_decade,

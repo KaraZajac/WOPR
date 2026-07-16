@@ -165,6 +165,30 @@ def main() -> None:
         check(all(0 <= v <= 60 for v in young), "youth share in plausible range")
         excl = [float(c["excluded_share"]) for c in cov if c["excluded_share"]]
         check(all(0 <= v <= 1.01 for v in excl), "excluded share is a fraction")
+        if cov and "cinc" in cov[0]:
+            cinc = [(c["year"], float(c["cinc"])) for c in cov if c.get("cinc")]
+            check(all(0 <= v <= 1 for _, v in cinc), "CINC values are world shares")
+            latest = max(y for y, _ in cinc)
+            total = sum(v for y, v in cinc if y == latest)
+            check(0.9 <= total <= 1.1, f"CINC sums to ~1 across states ({latest}: {total:.3f})")
+
+    mids_path = TABLES / "mids.csv"
+    if mids_path.exists():
+        mids = rows_of("mids.csv")
+        check(len({(m["gwno_a"], m["gwno_b"], m["year"]) for m in mids}) == len(mids), "MID pair-year key unique")
+        check(all(1 <= int(m["hostility"]) <= 5 for m in mids), "MID hostility on the 1–5 scale")
+        check(all(int(m["gwno_a"]) < int(m["gwno_b"]) for m in mids), "MID pairs undirected (a < b)")
+        gwnos = {int(s["gwno"]) for s in states}
+        check(
+            all(int(m["gwno_a"]) in gwnos and int(m["gwno_b"]) in gwnos for m in mids),
+            "MID states all in the registry (COW→G-W crosswalk clean)",
+        )
+
+    al_path = TABLES / "alliances.csv"
+    if al_path.exists():
+        al = rows_of("alliances.csv")
+        check(all(r["defense"] in ("0", "1") for r in al), "alliance defense flag boolean")
+        check(len({(r["gwno_a"], r["gwno_b"], r["year"]) for r in al}) == len(al), "alliance pair-year key unique")
 
     questions = store.load_all()
     errs = [e for q in questions for e in store.validate_question(q)]

@@ -66,6 +66,19 @@ const eraTotal = era.reduce((a, b) => a + b, 0);
     </div>
   )}
 
+  {t.mids && t.mids.length > 0 && (
+    <div style="margin-top:14px">
+      <MultiLine
+        title="Militarized interstate disputes, 1946–2014"
+        sub="COW dyadic MIDs — country pairs in a threat, display, or use of force each year. The friction between states never went away; it just stopped crossing the war threshold. (COW's dispute coding ends in 2014.)"
+        series={t.mids}
+        keys={["pairs in dispute", "force used (hostility ≥4)"]}
+        fmt={(v) => String(v)}
+        w={1040}
+      />
+    </div>
+  )}
+
   <div class="grid-2" style="margin-top:14px">
     <LineChart
       title="Global battle deaths per million people"

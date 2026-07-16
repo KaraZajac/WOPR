@@ -20,6 +20,7 @@ sources live only in the gitignored `sources/` directory (regenerable via
 | Population | `data/tables/population.csv` | Our World in Data population series (UN WPP / HYDE composite) | OWID: **CC BY**; used for per-capita normalization on the trends page |
 | Structural covariates | `data/tables/covariates.csv` (WDI columns) | World Bank Open Data / WDI (income, age structure, urbanization, infant mortality — World Bank/UN-compiled; **inflation** is IMF IFS, redistributed by the Bank under its open terms) | **CC BY 4.0** (World Bank Terms of Use for Datasets); attribute "The World Bank: WDI". Third-party series (IMF inflation) carry the provider's terms; kept as covariate context |
 | Ethnic exclusion | `data/tables/covariates.csv` (`excluded_share`) | Ethnic Power Relations (EPR-2021) core dataset, ETH Zürich / ICR | freely published academic data; cite Vogt et al. (2015) *JCR* 59(7) and Cederman, Wimmer & Min (2010) |
+| Militarized disputes, capabilities, alliances | `data/tables/mids.csv`, `data/tables/alliances.csv`, `covariates.csv` (`cinc`) | Correlates of War project: Dyadic MID 4.03, National Material Capabilities v7, Formal Alliances v4.1 (COW codes crosswalked to G-W year-aware) | **no formal license** — freely downloadable academic data; COW asks that users cite the article of record for each dataset (below) |
 | Original contributions | the pipeline/engine/journal code, question files in `questions/`, computed priors and scorecards, documentation | this project | code MIT; data outputs CC BY 4.0 (attribution chains back to UCDP) |
 
 **Required citations (UCDP):**
@@ -51,6 +52,20 @@ sources live only in the gitignored `sources/` directory (regenerable via
 **Gleditsch–Ward:** Gleditsch, Kristian S. & Michael D. Ward (1999) Interstate
 System Membership: A Revised List of the Independent States since 1816.
 *International Interactions* 25(4): 393–413.
+
+**Correlates of War (articles of record):**
+
+- Palmer, Glenn, et al. (2022) The MID5 Dataset, 2011–2014: Procedures, coding
+  rules, and description. *Conflict Management and Peace Science* 39(4):
+  470–482. (MID)
+- Maoz, Zeev, Paul L. Johnson, Jasper Kaplan, Fiona Ogunkoya & Aaron Shreve
+  (2019) The Dyadic Militarized Interstate Disputes (MIDs) Dataset Version
+  3.0. *Journal of Conflict Resolution* 63(3): 811–835. (dyadic MID)
+- Singer, J. David, Stuart Bremer & John Stuckey (1972) Capability
+  Distribution, Uncertainty, and Major Power War, 1820–1965. In Bruce Russett
+  (ed.) *Peace, War, and Numbers*. Beverly Hills: Sage, 19–48. (NMC/CINC)
+- Gibler, Douglas M. (2009) *International Military Alliances, 1648–2008*.
+  Washington DC: CQ Press. (Formal Alliances)
 
 **ACLED (if its data informs any published output):** Raleigh, Clionadh,
 Andrew Linke, Håvard Hegre & Joakim Karlsen (2010) Introducing ACLED: An
