@@ -24,9 +24,9 @@ resolution_policy:
   method: auto
 forecasts: []
 prior:
-  p: 0.9462
-  computed: '2026-07-16T12:42:35Z'
-  engine: 0.2.0
+  p: 0.8861
+  computed: '2026-07-16T14:40:55Z'
+  engine: 0.3.0
   detail:
     spec:
       grain: country
@@ -40,29 +40,29 @@ prior:
       - 1989
       - 2025
     unit_name: Colombia
-    bucket: active-4-9
+    bucket: active-4-9|minor
     bucket_coarse: active
     bucket_data_end: 2025
     levels:
       self:
         units: 1
-        years: 8
-        hits: 8
+        years: 3
+        hits: 3
         rate: 1.0
       region:
         units: 29
-        years: 13
-        hits: 11
-        rate: 0.8462
-        M: 11.5
-        posterior: 0.9092
+        years: 8
+        hits: 6
+        rate: 0.75
+        M: 1000.0
+        posterior: 0.7507
       global:
         units: 181
-        years: 150
-        hits: 129
-        rate: 0.86
-        M: 5.0
-        posterior: 0.9462
+        years: 109
+        hits: 91
+        rate: 0.8349
+        M: 6.7
+        posterior: 0.8861
     unconditional:
       self:
         years: 37
@@ -77,12 +77,12 @@ prior:
         hits: 516
         rate: 0.0787
     nowcast:
-      bucket: active-4-9
+      bucket: active-4-9|minor
       year: 2026
       months: 5
       total: 289
     headline_level: global
-    p: 0.9462
+    p: 0.8861
     notes:
     - annual-hit probability; sub-annual or cross-year windows approximated by the calendar-year rate
     - 'as_of 2027 is 1 year(s) past the substrate (2025): bucket taken at the data edge, one-step rate

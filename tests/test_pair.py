@@ -38,7 +38,7 @@ class TestPairGrain(unittest.TestCase):
             "partial": None,
         }
         r = rate(pspec(1), sub)
-        self.assertEqual(r["bucket"], "active-2-3")
+        self.assertEqual(r["bucket"], "active-2-3|minor")
         self.assertGreater(r["p"], rate(pspec(2), sub)["p"])
 
     def test_pair_rejects_deaths_measure(self):

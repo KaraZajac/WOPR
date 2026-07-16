@@ -68,8 +68,8 @@ class TestBuckets(unittest.TestCase):
         b = bucket_series(C, RollingSpec("country", 1, ("sb",), 25, 12, 0))
         for year in (1992, 1993, 1995, 1996, 1998):
             self.assertEqual(
-                b[mi(year, 1)].split("|")[0],  # tempo suffix is month-grain-only refinement
-                bucket_of(u, year, annual),
+                b[mi(year, 1)].split("|")[0],  # suffixes differ by grain (tempo vs intensity)
+                bucket_of(u, year, annual).split("|")[0],
                 f"January {year} bucket must match the annual engine",
             )
             self.assertEqual(window_sum(C, mi(year - 1, 1), 12), u.years[year - 1]["sb"])
@@ -154,7 +154,7 @@ class TestRate(unittest.TestCase):
     def test_neighbor_suffix_on_quiet_country_next_to_war(self):
         war = {(y, m): 200 for y in range(1992, 1999) for m in range(1, 13)}
         sub, monthly = substrate_with({1: ("Africa", war), 2: ("Africa", {(1990, 1): 0}), 3: ("Africa", {(1990, 1): 0})})
-        monthly["neighbors"] = {2: {y: {1} for y in range(1989, 1999)}}  # 2 borders the war; 3 does not
+        sub["neighbors"] = {2: {y: {1} for y in range(1989, 1999)}}  # 2 borders the war; 3 does not
         exposed_r = rate(RollingSpec("country", 2, ("sb",), 25, 12, mi(1996, 1)), sub, monthly)
         isolated = rate(RollingSpec("country", 3, ("sb",), 25, 12, mi(1996, 1)), sub, monthly)
         self.assertEqual(exposed_r["bucket"], "cold+nbr")

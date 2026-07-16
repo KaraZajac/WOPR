@@ -23,9 +23,9 @@ resolution_policy:
   method: auto
 forecasts: []
 prior:
-  p: 0.0462
-  computed: '2026-07-16T12:42:36Z'
-  engine: 0.2.0
+  p: 0.0243
+  computed: '2026-07-16T14:41:01Z'
+  engine: 0.3.0
   detail:
     spec:
       grain: country
@@ -45,23 +45,23 @@ prior:
     levels:
       self:
         units: 1
-        years: 6
+        years: 4
         hits: 0
         rate: 0.0
       region:
         units: 52
-        years: 216
-        hits: 18
-        rate: 0.0833
-        M: 7.4
-        posterior: 0.0462
+        years: 41
+        hits: 1
+        rate: 0.0244
+        M: 1000.0
+        posterior: 0.0243
       global:
         units: 181
-        years: 576
-        hits: 36
-        rate: 0.0625
-        M: 5.4
-        posterior: 0.0295
+        years: 110
+        hits: 2
+        rate: 0.0182
+        M: 1000.0
+        posterior: 0.0181
     unconditional:
       self:
         years: 37
@@ -76,7 +76,7 @@ prior:
         hits: 1146
         rate: 0.1748
     headline_level: region
-    p: 0.0462
+    p: 0.0243
     notes:
     - annual-hit probability; sub-annual or cross-year windows approximated by the calendar-year rate
     - 'as_of 2027 is 1 year(s) past the substrate (2025): bucket taken at the data edge, one-step rate

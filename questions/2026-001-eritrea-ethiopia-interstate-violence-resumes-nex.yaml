@@ -25,22 +25,12 @@ resolution_policy:
 forecasts: []
 prior:
   p: 0.0007
-  computed: '2026-07-16T14:07:30Z'
+  computed: '2026-07-16T14:40:44Z'
   engine: 0.3.0
   detail:
-    spec:
-      grain: dyad
-      unit: 865
-      measure: deaths
-      types:
-      - sb
-      threshold: 25
-      window_months: 12
-      start_month: 2026-08
-    unit_name: Government of Eritrea - Government of Ethiopia
     bucket: dormant
     bucket_coarse: dormant
-    bucket_data_end: 2026-05
+    gap: 0
     levels:
       self:
         units: 1
@@ -61,10 +51,23 @@ prior:
         rate: 0.0237
         M: 5.0
         posterior: 0.0008
+    headline_level: region
+    p: 0.0007
+    spec:
+      grain: dyad
+      unit: 865
+      measure: deaths
+      types:
+      - sb
+      threshold: 25
+      window_months: 12
+      start_month: 2026-08
+    unit_name: Government of Eritrea - Government of Ethiopia
+    bucket_data_end: 2026-06
     notes:
     - rolling 12-month window from 2026-08; class counts are overlapping window-starts (rates read fine;
       dispersion slightly overstated)
+    - 'window starts 2 month(s) past the data edge: bucket taken at the edge, one-step rate applied frozen
+      (horizon-aware class decay measured worse — see method.md)'
     - target bucket uses preliminary candidate months
     - dyad universe = dyads UCDP ever observed; recurrence rate, not an arbitrary-pair rate
-    headline_level: region
-    p: 0.0007

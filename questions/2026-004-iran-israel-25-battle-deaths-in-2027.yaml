@@ -24,9 +24,9 @@ resolution_policy:
   method: auto
 forecasts: []
 prior:
-  p: 0.9339
-  computed: '2026-07-16T12:42:34Z'
-  engine: 0.2.0
+  p: 0.9091
+  computed: '2026-07-16T14:40:49Z'
+  engine: 0.3.0
   detail:
     spec:
       grain: dyad
@@ -40,29 +40,29 @@ prior:
       - 1989
       - 2025
     unit_name: Government of Iran - Government of Israel
-    bucket: active-4-9
+    bucket: active-4-9|war
     bucket_coarse: active
     bucket_data_end: 2025
     levels:
       self:
         units: 1
-        years: 4
-        hits: 4
-        rate: 1.0
+        years: 0
+        hits: 0
+        rate: null
       region:
         units: 96
-        years: 84
-        hits: 74
-        rate: 0.881
-        M: 5.0
-        posterior: 0.9339
+        years: 26
+        hits: 26
+        rate: 1.0
+        M: 1000.0
+        posterior: 1.0
       global:
         units: 697
-        years: 528
-        hits: 433
-        rate: 0.8201
-        M: 5.3
-        posterior: 0.8974
+        years: 99
+        hits: 90
+        rate: 0.9091
+        M: 5.0
+        posterior: 0.9091
     unconditional:
       self:
         years: 9
@@ -76,8 +76,8 @@ prior:
         years: 19495
         hits: 2081
         rate: 0.1067
-    headline_level: region
-    p: 0.9339
+    headline_level: global
+    p: 0.9091
     notes:
     - annual-hit probability; sub-annual or cross-year windows approximated by the calendar-year rate
     - 'as_of 2027 is 1 year(s) past the substrate (2025): bucket taken at the data edge, one-step rate

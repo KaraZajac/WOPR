@@ -73,23 +73,9 @@ class RollingSpec:
 # ---------------------------------------------------------------- loading
 
 
-def load_neighbors(tables=TABLES) -> dict:
-    """gwno -> year -> set of gwnos within NEIGHBOR_KM (from the pair table,
-    so succession and system exits are already year-resolved)."""
-    out: dict[int, dict[int, set]] = defaultdict(lambda: defaultdict(set))
-    with open(tables / "pair-year.csv", newline="") as f:
-        for r in csv.DictReader(f):
-            if r["km"] == "" or int(r["km"]) > NEIGHBOR_KM:
-                continue
-            a, b, y = int(r["gwno_a"]), int(r["gwno_b"]), int(r["year"])
-            out[a][y].add(b)
-            out[b][y].add(a)
-    return {g: dict(years) for g, years in out.items()}
-
-
 def load_monthly(substrate: dict, tables=TABLES) -> dict:
     """Dense per-unit monthly death arrays layered over the annual substrate
-    (which supplies exposure and regions), plus the neighbor map."""
+    (which also supplies exposure, regions, and the neighbor map)."""
     final_end = mi(substrate["last_year"], 12)
     data_end = final_end
     arrays: dict[str, dict[int, list]] = {"country": {}, "dyad": {}}
@@ -123,7 +109,6 @@ def load_monthly(substrate: dict, tables=TABLES) -> dict:
         "dyad": arrays["dyad"],
         "final_end": final_end,
         "data_end": data_end,
-        "neighbors": load_neighbors(tables),
     }
 
 
@@ -236,7 +221,7 @@ def build_state(grain, substrate, monthly, types=("sb",), threshold=25, window=1
                 s = window_sum(C25, m - 12, 12)
                 arr[m - START] = s is not None and s >= 25
             active25[uid] = arr
-        neighbors = monthly.get("neighbors", {})
+        neighbors = substrate.get("neighbors", {})
 
         def make_nbr(uid):
             def nbr(m):

@@ -25,22 +25,12 @@ resolution_policy:
 forecasts: []
 prior:
   p: 0.6943
-  computed: '2026-07-16T14:07:33Z'
+  computed: '2026-07-16T14:40:47Z'
   engine: 0.3.0
   detail:
-    spec:
-      grain: dyad
-      unit: 15633
-      measure: deaths
-      types:
-      - sb
-      threshold: 25
-      window_months: 5
-      start_month: 2026-08
-    unit_name: Government of Iran - Government of Israel
     bucket: active-4-9|low
     bucket_coarse: active
-    bucket_data_end: 2026-05
+    gap: 0
     levels:
       self:
         units: 1
@@ -61,10 +51,23 @@ prior:
         rate: 0.482
         M: 5.0
         posterior: 0.6974
+    headline_level: region
+    p: 0.6943
+    spec:
+      grain: dyad
+      unit: 15633
+      measure: deaths
+      types:
+      - sb
+      threshold: 25
+      window_months: 5
+      start_month: 2026-08
+    unit_name: Government of Iran - Government of Israel
+    bucket_data_end: 2026-06
     notes:
     - rolling 5-month window from 2026-08; class counts are overlapping window-starts (rates read fine;
       dispersion slightly overstated)
+    - 'window starts 2 month(s) past the data edge: bucket taken at the edge, one-step rate applied frozen
+      (horizon-aware class decay measured worse — see method.md)'
     - target bucket uses preliminary candidate months
     - dyad universe = dyads UCDP ever observed; recurrence rate, not an arbitrary-pair rate
-    headline_level: region
-    p: 0.6943

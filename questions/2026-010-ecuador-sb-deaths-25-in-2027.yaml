@@ -23,9 +23,9 @@ resolution_policy:
   method: auto
 forecasts: []
 prior:
-  p: 0.022
-  computed: '2026-07-16T12:42:35Z'
-  engine: 0.2.0
+  p: 0.0123
+  computed: '2026-07-16T14:40:56Z'
+  engine: 0.3.0
   detail:
     spec:
       grain: country
@@ -39,7 +39,7 @@ prior:
       - 1989
       - 2025
     unit_name: Ecuador
-    bucket: cold
+    bucket: cold+nbr
     bucket_coarse: cold
     bucket_data_end: 2025
     levels:
@@ -50,18 +50,18 @@ prior:
         rate: 0.0385
       region:
         units: 29
-        years: 843
-        hits: 7
-        rate: 0.0083
-        M: 31.4
-        posterior: 0.022
+        years: 344
+        hits: 4
+        rate: 0.0116
+        M: 1000.0
+        posterior: 0.0123
       global:
         units: 181
-        years: 4388
-        hits: 74
-        rate: 0.0169
-        M: 5.9
-        posterior: 0.0345
+        years: 2575
+        hits: 67
+        rate: 0.026
+        M: 6.2
+        posterior: 0.0361
     unconditional:
       self:
         years: 37
@@ -76,7 +76,7 @@ prior:
         hits: 1146
         rate: 0.1748
     headline_level: region
-    p: 0.022
+    p: 0.0123
     notes:
     - annual-hit probability; sub-annual or cross-year windows approximated by the calendar-year rate
     - 'as_of 2027 is 1 year(s) past the substrate (2025): bucket taken at the data edge, one-step rate

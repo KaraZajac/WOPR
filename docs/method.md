@@ -25,12 +25,25 @@ has been sticky matters too. Every ladder level is conditioned on the target's
 **bucket**, evaluated as of the forecast year:
 
 - `active-1` / `active-2-3` / `active-4-9` / `active-10+` — met the measure
-  last year, banded by the run of consecutive hit-years (episode age). The
-  bands are worth ~35 points: fresh dyad flares continue ≈53%, decade-old
-  wars ≈88% (walk-forward, dyad grain).
+  last year, banded by the run of consecutive hit-years (episode age; worth
+  ~35 points at dyad grain) — **× an intensity band** (`|minor` / `|war`:
+  was the latest hit-year above the UCDP war line, 1,000 deaths or
+  intensity 2).
 - `recent` — last met 2–3 years ago
 - `dormant` — 4–10 years ago
 - `cold` — 11+ years ago, or never within the substrate
+- non-active **country** buckets carry `+nbr` when a ≤400km neighbor (pair-
+  universe distances) had active sb conflict last year — spatial contagion,
+  measured at 7× for cold countries at month grain.
+
+The intensity and neighbor splits were ablated against the walk-forward
+backtest: **additive gains on the death-threshold suites** (sb≥25
+.04145→.04109; all-types≥100 .03695→.03660) and dyads (.04085→.04055),
+a small measured cost on country/acd-active (+.0005, likely the location-
+attribution noise in country-level intensity) and a noise-level one at pair
+grain (sparser cells). Both are kept **uniformly** — per-suite gating chosen
+after seeing the numbers would be overfitting the backtest — and the mixed
+cells stay on this record.
 
 Class-years are counted only when they entered the same bucket the target is
 in now. The first substrate year is skipped (no observable history); "never"

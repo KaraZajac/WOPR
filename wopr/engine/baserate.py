@@ -35,8 +35,15 @@ from wopr.paths import TABLES
 # flares and decade-old wars continue at very different rates, and pooling
 # them was the engine's one measured calibration defect (dyad top bins ~5–6
 # points overconfident). Buckets are ordered youngest-episode first.
+# Active buckets also carry an intensity band — was the latest hit-year above
+# the UCDP war line? — and non-active country buckets carry "+nbr" when a
+# ≤400km neighbor is in active conflict (both arena/backtest-motivated).
 AGE_BANDS = ((1, 1, "active-1"), (2, 3, "active-2-3"), (4, 9, "active-4-9"), (10, 10_000, "active-10+"))
-BUCKETS = ("active-1", "active-2-3", "active-4-9", "active-10+", "recent", "dormant", "cold")
+INTENSITY_BANDS = ("minor", "war")
+WAR_DEATHS = 1000  # the UCDP war line, for deaths measures
+BUCKETS = tuple(
+    f"{age}|{band}" for _, _, age in AGE_BANDS for band in INTENSITY_BANDS
+) + ("recent", "recent+nbr", "dormant", "dormant+nbr", "cold", "cold+nbr")
 MIN_CLASS_YEARS = 30  # fall from region to global below this
 M_DEFAULT = 50.0
 M_MIN, M_MAX = 5.0, 1000.0
@@ -45,7 +52,7 @@ ACD_START = 1946
 
 
 def coarse(bucket: str) -> str:
-    """active-2-3|high -> active, cold+nbr -> cold (for badges/map keys)."""
+    """active-2-3|war -> active, cold+nbr -> cold (for badges/map keys)."""
     base = bucket.split("|")[0].split("+")[0]
     return "active" if base.startswith("active") else base
 
@@ -86,6 +93,37 @@ class Unit:
     first_year: int  # exposure start (system entry / first observed activity)
     last_year: int
     years: dict = field(default_factory=dict)  # year -> {"acd": int, "sb": int|None, ...}
+
+
+def load_neighbors(tables: Path = TABLES, km: int = 400) -> dict:
+    """gwno -> year -> set of gwnos within `km` (from the pair table, so
+    succession and system exits are already year-resolved)."""
+    from collections import defaultdict
+
+    out: dict[int, dict[int, set]] = defaultdict(lambda: defaultdict(set))
+    with open(tables / "pair-year.csv", newline="") as f:
+        for r in csv.DictReader(f):
+            if r["km"] == "" or int(r["km"]) > km:
+                continue
+            a, b, y = int(r["gwno_a"]), int(r["gwno_b"]), int(r["year"])
+            out[a][y].add(b)
+            out[b][y].add(a)
+    return {g: dict(years) for g, years in out.items()}
+
+
+def _nbr_active(countries: dict, neighbors: dict) -> set:
+    """(gwno, year) pairs where ≥1 ≤400km neighbor had active sb conflict
+    (≥25 deaths or ACD-active) that year. Spec-independent by design."""
+    active = set()
+    for gwno, u in countries.items():
+        for y, row in u.years.items():
+            if row.get("acd", 0) > 0 or (row.get("sb") or 0) >= 25:
+                active.add((gwno, y))
+    flagged = set()
+    for gwno, y in active:
+        for g in neighbors.get(gwno, {}).get(y, ()):
+            flagged.add((g, y))
+    return flagged
 
 
 def load_partial(tables: Path, last_year: int) -> dict | None:
@@ -165,12 +203,15 @@ def load_substrate(tables: Path = TABLES) -> dict:
             # exposure = row presence; a pair-year outside the universe has no row
             u.years[year] = {"acd": 2 if r["war"] == "1" else 1 if r["active"] == "1" else 0}
     last = max(u.last_year for u in countries.values())
+    neighbors = load_neighbors(tables)
     return {
         "country": countries,
         "dyad": dyads,
         "pair": pairs,
         "last_year": last,
         "partial": load_partial(tables, last),
+        "neighbors": neighbors,
+        "nbr_active": _nbr_active(countries, neighbors),
     }
 
 
@@ -195,11 +236,22 @@ def hit(u: Unit, year: int, spec: Spec) -> bool | None:
     return total >= spec.threshold
 
 
-def bucket_of(u: Unit, year: int, spec: Spec) -> str | None:
+def war_year(u: Unit, year: int, spec: Spec) -> bool:
+    """Did `year` sit above the UCDP war line? (intensity 2, or ≥1,000 deaths
+    across the spec's categories — fixed line, independent of threshold)."""
+    row = u.years.get(year) or {}
+    if spec.measure == "acd-active":
+        return row.get("acd", 0) >= 2
+    return sum(row.get(t) or 0 for t in spec.types) >= WAR_DEATHS
+
+
+def bucket_of(u: Unit, year: int, spec: Spec, nbr: set | None = None) -> str | None:
     """Recency/episode-age bucket entering `year`, from history strictly
     before it. Active units are banded by consecutive hit-years (episode
-    age); runs touching the substrate start are left-censored (age reads
-    low — documented in docs/method.md)."""
+    age) and by last year's intensity (|minor / |war). Non-active units get
+    "+nbr" when `nbr` (the substrate's neighbor-at-war set, country grain)
+    flags a ≤400km neighbor in conflict last year. Runs touching the
+    substrate start are left-censored (age reads low)."""
     lo, _ = spec.period
     start = max(lo, u.first_year if spec.measure == "acd-active" else max(u.first_year, DEATHS_START))
     if year <= start:  # no observable history yet
@@ -210,31 +262,32 @@ def bucket_of(u: Unit, year: int, spec: Spec) -> str | None:
             last_hit = y
             break
     if last_hit is None:
-        return "cold"
-    gap = year - last_hit
-    if gap == 1:
-        age = 1
-        y = year - 2
-        while y >= start and hit(u, y, spec):
-            age += 1
-            y -= 1
-        for a_lo, a_hi, name in AGE_BANDS:
-            if a_lo <= age <= a_hi:
-                return name
-    if gap <= 3:
-        return "recent"
-    if gap <= 10:
-        return "dormant"
-    return "cold"
+        base = "cold"
+    else:
+        gap = year - last_hit
+        if gap == 1:
+            age = 1
+            y = year - 2
+            while y >= start and hit(u, y, spec):
+                age += 1
+                y -= 1
+            for a_lo, a_hi, name in AGE_BANDS:
+                if a_lo <= age <= a_hi:
+                    band = "war" if war_year(u, year - 1, spec) else "minor"
+                    return f"{name}|{band}"
+        base = "recent" if gap <= 3 else "dormant" if gap <= 10 else "cold"
+    if nbr is not None and (u.id, year - 1) in nbr:
+        return f"{base}+nbr"
+    return base
 
 
-def unit_bucket_years(u: Unit, spec: Spec, bucket: str) -> tuple[int, int]:
+def unit_bucket_years(u: Unit, spec: Spec, bucket: str, nbr: set | None = None) -> tuple[int, int]:
     """(hits k, exposure years n) for u restricted to years entered in `bucket`."""
     lo, hi = spec.period
     k = n = 0
     for y in range(lo + 1, hi + 1):
         h = hit(u, y, spec)
-        if h is None or bucket_of(u, y, spec) != bucket:
+        if h is None or bucket_of(u, y, spec, nbr) != bucket:
             continue
         n += 1
         k += int(h)
@@ -291,14 +344,15 @@ def rate(spec: Spec, substrate: dict) -> dict:
     if spec.unit not in units:
         raise KeyError(f"unknown {spec.grain} id {spec.unit}")
     me = units[spec.unit]
+    nbr = substrate.get("nbr_active") if spec.grain == "country" else None
     # the unit's bucket is its status at the edge of observation — unobserved
     # years between the substrate end and as_of must not decay it toward cold
     bucket_year = min(spec.as_of, spec.period[1] + 1)
-    bucket = bucket_of(me, bucket_year, spec) or "cold"
+    bucket = bucket_of(me, bucket_year, spec, nbr) or "cold"
     nowcast = nowcast_bucket(me, spec, substrate.get("partial"))
     if nowcast:
         bucket = nowcast["bucket"]
-    k_self, n_self = unit_bucket_years(me, spec, bucket)
+    k_self, n_self = unit_bucket_years(me, spec, bucket, nbr)
 
     out = {
         "spec": spec.to_dict(),
@@ -314,7 +368,7 @@ def rate(spec: Spec, substrate: dict) -> dict:
     posteriors = {}
     for level in ("self", "region", "global"):
         members = class_units(spec, substrate, level)
-        counts = [unit_bucket_years(u, spec, bucket) for u in members]
+        counts = [unit_bucket_years(u, spec, bucket, nbr) for u in members]
         K = sum(k for k, _ in counts)
         N = sum(n for _, n in counts)
         entry = {"units": len(members), "years": N, "hits": K, "rate": round(K / N, 4) if N else None}
@@ -383,7 +437,8 @@ def nowcast_bucket(u: Unit, spec: Spec, partial: dict | None) -> dict | None:
         age += 1
         y -= 1
     band = next(name for a_lo, a_hi, name in AGE_BANDS if a_lo <= age <= a_hi)
-    return {"bucket": band, "year": partial["year"], "months": partial["months"], "total": got}
+    intensity = "war" if got >= WAR_DEATHS else "minor"
+    return {"bucket": f"{band}|{intensity}", "year": partial["year"], "months": partial["months"], "total": got}
 
 
 def notes(spec: Spec) -> list[str]:

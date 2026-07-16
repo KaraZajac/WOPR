@@ -25,8 +25,8 @@ resolution_policy:
 forecasts: []
 prior:
   p: 0.463
-  computed: '2026-07-16T12:42:34Z'
-  engine: 0.2.0
+  computed: '2026-07-16T14:40:50Z'
+  engine: 0.3.0
   detail:
     spec:
       grain: country
@@ -40,7 +40,7 @@ prior:
       - 1989
       - 2025
     unit_name: Sudan
-    bucket: active-1
+    bucket: active-1|war
     bucket_coarse: active
     bucket_data_end: 2025
     levels:

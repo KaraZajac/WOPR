@@ -28,8 +28,8 @@ resolution_policy:
 forecasts: []
 prior:
   p: 0.0002
-  computed: '2026-07-16T13:04:06Z'
-  engine: 0.2.0
+  computed: '2026-07-16T14:41:04Z'
+  engine: 0.3.0
   detail:
     spec:
       grain: pair

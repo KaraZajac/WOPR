@@ -22,10 +22,12 @@
   non-active buckets split by ≤400km-neighbor contagion — cold+nbr onsets at
   7× cold; Brier-invisible at month grain, expected to matter at year grain).
   **Horizon-aware class rates: built, ablated, measured worse (+.003) —
-  reverted to frozen one-step; machinery retained** (docs/method.md). Still
-  open: neighbor + tempo at the ANNUAL grain (backtest-verified), continuous
-  tempo with a tune/validate vantage split, self-level horizon decay curves,
-  ACLED weeklies as a tempo input.
+  reverted to frozen one-step; machinery retained** (docs/method.md).
+  ~~Annual-grain intensity + neighbor~~ **done** (0.4.0: |minor/|war bands +
+  country +nbr; additive backtest gains on death-threshold suites, mixed
+  cells documented). Still open: continuous tempo with a tune/validate
+  vantage split, self-level horizon decay curves, ACLED weeklies as a tempo
+  input, V-Dem covariate classes.
 - **Proper hierarchical model** replacing the moment-matched EB (partial
   pooling over region × bucket, fitted once at build time).
 - **Conflict-scope priors** (aggregate dyad substrate per conflict id).

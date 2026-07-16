@@ -24,8 +24,8 @@ resolution_policy:
 forecasts: []
 prior:
   p: 0.0398
-  computed: '2026-07-16T12:42:35Z'
-  engine: 0.2.0
+  computed: '2026-07-16T14:40:58Z'
+  engine: 0.3.0
   detail:
     spec:
       grain: country
@@ -39,7 +39,7 @@ prior:
       - 1989
       - 2025
     unit_name: Bangladesh
-    bucket: dormant
+    bucket: dormant+nbr
     bucket_coarse: dormant
     bucket_data_end: 2025
     levels:
@@ -57,11 +57,11 @@ prior:
         posterior: 0.0398
       global:
         units: 181
-        years: 576
-        hits: 36
-        rate: 0.0625
-        M: 5.4
-        posterior: 0.0548
+        years: 466
+        hits: 34
+        rate: 0.073
+        M: 5.6
+        posterior: 0.0573
     unconditional:
       self:
         years: 37
