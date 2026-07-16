@@ -1,30 +1,31 @@
 # WOPR
 
-> *"A strange game. The only winning move is to check whether your inside
-> view actually beats the base rate."*
+> *"A strange game. The only winning move is to check whether anything
+> actually beats the base rate."*
 
 **A conflict-forecasting system: reference-class base rates computed from the
 UCDP record, operational questions that resolve themselves from the next data
 refresh, and calibration scoring of your forecasts against the prior you
 started from.**
 
-Most forecasting tools are a journal (log probabilities, get Brier scores) or
-a model (spit out risk numbers). WOPR is the seam between them:
+WOPR is the forecaster; the analyst audits it and makes it race. Three parts:
 
-1. **The outside view.** Ask for a base rate and get an explicit
-   reference-class *ladder* — the unit's own history, its region, the world —
-   every level conditioned on recency (conflict is sticky: ~0.17 unconditional
-   becomes ~0.85 for countries violent last year), with empirical-Bayes
-   shrinkage and the class sizes in your face. If the class is thin, you see
-   that. No astrology.
-2. **The inside view.** Turn the rate into a question with hard UCDP-pinned
-   criteria, store the prior, then log your adjusted forecast and your
-   reasoning.
-3. **The bridge.** Questions auto-resolve from the UCDP annual + candidate
-   event feeds; scoring pairs *your* Brier against the *prior's* Brier on the
-   same questions. After enough resolutions you learn the one thing almost no
-   forecaster ever measures: whether your clever adjustments add information
-   or noise.
+1. **The model.** Ask for a probability and get an explicit reference-class
+   *ladder* — the unit's own history, its region, the world — conditioned on
+   recency and episode age (conflict is sticky: ~0.17 unconditional becomes
+   ~0.85 for countries violent last year), with empirical-Bayes shrinkage and
+   the class sizes in your face. If the class is thin, you see that. Every
+   prediction shows its work; the walk-forward backtest measures its
+   calibration on ~280k historical unit-years. No astrology.
+2. **The testable record.** Predictions become questions with hard
+   UCDP-pinned criteria that resolve mechanically from the next data refresh
+   — the model's track record accumulates in git, timestamped, with no human
+   in the resolution loop.
+3. **The arena.** Challenger forecasts — other models (VIEWS), naive
+   baselines, or an analyst override — get logged against the same questions
+   and scored head-to-head on identical resolved outcomes: paired Brier,
+   challenger vs engine. That's the question the whole system exists to
+   answer: does anything out there carry information the base rate doesn't?
 
 ## What's here
 
@@ -82,20 +83,21 @@ region       52    460    379  0.8239     5.4     0.9231
 global      181   1112    940  0.8453     5.0      0.927
 headline: p = 0.9231  (region posterior, bucket-conditional)
 
-$ wopr ask --dyad "Eritrea - Ethiopia" --year 2027       # prior computed + stored
-$ wopr call 2027-001 0.03 --note "border rhetoric worse than the base rate implies"
+$ wopr ask --pair "Venezuela,Guyana" --year 2027         # model's prediction stored
+$ wopr call 2027-001 0.03 --source views                 # challenger number logged
 $ wopr resolve                   # grades due questions from the data (provisional
                                  #   on candidate months, confirmed each release)
 $ wopr score
-you             : Brier 0.041  log -0.113  (n=23)
-you vs prior    : ΔBrier -0.019 on 23 paired questions (15 you / 7 prior) — you BEAT the base rate
+engine (prior)      : Brier 0.041  log -0.113  (n=23)
+challenger          : Brier 0.058  log -0.171  (n=23)
+challenger vs engine: ΔBrier +0.017 on 23 paired questions — the engine held
 ```
 
 `wopr status`, `wopr list`, `wopr show ID` browse the journal; `--manual`
 questions resolve by hand; `wopr resolve --id X --void "reason"` retires a
 broken question. Scored forecasts are the last ones made **before** a
 question's deciding date — once the threshold crosses, the book is closed
-(that applies to stale priors too).
+(that applies to stale engine priors too).
 
 ## Honesty guarantees
 

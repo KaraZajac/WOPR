@@ -21,9 +21,9 @@ const typeWords = { sb: "state-based", ns: "non-state", os: "one-sided" };
   <h1>The journal</h1>
   <p class="lede">
     Every question is pinned to a UCDP measure, scope, threshold, and window, so it resolves
-    mechanically from the data. The gray dot is the engine's prior at ask-time; the blue dot is
-    the logged call. When enough of these resolve, the scorecard shows whether the inside view
-    beats the base rate.
+    mechanically from the data. The gray dot is WOPR's own prediction (the engine prior at
+    ask-time); the blue dot is a challenger — another model's number, or an analyst override.
+    When enough resolve, the scorecard shows which forecaster carries information.
   </p>
 
   <div class="chips" style="margin-bottom:20px">
@@ -57,8 +57,8 @@ const typeWords = { sb: "state-based", ns: "non-state", os: "one-sided" };
           </div>
           <Dumbbell prior={q.prior?.p ?? null} you={you} outcome={outcome} />
           <div style="display:flex;gap:18px;font-size:12.5px;color:var(--ink-2);flex-wrap:wrap">
-            <span><span class="swatch baseline" style="display:inline-block;vertical-align:middle"></span> prior {pct(q.prior?.p ?? null, 1)}</span>
-            <span><span class="swatch accent" style="display:inline-block;vertical-align:middle"></span> you {you == null ? "— no call logged yet" : pct(you, 1)}</span>
+            <span><span class="swatch baseline" style="display:inline-block;vertical-align:middle"></span> engine {pct(q.prior?.p ?? null, 1)}</span>
+            <span><span class="swatch accent" style="display:inline-block;vertical-align:middle"></span> challenger {you == null ? "—" : pct(you, 1)}</span>
             {res?.basis && <span>basis: {num(res.basis.total)} {q.criteria.measure} in window</span>}
           </div>
           {q.forecasts.length > 1 && (

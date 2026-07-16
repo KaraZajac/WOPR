@@ -90,12 +90,17 @@ def new_question(title: str, question: str, criteria: dict, method: str = "auto"
     }
 
 
-def add_forecast(q: dict, p: float, note: str = "") -> dict:
+def add_forecast(q: dict, p: float, note: str = "", source: str = "") -> dict:
+    """Log a challenger forecast — another model's number, or an analyst
+    override. The engine's own prediction lives in `prior`; these compete
+    against it when the question resolves."""
     if q["status"] != "open":
         raise SystemExit(f"{q['id']} is {q['status']}; no further forecasts")
     if not (P_MIN <= p <= P_MAX):
         raise SystemExit(f"p must be within [{P_MIN}, {P_MAX}] — no certainties in this house")
     entry = {"t": now(), "p": p}
+    if source:
+        entry["source"] = source
     if note:
         entry["note"] = note
     q["forecasts"].append(entry)

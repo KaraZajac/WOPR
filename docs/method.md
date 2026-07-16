@@ -132,7 +132,7 @@ bin was 10 points hot under 4-bucket conditioning, now 4; 80–90% from 5.5 to
 2.7). **Residual bias:** all active bands still run ~3 points optimistic at
 dyad grain, and fresh onsets (`active-1`) are the least predictable class
 (country sb: predicted .65, observed .56) — when your question sits in
-`active-1`, treat the prior as soft and lean on your inside view.
+`active-1`, treat the prior as soft — it is where challengers have the best shot.
 
 ## Known approximations (read before trusting a prior)
 
@@ -156,7 +156,7 @@ dyad grain, and fresh onsets (`active-1`) are the least predictable class
 ## Scoring rules
 
 Brier `(p−o)²` and log score `ln p(outcome)`; calibration in decile bins; the
-headline comparison is **paired Brier, you vs the stored prior, on the same
+headline comparison is **paired Brier, challengers vs the engine's stored prior, on the same
 questions**. Anti-gaming: only forecasts (and priors) timestamped on or
 before a question's `decided_on` date score — once the threshold has crossed,
 the book is closed.

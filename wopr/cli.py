@@ -250,10 +250,11 @@ def cmd_ask(args) -> None:
 
 def cmd_call(args) -> None:
     q = store.load(args.id)
-    fc = store.add_forecast(q, args.p, args.note or "")
+    fc = store.add_forecast(q, args.p, args.note or "", source=args.source or "")
     store.save(q)
     prior_p = (q.get("prior") or {}).get("p")
-    drift = f"  (prior {prior_p}, you {args.p:+.3f} vs it)" if prior_p is not None else ""
+    who = args.source or "challenger"
+    drift = f"  (engine {prior_p}, {who} {args.p})" if prior_p is not None else ""
     print(f"{q['id']} ← p={fc['p']} at {fc['t']}{drift}")
 
 
@@ -341,12 +342,12 @@ def cmd_status(_args) -> None:
         )
     open_qs = [q for q in questions if q["status"] == "open"]
     provisional = [q for q in questions if (q.get("resolution") or {}).get("provisional")]
-    unforecast = [q for q in open_qs if not q["forecasts"]]
     print(f"questions: {len(questions)} total, {len(open_qs)} open, {len(provisional)} provisional")
     for q in open_qs:
         w = q["criteria"]["window"]
-        nag = "  ← no forecast logged yet" if q in unforecast else ""
-        print(f"  {q['id']}  ends {w['end']}  {q['title'][:56]}{nag}")
+        challengers = sorted({f.get("source", "challenger") for f in q["forecasts"]})
+        extra = f"  [{', '.join(challengers)}]" if challengers else ""
+        print(f"  {q['id']}  ends {w['end']}  {q['title'][:56]}{extra}")
     for q in provisional:
         print(f"  {q['id']}  provisional {q['resolution']['outcome']} — confirms on next annual release")
 
@@ -392,10 +393,11 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--prior", type=float, help="manual prior when the engine can't compute one")
     p.add_argument("--prior-note", default="")
 
-    p = sub.add_parser("call", help="log a forecast")
+    p = sub.add_parser("call", help="log a challenger forecast (another model, or an analyst override)")
     p.add_argument("id")
     p.add_argument("p", type=float)
     p.add_argument("--note")
+    p.add_argument("--source", help="who this number belongs to, e.g. views, analyst")
 
     p = sub.add_parser("resolve", help="grade due questions from the data")
     p.add_argument("--id")
@@ -405,7 +407,7 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--note")
     p.add_argument("--void", help="void a question, with the reason (with --id)")
 
-    p = sub.add_parser("score", help="Brier/log/calibration, you vs the prior")
+    p = sub.add_parser("score", help="Brier/log/calibration, challengers vs the engine")
     p.add_argument("--write", action="store_true", help="also write data/scorecard.yaml")
 
     p = sub.add_parser("backtest", help="walk-forward test: is the engine itself calibrated?")

@@ -1,14 +1,15 @@
-"""Scoring: Brier, log score, calibration curve, and you-versus-the-prior.
+"""Scoring: Brier, log score, calibration curve, and challengers-vs-engine.
 
-The headline table almost nobody else computes: on the same resolved
-questions, did your adjusted forecasts beat the naive base-rate prior the
-engine handed you? A negative Brier delta means your inside view added
-information; a positive one means you added noise.
+WOPR's own prediction is the stored prior; `forecasts` hold challenger
+numbers (other models such as VIEWS, or an analyst override). On the same
+resolved questions the table shows whether any challenger beat the engine —
+a negative Brier delta means the challenger carried information the base
+rate didn't.
 
 Anti-gaming rule: the scored forecast is the last one made on or before the
 question's ``decided_on`` date (the day the threshold was crossed, or the
-window's end) — forecasts logged after the outcome was effectively knowable
-never count.
+window's end) — numbers logged after the outcome was effectively knowable
+never count, and the same rule applies to stale engine priors.
 """
 
 import math
@@ -109,7 +110,7 @@ def render(rows: list[dict], agg: dict) -> str:
     lines = []
     if not rows:
         return "no resolved questions yet — nothing to score"
-    lines.append(f"{'id':<10} {'out':<4} {'prior':>6} {'you':>6} {'B(prior)':>9} {'B(you)':>8}  title")
+    lines.append(f"{'id':<10} {'out':<4} {'engine':>6} {'chal':>6} {'B(eng)':>9} {'B(chal)':>8}  title")
     for r in rows:
         lines.append(
             f"{r['id']:<10} {'YES' if r['outcome'] else 'no':<4} "
@@ -121,20 +122,20 @@ def render(rows: list[dict], agg: dict) -> str:
         )
     lines.append("")
     if "prior" in agg:
-        lines.append(f"base rate alone : Brier {agg['prior']['brier']}  log {agg['prior']['log']}  (n={agg['prior']['n']})")
+        lines.append(f"engine (prior)     : Brier {agg['prior']['brier']}  log {agg['prior']['log']}  (n={agg['prior']['n']})")
     if "you" in agg:
-        lines.append(f"you             : Brier {agg['you']['brier']}  log {agg['you']['log']}  (n={agg['you']['n']})")
+        lines.append(f"challenger         : Brier {agg['you']['brier']}  log {agg['you']['log']}  (n={agg['you']['n']})")
     if "you_vs_prior" in agg:
         v = agg["you_vs_prior"]
-        verdict = "you BEAT the base rate" if v["brier_delta"] < 0 else "the base rate beat you"
+        verdict = "challenger BEAT the engine" if v["brier_delta"] < 0 else "the engine held"
         lines.append(
-            f"you vs prior    : ΔBrier {v['brier_delta']:+} on {agg['paired']} paired questions "
-            f"({v['you_better_on']} you / {v['prior_better_on']} prior) — {verdict}"
+            f"challenger vs engine: ΔBrier {v['brier_delta']:+} on {agg['paired']} paired questions "
+            f"({v['you_better_on']} challenger / {v['prior_better_on']} engine) — {verdict}"
         )
     cal = calibration(rows)
     if cal:
         lines.append("")
-        lines.append("calibration (your forecasts):")
+        lines.append("calibration (challenger forecasts):")
         lines.append(f"  {'bin':<9} {'n':>4} {'mean p':>7} {'observed':>9}")
         for b in cal:
             lines.append(f"  {b['bin']:<9} {b['n']:>4} {b['mean_p']:>7} {b['observed']:>9}")
