@@ -18,6 +18,22 @@ export function ticks(max, count = 4) {
   return out;
 }
 
+/** Clean ticks spanning [lo, hi], always including 0 — for series that can go
+ *  negative (e.g. inflation/deflation). Returns {ticks, lo, hi}. */
+export function signedTicks(lo, hi, count = 5) {
+  if (lo >= 0) return { ticks: ticks(hi, count), lo: 0, hi: ticks(hi, count).at(-1) };
+  const span = hi - lo || 1;
+  const raw = span / count;
+  const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const err = raw / mag;
+  const step = (err >= 7.5 ? 10 : err >= 3.5 ? 5 : err >= 1.5 ? 2 : 1) * mag;
+  const start = Math.floor(lo / step) * step;
+  const end = Math.ceil(hi / step) * step;
+  const out = [];
+  for (let v = start; v <= end + step * 0.001; v += step) out.push(Math.round(v * 1e6) / 1e6);
+  return { ticks: out, lo: start, hi: end };
+}
+
 export const linePath = (pts) =>
   pts.map(([x, y], i) => `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`).join("");
 

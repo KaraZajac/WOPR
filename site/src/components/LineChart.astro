@@ -3,7 +3,7 @@
 // 10%-wash underfill, hairline grid, clean ticks, endpoint direct label, and
 // per-step hover targets feeding the shared tooltip. Values are also in the
 // table view (tooltips enhance, never gate).
-import { linePath, scale, ticks } from "../lib/scale.js";
+import { linePath, scale, signedTicks, ticks } from "../lib/scale.js";
 
 const {
   title,
@@ -20,10 +20,18 @@ const {
 
 const PAD = { l: 44, r: 46, t: 10, b: 22 };
 const vals = series.map((d) => d[1]);
-const top = yMax ?? Math.max(...vals, 1e-9) * 1.05;
-const tks = yMax === 1 ? [0, 0.25, 0.5, 0.75, 1] : ticks(top);
+const dataMin = Math.min(...vals, 0);
+// probabilities stay [0,1]; otherwise extend below zero only if the data does
+const range =
+  yMax === 1
+    ? { ticks: [0, 0.25, 0.5, 0.75, 1], lo: 0, hi: 1 }
+    : yMax != null
+      ? { ticks: ticks(yMax), lo: 0, hi: ticks(yMax).at(-1) }
+      : signedTicks(dataMin, Math.max(...vals, 1e-9) * 1.05);
+const tks = range.ticks;
+const hasNegative = range.lo < 0;
 const x = scale(0, Math.max(series.length - 1, 1), PAD.l, w - PAD.r);
-const y = scale(0, yMax ?? tks[tks.length - 1], h - PAD.b, PAD.t);
+const y = scale(range.lo, range.hi, h - PAD.b, PAD.t);
 const pts = series.map((d, i) => [x(i), y(d[1])]);
 const last = pts[pts.length - 1];
 const step = series.length > 1 ? x(1) - x(0) : w;
@@ -47,7 +55,10 @@ const labelEvery = Math.max(1, Math.round(series.length / nLabels));
           <text class="tick-text" x={x(i)} y={h - 6} text-anchor="middle">{String(d[0])}</text>
         ) : null
       )}
-      {wash && pts.length > 1 && (
+      {hasNegative && (
+        <line class="baseline-line" x1={PAD.l} x2={w - PAD.r} y1={y(0)} y2={y(0)} />
+      )}
+      {wash && !hasNegative && pts.length > 1 && (
         <path
           class="area-wash"
           d={`${linePath(pts)}L${last[0]},${y(0)}L${pts[0][0]},${y(0)}Z`}
