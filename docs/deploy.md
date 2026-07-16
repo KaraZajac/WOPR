@@ -1,33 +1,54 @@
-# Deploying the site — wopr.karazajac.io
+# Deploying the site — wopr.karazajac.io (self-hosted)
 
-The site is fully static (Astro, `site/dist/`) and deploys to Cloudflare
-Pages exactly like judgment.karazajac.io. One-time setup, ~10 minutes:
+The site is pure static output: `site/dist/` after a build is the entire
+deployable artifact — no server-side runtime, no Python on the web host.
 
-## Cloudflare Pages setup
+## Build
 
-1. Cloudflare dashboard → **Workers & Pages → Create → Pages →
-   Connect to Git** → select `KaraZajac/WOPR` (grant access to the private
-   repo when prompted).
-2. Build settings:
-   - **Framework preset:** Astro
-   - **Build command:** `npm ci && npm run build`
-   - **Build output directory:** `dist`
-   - **Root directory:** `site`
-3. Environment variables (Production):
-   - `PAGES_SITE` = `https://wopr.karazajac.io`
-   (astro.config.mjs already defaults to this, so the var is belt-and-
-   suspenders; set `PAGES_BASE` only if ever serving under a subpath.)
-4. Deploy, then **Custom domains → add `wopr.karazajac.io`** — Cloudflare
-   creates the CNAME automatically since karazajac.io is already on
-   Cloudflare.
+```sh
+git clone https://github.com/KaraZajac/WOPR
+cd WOPR/site
+npm ci
+npm run build          # -> site/dist/
+```
 
-## How updates flow
+`astro.config.mjs` defaults the canonical URL to `https://wopr.karazajac.io`;
+set `PAGES_SITE` (and `PAGES_BASE` for a subpath) at build time only if
+serving somewhere else.
 
-- Every push to `main` redeploys automatically (Pages watches the repo).
-- The monthly refresh workflow (`.github/workflows/refresh.yml`, the 20th)
-  commits updated data → that push triggers the redeploy. No manual step.
-- The committed `data/site/*.json` are the site's only inputs, so Pages
-  never needs Python or the pipeline — just the Astro build.
+## Serve
+
+Any static file server works. nginx example:
+
+```nginx
+server {
+    server_name wopr.karazajac.io;
+    root /var/www/wopr;            # rsync of site/dist/
+    index index.html;
+    location / { try_files $uri $uri/ =404; }
+    gzip on;
+    gzip_types text/html text/css application/javascript application/json image/svg+xml;
+}
+```
+
+Deploy step after a build: `rsync -a --delete site/dist/ server:/var/www/wopr/`.
+
+## Staying current
+
+The repo refreshes itself monthly (`.github/workflows/refresh.yml`, the
+20th: pull → build → resolve → verify → export → commit). To pick that up,
+a cron on the server rebuilds shortly after — e.g. the 21st:
+
+```sh
+#!/bin/sh
+# /etc/cron.monthly-ish: 0 6 21 * *  wopr-rebuild
+cd /opt/WOPR && git pull --ff-only \
+  && cd site && npm ci && npm run build \
+  && rsync -a --delete dist/ /var/www/wopr/
+```
+
+Push-based alternative: a GitHub webhook or Actions job that rsyncs
+`site/dist/` to the server on push to main — same artifact either way.
 
 ## Checks after first deploy
 
@@ -35,3 +56,12 @@ Pages exactly like judgment.karazajac.io. One-time setup, ~10 minutes:
 - `/methods` arena table shows the pools ranked first.
 - A country page (e.g. `/country/530/`) renders charts + risk factors.
 - Theme toggle persists (Latte/Mocha).
+
+## Now that the repo is public
+
+- The Zenodo GitHub integration works: enable the repo at zenodo.org →
+  GitHub, then publishing a GitHub Release (attach `dist/wopr-dataset-*.tar.gz`
+  from `wopr release`) mints a DOI automatically — no manual upload.
+- Anyone can reproduce the site from the committed `data/site/*.json`,
+  and the full pipeline from `wopr pull && wopr build` (sources are
+  re-fetched; nothing proprietary is in the repo — see DATA-RIGHTS.md).
