@@ -13,8 +13,14 @@
   bands). Population added (OWID) for per-capita normalization.
   ~~pre-1989 battle deaths (PRIO)~~ **done** (v3.1 1946–2008, converted from
   legacy .xls via libreoffice, stitched onto GED at 1989 — pre-1989 total
-  ~3× the whole post–Cold-War era). Next trend ideas: small-multiple country
-  trajectories, protest trends, Maddison historical GDP via OWID.
+  ~3× the whole post–Cold-War era). ~~Correlates of War~~ **done** (dyadic
+  MIDs 1946–2014 + trends chart, formal alliances 1946–2012, CINC v7 through
+  2022 on country risk panels; COW→G-W crosswalk unit-tested; COW's missing
+  TLS intermediate pinned in wopr/pipeline/cow-ca.pem). MID/alliance
+  pair-year context is available to the engine as *protocol candidates*
+  (past-MID density, defense-pact flag) — must clear `wopr protocol` before
+  conditioning. Next trend ideas: small-multiple country trajectories,
+  protest trends, Maddison historical GDP via OWID.
 - **Covariate-widened reference classes**: regime type (V-Dem/Polity),
   GDP/capita, ethnic fractionalization — class = "countries like this one",
   not just "countries near this one". Sensitivity across class definitions in
