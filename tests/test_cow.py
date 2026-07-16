@@ -1,6 +1,6 @@
 import unittest
 
-from wopr.pipeline.build import cow_to_gw
+from tocsin.pipeline.build import cow_to_gw
 
 
 class TestCowToGw(unittest.TestCase):

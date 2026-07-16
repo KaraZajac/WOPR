@@ -1,7 +1,7 @@
 import unittest
 
-from wopr.engine.baserate import Spec, Unit, hit, rate
-from wopr.journal.resolve import match
+from tocsin.engine.baserate import Spec, Unit, hit, rate
+from tocsin.journal.resolve import match
 
 
 def pair_unit(pid, region, years):

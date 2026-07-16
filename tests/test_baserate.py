@@ -1,6 +1,6 @@
 import unittest
 
-from wopr.engine.baserate import (
+from tocsin.engine.baserate import (
     M_DEFAULT,
     M_MAX,
     Spec,
@@ -176,7 +176,7 @@ class TestRate(unittest.TestCase):
 
     def test_backtest_parity_with_live_engine(self):
         # the walk-forward prior at year Y must equal rate() restricted to <Y
-        from wopr.engine.backtest import walk
+        from tocsin.engine.backtest import walk
 
         sub = self.substrate()
         records = walk("country", "deaths", ("sb",), 25, sub, burn_in=5)

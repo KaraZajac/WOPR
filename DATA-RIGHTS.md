@@ -5,7 +5,7 @@ from third-party conflict datasets. Rights are layered: the code is
 [MIT](LICENSE); the derived data in `data/` is **CC BY 4.0**, matching the
 upstream UCDP terms, and inherits the attribution requirements below. Raw
 sources live only in the gitignored `sources/` directory (regenerable via
-`wopr pull`) and are not redistributed here.
+`tocsin pull`) and are not redistributed here.
 
 | layer | contents | provenance | terms (verified 2026-07-16) |
 |---|---|---|---|

@@ -1,6 +1,6 @@
 """Scoring: Brier, log score, calibration curve, and challengers-vs-engine.
 
-WOPR's own prediction is the stored prior; `forecasts` hold challenger
+TOCSIN's own prediction is the stored prior; `forecasts` hold challenger
 numbers (other models such as VIEWS, or an analyst override). On the same
 resolved questions the table shows whether any challenger beat the engine —
 a negative Brier delta means the challenger carried information the base

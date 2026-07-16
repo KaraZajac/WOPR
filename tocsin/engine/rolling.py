@@ -31,14 +31,14 @@ import csv
 from collections import defaultdict
 from dataclasses import dataclass
 
-from wopr.engine.baserate import (
+from tocsin.engine.baserate import (
     AGE_BANDS,
     MIN_CLASS_YEARS,
     Unit,
     coarse,
     eb_strength,
 )
-from wopr.paths import TABLES
+from tocsin.paths import TABLES
 
 START = 1989 * 12  # month index of 1989-01; index = year*12 + (month-1)
 MIN_CLASS_MONTHS = MIN_CLASS_YEARS * 12

@@ -1,15 +1,15 @@
-"""wopr — the command line for the whole loop.
+"""tocsin — the command line for the whole loop.
 
-    wopr pull                          fetch UCDP sources
-    wopr build                         sources -> data/ tables + registries
-    wopr verify                        validation gate (data + journal + math)
-    wopr rate --country Ethiopia       ad-hoc base rate (the outside view)
-    wopr ask --country Ethiopia --year 2026 --threshold 25
+    tocsin pull                          fetch UCDP sources
+    tocsin build                         sources -> data/ tables + registries
+    tocsin verify                        validation gate (data + journal + math)
+    tocsin rate --country Ethiopia       ad-hoc base rate (the outside view)
+    tocsin ask --country Ethiopia --year 2026 --threshold 25
                                        create a question; prior computed + stored
-    wopr call 2026-001 0.45 --note "…" log your forecast (the inside view)
-    wopr resolve                       grade due questions from the data
-    wopr score                         Brier / log / calibration / you-vs-prior
-    wopr list | show ID | status       browse the journal
+    tocsin call 2026-001 0.45 --note "…" log your forecast (the inside view)
+    tocsin resolve                       grade due questions from the data
+    tocsin score                         Brier / log / calibration / you-vs-prior
+    tocsin list | show ID | status       browse the journal
 """
 
 import argparse
@@ -19,12 +19,12 @@ import sys
 
 import yaml
 
-import wopr
-from wopr.engine import baserate, rolling
-from wopr.journal import resolve as resolver
-from wopr.journal import score as scoring
-from wopr.journal import store
-from wopr.paths import DATA, REGISTRY
+import tocsin
+from tocsin.engine import baserate, rolling
+from tocsin.journal import resolve as resolver
+from tocsin.journal import score as scoring
+from tocsin.journal import store
+from tocsin.paths import DATA, REGISTRY
 
 TYPE_WORDS = {"sb": "state-based", "ns": "non-state", "os": "one-sided"}
 
@@ -32,7 +32,7 @@ TYPE_WORDS = {"sb": "state-based", "ns": "non-state", "os": "one-sided"}
 def _registry(name: str) -> list[dict]:
     path = REGISTRY / f"{name}.yaml"
     if not path.exists():
-        raise SystemExit(f"{path} missing — run `wopr build` first")
+        raise SystemExit(f"{path} missing — run `tocsin build` first")
     return yaml.safe_load(path.read_text())
 
 
@@ -120,7 +120,7 @@ def engine_prior(criteria: dict) -> dict | None:
         as_of = int(str(criteria["window"]["start"])[:4])
         result = baserate.rate(baserate.Spec(grain, scope["id"], criteria["measure"], (), 25, as_of), sub)
         result["unit_name"] = scope["name"]
-        return {"p": result["p"], "computed": store.now(), "engine": wopr.__version__, "detail": result}
+        return {"p": result["p"], "computed": store.now(), "engine": tocsin.__version__, "detail": result}
     if criteria["measure"] != "deaths" or scope["kind"] not in ("country", "dyad", "pair"):
         return None
     if scope["kind"] == "dyad" and types != ["sb"]:
@@ -150,7 +150,7 @@ def engine_prior(criteria: dict) -> dict | None:
     return {
         "p": result["p"],
         "computed": store.now(),
-        "engine": wopr.__version__,
+        "engine": tocsin.__version__,
         "detail": result,
     }
 
@@ -270,7 +270,7 @@ def cmd_ask(args) -> None:
         print()
         print(render_detail(prior["detail"]))
     print()
-    print(f"log your forecast:  wopr call {q['id']} <p> --note '…'")
+    print(f"log your forecast:  tocsin call {q['id']} <p> --note '…'")
 
 
 def cmd_call(args) -> None:
@@ -332,7 +332,7 @@ def cmd_score(args) -> None:
 
 
 def cmd_watchfloor(_args) -> None:
-    from wopr.engine import watchfloor
+    from tocsin.engine import watchfloor
 
     print(watchfloor.render(watchfloor.compute()))
 
@@ -340,7 +340,7 @@ def cmd_watchfloor(_args) -> None:
 def cmd_list(_args) -> None:
     questions = store.load_all()
     if not questions:
-        print("journal is empty — create a question with `wopr ask`")
+        print("journal is empty — create a question with `tocsin ask`")
         return
     for q in questions:
         w = q["criteria"]["window"]
@@ -384,8 +384,8 @@ def cmd_status(_args) -> None:
 
 
 def main(argv: list[str] | None = None) -> None:
-    ap = argparse.ArgumentParser(prog="wopr", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--version", action="version", version=f"wopr {wopr.__version__}")
+    ap = argparse.ArgumentParser(prog="tocsin", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--version", action="version", version=f"tocsin {tocsin.__version__}")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     sub.add_parser("pull", help="download UCDP sources").add_argument("--force", action="store_true")
@@ -446,7 +446,7 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--burn-in", type=int, default=5, help="years of history before scoring starts")
     p.add_argument("--write", action="store_true", help="also write data/backtest.yaml")
 
-    p = sub.add_parser("benchmark", help="the arena: WOPR vs VIEWS vs baselines, retrospectively")
+    p = sub.add_parser("benchmark", help="the arena: TOCSIN vs VIEWS vs baselines, retrospectively")
     p.add_argument("--force-pull", action="store_true", help="re-fetch cached VIEWS runs")
 
     p = sub.add_parser("protocol", help="tune/validate candidate covariates on held-out vantages")
@@ -460,28 +460,28 @@ def main(argv: list[str] | None = None) -> None:
 
     args = ap.parse_args(argv)
     if args.cmd == "pull":
-        from wopr.pipeline import download
+        from tocsin.pipeline import download
 
         sys.argv = ["download"] + (["--force"] if args.force else [])
         download.main()
     elif args.cmd == "build":
-        from wopr.pipeline import build
+        from tocsin.pipeline import build
 
         build.main()
     elif args.cmd == "verify":
-        from wopr.pipeline import validate
+        from tocsin.pipeline import validate
 
         validate.main()
     elif args.cmd == "release":
-        from wopr.pipeline import release
+        from tocsin.pipeline import release
 
         release.main()
     elif args.cmd == "acled":
-        from wopr.pipeline import acled
+        from tocsin.pipeline import acled
 
         acled.api_check() if args.api_check else acled.pull(force=args.force)
     elif args.cmd == "backtest":
-        from wopr.engine import backtest
+        from tocsin.engine import backtest
 
         report = backtest.run(burn_in=args.burn_in)
         if args.write:
@@ -489,11 +489,11 @@ def main(argv: list[str] | None = None) -> None:
                 yaml.safe_dump(report, f, sort_keys=False, allow_unicode=True)
             print(f"wrote {DATA / 'backtest.yaml'}")
     elif args.cmd == "benchmark":
-        from wopr.pipeline import benchmark
+        from tocsin.pipeline import benchmark
 
         benchmark.main(force_pull=args.force_pull)
     elif args.cmd == "protocol":
-        from wopr.engine import protocol
+        from tocsin.engine import protocol
 
         if args.study in ("youth", "all"):
             print(protocol.render(protocol.run()))

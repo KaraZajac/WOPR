@@ -1,4 +1,4 @@
-"""The arena: WOPR vs VIEWS vs naive baselines, head-to-head, retrospectively.
+"""The arena: TOCSIN vs VIEWS vs naive baselines, head-to-head, retrospectively.
 
 Target: P(≥25 state-based deaths in country c in month m) — VIEWS's native
 main_dich semantics (detected empirically, not assumed), scored against
@@ -6,7 +6,7 @@ realized UCDP monthly outcomes. For each vantage run, every model predicts
 the next 12 months using only information available at the vantage:
 
   views        main_dich at horizon h, untransformed
-  wopr         the rolling engine, W=1, walk-forward-clamped to the vantage;
+  tocsin         the rolling engine, W=1, walk-forward-clamped to the vantage;
                one-step by design, so its number is constant across horizons
   persistence  the country's trailing-12-month hit rate, (k+1)/(n+2)
   climatology  the country's full-history monthly hit rate, (k+0.5)/(n+1)
@@ -19,11 +19,11 @@ import datetime
 
 import yaml
 
-from wopr.engine import baserate, rolling
-from wopr.engine.rolling import RollingSpec, mi, ym
-from wopr.paths import DATA, ROOT
-from wopr.pipeline import views
-from wopr.pipeline.build import to_gw
+from tocsin.engine import baserate, rolling
+from tocsin.engine.rolling import RollingSpec, mi, ym
+from tocsin.paths import DATA, ROOT
+from tocsin.pipeline import views
+from tocsin.pipeline.build import to_gw
 
 VANTAGE_RUNS = (
     "fatalities002_2023_04_t01",
@@ -33,15 +33,15 @@ VANTAGE_RUNS = (
     "fatalities002_2025_04_t01",
 )
 HORIZON = 12
-MODELS = ("views", "wopr", "persistence", "climatology")
+MODELS = ("views", "tocsin", "persistence", "climatology")
 # equal-weight opinion pools — zero fitted parameters, so scoring them on the
 # same vantages is measurement, not tuning. The pool result is the arena's
 # central lesson: combining diverse forecasters beats the best member
 # (views+persist beats views), while adding a redundant one subtracts
-# (wopr duplicates persistence's recency signal at this grain).
+# (tocsin duplicates persistence's recency signal at this grain).
 POOLS = {
     "pool:views+persist": ("views", "persistence"),
-    "pool:all-three": ("views", "wopr", "persistence"),
+    "pool:all-three": ("views", "tocsin", "persistence"),
 }
 
 
@@ -77,12 +77,12 @@ def collect(force_pull: bool = False) -> tuple[list[dict], dict]:
             "country", substrate, monthly, types=("sb",), threshold=25, window=1,
             class_end=v, gaps=(0,),
         )
-        wopr_p, base = {}, {}
+        tocsin_p, base = {}, {}
         for gwno, u in substrate["country"].items():
             if (gwno, months[0]) not in vrows and (gwno, months[-1]) not in vrows:
                 continue
             # horizon-aware: one price per (country, horizon month)
-            wopr_p[gwno] = {m: rolling.assemble(state, gwno, m)["p"] for m in months}
+            tocsin_p[gwno] = {m: rolling.assemble(state, gwno, m)["p"] for m in months}
             k = n = k12 = n12 = 0
             for m in range(rolling.START, v + 1):
                 h = hits.get((gwno, m))
@@ -95,7 +95,7 @@ def collect(force_pull: bool = False) -> tuple[list[dict], dict]:
                     k12 += h
             base[gwno] = ((k + 0.5) / (n + 1) if n else 0.5, (k12 + 1) / (n12 + 2))
 
-        for gwno in wopr_p:
+        for gwno in tocsin_p:
             for h, m in enumerate(months, start=1):
                 p_views = vrows.get((gwno, m))
                 outcome = hits.get((gwno, m))
@@ -110,7 +110,7 @@ def collect(force_pull: bool = False) -> tuple[list[dict], dict]:
                         "outcome": outcome,
                         "provisional": m > final_end,
                         "views": p_views,
-                        "wopr": wopr_p[gwno][m],
+                        "tocsin": tocsin_p[gwno][m],
                         "climatology": round(base[gwno][0], 4),
                         "persistence": round(base[gwno][1], 4),
                     }
@@ -160,13 +160,13 @@ def summarize(records: list[dict], dich: dict) -> dict:
         out["by_horizon"][label] = {
             m: round(sum(brier(r[m], r["outcome"]) for r in got) / len(got), 5) for m in scored
         }
-    wins = sum(1 for r in records if brier(r["wopr"], r["outcome"]) < brier(r["views"], r["outcome"]))
-    ties = sum(1 for r in records if r["wopr"] == r["views"])
+    wins = sum(1 for r in records if brier(r["tocsin"], r["outcome"]) < brier(r["views"], r["outcome"]))
+    ties = sum(1 for r in records if r["tocsin"] == r["views"])
     out["head_to_head"] = {
-        "wopr_better_on": wins,
+        "tocsin_better_on": wins,
         "views_better_on": n - wins - ties,
-        "delta_brier_wopr_minus_views": round(
-            out["models"]["wopr"]["brier"] - out["models"]["views"]["brier"], 5
+        "delta_brier_tocsin_minus_views": round(
+            out["models"]["tocsin"]["brier"] - out["models"]["views"]["brier"], 5
         ),
     }
     return out
@@ -187,12 +187,12 @@ def render(s: dict) -> str:
             f"{s['by_horizon']['h1-3'][m]:>8} {s['by_horizon']['h4-6'][m]:>8} {s['by_horizon']['h7-12'][m]:>8}"
         )
     hh = s["head_to_head"]
-    d = hh["delta_brier_wopr_minus_views"]
-    verdict = "WOPR ahead" if d < 0 else "VIEWS ahead" if d > 0 else "dead heat"
+    d = hh["delta_brier_tocsin_minus_views"]
+    verdict = "TOCSIN ahead" if d < 0 else "VIEWS ahead" if d > 0 else "dead heat"
     lines.append("")
     lines.append(
-        f"head-to-head: ΔBrier (wopr − views) {d:+} · "
-        f"wopr better on {hh['wopr_better_on']:,}, views on {hh['views_better_on']:,} — {verdict}"
+        f"head-to-head: ΔBrier (tocsin − views) {d:+} · "
+        f"tocsin better on {hh['tocsin_better_on']:,}, views on {hh['views_better_on']:,} — {verdict}"
     )
     return "\n".join(lines)
 

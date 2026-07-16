@@ -12,9 +12,9 @@ const suites = Object.entries(bt);
 const countrySuite = bt["country/deaths/sb≥25"];
 const MODEL_NOTES = {
   "pool:views+persist": "equal-weight average — the arena's best forecast",
-  "pool:all-three": "equal-weight views+wopr+persistence",
+  "pool:all-three": "equal-weight views+tocsin+persistence",
   views: "Uppsala VIEWS, main_dich at each horizon",
-  wopr: "this engine, walk-forward-clamped, one-step",
+  tocsin: "this engine, walk-forward-clamped, one-step",
   persistence: "country's trailing-12-month hit rate",
   climatology: "country's full-history monthly rate",
 };
@@ -107,7 +107,7 @@ const MODEL_NOTES = {
 
   {ar && (
     <>
-      <h2>The arena — WOPR vs other models</h2>
+      <h2>The arena — TOCSIN vs other models</h2>
       <p class="lede">
         Retrospective head-to-head on VIEWS's native target — {ar.target} — with every model
         predicting the next 12 months from the same historical vantages using only
@@ -140,9 +140,9 @@ const MODEL_NOTES = {
         <div class="viz-legend" style="margin-top:12px">
           <span>· The best forecast in the arena is nobody's model — it's the equal-weight pool
             (combining diverse forecasters beats the best member; zero fitted parameters).
-            VIEWS leads the singles; WOPR is better on {num(ar.head_to_head.wopr_better_on)} of {num(ar.n)} months
+            VIEWS leads the singles; TOCSIN is better on {num(ar.head_to_head.tocsin_better_on)} of {num(ar.n)} months
             (the quiet mass) but pays more on transitions — and adds no diversity to a
-            persistence pool, because at this grain WOPR <i>is</i> calibrated persistence</span>
+            persistence pool, because at this grain TOCSIN <i>is</i> calibrated persistence</span>
           <span>· persistence nearly ties VIEWS: the standing result of this field, reproduced</span>
           <span>· {pct(ar.provisional_share, 0)} of outcomes are candidate-month provisional</span>
         </div>

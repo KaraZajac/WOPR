@@ -26,8 +26,8 @@ simply omitted.
 import csv
 import datetime
 
-from wopr.engine import baserate
-from wopr.paths import SOURCES, TABLES
+from tocsin.engine import baserate
+from tocsin.paths import SOURCES, TABLES
 
 FLOOR = 25  # annualized-death floor: below this a ratio is noise, not a signal
 TRAILING = 5  # complete years of baseline

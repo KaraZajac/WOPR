@@ -1,4 +1,4 @@
-# WOPR — pipeline + verification gate. See README.md and docs/.
+# TOCSIN — pipeline + verification gate. See README.md and docs/.
 
 .PHONY: pull build verify test score status export site site-dev install-hooks help
 
@@ -6,26 +6,26 @@ help:                ## list targets
 	@grep -hE '^[a-z-]+:.*##' $(MAKEFILE_LIST) | sed 's/:.*## /\t/' | sort
 
 pull:                ## download UCDP sources into sources/
-	@python3 -m wopr pull
+	@python3 -m tocsin pull
 
 build:               ## build data/ tables + registries from sources/
-	@python3 -m wopr build
+	@python3 -m tocsin build
 
 verify:              ## validation gate: data + journal checks, then unit tests
-	@python3 -m wopr verify
+	@python3 -m tocsin verify
 	@python3 -m unittest discover -s tests -q
 
 test:                ## unit tests only
 	@python3 -m unittest discover -s tests -q
 
 score:               ## scorecard: Brier/log/calibration, you vs the prior
-	@python3 -m wopr score
+	@python3 -m tocsin score
 
 status:              ## open questions and data coverage
-	@python3 -m wopr status
+	@python3 -m tocsin status
 
 export:              ## write data/site/*.json for the Astro site
-	@python3 -m wopr.pipeline.site_export
+	@python3 -m tocsin.pipeline.site_export
 
 site: export         ## build the static site (site/dist)
 	@cd site && npm run build

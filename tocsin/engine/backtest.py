@@ -13,12 +13,12 @@ Jeffreys floor); tests assert parity with rate() at the final year. Skill is
 reported against a climatology baseline that predicts the running global
 unconditional rate — beating it is the minimum bar for "conditioning helps".
 
-Run: wopr backtest [--burn-in 5] — writes data/backtest.yaml.
+Run: tocsin backtest [--burn-in 5] — writes data/backtest.yaml.
 """
 
 from collections import defaultdict
 
-from wopr.engine.baserate import (
+from tocsin.engine.baserate import (
     BUCKETS,
     MIN_CLASS_YEARS,
     Spec,
@@ -27,7 +27,7 @@ from wopr.engine.baserate import (
     hit,
     load_substrate,
 )
-from wopr.journal.score import brier, log_score
+from tocsin.journal.score import brier, log_score
 
 SUITE = (
     ("country", "deaths", ("sb",), 25),

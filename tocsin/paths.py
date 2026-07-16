@@ -1,6 +1,6 @@
-"""Repo-relative paths shared across wopr modules.
+"""Repo-relative paths shared across tocsin modules.
 
-WOPR_QUESTIONS overrides the journal directory (used by tests and smoke runs
+TOCSIN_QUESTIONS overrides the journal directory (used by tests and smoke runs
 so they never touch the real journal).
 """
 
@@ -13,4 +13,4 @@ CANDIDATE = SOURCES / "candidate"
 DATA = ROOT / "data"
 TABLES = DATA / "tables"
 REGISTRY = DATA / "registry"
-QUESTIONS = Path(os.environ.get("WOPR_QUESTIONS", ROOT / "questions"))
+QUESTIONS = Path(os.environ.get("TOCSIN_QUESTIONS", ROOT / "questions"))

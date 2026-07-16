@@ -1,3 +1,3 @@
 #!/bin/sh
-# WOPR pre-commit gate: refuse to commit malformed data or journal entries.
+# TOCSIN pre-commit gate: refuse to commit malformed data or journal entries.
 exec make -s verify

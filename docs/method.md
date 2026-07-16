@@ -63,7 +63,7 @@ itself never sees that year's own data in its prior.
 ## Rolling windows (month grain)
 
 Month-aligned windows that aren't calendar years — "next 12 months", "H2
-2026" — are priced by the rolling engine (`wopr/engine/rolling.py`) instead
+2026" — are priced by the rolling engine (`tocsin/engine/rolling.py`) instead
 of the calendar-year approximation: P(≥T deaths within the W months from
 m₀), estimated over class member window-starts on the monthly substrate
 (1989–). The bucket machinery ports intact: a unit's status entering month m
@@ -77,7 +77,7 @@ At month grain, **active buckets carry a tempo band** — the count of
 trailing-year months individually over the threshold (`low` 1–3, `mid` 4–8,
 `high` 9–12) — so a sustained war and a single-spike year no longer share a
 class. (A sum-active year with no single hit-month reads `low`.) The arena
-priced this covariate: adding it moved WOPR's month-grain Brier from .0611
+priced this covariate: adding it moved TOCSIN's month-grain Brier from .0611
 to .0461, closing 75% of the gap to VIEWS.
 
 **Non-active buckets carry a neighbor flag** (`+nbr`: any ≤400km neighbor,
@@ -207,7 +207,7 @@ globally, it falls back to the global unconditional rate and says so.
 
 ## Measured reliability (walk-forward backtest)
 
-`wopr backtest` replays the engine over every observable unit-year using only
+`tocsin backtest` replays the engine over every observable unit-year using only
 prior data (~47k pseudo-forecasts; results in `data/backtest.yaml`). As of
 UCDP 26.1 with episode-age buckets (engine 0.2.0): country-grain priors are
 well calibrated end to end (sb≥25 skill +70%; acd-active +65%); dyad-grain
@@ -246,7 +246,7 @@ youth yes, exclusion yes, inflation no.
 
 The descriptive lift above is *not* permission to add youth to the engine —
 fitting a scheme on the same history you score it on is p-hacking, the exact
-error that made the reverted regime result look tempting. `wopr protocol`
+error that made the reverted regime result look tempting. `tocsin protocol`
 enforces the discipline: split the scored years into **tune** (≤2007, where
 candidate schemes compete) and **validate** (≥2008, read exactly once); pick
 the best youth cut on tune; compare it to the baseline on validate a single
@@ -270,7 +270,7 @@ useful context on country pages); the live engine is unchanged.
 
 ### The COW pair study: a 30× signal the metric cannot see
 
-`wopr protocol --study pair` ran the four pre-registered COW candidates on
+`tocsin protocol --study pair` ran the four pre-registered COW candidates on
 the pair universe (pair/acd-active, same 2007 split, same bar): **ever-MID,
 MID-in-25yr, fatal-MID, defense-pact**. Verdict: **all four REJECTED** —
 0/4 beat the baseline on tune; the selected one (ever-MID) was *worse* on
@@ -299,7 +299,7 @@ validate years are genuinely fresh.
 ### The joint study: combinations don't rescue rejected covariates
 
 "What if the covariates were combined?" was answered narrowly and finally
-(`wopr protocol --study joint`). Combinations excluded a priori: anything at
+(`tocsin protocol --study joint`). Combinations excluded a priori: anything at
 pair grain (Brier-blind regardless) and regime × anything (fragmentation
 already measured harmful). The one descriptively-motivated untested
 combination was youth × ethnic exclusion (the 2×2 had shown young+excluded
@@ -348,28 +348,28 @@ project's central empirical claim when written up.
 
 ## The arena (model-vs-model benchmarking)
 
-`wopr benchmark` races WOPR against named challengers retrospectively on a
+`tocsin benchmark` races TOCSIN against named challengers retrospectively on a
 common target: **P(≥25 state-based deaths in a country-month)** — VIEWS's
 native output. Their `main_dich` was verified to mean exactly that by
 calibrating old runs against realized outcomes (mean prediction .138 vs
 realized ≥25 frequency .136; the ≥1 frequency is .251 — detected, never
 assumed). Every model predicts 12 months ahead from identical historical
-vantages using only information available then; WOPR runs walk-forward-
+vantages using only information available then; TOCSIN runs walk-forward-
 clamped (`class_end`), one-step by design. Baselines: persistence (trailing-
 12-month rate) and climatology (full-history rate).
 
 Current standings (5 vantages, 7,680 country-months, UCDP 26.1; Brier, lower
-better): **VIEWS 0.0412, persistence 0.0433, WOPR 0.0461, climatology
-0.0922**. History: WOPR opened at 0.0611 with recency/age-only buckets; the
+better): **VIEWS 0.0412, persistence 0.0433, TOCSIN 0.0461, climatology
+0.0922**. History: TOCSIN opened at 0.0611 with recency/age-only buckets; the
 arena priced that tempo gap at ~0.017, and adding the tempo band closed 75%
 of the deficit to VIEWS in one covariate. Readings: (1) VIEWS leads,
 earning its covariates on transitions — but only ~5% ahead of naive
 persistence, the standing embarrassment of this field, reproduced here
-independently. (2) WOPR is now within ~12% of the academic SOTA with a
+independently. (2) TOCSIN is now within ~12% of the academic SOTA with a
 transparent lookup you can audit down to the class counts, and it wins 71%
 of individual months head-to-head. (3) The residual to persistence is
 banding discretization, deliberately not tuned against the arena. (4) Month
-grain is VIEWS's home target; the annual-grain arena — WOPR's design center —
+grain is VIEWS's home target; the annual-grain arena — TOCSIN's design center —
 opens as journal questions resolve.
 
 ### The pools: the arena's most accurate forecast is nobody's model
@@ -382,12 +382,12 @@ This is the classic combination result (Bates–Granger 1969; Clemen 1989;
 every M-competition): forecasters with *different* error structures average
 into something better than the best of them.
 
-The diagnostic detail: WOPR wins 70% of months against VIEWS yet *adding
-WOPR to the views+persistence pool makes it worse* (0.0409 vs 0.0399) —
-because at month grain WOPR **is** calibrated persistence; it duplicates the
+The diagnostic detail: TOCSIN wins 70% of months against VIEWS yet *adding
+TOCSIN to the views+persistence pool makes it worse* (0.0409 vs 0.0399) —
+because at month grain TOCSIN **is** calibrated persistence; it duplicates the
 pool's recency member rather than diversifying it. Diversity, not individual
 skill, is what a pool pays for. VIEWS's covariate-ML signal is the orthogonal
-ingredient; WOPR's distinct value lies on the targets no other model prices
+ingredient; TOCSIN's distinct value lies on the targets no other model prices
 (annual horizons, arbitrary thresholds, termination, coups) and in
 auditability — not in month-grain occurrence, where its information is
 already in the pool via persistence.

@@ -12,7 +12,7 @@ import re
 
 import yaml
 
-from wopr.paths import QUESTIONS
+from tocsin.paths import QUESTIONS
 
 SCOPE_KINDS = ("country", "dyad", "conflict", "actor", "pair")
 MEASURES = ("deaths", "events", "terminates", "coup")

@@ -11,7 +11,7 @@ strictly after that). Rules:
   …    otherwise the question stays open pending data
 
 A resolution is *provisional* when it leans on candidate data (its deciding
-date lies past the annual cutoff). Re-running ``wopr resolve`` after the next
+date lies past the annual cutoff). Re-running ``tocsin resolve`` after the next
 annual release re-grades provisional questions: normally they just finalize,
 but candidate-era revisions can flip one — that gets a note, and the score
 moves. Candidate events whose dyad/actor identities are UCDP ``XXX``
@@ -26,8 +26,8 @@ import re
 
 import yaml
 
-from wopr.paths import DATA, SOURCES
-from wopr.pipeline.build import VIOLENCE, is_placeholder, load_candidates, parse_date, to_gw
+from tocsin.paths import DATA, SOURCES
+from tocsin.pipeline.build import VIOLENCE, is_placeholder, load_candidates, parse_date, to_gw
 
 csv.field_size_limit(10_000_000)
 
@@ -37,7 +37,7 @@ TYPE_CODES = {v: k for k, v in VIOLENCE.items()}  # sb -> "1", …
 def load_meta() -> dict:
     meta_path = DATA / "meta.yaml"
     if not meta_path.exists():
-        raise SystemExit("data/meta.yaml missing — run `wopr build` first")
+        raise SystemExit("data/meta.yaml missing — run `tocsin build` first")
     meta = yaml.safe_load(meta_path.read_text())
     meta["annual_end"] = datetime.date.fromisoformat(meta["annual_coverage_end"])
     meta["through"] = datetime.date.fromisoformat(meta["data_through"])
@@ -162,7 +162,7 @@ def evaluate(criteria: dict, meta: dict) -> dict:
     """Count matching events in the window across annual + candidate data."""
     ged = SOURCES / "ucdp-ged.csv"
     if not ged.exists():
-        raise SystemExit("sources/ missing — run `wopr pull` first")
+        raise SystemExit("sources/ missing — run `tocsin pull` first")
     w = criteria["window"]
     start = datetime.date.fromisoformat(str(w["start"]))
     end = datetime.date.fromisoformat(str(w["end"]))

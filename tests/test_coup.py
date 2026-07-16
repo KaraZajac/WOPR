@@ -3,7 +3,7 @@ import io
 import unittest
 from unittest import mock
 
-from wopr.engine.baserate import Spec, Unit, bucket_of, hit, rate
+from tocsin.engine.baserate import Spec, Unit, bucket_of, hit, rate
 
 
 def country(uid, coup_years, span=(1950, 2020)):
@@ -64,7 +64,7 @@ class TestCoupMeasure(unittest.TestCase):
 
 class TestCoupResolution(unittest.TestCase):
     def test_resolution_rules(self):
-        from wopr.journal import resolve as R
+        from tocsin.journal import resolve as R
 
         table = "gwno,year,attempts,successes\n432,2024,1,1\n433,2024,0,0\n"
 

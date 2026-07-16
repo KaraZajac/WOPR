@@ -1,7 +1,7 @@
 import datetime
 import unittest
 
-from wopr.journal.resolve import accumulate, decide, match
+from tocsin.journal.resolve import accumulate, decide, match
 
 META = {
     "ucdp_release": "26.1",

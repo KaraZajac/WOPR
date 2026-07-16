@@ -19,7 +19,7 @@ remote violence, violence against civilians), NOT UCDP's sb/ns/os categories
 or its 25-death inclusion rule — keep them as tempo signals and cross-checks,
 not as resolution authorities for UCDP-pinned questions.
 
-Run: python3 -m wopr.pipeline.acled [--force] [--api-check]
+Run: python3 -m tocsin.pipeline.acled [--force] [--api-check]
 """
 
 import csv
@@ -34,12 +34,12 @@ from pathlib import Path
 
 import yaml
 
-import wopr._env  # noqa: F401  (loads .env)
-from wopr.paths import ROOT, SOURCES
-from wopr.pipeline.xlsx import xlsx_rows
+import tocsin._env  # noqa: F401  (loads .env)
+from tocsin.paths import ROOT, SOURCES
+from tocsin.pipeline.xlsx import xlsx_rows
 
 ACLED = "https://acleddata.com"
-UA = "WOPR-pipeline/0.1 (academic research)"
+UA = "TOCSIN-pipeline/0.1 (academic research)"
 DEST = SOURCES / "acled"
 
 # logical name -> landing page under /aggregated/ that links the current file

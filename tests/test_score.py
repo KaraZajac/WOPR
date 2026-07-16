@@ -1,7 +1,7 @@
 import math
 import unittest
 
-from wopr.journal import score
+from tocsin.journal import score
 
 
 def q(outcome="yes", prior=0.3, forecasts=None, decided="2026-06-15", status="resolved"):

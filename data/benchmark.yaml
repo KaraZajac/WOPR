@@ -58,7 +58,7 @@ models:
       n: 654
       mean_p: 0.971
       observed: 0.946
-  wopr:
+  tocsin:
     brier: 0.0461
     skill_vs_climatology: 0.4999
     calibration:
@@ -277,28 +277,28 @@ models:
 by_horizon:
   h1-3:
     views: 0.03371
-    wopr: 0.04131
+    tocsin: 0.04131
     persistence: 0.03887
     climatology: 0.08774
     pool:views+persist: 0.034
     pool:all-three: 0.03536
   h4-6:
     views: 0.03962
-    wopr: 0.04252
+    tocsin: 0.04252
     persistence: 0.04006
     climatology: 0.09294
     pool:views+persist: 0.03761
     pool:all-three: 0.03821
   h7-12:
     views: 0.04579
-    wopr: 0.05029
+    tocsin: 0.05029
     persistence: 0.04705
     climatology: 0.09404
     pool:views+persist: 0.04394
     pool:all-three: 0.04495
 head_to_head:
-  wopr_better_on: 5386
+  tocsin_better_on: 5386
   views_better_on: 2271
-  delta_brier_wopr_minus_views: 0.00487
+  delta_brier_tocsin_minus_views: 0.00487
 generated_from:
   records: 7680

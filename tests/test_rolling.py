@@ -1,7 +1,7 @@
 import unittest
 
-from wopr.engine.baserate import Spec, Unit, bucket_of
-from wopr.engine.rolling import START, RollingSpec, bucket_series, cumsum, mi, rate, window_sum, ym
+from tocsin.engine.baserate import Spec, Unit, bucket_of
+from tocsin.engine.rolling import START, RollingSpec, bucket_series, cumsum, mi, rate, window_sum, ym
 
 
 def monthly_country(per_month: dict, end=(1998, 12)):
@@ -75,7 +75,7 @@ class TestBuckets(unittest.TestCase):
             self.assertEqual(window_sum(C, mi(year - 1, 1), 12), u.years[year - 1]["sb"])
 
     def test_tempo_bands_split_active(self):
-        from wopr.engine.rolling import prefixes
+        from tocsin.engine.rolling import prefixes
 
         sustained = {(y, m): 30 for y in (1992, 1993) for m in range(1, 13)}  # 12 hit-months/yr
         spike = {(1992, 6): 400, (1993, 6): 400}  # one hit-month/yr, same activity status
@@ -87,7 +87,7 @@ class TestBuckets(unittest.TestCase):
             self.assertTrue(got.endswith(f"|{expect}"), f"{per_month and 'case'}: {got}")
 
     def test_sum_active_without_hit_months_reads_low_tempo(self):
-        from wopr.engine.rolling import prefixes
+        from tocsin.engine.rolling import prefixes
 
         # 12 × 3 deaths = 36 ≥ 25 in sum, but no single month crosses 25
         dribble = {(1992, m): 3 for m in range(1, 13)}
@@ -133,7 +133,7 @@ class TestRate(unittest.TestCase):
 
     def test_rate_is_one_step_frozen_but_state_can_price_horizons(self):
         # class history: one-off 3-month bursts, then permanent quiet
-        from wopr.engine.rolling import assemble, build_state
+        from tocsin.engine.rolling import assemble, build_state
 
         bursts = {}
         for uid, year in ((1, 1992), (2, 1993), (3, 1994)):

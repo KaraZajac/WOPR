@@ -19,11 +19,11 @@ from urllib.request import Request, urlopen
 
 import yaml
 
-from wopr.paths import CANDIDATE, ROOT, SOURCES
+from tocsin.paths import CANDIDATE, ROOT, SOURCES
 
 UCDP = "https://ucdp.uu.se/downloads"
 GW = "http://ksgleditsch.com/data"
-UA = "WOPR-pipeline/0.1 (academic research)"
+UA = "TOCSIN-pipeline/0.1 (academic research)"
 
 # logical name -> (subdirectory, file stem); url is {UCDP}/{subdir}/{stem}-{v}-csv.zip
 ZIPS = {
@@ -75,7 +75,7 @@ def _cow_context() -> ssl.SSLContext:
     """correlatesofwar.org serves its leaf certificate without the InCommon
     intermediate, so default verification fails ('unable to verify the first
     certificate'). We complete the chain with a pinned copy of the public
-    intermediate (wopr/pipeline/cow-ca.pem, verified against the system
+    intermediate (tocsin/pipeline/cow-ca.pem, verified against the system
     USERTrust root; see the file header) on top of the default trust store."""
     ctx = ssl.create_default_context()
     ctx.load_verify_locations(cafile=str(Path(__file__).parent / "cow-ca.pem"))
@@ -306,7 +306,7 @@ def main() -> None:
         print(f"  cached {dest.relative_to(ROOT)}")
 
     # World Bank WDI covariates (its own paginated API module)
-    from wopr.pipeline import worldbank
+    from tocsin.pipeline import worldbank
 
     print("World Bank WDI covariates:")
     worldbank.pull(force=force)

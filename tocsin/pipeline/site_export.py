@@ -29,11 +29,11 @@ from collections import defaultdict
 
 import yaml
 
-import wopr
-from wopr.engine import baserate
-from wopr.engine.backtest import walk
-from wopr.journal import store
-from wopr.paths import DATA, REGISTRY, ROOT, TABLES
+import tocsin
+from tocsin.engine import baserate
+from tocsin.engine.backtest import walk
+from tocsin.journal import store
+from tocsin.paths import DATA, REGISTRY, ROOT, TABLES
 
 SITE = DATA / "site"
 P5 = {2: "United States", 200: "United Kingdom", 220: "France", 365: "Russia (USSR)", 710: "China"}
@@ -480,7 +480,7 @@ def build_dyads(dyads, substrate, last_year):
 
 
 def build_watchfloor():
-    from wopr.engine import watchfloor as wf
+    from tocsin.engine import watchfloor as wf
 
     board = wf.compute(baserate.load_substrate())
     return board
@@ -671,7 +671,7 @@ def main() -> None:
         key=lambda c: -(c["p_series"][-1][1] - c["p_series"][-6][1]),
     )
     summary = {
-        "version": wopr.__version__,
+        "version": tocsin.__version__,
         "release": meta["ucdp_release"],
         "annual_end": meta["annual_coverage_end"],
         "data_through": meta["data_through"],

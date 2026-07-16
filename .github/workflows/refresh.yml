@@ -34,29 +34,29 @@ jobs:
 
       - name: Pull and build
         run: |
-          python3 -m wopr pull
-          python3 -m wopr build
+          python3 -m tocsin pull
+          python3 -m tocsin build
 
       - name: Resolve due questions
-        run: python3 -m wopr resolve
+        run: python3 -m tocsin resolve
 
       - name: Verify
         run: |
-          python3 -m wopr verify
+          python3 -m tocsin verify
           python3 -m unittest discover -s tests -q
 
       - name: Refresh scorecard, backtest, and site data
         run: |
-          python3 -m wopr score --write
-          python3 -m wopr backtest --write
-          python3 -m wopr.pipeline.site_export
+          python3 -m tocsin score --write
+          python3 -m tocsin backtest --write
+          python3 -m tocsin.pipeline.site_export
         # site_export recomputes the watchfloor from the fresh candidate months;
         # ACLED corroboration is skipped in CI (no .env credentials) and the
         # board simply omits the direction flag
 
       - name: Commit changes
         run: |
-          git config user.name "wopr-refresh"
+          git config user.name "tocsin-refresh"
           git config user.email "actions@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then

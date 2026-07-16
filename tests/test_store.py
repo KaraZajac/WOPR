@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from wopr.journal import store
+from tocsin.journal import store
 
 
 def criteria():

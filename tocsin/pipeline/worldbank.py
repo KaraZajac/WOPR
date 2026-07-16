@@ -15,10 +15,10 @@ honest.
 import json
 import urllib.request
 
-from wopr.paths import ROOT, SOURCES
+from tocsin.paths import ROOT, SOURCES
 
 API = "https://api.worldbank.org/v2"
-UA = "WOPR-pipeline/0.5 (academic research)"
+UA = "TOCSIN-pipeline/0.5 (academic research)"
 DEST = SOURCES / "worldbank"
 
 # logical name -> (indicator code, source label for attribution)

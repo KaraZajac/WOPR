@@ -1,5 +1,5 @@
 // Read-only access to the export at ../data/site (JSON, written by
-// `wopr export`) plus data/meta.yaml. Cached per build process.
+// `tocsin export`) plus data/meta.yaml. Cached per build process.
 
 import fs from "node:fs";
 import path from "node:path";

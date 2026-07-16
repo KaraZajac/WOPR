@@ -1,5 +1,5 @@
 [project]
-name = "wopr"
+name = "tocsin"
 version = "0.1.0"
 description = "A conflict-forecasting system: reference-class base rates from UCDP data, auto-resolving operational questions, and calibration scoring of your forecasts against the prior."
 readme = "README.md"
@@ -13,11 +13,11 @@ dependencies = ["pyyaml>=6.0"]
 analysis = ["duckdb>=1.0", "pandas>=2.0", "matplotlib>=3.8"]
 
 [project.scripts]
-wopr = "wopr.cli:main"
+tocsin = "tocsin.cli:main"
 
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["wopr*"]
+include = ["tocsin*"]

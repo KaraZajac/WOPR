@@ -1,7 +1,7 @@
 import unittest
 
-from wopr.engine import protocol
-from wopr.engine.baserate import Spec, Unit, bucket_of
+from tocsin.engine import protocol
+from tocsin.engine.baserate import Spec, Unit, bucket_of
 
 
 class TestYouthHook(unittest.TestCase):

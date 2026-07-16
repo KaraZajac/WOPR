@@ -1,7 +1,7 @@
 import unittest
 
-from wopr.engine import watchfloor
-from wopr.engine.baserate import Unit
+from tocsin.engine import watchfloor
+from tocsin.engine.baserate import Unit
 
 
 def country(uid, region, annual):

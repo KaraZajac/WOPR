@@ -26,9 +26,9 @@ result is recorded (see docs/method.md). Whatever this prints, the live
 engine is not changed by running it; adoption is a separate, deliberate edit.
 """
 
-from wopr.engine import baserate
-from wopr.engine.backtest import walk
-from wopr.journal.score import brier
+from tocsin.engine import baserate
+from tocsin.engine.backtest import walk
+from tocsin.journal.score import brier
 
 SPLIT = 2007  # scored years ≤ 2007 tune; ≥ 2008 validate (covariates begin ~1961)
 # candidate youth schemes: the percentile cut that defines "young", built on
@@ -64,7 +64,7 @@ def run() -> dict:
     substrate = baserate.load_substrate()
     youth = substrate["youth"]
     if not youth:
-        raise SystemExit("no covariates built — run `wopr pull && wopr build` first")
+        raise SystemExit("no covariates built — run `tocsin pull && tocsin build` first")
     grain, measure, types, threshold = SUITE
 
     baseline = walk(grain, measure, types, threshold, substrate)
@@ -158,7 +158,7 @@ def run_pair() -> dict:
     baseline on TUNE, not merely be the least bad."""
     substrate = baserate.load_substrate()
     if not substrate["mids"]:
-        raise SystemExit("no mids.csv built — run `wopr pull && wopr build` first")
+        raise SystemExit("no mids.csv built — run `tocsin pull && tocsin build` first")
     grain, measure, types, threshold = PAIR_SUITE
 
     baseline = walk(grain, measure, types, threshold, substrate)
@@ -223,7 +223,7 @@ def run_joint() -> dict:
     substrate = baserate.load_substrate()
     youth, excluded = substrate["youth"], substrate["excluded"]
     if not excluded:
-        raise SystemExit("no covariates built — run `wopr pull && wopr build` first")
+        raise SystemExit("no covariates built — run `tocsin pull && tocsin build` first")
     grain, measure, types, threshold = SUITE
 
     young = young_set(youth, 0.66, SPLIT)

@@ -1,7 +1,7 @@
 """Build data/ from sources/: registries and base-rate tables.
 
 Reads the UCDP releases and the Gleditsch–Ward state list fetched by
-``wopr pull`` and writes:
+``tocsin pull`` and writes:
 
   data/registry/states.yaml      G–W state system, UCDP regions, system spells
   data/registry/conflicts.yaml   UCDP/PRIO state-based conflicts + active years
@@ -30,7 +30,7 @@ from pathlib import Path
 
 import yaml
 
-from wopr.paths import CANDIDATE, DATA, REGISTRY, ROOT, SOURCES, TABLES
+from tocsin.paths import CANDIDATE, DATA, REGISTRY, ROOT, SOURCES, TABLES
 
 csv.field_size_limit(10_000_000)
 
@@ -728,7 +728,7 @@ def build_peace_agreements(states) -> list[dict]:
     """data/registry/peace-agreements.yaml from the UCDP PA workbook. The PA
     dataset updates irregularly (v22.2 ends 2021), so this is browsable
     context and eventual confirmation — not a near-term resolution feed."""
-    from wopr.pipeline.xlsx import xlsx_rows
+    from tocsin.pipeline.xlsx import xlsx_rows
 
     path = SOURCES / "ucdp-peace-agreements.xlsx"
     if not path.exists():

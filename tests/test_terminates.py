@@ -1,6 +1,6 @@
 import unittest
 
-from wopr.engine.baserate import Spec, Unit, bucket_of, hit, rate
+from tocsin.engine.baserate import Spec, Unit, bucket_of, hit, rate
 
 
 def dyad(uid, years_active):
@@ -73,7 +73,7 @@ class TestTerminatesResolution(unittest.TestCase):
     def test_decision_rules(self):
         import datetime
         from unittest import mock
-        from wopr.journal import resolve as R
+        from tocsin.journal import resolve as R
 
         rows = [
             {"dyad_id": "9", "year": "2024", "acd_intensity": "1"},

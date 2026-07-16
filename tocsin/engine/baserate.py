@@ -29,7 +29,7 @@ import csv
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from wopr.paths import TABLES
+from tocsin.paths import TABLES
 
 # `active` is split by episode age (consecutive hit-years so far): fresh
 # flares and decade-old wars continue at very different rates, and pooling
@@ -488,7 +488,7 @@ def rate(spec: Spec, substrate: dict) -> dict:
         if spec.grain != "country":
             raise ValueError("coup is a country-grain measure")
         if substrate.get("coup_span") is None:
-            raise ValueError("no coup table built — run `wopr pull && wopr build`")
+            raise ValueError("no coup table built — run `tocsin pull && tocsin build`")
     units = substrate[spec.grain]
     if spec.unit not in units:
         raise KeyError(f"unknown {spec.grain} id {spec.unit}")

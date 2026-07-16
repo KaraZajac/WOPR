@@ -3,7 +3,7 @@ import "../styles/global.css";
 import { summary } from "../lib/data.js";
 import { num, url } from "../lib/format.js";
 
-const { title = "WOPR", description = "" } = Astro.props;
+const { title = "TOCSIN", description = "" } = Astro.props;
 const s = summary();
 const path = Astro.url.pathname;
 const current = (p) =>
@@ -16,11 +16,11 @@ const current = (p) =>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
     {description && <meta name="description" content={description} />}
-    <title>{title} · WOPR</title>
+    <title>{title} · TOCSIN</title>
     <script is:inline>
       // pre-paint theme apply: explicit choice wins, else system preference
       (function () {
-        var t = localStorage.getItem("wopr-theme");
+        var t = localStorage.getItem("tocsin-theme");
         if (t === "latte" || t === "mocha") document.documentElement.dataset.theme = t;
       })();
     </script>
@@ -29,7 +29,7 @@ const current = (p) =>
   <body>
     <header class="site-head">
       <div class="wrap">
-        <a class="brand" href={url("/")}>WOPR</a>
+        <a class="brand" href={url("/")}>TOCSIN</a>
         <nav class="site-nav">
           <a href={url("/")} aria-current={path === url("/") ? "true" : undefined}>Board</a>
           <a href={url("/watchfloor")} aria-current={current("/watchfloor")}>Watchfloor</a>
@@ -76,7 +76,7 @@ const current = (p) =>
         btn.addEventListener("click", function () {
           var next = mode() === "mocha" ? "latte" : "mocha";
           document.documentElement.dataset.theme = next;
-          localStorage.setItem("wopr-theme", next);
+          localStorage.setItem("tocsin-theme", next);
           label();
         });
         label();

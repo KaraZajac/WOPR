@@ -1,4 +1,4 @@
-# Deploying the site — wopr.karazajac.io (self-hosted)
+# Deploying the site — tocsin.karazajac.io (self-hosted)
 
 The site is pure static output: `site/dist/` after a build is the entire
 deployable artifact — no server-side runtime, no Python on the web host.
@@ -6,13 +6,13 @@ deployable artifact — no server-side runtime, no Python on the web host.
 ## Build
 
 ```sh
-git clone https://github.com/KaraZajac/WOPR
-cd WOPR/site
+git clone https://github.com/KaraZajac/TOCSIN
+cd TOCSIN/site
 npm ci
 npm run build          # -> site/dist/
 ```
 
-`astro.config.mjs` defaults the canonical URL to `https://wopr.karazajac.io`;
+`astro.config.mjs` defaults the canonical URL to `https://tocsin.karazajac.io`;
 set `PAGES_SITE` (and `PAGES_BASE` for a subpath) at build time only if
 serving somewhere else.
 
@@ -22,8 +22,8 @@ Any static file server works. nginx example:
 
 ```nginx
 server {
-    server_name wopr.karazajac.io;
-    root /var/www/wopr;            # rsync of site/dist/
+    server_name tocsin.karazajac.io;
+    root /var/www/tocsin;            # rsync of site/dist/
     index index.html;
     location / { try_files $uri $uri/ =404; }
     gzip on;
@@ -31,7 +31,7 @@ server {
 }
 ```
 
-Deploy step after a build: `rsync -a --delete site/dist/ server:/var/www/wopr/`.
+Deploy step after a build: `rsync -a --delete site/dist/ server:/var/www/tocsin/`.
 
 ## Staying current
 
@@ -41,10 +41,10 @@ a cron on the server rebuilds shortly after — e.g. the 21st:
 
 ```sh
 #!/bin/sh
-# /etc/cron.monthly-ish: 0 6 21 * *  wopr-rebuild
-cd /opt/WOPR && git pull --ff-only \
+# /etc/cron.monthly-ish: 0 6 21 * *  tocsin-rebuild
+cd /opt/TOCSIN && git pull --ff-only \
   && cd site && npm ci && npm run build \
-  && rsync -a --delete dist/ /var/www/wopr/
+  && rsync -a --delete dist/ /var/www/tocsin/
 ```
 
 Push-based alternative: a GitHub webhook or Actions job that rsyncs
@@ -60,8 +60,8 @@ Push-based alternative: a GitHub webhook or Actions job that rsyncs
 ## Now that the repo is public
 
 - The Zenodo GitHub integration works: enable the repo at zenodo.org →
-  GitHub, then publishing a GitHub Release (attach `dist/wopr-dataset-*.tar.gz`
-  from `wopr release`) mints a DOI automatically — no manual upload.
+  GitHub, then publishing a GitHub Release (attach `dist/tocsin-dataset-*.tar.gz`
+  from `tocsin release`) mints a DOI automatically — no manual upload.
 - Anyone can reproduce the site from the committed `data/site/*.json`,
-  and the full pipeline from `wopr pull && wopr build` (sources are
+  and the full pipeline from `tocsin pull && tocsin build` (sources are
   re-fetched; nothing proprietary is in the repo — see DATA-RIGHTS.md).

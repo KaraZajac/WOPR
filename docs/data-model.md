@@ -2,7 +2,7 @@
 
 ## sources/ (gitignored, regenerable)
 
-`wopr pull` scrapes ucdp.uu.se/downloads once to discover the newest annual
+`tocsin pull` scrapes ucdp.uu.se/downloads once to discover the newest annual
 release and the current candidate-GED monthly files, then fetches:
 
 | file | dataset |
@@ -21,10 +21,10 @@ Candidate files overlap and correct each other; consumers dedupe by event id
 (latest file version wins) and drop dates at or before the annual cutoff.
 UCDP id 345 (Serbia (Yugoslavia)) maps to G-W 340 from 2007 (`build.to_gw`).
 
-### sources/acled/ (optional; `wopr acled`)
+### sources/acled/ (optional; `tocsin acled`)
 
 With `ACLED_USERNAME`/`ACLED_PASSWORD` in the repo-root `.env`,
-`wopr acled` logs into myACLED (Drupal session), discovers the current
+`tocsin acled` logs into myACLED (Drupal session), discovers the current
 aggregate file behind each `/aggregated/…` landing page (upstream filenames
 change per release), and converts the xlsx to CSV with a stdlib reader:
 
@@ -37,10 +37,10 @@ Caveats: ACLED's ontology (battles, explosions/remote violence, violence
 against civilians; all reported fatalities) is not UCDP's sb/ns/os with a
 25-death rule — treat these as tempo signals and cross-checks, not resolution
 authorities for UCDP-pinned questions. The event-level read API
-(`wopr acled --api-check`, OAuth bearer via `wopr.pipeline.acled.api_read`)
+(`tocsin acled --api-check`, OAuth bearer via `tocsin.pipeline.acled.api_read`)
 requires a myACLED access level above the automatic *Open* tier.
 
-## data/ (committed, rebuilt by `wopr build`)
+## data/ (committed, rebuilt by `tocsin build`)
 
 - `meta.yaml` — release, `annual_coverage_end` (last authoritative date),
   `data_through` (last candidate-covered date), row counts.
@@ -104,7 +104,7 @@ prior:                  # the outside view, stored at creation
   detail: {…full ladder…}
 forecasts:              # the inside view, appended over time
   - {t: '2026-07-16T04:05:00Z', p: 0.03, note: "border rhetoric worse than base rate implies"}
-resolution:             # written by `wopr resolve`
+resolution:             # written by `tocsin resolve`
   outcome: no
   decided_on: '2026-12-31'
   provisional: true     # leaned on candidate data; confirmed next release

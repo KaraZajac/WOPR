@@ -1,4 +1,4 @@
-# Raw source downloads (regenerable via `wopr pull`)
+# Raw source downloads (regenerable via `tocsin pull`)
 sources/
 
 # Python

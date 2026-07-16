@@ -1,6 +1,6 @@
-# WOPR site
+# TOCSIN site
 
-Astro static site over `../data/site/*.json` (written by `wopr export`) and
+Astro static site over `../data/site/*.json` (written by `tocsin export`) and
 `../data/meta.yaml`. No client-side framework: charts and the world map are
 SVG rendered at build time; the only browser JS is the shared tooltip layer
 and the Catppuccin Latte/Mocha theme toggle.

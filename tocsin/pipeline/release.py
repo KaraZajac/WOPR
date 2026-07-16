@@ -1,6 +1,6 @@
-"""Assemble the redistributable dataset bundle: `wopr release`.
+"""Assemble the redistributable dataset bundle: `tocsin release`.
 
-Produces dist/wopr-dataset-<version>/ (+ .tar.gz) containing the derived
+Produces dist/tocsin-dataset-<version>/ (+ .tar.gz) containing the derived
 tables and registries, an auto-generated codebook (descriptions below, spans
 and row counts read from the live files), and the rights/citation documents.
 The bundle is licensed CC BY 4.0 — the most permissive license the most
@@ -8,7 +8,7 @@ restrictive committed input (UCDP) allows; see DATA-RIGHTS.md. ACLED never
 enters the committed data, so nothing here inherits its terms.
 
 Version = the UCDP annual release the build is pinned to (data/meta.yaml),
-so a bundle is reproducible from `wopr pull && wopr build` at that release.
+so a bundle is reproducible from `tocsin pull && tocsin build` at that release.
 """
 
 import csv
@@ -16,7 +16,7 @@ import tarfile
 
 import yaml
 
-from wopr.paths import DATA, REGISTRY, ROOT, TABLES
+from tocsin.paths import DATA, REGISTRY, ROOT, TABLES
 
 DIST = ROOT / "dist"
 
@@ -195,14 +195,14 @@ def table_stats(name: str) -> tuple[int, str]:
 
 def codebook(version: str) -> str:
     lines = [
-        f"# WOPR dataset codebook — v{version}",
+        f"# TOCSIN dataset codebook — v{version}",
         "",
         "A merged, redistributable conflict-research dataset on a common spine —",
         "Gleditsch–Ward country code × year — derived from UCDP/PRIO, Gleditsch–Ward,",
         "Powell–Thyne, V-Dem (via OWID), OWID population, World Bank WDI, EPR, and",
         "Correlates of War. License: **CC BY 4.0** with the attribution chain in",
         "DATA-RIGHTS.md (included in this bundle). Build pinned to UCDP release",
-        f"{version}; regenerate from source with `wopr pull && wopr build`.",
+        f"{version}; regenerate from source with `tocsin pull && tocsin build`.",
         "",
         "Country codes are Gleditsch–Ward throughout (UCDP and COW codes are",
         "crosswalked year-aware at build time; Serbia is 340 from 2007, unified",
@@ -231,13 +231,13 @@ def codebook(version: str) -> str:
 def main() -> None:
     meta_path = DATA / "meta.yaml"
     if not meta_path.exists():
-        raise SystemExit("data/meta.yaml missing — run `wopr build` (and `make verify`) first")
+        raise SystemExit("data/meta.yaml missing — run `tocsin build` (and `make verify`) first")
     version = str(yaml.safe_load(meta_path.read_text())["ucdp_release"])
     missing = [n for n in CODEBOOK if not (TABLES / n).exists()]
     if missing:
         raise SystemExit(f"tables missing from data/tables: {missing} — run the full pipeline first")
 
-    name = f"wopr-dataset-{version}"
+    name = f"tocsin-dataset-{version}"
     stage = DIST / name
     if stage.exists():
         for p in sorted(stage.rglob("*"), reverse=True):

@@ -1,5 +1,5 @@
 """Validation gate: is the built data internally consistent, and is every
-journal entry well-formed? Run via `wopr verify` or `make verify` (which adds
+journal entry well-formed? Run via `tocsin verify` or `make verify` (which adds
 the unit tests). Exits nonzero on hard failures; cross-checks that depend on
 absent sources/ are skipped so the gate still works on a fresh clone.
 """
@@ -10,8 +10,8 @@ from collections import defaultdict
 
 import yaml
 
-from wopr.journal import store
-from wopr.paths import DATA, REGISTRY, SOURCES, TABLES
+from tocsin.journal import store
+from tocsin.paths import DATA, REGISTRY, SOURCES, TABLES
 
 REGIONS = {"Africa", "Americas", "Asia", "Europe", "Middle East"}
 failures = []
@@ -35,7 +35,7 @@ def rows_of(name: str) -> list[dict]:
 
 def main() -> None:
     if not (DATA / "meta.yaml").exists():
-        raise SystemExit("data/meta.yaml missing — run `wopr build` first")
+        raise SystemExit("data/meta.yaml missing — run `tocsin build` first")
     meta = yaml.safe_load((DATA / "meta.yaml").read_text())
 
     manifest_path = SOURCES / "manifest.yaml"

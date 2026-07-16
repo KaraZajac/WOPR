@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: If you use this software or the derived tables, please cite it, and cite UCDP as described in DATA-RIGHTS.md.
-title: "WOPR: a conflict-forecasting system with reference-class base rates and calibration scoring"
+title: "TOCSIN: a conflict-forecasting system with reference-class base rates and calibration scoring"
 type: software
 authors:
   - family-names: Zajac
     given-names: Kara
 license: MIT
-repository-code: https://github.com/KaraZajac/WOPR
+repository-code: https://github.com/KaraZajac/TOCSIN

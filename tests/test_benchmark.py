@@ -1,7 +1,7 @@
 import unittest
 
-from wopr.engine.rolling import RollingSpec, mi, rate
-from wopr.pipeline.benchmark import summarize
+from tocsin.engine.rolling import RollingSpec, mi, rate
+from tocsin.pipeline.benchmark import summarize
 from tests.test_rolling import substrate_with
 
 
@@ -24,7 +24,7 @@ class TestWalkForwardClamp(unittest.TestCase):
 
 class TestSummarize(unittest.TestCase):
     def records(self):
-        # views sharp, wopr flat, outcome alternates
+        # views sharp, tocsin flat, outcome alternates
         out = []
         for i in range(20):
             o = i % 2
@@ -37,7 +37,7 @@ class TestSummarize(unittest.TestCase):
                     "outcome": o,
                     "provisional": False,
                     "views": 0.9 if o else 0.1,
-                    "wopr": 0.5,
+                    "tocsin": 0.5,
                     "climatology": 0.5,
                     "persistence": 0.5,
                 }
@@ -46,10 +46,10 @@ class TestSummarize(unittest.TestCase):
 
     def test_ordering_and_head_to_head(self):
         s = summarize(self.records(), {"threshold": 25})
-        self.assertLess(s["models"]["views"]["brier"], s["models"]["wopr"]["brier"])
+        self.assertLess(s["models"]["views"]["brier"], s["models"]["tocsin"]["brier"])
         self.assertAlmostEqual(s["models"]["views"]["brier"], 0.01, places=6)
-        self.assertAlmostEqual(s["models"]["wopr"]["brier"], 0.25, places=6)
-        self.assertEqual(s["head_to_head"]["wopr_better_on"], 0)
+        self.assertAlmostEqual(s["models"]["tocsin"]["brier"], 0.25, places=6)
+        self.assertEqual(s["head_to_head"]["tocsin_better_on"], 0)
         self.assertEqual(s["head_to_head"]["views_better_on"], 20)
         self.assertEqual(s["n"], 20)
         self.assertIn("h1-3", s["by_horizon"])

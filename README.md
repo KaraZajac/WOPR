@@ -1,4 +1,4 @@
-# WOPR
+# TOCSIN
 
 > *"A strange game. The only winning move is to check whether anything
 > actually beats the base rate."*
@@ -8,7 +8,7 @@ UCDP record, operational questions that resolve themselves from the next data
 refresh, and calibration scoring of your forecasts against the prior you
 started from.**
 
-WOPR is the forecaster; the analyst audits it and makes it race. Three parts:
+TOCSIN is the forecaster; the analyst audits it and makes it race. Three parts:
 
 1. **The model.** Ask for a probability and get an explicit reference-class
    *ladder* — the unit's own history, its region, the world — conditioned on
@@ -39,7 +39,7 @@ WOPR is the forecaster; the analyst audits it and makes it race. Three parts:
 | Country-years in the base-rate substrate | **12,703** |
 
 ```
-wopr/
+tocsin/
 ├── pipeline/          pull (UCDP + G-W) → build (tables, registries) → validate
 │                        + acled (aggregates) + site_export (render-ready JSON)
 ├── engine/            reference-class ladder, recency buckets, EB shrinkage,
@@ -50,7 +50,7 @@ data/
 ├── registry/          states, conflicts, dyads, non-state, one-sided (YAML)
 ├── tables/            country-year, dyad-year, country-month, dyad-month (CSV)
 ├── backtest.yaml      the engine's own measured reliability
-└── site/              JSON exported for the site (`wopr export`)
+└── site/              JSON exported for the site (`tocsin export`)
 questions/             the journal: one YAML per question, git-timestamped
 site/                  Astro site: world risk map, Global War Index, WWIII panel,
                          country pages, the journal — Catppuccin Latte/Mocha
@@ -75,8 +75,8 @@ switch.
 ## The loop
 
 ```console
-$ wopr pull && wopr build        # ~280 MB of UCDP into sources/, tables into data/
-$ wopr rate --country Ethiopia --threshold 25
+$ tocsin pull && tocsin build        # ~280 MB of UCDP into sources/, tables into data/
+$ tocsin rate --country Ethiopia --threshold 25
 Ethiopia (country 530) — P(sb deaths ≥ 25 in a calendar year)
 as of 2026 · bucket: active (history through 2025) · substrate 1989–2025
 level     units    yrs   hits    rate       M  posterior
@@ -85,18 +85,18 @@ region       52    460    379  0.8239     5.4     0.9231
 global      181   1112    940  0.8453     5.0      0.927
 headline: p = 0.9231  (region posterior, bucket-conditional)
 
-$ wopr ask --pair "Venezuela,Guyana" --year 2027         # model's prediction stored
-$ wopr call 2027-001 0.03 --source views                 # challenger number logged
-$ wopr resolve                   # grades due questions from the data (provisional
+$ tocsin ask --pair "Venezuela,Guyana" --year 2027         # model's prediction stored
+$ tocsin call 2027-001 0.03 --source views                 # challenger number logged
+$ tocsin resolve                   # grades due questions from the data (provisional
                                  #   on candidate months, confirmed each release)
-$ wopr score
+$ tocsin score
 engine (prior)      : Brier 0.041  log -0.113  (n=23)
 challenger          : Brier 0.058  log -0.171  (n=23)
 challenger vs engine: ΔBrier +0.017 on 23 paired questions — the engine held
 ```
 
-`wopr status`, `wopr list`, `wopr show ID` browse the journal; `--manual`
-questions resolve by hand; `wopr resolve --id X --void "reason"` retires a
+`tocsin status`, `tocsin list`, `tocsin show ID` browse the journal; `--manual`
+questions resolve by hand; `tocsin resolve --id X --void "reason"` retires a
 broken question. Scored forecasts are the last ones made **before** a
 question's deciding date — once the threshold crosses, the book is closed
 (that applies to stale engine priors too).
@@ -115,25 +115,26 @@ question's deciding date — once the threshold crosses, the book is closed
 
 ## Setup
 
-Python ≥ 3.11 and PyYAML; nothing else. `pip install -e .` for the `wopr`
-entry point (or run `python3 -m wopr …`). `make install-hooks` turns on the
+Python ≥ 3.11 and PyYAML; nothing else. `pip install -e .` for the `tocsin`
+entry point (or run `python3 -m tocsin …`). `make install-hooks` turns on the
 pre-commit gate (`make verify`: data validation + unit tests).
 
 Data terms and required citations: [DATA-RIGHTS.md](DATA-RIGHTS.md). UCDP
 annual releases land mid-year; candidate GED lands monthly with ~6 weeks of
-lag — `wopr pull && wopr build && wopr resolve` is the maintenance loop.
+lag — `tocsin pull && tocsin build && tocsin resolve` is the maintenance loop.
 
 Optional: with myACLED credentials in the repo-root `.env`
-(`ACLED_USERNAME`/`ACLED_PASSWORD`), `wopr acled` pulls ACLED's aggregate
+(`ACLED_USERNAME`/`ACLED_PASSWORD`), `tocsin acled` pulls ACLED's aggregate
 files (country-month political violence, country-year fatalities, weekly
 Admin-1 regionals) into `sources/acled/` — tempo signals for the future
 watchfloor, not resolution authorities (different ontology than UCDP; see
 docs/data-model.md).
 
-*WOPR: the War Operation Plan Response computer from* WarGames *(1983), which
-learned about unwinnable games by playing itself. The name stays: five
+*TOCSIN: the alarm bell rung when war approaches — from medieval French
+`toquassen`, "strike the bell." A watchfloor that rings when the record
+says risk is rising deserves the word coined for exactly that. (Developed
+under the codename WOPR, after the* WarGames *computer that learned about
+unwinnable games by playing itself; renamed to a word nobody owns. Five
 covariate families tested against held-out history, five absorbed by the
-base rates — a system whose central finding is its own humility might as
-well be named for the machine that concluded the only winning move is not
-to play. The scoring loop is the point. Live at
-[wopr.karazajac.io](https://wopr.karazajac.io).*
+base rates — the humility fits either name.) The scoring loop is the point.
+Live at [tocsin.karazajac.io](https://tocsin.karazajac.io).*

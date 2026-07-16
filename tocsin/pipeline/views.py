@@ -20,12 +20,12 @@ import urllib.request
 
 import yaml
 
-from wopr.engine.rolling import mi
-from wopr.paths import ROOT, SOURCES
-from wopr.pipeline.build import to_gw
+from tocsin.engine.rolling import mi
+from tocsin.paths import ROOT, SOURCES
+from tocsin.pipeline.build import to_gw
 
 API = "https://api.viewsforecasting.org"
-UA = {"User-Agent": "WOPR-pipeline/0.3 (academic research)"}
+UA = {"User-Agent": "TOCSIN-pipeline/0.3 (academic research)"}
 DEST = SOURCES / "views"
 KEEP = ("gwcode", "name", "month_id", "year", "month", "main_dich", "main_mean")
 
