@@ -1,0 +1,23 @@
+[project]
+name = "wopr"
+version = "0.1.0"
+description = "A conflict-forecasting system: reference-class base rates from UCDP data, auto-resolving operational questions, and calibration scoring of your forecasts against the prior."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Kara Zajac" }]
+dependencies = ["pyyaml>=6.0"]
+
+[project.optional-dependencies]
+# Heavier stack for exploratory analysis, not required by the pipeline/engine.
+analysis = ["duckdb>=1.0", "pandas>=2.0", "matplotlib>=3.8"]
+
+[project.scripts]
+wopr = "wopr.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["wopr*"]

@@ -1,0 +1,5624 @@
+- id: 200
+  name: 'Bolivia: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 145
+  active_years:
+  - 1946
+  - 1949
+  - 1952
+  - 1967
+- id: 201
+  name: 'Cambodia (Kampuchea): Cambodia'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 811
+  active_years:
+  - 1946
+  - 1947
+  - 1948
+  - 1949
+  - 1950
+  - 1951
+  - 1952
+  - 1953
+- id: 202
+  name: 'China: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 710
+  active_years:
+  - 1946
+  - 1947
+  - 1948
+  - 1949
+- id: 203
+  name: 'Greece: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Europe
+  countries:
+  - 350
+  active_years:
+  - 1946
+  - 1947
+  - 1948
+  - 1949
+- id: 204
+  name: 'Indonesia: Indonesia'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 850
+  active_years:
+  - 1946
+  - 1947
+  - 1948
+  - 1949
+- id: 205
+  name: 'Iran: Kurdistan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 630
+  active_years:
+  - 1946
+  - 1966
+  - 1967
+  - 1968
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1990
+  - 1993
+  - 1996
+  - 2016
+  - 2018
+- id: 206
+  name: 'Iran: Azerbaijan'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 630
+  active_years:
+  - 1946
+- id: 207
+  name: 'Israel: Israel'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 666
+  active_years:
+  - 1946
+- id: 208
+  name: 'Laos: Laos'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 812
+  active_years:
+  - 1946
+  - 1947
+  - 1948
+  - 1949
+  - 1950
+  - 1951
+  - 1952
+  - 1953
+- id: 209
+  name: 'Philippines: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 840
+  active_years:
+  - 1946
+  - 1947
+  - 1948
+  - 1949
+  - 1950
+  - 1951
+  - 1952
+  - 1953
+  - 1954
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1997
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 210
+  name: 'Russia (Soviet Union): Estonia'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 1946
+  - 1947
+  - 1948
+- id: 211
+  name: 'Russia (Soviet Union): Latvia'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 1946
+- id: 212
+  name: 'Russia (Soviet Union): Lithuania'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 1946
+  - 1947
+  - 1948
+- id: 213
+  name: 'Russia (Soviet Union): Ukraine'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 1946
+  - 1947
+  - 1948
+  - 1949
+  - 1950
+- id: 214
+  name: 'France, Thailand: Northern Cambodia'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Europe
+  - Asia
+  countries:
+  - 220
+  - 800
+  active_years:
+  - 1946
+- id: 215
+  name: 'Albania, United Kingdom: Korfu Channel'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 200
+  - 339
+  active_years:
+  - 1946
+- id: 216
+  name: 'Vietnam (North Vietnam): Vietnam'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 816
+  active_years:
+  - 1946
+  - 1947
+  - 1948
+  - 1949
+  - 1950
+  - 1951
+  - 1952
+  - 1953
+  - 1954
+- id: 217
+  name: 'China: Taiwan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 710
+  active_years:
+  - 1947
+- id: 218
+  name: India - Pakistan
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  - 770
+  active_years:
+  - 1948
+  - 1964
+  - 1965
+  - 1971
+  - 1984
+  - 1987
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2025
+- id: 219
+  name: 'Madagascar (Malagasy): Malagasy'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 580
+  active_years:
+  - 1947
+- id: 220
+  name: 'Paraguay: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 150
+  active_years:
+  - 1947
+  - 1954
+  - 1989
+- id: 221
+  name: 'Myanmar (Burma): Karen'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 1949
+  - 1950
+  - 1951
+  - 1952
+  - 1953
+  - 1954
+  - 1955
+  - 1956
+  - 1957
+  - 1958
+  - 1959
+  - 1960
+  - 1961
+  - 1962
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1994
+  - 1995
+  - 1997
+  - 1998
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2013
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 222
+  name: 'Myanmar (Burma): Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 1948
+  - 1949
+  - 1950
+  - 1951
+  - 1952
+  - 1953
+  - 1954
+  - 1955
+  - 1956
+  - 1957
+  - 1958
+  - 1959
+  - 1960
+  - 1961
+  - 1962
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1990
+  - 1991
+  - 1992
+  - 1994
+  - 2013
+  - 2014
+  - 2015
+  - 2017
+  - 2018
+  - 2019
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 223
+  name: 'Myanmar (Burma): Arakan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 1948
+  - 1949
+  - 1950
+  - 1951
+  - 1952
+  - 1953
+  - 1954
+  - 1955
+  - 1956
+  - 1957
+  - 1958
+  - 1959
+  - 1960
+  - 1961
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1991
+  - 1994
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 224
+  name: 'Myanmar (Burma): Mon'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 1949
+  - 1950
+  - 1951
+  - 1952
+  - 1953
+  - 1954
+  - 1955
+  - 1956
+  - 1957
+  - 1958
+  - 1959
+  - 1960
+  - 1961
+  - 1962
+  - 1963
+  - 1990
+  - 1996
+- id: 225
+  name: 'Costa Rica: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 94
+  active_years:
+  - 1948
+- id: 226
+  name: 'Hyderabad, India: Hyderabad'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  - 751
+  active_years:
+  - 1948
+- id: 227
+  name: 'India: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1948
+  - 1949
+  - 1950
+  - 1951
+  - 1969
+  - 1970
+  - 1971
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 228
+  name: 'Egypt, Iraq, Israel, Jordan, Lebanon, Syria: Palestine'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 645
+  - 651
+  - 652
+  - 660
+  - 663
+  - 666
+  active_years:
+  - 1948
+  - 1949
+- id: 229
+  name: 'Malaysia: Malaya'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 820
+  active_years:
+  - 1948
+  - 1949
+  - 1950
+  - 1951
+  - 1952
+  - 1953
+  - 1954
+  - 1955
+  - 1956
+  - 1957
+- id: 230
+  name: 'Yemen (North Yemen): Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Middle East
+  countries:
+  - 678
+  active_years:
+  - 1948
+  - 1962
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 231
+  name: 'Myanmar (Burma): Kachin'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 1949
+  - 1950
+  - 1961
+  - 1962
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 232
+  name: 'China, Taiwan: Taiwan strait'
+  type: interstate
+  incompatibility: both
+  region:
+  - Asia
+  countries:
+  - 710
+  - 713
+  active_years:
+  - 1949
+  - 1950
+  - 1954
+  - 1958
+- id: 233
+  name: 'Guatemala: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 90
+  active_years:
+  - 1949
+  - 1954
+  - 1963
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+- id: 234
+  name: 'Israel: Palestine'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 666
+  active_years:
+  - 1949
+  - 1950
+  - 1951
+  - 1952
+  - 1953
+  - 1954
+  - 1955
+  - 1956
+  - 1957
+  - 1958
+  - 1959
+  - 1960
+  - 1961
+  - 1962
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2014
+  - 2018
+  - 2019
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 235
+  name: 'North Korea, South Korea: Korea'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 731
+  - 732
+  active_years:
+  - 1949
+  - 1950
+  - 1951
+  - 1952
+  - 1953
+- id: 236
+  name: 'China: Tibet'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 710
+  active_years:
+  - 1950
+  - 1956
+  - 1959
+- id: 237
+  name: 'Indonesia: South Moluccas'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 850
+  active_years:
+  - 1950
+- id: 238
+  name: 'United States of America: Puerto Rico'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Americas
+  countries:
+  - 2
+  active_years:
+  - 1950
+- id: 239
+  name: 'Egypt, United Kingdom: Suez'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Europe
+  - Middle East
+  countries:
+  - 200
+  - 651
+  active_years:
+  - 1951
+  - 1952
+- id: 240
+  name: 'Thailand: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 800
+  active_years:
+  - 1951
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+- id: 241
+  name: 'Kenya: Kenya'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 501
+  active_years:
+  - 1952
+  - 1953
+  - 1954
+  - 1955
+  - 1956
+- id: 242
+  name: 'Cuba: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 40
+  active_years:
+  - 1953
+  - 1956
+  - 1957
+  - 1958
+  - 1961
+- id: 243
+  name: 'Indonesia: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 850
+  active_years:
+  - 1953
+  - 1958
+  - 1959
+  - 1960
+  - 1961
+- id: 244
+  name: 'Morocco: Morocco'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 600
+  active_years:
+  - 1953
+  - 1954
+  - 1955
+  - 1956
+- id: 245
+  name: 'Tunisia: Tunisia'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 616
+  active_years:
+  - 1953
+  - 1954
+  - 1955
+  - 1956
+- id: 246
+  name: 'Algeria: Algeria'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 615
+  active_years:
+  - 1954
+  - 1955
+  - 1956
+  - 1957
+  - 1958
+  - 1959
+  - 1960
+  - 1961
+  - 1962
+- id: 247
+  name: 'Argentina: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 160
+  active_years:
+  - 1955
+  - 1963
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+- id: 248
+  name: 'Cyprus: Cyprus'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 352
+  active_years:
+  - 1955
+  - 1956
+  - 1957
+  - 1958
+  - 1959
+- id: 249
+  name: 'South Vietnam: South Vietnam'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 817
+  active_years:
+  - 1955
+  - 1956
+  - 1957
+  - 1958
+  - 1959
+  - 1960
+  - 1961
+  - 1962
+  - 1963
+  - 1964
+- id: 250
+  name: 'Hungary, Russia (Soviet Union): Government'
+  type: interstate
+  incompatibility: government
+  region:
+  - Europe
+  countries:
+  - 310
+  - 365
+  active_years:
+  - 1956
+- id: 251
+  name: 'India: Nagaland'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1956
+  - 1957
+  - 1958
+  - 1959
+  - 1961
+  - 1962
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 2000
+- id: 252
+  name: 'Egypt, France, Israel, United Kingdom: Suez'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Europe
+  - Middle East
+  countries:
+  - 200
+  - 220
+  - 651
+  - 666
+  active_years:
+  - 1956
+- id: 253
+  name: 'Myanmar (Burma): Karenni'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 1957
+  - 1987
+  - 1992
+  - 1996
+  - 2005
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 254
+  name: 'Cameroon: Cameroon'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 471
+  active_years:
+  - 1957
+  - 1958
+  - 1959
+- id: 255
+  name: 'Honduras, Nicaragua: Common Border'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Americas
+  countries:
+  - 91
+  - 93
+  active_years:
+  - 1957
+- id: 256
+  name: 'Mauritania, Morocco: Morocco/Mauritania'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 435
+  - 600
+  active_years:
+  - 1957
+  - 1958
+- id: 257
+  name: 'Mauritania, Morocco: Morocco/Spanish territories'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 435
+  - 600
+  active_years:
+  - 1957
+  - 1958
+- id: 258
+  name: 'Oman: Oman'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 698
+  active_years:
+  - 1957
+- id: 259
+  name: 'Iraq: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Middle East
+  countries:
+  - 645
+  active_years:
+  - 1958
+  - 1959
+  - 1963
+  - 1982
+  - 1983
+  - 1984
+  - 1987
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 260
+  name: 'Lebanon: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Middle East
+  countries:
+  - 660
+  active_years:
+  - 1958
+  - 1975
+  - 1976
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1989
+  - 1990
+- id: 261
+  name: 'Malaysia: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 820
+  active_years:
+  - 1958
+  - 1959
+  - 1960
+  - 1974
+  - 1975
+  - 1981
+- id: 262
+  name: 'Laos: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 812
+  active_years:
+  - 1959
+  - 1960
+  - 1961
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1989
+  - 1990
+- id: 263
+  name: 'Angola: Angola'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 540
+  active_years:
+  - 1961
+  - 1962
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+- id: 264
+  name: 'Myanmar (Burma): Shan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 1959
+  - 1960
+  - 1961
+  - 1962
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1972
+  - 1973
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2013
+  - 2015
+- id: 265
+  name: 'DR Congo (Zaire): Katanga'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 1961
+  - 1962
+  - 2013
+  - 2014
+  - 2020
+- id: 266
+  name: 'DR Congo (Zaire): South Kasai'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 1960
+  - 1961
+  - 1962
+- id: 267
+  name: 'Ethiopia: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 1960
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 2020
+  - 2021
+  - 2022
+- id: 268
+  name: 'Ethiopia, Somalia: Ogaden'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 520
+  - 530
+  active_years:
+  - 1964
+  - 1977
+  - 1978
+  - 1980
+- id: 269
+  name: 'Nepal: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 790
+  active_years:
+  - 1960
+  - 1961
+  - 1962
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+- id: 270
+  name: 'France: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Europe
+  countries:
+  - 220
+  active_years:
+  - 1961
+  - 1962
+- id: 271
+  name: 'Iraq: Kurdistan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 645
+  active_years:
+  - 1961
+  - 1962
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1995
+  - 1996
+- id: 272
+  name: 'France, Tunisia: Bizerte'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Europe
+  - Africa
+  countries:
+  - 220
+  - 616
+  active_years:
+  - 1961
+- id: 273
+  name: 'Brunei: North Borneo'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 835
+  active_years:
+  - 1962
+- id: 274
+  name: China - India
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 710
+  - 750
+  active_years:
+  - 1962
+  - 1967
+  - 2020
+- id: 275
+  name: 'Ethiopia: Eritrea'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+- id: 276
+  name: 'Indonesia, Netherlands: West New Guinea'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Europe
+  - Asia
+  countries:
+  - 210
+  - 850
+  active_years:
+  - 1962
+- id: 277
+  name: 'Venezuela: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 101
+  active_years:
+  - 1962
+  - 1982
+  - 1992
+- id: 278
+  name: 'Algeria, Morocco: Common Border'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 600
+  - 615
+  active_years:
+  - 1963
+- id: 279
+  name: 'Guinea-Bissau: Guinea-Bissau'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 404
+  active_years:
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+- id: 280
+  name: 'Malaysia: North Borneo'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 820
+  active_years:
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+- id: 281
+  name: 'Indonesia, Malaysia: North Borneo'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 820
+  - 850
+  active_years:
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+- id: 282
+  name: 'Sudan: Southern Sudan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 625
+  active_years:
+  - 1963
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+- id: 283
+  name: 'DR Congo (Zaire): Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 1964
+  - 1965
+  - 1967
+  - 1977
+  - 1978
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 284
+  name: 'Gabon: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 481
+  active_years:
+  - 1964
+- id: 285
+  name: 'Mozambique: Mozambique'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 541
+  active_years:
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+- id: 286
+  name: 'South Yemen: Aden/South Yemen'
+  type: extrasystemic
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 680
+  active_years:
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+- id: 287
+  name: 'Burundi: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 516
+  active_years:
+  - 1965
+  - 1991
+  - 1992
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2008
+  - 2014
+  - 2015
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+- id: 288
+  name: 'Chad: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 483
+  active_years:
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1986
+  - 1987
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2018
+  - 2020
+  - 2021
+  - 2023
+- id: 289
+  name: 'Colombia: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 1964
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 290
+  name: 'Dominican Republic: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 42
+  active_years:
+  - 1965
+- id: 291
+  name: 'Indonesia: West Papua'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 850
+  active_years:
+  - 1965
+  - 1967
+  - 1968
+  - 1969
+  - 1976
+  - 1977
+  - 1978
+  - 1981
+  - 1984
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 292
+  name: 'Peru: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 135
+  active_years:
+  - 1965
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+- id: 293
+  name: 'South Vietnam, Vietnam (North Vietnam): South Vietnam'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 816
+  - 817
+  active_years:
+  - 1965
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+- id: 294
+  name: Cambodia (Kampuchea) - Thailand
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 800
+  - 811
+  active_years:
+  - 1977
+  - 1978
+  - 2011
+  - 2025
+- id: 295
+  name: 'Ghana: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 452
+  active_years:
+  - 1966
+  - 1981
+  - 1983
+- id: 296
+  name: 'India: Mizoram'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1966
+  - 1967
+  - 1968
+- id: 297
+  name: 'Nigeria: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 1966
+  - 2009
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 298
+  name: 'South Africa: Namibia'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 560
+  active_years:
+  - 1966
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+- id: 299
+  name: 'Syria: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Middle East
+  countries:
+  - 652
+  active_years:
+  - 1966
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 300
+  name: 'Cambodia (Kampuchea): Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 811
+  active_years:
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+- id: 301
+  name: 'Israel, Jordan: West Bank'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 663
+  - 666
+  active_years:
+  - 1967
+- id: 302
+  name: Israel - Syria
+  type: interstate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 652
+  - 666
+  active_years:
+  - 1967
+  - 1973
+  - 2025
+- id: 303
+  name: 'Nigeria: Biafra'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 304
+  name: 'China, Myanmar (Burma): Common Border'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 710
+  - 775
+  active_years:
+  - 1969
+- id: 305
+  name: 'China, Russia (Soviet Union): Ussuri river'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Europe
+  - Asia
+  countries:
+  - 365
+  - 710
+  active_years:
+  - 1969
+- id: 306
+  name: 'El Salvador, Honduras: Common Border'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Americas
+  countries:
+  - 91
+  - 92
+  active_years:
+  - 1969
+- id: 307
+  name: 'Guinea: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 438
+  active_years:
+  - 2000
+  - 2001
+- id: 308
+  name: 'Philippines: Mindanao'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 840
+  active_years:
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+- id: 309
+  name: 'Sudan: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 625
+  active_years:
+  - 1971
+  - 1976
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 310
+  name: 'Madagascar (Malagasy): Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 580
+  active_years:
+  - 1971
+- id: 311
+  name: 'Morocco: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 600
+  active_years:
+  - 1971
+- id: 312
+  name: 'Pakistan: East Pakistan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 770
+  active_years:
+  - 1971
+- id: 313
+  name: 'Sri Lanka (Ceylon): Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 780
+  active_years:
+  - 1971
+  - 1989
+  - 1990
+- id: 314
+  name: 'Uganda: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 500
+  active_years:
+  - 1971
+  - 1972
+  - 1974
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+- id: 315
+  name: 'United Kingdom: Northern Ireland'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 200
+  active_years:
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1998
+- id: 316
+  name: 'El Salvador: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 92
+  active_years:
+  - 1972
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+- id: 317
+  name: 'Oman: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Middle East
+  countries:
+  - 698
+  active_years:
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1975
+- id: 318
+  name: 'Zimbabwe (Rhodesia): Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 552
+  active_years:
+  - 1967
+  - 1968
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+- id: 319
+  name: 'Uruguay: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 165
+  active_years:
+  - 1972
+- id: 320
+  name: 'South Yemen, Yemen (North Yemen): Common border'
+  type: interstate
+  incompatibility: both
+  region:
+  - Middle East
+  countries:
+  - 678
+  - 680
+  active_years:
+  - 1972
+  - 1979
+- id: 321
+  name: 'Chile: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 155
+  active_years:
+  - 1973
+- id: 322
+  name: 'Bangladesh: Chittagong Hill Tracts'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 771
+  active_years:
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+- id: 323
+  name: 'Cyprus, Turkey: Northern Cyprus'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Europe
+  - Middle East
+  countries:
+  - 352
+  - 640
+  active_years:
+  - 1974
+- id: 324
+  name: 'Iran, Iraq: Various'
+  type: interstate
+  incompatibility: both
+  region:
+  - Middle East
+  countries:
+  - 630
+  - 645
+  active_years:
+  - 1974
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+- id: 325
+  name: 'Pakistan: Balochistan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 770
+  active_years:
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 2004
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 326
+  name: 'Eritrea: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 531
+  active_years:
+  - 1997
+  - 1999
+  - 2003
+- id: 327
+  name: 'Angola: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 540
+  active_years:
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+- id: 328
+  name: 'Cambodia (Kampuchea), Vietnam (North Vietnam): Common Border'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 811
+  - 816
+  active_years:
+  - 1975
+  - 1976
+  - 1977
+- id: 329
+  name: 'Ethiopia: Ogaden'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 1964
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1993
+  - 1994
+  - 1996
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+- id: 330
+  name: 'Indonesia: East Timor'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 850
+  active_years:
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1992
+  - 1997
+  - 1998
+  - 1999
+- id: 331
+  name: 'Morocco: Sahrawi Arab Democratic Republic (Western Sahara)'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 600
+  active_years:
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+- id: 332
+  name: 'Mozambique: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 541
+  active_years:
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 2013
+  - 2014
+  - 2016
+  - 2018
+  - 2019
+  - 2025
+- id: 333
+  name: 'Afghanistan: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 700
+  active_years:
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 334
+  name: 'China, Vietnam (North Vietnam): Various'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 710
+  - 816
+  active_years:
+  - 1974
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1983
+  - 1984
+  - 1986
+  - 1987
+  - 1988
+- id: 335
+  name: 'India: Tripura'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1992
+  - 1997
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+- id: 336
+  name: 'Nicaragua: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 93
+  active_years:
+  - 1977
+  - 1978
+  - 1979
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+- id: 337
+  name: 'Somalia: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 520
+  active_years:
+  - 1982
+  - 1983
+  - 1984
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 2001
+  - 2002
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 338
+  name: 'Iran: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Middle East
+  countries:
+  - 630
+  active_years:
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1986
+  - 1987
+  - 1988
+  - 1991
+  - 1993
+  - 1997
+  - 1999
+  - 2000
+  - 2001
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2023
+  - 2024
+  - 2025
+- id: 339
+  name: 'Iran: Arabistan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 630
+  active_years:
+  - 1979
+  - 1980
+- id: 340
+  name: 'Saudi Arabia: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Middle East
+  countries:
+  - 670
+  active_years:
+  - 1979
+- id: 341
+  name: 'Liberia: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 450
+  active_years:
+  - 1980
+  - 1989
+  - 1990
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+- id: 342
+  name: 'Spain: Basque'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 230
+  active_years:
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+  - 1985
+  - 1986
+  - 1987
+  - 1991
+- id: 343
+  name: 'Tunisia: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 616
+  active_years:
+  - 1980
+  - 2013
+  - 2014
+  - 2015
+- id: 344
+  name: 'Gambia: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 420
+  active_years:
+  - 1981
+- id: 345
+  name: 'South Africa: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 560
+  active_years:
+  - 1981
+  - 1982
+  - 1983
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+- id: 346
+  name: 'Argentina, United Kingdom: Malvinas/Falkland Islands'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Europe
+  - Americas
+  countries:
+  - 160
+  - 200
+  active_years:
+  - 1982
+- id: 347
+  name: 'India: Manipur'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1998
+  - 1999
+  - 2000
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+- id: 348
+  name: 'Kenya: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 501
+  active_years:
+  - 1982
+- id: 349
+  name: 'Chad, Nigeria: Lake Chad'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 475
+  - 483
+  active_years:
+  - 1983
+- id: 350
+  name: 'Grenada, United States of America: Government'
+  type: interstate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 2
+  - 55
+  active_years:
+  - 1983
+- id: 351
+  name: 'India: Punjab/Khalistan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+- id: 352
+  name: 'Sri Lanka (Ceylon): Eelam'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 780
+  active_years:
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2003
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+- id: 353
+  name: 'Cameroon: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 471
+  active_years:
+  - 1960
+  - 1961
+  - 1984
+  - 2015
+  - 2016
+  - 2017
+  - 2020
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 354
+  name: 'Turkey: Kurdistan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 640
+  active_years:
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 355
+  name: 'Burkina Faso, Mali: Agacher Strip'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 432
+  - 439
+  active_years:
+  - 1985
+- id: 356
+  name: 'Laos, Thailand: Common Border'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 800
+  - 812
+  active_years:
+  - 1986
+  - 1987
+  - 1988
+- id: 357
+  name: 'Suriname: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 115
+  active_years:
+  - 1987
+- id: 358
+  name: 'Togo: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 461
+  active_years:
+  - 1986
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 359
+  name: 'South Yemen: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Middle East
+  countries:
+  - 680
+  active_years:
+  - 1986
+- id: 360
+  name: 'Burkina Faso: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 439
+  active_years:
+  - 1987
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 361
+  name: 'Chad, Libya: Aozou strip'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 483
+  - 620
+  active_years:
+  - 1987
+- id: 362
+  name: 'Comoros: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 581
+  active_years:
+  - 1989
+- id: 363
+  name: 'Ethiopia: Afar'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 1975
+  - 1976
+  - 1996
+- id: 364
+  name: 'India: Kashmir'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 365
+  name: 'India: Assam'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1990
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+- id: 366
+  name: 'Indonesia: Aceh'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 850
+  active_years:
+  - 1990
+  - 1991
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+- id: 367
+  name: 'Panama: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 95
+  active_years:
+  - 1989
+- id: 368
+  name: Panama - United States of America
+  type: interstate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 2
+  - 95
+  active_years:
+  - 1989
+- id: 369
+  name: 'Papua New Guinea: Bougainville'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 910
+  active_years:
+  - 1990
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+- id: 370
+  name: 'Romania: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Europe
+  countries:
+  - 360
+  active_years:
+  - 1989
+- id: 371
+  name: Iraq - Kuwait
+  type: interstate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 645
+  - 690
+  active_years:
+  - 1990
+  - 1991
+- id: 372
+  name: 'Mali: Azawad'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 432
+  active_years:
+  - 1990
+  - 1991
+  - 1994
+  - 2007
+  - 2008
+  - 2009
+  - 2012
+  - 2014
+  - 2015
+- id: 373
+  name: 'Niger: Air and Azawad'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 436
+  active_years:
+  - 1994
+- id: 374
+  name: 'Rwanda: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 517
+  active_years:
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2016
+  - 2019
+  - 2020
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 375
+  name: 'Senegal: Casamance'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 433
+  active_years:
+  - 1990
+  - 1992
+  - 1993
+  - 1995
+  - 1997
+  - 1998
+  - 2000
+  - 2003
+  - 2011
+- id: 376
+  name: 'Russia (Soviet Union): Nagorno-Karabakh'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 1990
+  - 1991
+- id: 377
+  name: 'Russia (Soviet Union): Azerbaijan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 1990
+- id: 378
+  name: 'Trinidad and Tobago: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 52
+  active_years:
+  - 1990
+- id: 379
+  name: 'Djibouti: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 522
+  active_years:
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1999
+- id: 380
+  name: 'Georgia: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Europe
+  countries:
+  - 372
+  active_years:
+  - 1991
+  - 1992
+  - 1993
+- id: 381
+  name: 'Haiti: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 1989
+  - 1991
+  - 2004
+  - 2024
+  - 2025
+- id: 382
+  name: 'Sierra Leone: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 451
+  active_years:
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+- id: 383
+  name: 'Turkey: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Middle East
+  countries:
+  - 640
+  active_years:
+  - 1991
+  - 1992
+  - 1993
+  - 2000
+  - 2005
+  - 2016
+- id: 384
+  name: 'Serbia (Yugoslavia): Slovenia'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 345
+  active_years:
+  - 1991
+- id: 385
+  name: 'Serbia (Yugoslavia): Croatia'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 345
+  active_years:
+  - 1991
+  - 1992
+- id: 386
+  name: 'Algeria: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 615
+  active_years:
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2020
+- id: 387
+  name: 'Angola: Cabinda'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 540
+  active_years:
+  - 1991
+  - 1992
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 2002
+  - 2003
+  - 2004
+  - 2007
+  - 2009
+  - 2016
+  - 2017
+  - 2019
+  - 2020
+  - 2022
+  - 2024
+  - 2025
+- id: 388
+  name: 'Azerbaijan: Artsakh (Nagorno-Karabakh)'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 373
+  active_years:
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1997
+  - 1998
+  - 2005
+  - 2008
+  - 2012
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+- id: 389
+  name: 'Bosnia-Herzegovina: Serb'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 346
+  active_years:
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+- id: 390
+  name: 'Croatia: Serb'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 344
+  active_years:
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+- id: 391
+  name: 'Egypt: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Middle East
+  countries:
+  - 651
+  active_years:
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 2014
+  - 2017
+  - 2018
+  - 2019
+- id: 392
+  name: 'Georgia: Abkhazia'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 372
+  active_years:
+  - 1992
+  - 1993
+- id: 393
+  name: 'Georgia: South Ossetia'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 372
+  active_years:
+  - 1992
+  - 2004
+  - 2008
+- id: 394
+  name: 'Moldova: Dniestr'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 359
+  active_years:
+  - 1992
+- id: 395
+  name: 'Tajikistan: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 702
+  active_years:
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2010
+  - 2011
+- id: 396
+  name: 'Azerbaijan: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Europe
+  countries:
+  - 373
+  active_years:
+  - 1993
+  - 1995
+- id: 397
+  name: 'Bosnia-Herzegovina: Bihaca Krajina'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 346
+  active_years:
+  - 1993
+  - 1994
+  - 1995
+- id: 398
+  name: 'Bosnia-Herzegovina: Croat'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 346
+  active_years:
+  - 1992
+  - 1993
+  - 1994
+- id: 399
+  name: 'Russia (Soviet Union): Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 1993
+  - 2023
+  - 2024
+- id: 400
+  name: 'Mexico: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 70
+  active_years:
+  - 1994
+  - 1996
+- id: 401
+  name: 'Russia (Soviet Union): Chechnya'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 1994
+  - 1995
+  - 1996
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+- id: 402
+  name: 'Yemen (North Yemen): South Yemen'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 678
+  active_years:
+  - 1994
+  - 2025
+- id: 403
+  name: Ecuador - Peru
+  type: interstate
+  incompatibility: territory
+  region:
+  - Americas
+  countries:
+  - 130
+  - 135
+  active_years:
+  - 1995
+- id: 404
+  name: 'Pakistan: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 770
+  active_years:
+  - 1990
+  - 1994
+  - 1995
+  - 1996
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 405
+  name: Cameroon - Nigeria
+  type: interstate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 471
+  - 475
+  active_years:
+  - 1996
+- id: 406
+  name: 'Niger: Eastern Niger'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 436
+  active_years:
+  - 1995
+- id: 407
+  name: 'Comoros: Anjouan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 581
+  active_years:
+  - 1997
+- id: 408
+  name: 'Congo: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 484
+  active_years:
+  - 1993
+  - 1997
+  - 1998
+  - 1999
+  - 2002
+  - 2016
+- id: 409
+  name: Eritrea - Ethiopia
+  type: interstate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 530
+  - 531
+  active_years:
+  - 1998
+  - 1999
+  - 2000
+  - 2016
+- id: 410
+  name: 'Guinea-Bissau: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 404
+  active_years:
+  - 1998
+  - 1999
+- id: 411
+  name: 'Lesotho: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 570
+  active_years:
+  - 1998
+- id: 412
+  name: 'Serbia (Yugoslavia): Kosovo'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 345
+  active_years:
+  - 1998
+  - 1999
+- id: 413
+  name: 'Ethiopia: Oromiya'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 1977
+  - 1978
+  - 1980
+  - 1981
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1994
+  - 1995
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2015
+  - 2016
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 414
+  name: 'Russia (Soviet Union): Dagestan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 1999
+- id: 415
+  name: 'Uzbekistan: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 704
+  active_years:
+  - 1999
+  - 2000
+  - 2004
+- id: 416
+  name: 'Central African Republic: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2001
+  - 2002
+  - 2006
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 417
+  name: 'North Macedonia: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Europe
+  countries:
+  - 343
+  active_years:
+  - 2001
+- id: 418
+  name: 'United States of America: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Americas
+  countries:
+  - 2
+  active_years:
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2019
+- id: 419
+  name: 'Ivory Coast: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 437
+  active_years:
+  - 2002
+  - 2003
+  - 2004
+  - 2011
+- id: 420
+  name: Australia, United Kingdom, United States - Iraq
+  type: interstate
+  incompatibility: government
+  region:
+  - Europe
+  - Middle East
+  - Asia
+  - Americas
+  countries:
+  - 2
+  - 200
+  - 645
+  - 900
+  active_years:
+  - 2003
+- id: 421
+  name: 'India: Bodoland'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1989
+  - 1990
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2009
+  - 2010
+  - 2013
+  - 2014
+- id: 422
+  name: 'Myanmar (Burma): Wa'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 1997
+- id: 423
+  name: 'Thailand: Patani'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 800
+  active_years:
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 424
+  name: 'Nigeria: Northern Nigeria'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2004
+- id: 425
+  name: 'Nigeria: Niger Delta'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2004
+- id: 426
+  name: 'Israel: Southern Lebanon'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 666
+  active_years:
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2006
+  - 2023
+  - 2024
+  - 2025
+- id: 427
+  name: 'Tanzania, Uganda: Kagera Salient'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 500
+  - 510
+  active_years:
+  - 1978
+- id: 428
+  name: 'Mauritania: Sahrawi Arab Democratic Republic (Western Sahara)'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 435
+  active_years:
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+- id: 429
+  name: 'DR Congo (Zaire): Kongo Kingdom'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2007
+  - 2008
+  - 2017
+  - 2020
+- id: 430
+  name: 'Niger: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 436
+  active_years:
+  - 1991
+  - 1992
+  - 1997
+  - 2007
+  - 2008
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 431
+  name: 'Afghanistan, Russia (Soviet Union): Government'
+  type: interstate
+  incompatibility: government
+  region:
+  - Europe
+  - Asia
+  countries:
+  - 365
+  - 700
+  active_years:
+  - 1979
+- id: 432
+  name: 'Russia (Soviet Union): Caucasus Emirate'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+- id: 434
+  name: 'India: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2008
+- id: 435
+  name: Djibouti - Eritrea
+  type: interstate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 522
+  - 531
+  active_years:
+  - 2008
+- id: 436
+  name: 'Ethiopia: Arssi, Bale & Sidamo'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+- id: 437
+  name: 'Ethiopia: Sidamaland'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 1981
+  - 1983
+- id: 439
+  name: 'Myanmar (Burma): Kokang'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 2009
+  - 2014
+  - 2015
+  - 2017
+  - 2021
+  - 2023
+  - 2024
+- id: 440
+  name: 'Myanmar (Burma): Lahu'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 1973
+  - 1974
+  - 1975
+  - 1976
+  - 1977
+  - 1978
+  - 1979
+  - 1980
+  - 1981
+  - 1982
+- id: 442
+  name: 'Mauritania: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 435
+  active_years:
+  - 2010
+- id: 11342
+  name: 'India: Garoland'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2012
+  - 2014
+- id: 11343
+  name: 'Egypt, Israel: Suez/Sinai'
+  type: interstate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 651
+  - 666
+  active_years:
+  - 1967
+  - 1969
+  - 1970
+  - 1973
+- id: 11344
+  name: 'Sudan: Abyei'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 625
+  active_years:
+  - 2011
+- id: 11345
+  name: 'South Sudan: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 626
+  active_years:
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2025
+- id: 11346
+  name: 'Libya: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 620
+  active_years:
+  - 2011
+  - 2013
+  - 2014
+  - 2015
+  - 2017
+  - 2019
+  - 2020
+- id: 11347
+  name: 'Mali: Government'
+  type: internationalized-intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 432
+  active_years:
+  - 2009
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 11348
+  name: South Sudan - Sudan
+  type: interstate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 625
+  - 626
+  active_years:
+  - 2012
+- id: 11349
+  name: 'China: East Turkestan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 710
+  active_years:
+  - 2008
+- id: 11350
+  name: 'Bangladesh: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 771
+  active_years:
+  - 2005
+  - 2006
+- id: 11447
+  name: 'Ethiopia: Hararghe'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 1991
+- id: 11475
+  name: 'Myanmar (Burma): Nagaland'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 1991
+  - 1995
+  - 2000
+  - 2001
+  - 2005
+  - 2006
+  - 2007
+- id: 11487
+  name: 'Malaysia: Sabah'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 820
+  active_years:
+  - 2013
+- id: 11639
+  name: Afghanistan - Pakistan
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 700
+  - 770
+  active_years:
+  - 2024
+  - 2025
+- id: 11884
+  name: 'Hyderabad: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Asia
+  countries:
+  - 751
+  active_years:
+  - 1947
+  - 1948
+- id: 13042
+  name: 'Syria: Rojava Kurdistan'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 652
+  active_years:
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+- id: 13219
+  name: 'Ukraine: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Europe
+  countries:
+  - 369
+  active_years:
+  - 2014
+- id: 13243
+  name: Russia - Ukraine
+  type: interstate
+  incompatibility: both
+  region:
+  - Europe
+  countries:
+  - 365
+  - 369
+  active_years:
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 13246
+  name: 'Ukraine: Donetsk'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 369
+  active_years:
+  - 2014
+- id: 13247
+  name: 'Ukraine: Lugansk'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 369
+  active_years:
+  - 2014
+- id: 13306
+  name: 'Ukraine: Novorossiya'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 369
+  active_years:
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+- id: 13324
+  name: Kyrgyzstan - Tajikistan
+  type: interstate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 702
+  - 703
+  active_years:
+  - 2021
+  - 2022
+- id: 13588
+  name: 'Russia: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2024
+- id: 13604
+  name: 'Syria: Islamic State'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 652
+  active_years:
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 13611
+  name: 'Mali: Macina Empire'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 432
+  active_years:
+  - 2015
+- id: 13637
+  name: 'Afghanistan: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 700
+  active_years:
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 13638
+  name: 'Cameroon: Islamic State'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 471
+  active_years:
+  - 2015
+  - 2016
+  - 2019
+  - 2021
+  - 2023
+  - 2025
+- id: 13639
+  name: 'Niger: Islamic State'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 436
+  active_years:
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 13640
+  name: 'Chad: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 483
+  active_years:
+  - 2015
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+- id: 13641
+  name: 'Nigeria: Islamic State'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 13645
+  name: 'Yemen (North Yemen): Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 678
+  active_years:
+  - 2015
+  - 2017
+  - 2020
+- id: 13646
+  name: 'Kenya: Northeastern Province and Coast'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 501
+  active_years:
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 13648
+  name: 'Egypt: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 651
+  active_years:
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+- id: 13653
+  name: 'India: Western South East Asia'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2025
+- id: 13674
+  name: 'Bangladesh: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 771
+  active_years:
+  - 2016
+  - 2017
+- id: 13675
+  name: 'Lebanon: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 660
+  active_years:
+  - 2014
+  - 2015
+  - 2017
+- id: 13692
+  name: Afghanistan - United Kingdom, United States of America
+  type: interstate
+  incompatibility: government
+  region:
+  - Europe
+  - Asia
+  - Americas
+  countries:
+  - 2
+  - 200
+  - 700
+  active_years:
+  - 2001
+- id: 13694
+  name: 'Libya: Islamic State'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 620
+  active_years:
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+- id: 13721
+  name: 'Algeria: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 615
+  active_years:
+  - 2015
+- id: 13809
+  name: 'Syria: Government/Rojava Kurdistan'
+  type: internationalized-intrastate
+  incompatibility: both
+  region:
+  - Middle East
+  countries:
+  - 652
+  active_years:
+  - 2016
+  - 2018
+  - 2023
+  - 2024
+  - 2025
+- id: 13840
+  name: 'Burkina Faso: Islamic State'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 439
+  active_years:
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 13886
+  name: 'Jordan: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 663
+  active_years:
+  - 2016
+- id: 13902
+  name: 'Turkey: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 640
+  active_years:
+  - 2015
+  - 2016
+  - 2017
+- id: 13936
+  name: 'Pakistan: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 770
+  active_years:
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2021
+  - 2022
+  - 2023
+  - 2025
+- id: 14074
+  name: 'Somalia: Somaliland'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 520
+  active_years:
+  - 2018
+- id: 14113
+  name: 'Mali: Islamic State'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 432
+  active_years:
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 14129
+  name: 'Cameroon: Ambazonia'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 471
+  active_years:
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 14197
+  name: 'Somalia: Islamic State'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 520
+  active_years:
+  - 2019
+  - 2020
+  - 2021
+  - 2025
+- id: 14268
+  name: 'Iran: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Middle East
+  countries:
+  - 630
+  active_years:
+  - 2017
+- id: 14275
+  name: 'Philippines: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 840
+  active_years:
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+- id: 14333
+  name: 'Tunisia: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 616
+  active_years:
+  - 2016
+- id: 14609
+  name: Iran - Israel
+  type: interstate
+  incompatibility: government
+  region:
+  - Middle East
+  countries:
+  - 630
+  - 666
+  active_years:
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 14692
+  name: 'DR Congo (Zaire): Islamic State'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 14845
+  name: 'Mozambique: Islamic State'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 541
+  active_years:
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 14935
+  name: 'Ethiopia: Amhara'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 2019
+- id: 15183
+  name: 'Tanzania: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 510
+  active_years:
+  - 2020
+- id: 15256
+  name: 'Benin: Government'
+  type: intrastate
+  incompatibility: government
+  region:
+  - Africa
+  countries:
+  - 434
+  active_years:
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 15283
+  name: 'Central African Republic: Logone'
+  type: internationalized-intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2015
+  - 2023
+- id: 15438
+  name: 'Uganda: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Africa
+  countries:
+  - 500
+  active_years:
+  - 2022
+- id: 16038
+  name: 'Mali: Government/Azawad'
+  type: internationalized-intrastate
+  incompatibility: both
+  region:
+  - Africa
+  countries:
+  - 432
+  active_years:
+  - 2023
+  - 2024
+  - 2025
+- id: 16069
+  name: 'Ethiopia: Government/Amhara'
+  type: intrastate
+  incompatibility: both
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 2023
+  - 2024
+  - 2025
+- id: 16099
+  name: United Kingdom, United States of America - Yemen
+  type: interstate
+  incompatibility: territory
+  region:
+  - Europe
+  - Middle East
+  - Americas
+  countries:
+  - 2
+  - 200
+  - 678
+  active_years:
+  - 2024
+  - 2025
+- id: 16292
+  name: 'Tajikistan: Islamic State'
+  type: intrastate
+  incompatibility: territory
+  region:
+  - Asia
+  countries:
+  - 702
+  active_years:
+  - 2018
+  - 2019
+- id: 16470
+  name: Israel - Yemen
+  type: interstate
+  incompatibility: government
+  region:
+  - Middle East
+  countries:
+  - 666
+  - 678
+  active_years:
+  - 2025

@@ -1,0 +1,4604 @@
+- id: 6
+  name: Government of Haiti
+  government: true
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 1991
+  - 1993
+  - 1994
+  - 2005
+  - 2018
+  - 2023
+  - 2024
+- id: 10
+  name: Government of Mexico
+  government: true
+  region:
+  - Americas
+  countries:
+  - 70
+  active_years:
+  - 2014
+  - 2021
+- id: 11
+  name: Government of Guatemala
+  government: true
+  region:
+  - Americas
+  countries:
+  - 90
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+- id: 17
+  name: Government of Colombia
+  government: true
+  region:
+  - Americas
+  countries:
+  - 100
+  - 130
+  active_years:
+  - 1990
+  - 1991
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2017
+  - 2018
+  - 2020
+  - 2021
+- id: 18
+  name: Government of Venezuela
+  government: true
+  region:
+  - Americas
+  countries:
+  - 100
+  - 101
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1999
+  - 2000
+  - 2001
+  - 2003
+  - 2004
+  - 2005
+  - 2008
+  - 2009
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+- id: 21
+  name: Government of Peru
+  government: true
+  region:
+  - Americas
+  countries:
+  - 135
+  active_years:
+  - 1994
+- id: 22
+  name: Government of Brazil
+  government: true
+  region:
+  - Americas
+  countries:
+  - 140
+  active_years:
+  - 1993
+  - 1999
+  - 2005
+- id: 48
+  name: Government of Croatia
+  government: true
+  region:
+  - Europe
+  countries:
+  - 344
+  - 346
+  active_years:
+  - 1993
+  - 1995
+- id: 49
+  name: Government of Serbia (Yugoslavia)
+  government: true
+  region:
+  - Europe
+  countries:
+  - 343
+  - 345
+  active_years:
+  - 1998
+  - 1999
+- id: 50
+  name: Government of Bosnia-Herzegovina
+  government: true
+  region:
+  - Europe
+  countries:
+  - 346
+  active_years:
+  - 1992
+  - 1993
+- id: 56
+  name: Government of Romania
+  government: true
+  region:
+  - Europe
+  countries:
+  - 360
+  active_years:
+  - 1989
+- id: 57
+  name: Government of Russia (Soviet Union)
+  government: true
+  region:
+  - Europe
+  countries:
+  - 365
+  - 369
+  - 372
+  - 432
+  - 482
+  - 625
+  - 700
+  active_years:
+  - 1991
+  - 1995
+  - 1996
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 71
+  name: Government of Gambia
+  government: true
+  region:
+  - Africa
+  countries:
+  - 420
+  - 433
+  active_years:
+  - 2005
+- id: 72
+  name: Government of Mali
+  government: true
+  region:
+  - Africa
+  countries:
+  - 432
+  active_years:
+  - 1990
+  - 1991
+  - 1992
+  - 1994
+  - 2013
+  - 2018
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 73
+  name: Government of Senegal
+  government: true
+  region:
+  - Africa
+  countries:
+  - 433
+  active_years:
+  - 1998
+- id: 74
+  name: Government of Mauritania
+  government: true
+  region:
+  - Africa
+  countries:
+  - 433
+  - 435
+  active_years:
+  - 1989
+  - 1990
+- id: 75
+  name: Government of Niger
+  government: true
+  region:
+  - Africa
+  countries:
+  - 432
+  - 436
+  active_years:
+  - 1990
+  - 1995
+  - 1998
+  - 2020
+- id: 76
+  name: Government of Ivory Coast
+  government: true
+  region:
+  - Africa
+  countries:
+  - 437
+  active_years:
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2010
+  - 2011
+- id: 77
+  name: Government of Guinea
+  government: true
+  region:
+  - Africa
+  countries:
+  - 438
+  active_years:
+  - 2007
+  - 2009
+- id: 78
+  name: Government of Burkina Faso
+  government: true
+  region:
+  - Africa
+  countries:
+  - 432
+  - 439
+  active_years:
+  - 2014
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 79
+  name: Government of Liberia
+  government: true
+  region:
+  - Africa
+  countries:
+  - 450
+  active_years:
+  - 1990
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+- id: 80
+  name: Government of Sierra Leone
+  government: true
+  region:
+  - Africa
+  countries:
+  - 451
+  active_years:
+  - 1991
+  - 1994
+  - 1997
+  - 1998
+  - 1999
+- id: 82
+  name: Government of Togo
+  government: true
+  region:
+  - Africa
+  countries:
+  - 461
+  active_years:
+  - 1991
+  - 1993
+  - 2005
+- id: 83
+  name: Government of Cameroon
+  government: true
+  region:
+  - Africa
+  countries:
+  - 471
+  - 475
+  active_years:
+  - 1994
+  - 2015
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+- id: 84
+  name: Government of Nigeria
+  government: true
+  region:
+  - Africa
+  countries:
+  - 451
+  - 475
+  active_years:
+  - 1990
+  - 1994
+  - 1998
+  - 1999
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2008
+  - 2011
+  - 2012
+  - 2014
+  - 2015
+  - 2016
+  - 2018
+  - 2019
+  - 2020
+  - 2022
+  - 2023
+- id: 86
+  name: Government of Central African Republic
+  government: true
+  region:
+  - Africa
+  countries:
+  - 482
+  - 483
+  active_years:
+  - 2001
+  - 2006
+  - 2007
+  - 2012
+  - 2013
+  - 2021
+  - 2022
+- id: 87
+  name: Government of Chad
+  government: true
+  region:
+  - Africa
+  countries:
+  - 482
+  - 483
+  - 625
+  active_years:
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1998
+  - 2014
+- id: 88
+  name: Government of Congo
+  government: true
+  region:
+  - Africa
+  countries:
+  - 484
+  active_years:
+  - 1993
+  - 1997
+  - 1998
+  - 1999
+- id: 89
+  name: Government of DR Congo (Zaire)
+  government: true
+  region:
+  - Africa
+  countries:
+  - 490
+  - 500
+  - 551
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2002
+  - 2004
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 90
+  name: Government of Uganda
+  government: true
+  region:
+  - Africa
+  countries:
+  - 490
+  - 500
+  active_years:
+  - 1990
+  - 1991
+  - 2000
+  - 2002
+- id: 91
+  name: Government of Kenya
+  government: true
+  region:
+  - Africa
+  countries:
+  - 501
+  - 520
+  active_years:
+  - 2007
+  - 2008
+  - 2017
+  - 2018
+- id: 92
+  name: Government of Tanzania
+  government: true
+  region:
+  - Africa
+  countries:
+  - 510
+  active_years:
+  - 2001
+  - 2025
+- id: 93
+  name: Government of Burundi
+  government: true
+  region:
+  - Africa
+  countries:
+  - 490
+  - 510
+  - 516
+  - 520
+  active_years:
+  - 1991
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 94
+  name: Government of Rwanda
+  government: true
+  region:
+  - Africa
+  countries:
+  - 490
+  - 516
+  - 517
+  active_years:
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2009
+  - 2016
+  - 2022
+  - 2023
+  - 2025
+- id: 95
+  name: Government of Somalia
+  government: true
+  region:
+  - Africa
+  countries:
+  - 520
+  active_years:
+  - 1989
+  - 1991
+  - 2011
+  - 2012
+- id: 96
+  name: Government of Djibouti
+  government: true
+  region:
+  - Africa
+  countries:
+  - 520
+  - 522
+  active_years:
+  - 1991
+- id: 97
+  name: Government of Ethiopia
+  government: true
+  region:
+  - Africa
+  countries:
+  - 520
+  - 530
+  - 625
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1993
+  - 2002
+  - 2003
+  - 2004
+  - 2006
+  - 2007
+  - 2008
+  - 2012
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 98
+  name: Government of Eritrea
+  government: true
+  region:
+  - Africa
+  countries:
+  - 530
+  - 678
+  active_years:
+  - 2020
+  - 2021
+  - 2022
+- id: 99
+  name: Government of Angola
+  government: true
+  region:
+  - Africa
+  countries:
+  - 484
+  - 540
+  active_years:
+  - 1997
+  - 1998
+  - 2003
+- id: 100
+  name: Government of Mozambique
+  government: true
+  region:
+  - Africa
+  countries:
+  - 541
+  active_years:
+  - 2020
+  - 2021
+  - 2024
+  - 2025
+- id: 101
+  name: Government of Zimbabwe (Rhodesia)
+  government: true
+  region:
+  - Africa
+  countries:
+  - 552
+  active_years:
+  - 2008
+- id: 102
+  name: Government of South Africa
+  government: true
+  region:
+  - Africa
+  countries:
+  - 560
+  - 571
+  - 572
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+- id: 106
+  name: Government of Madagascar
+  government: true
+  region:
+  - Africa
+  countries:
+  - 580
+  active_years:
+  - 2009
+- id: 111
+  name: Government of Libya
+  government: true
+  region:
+  - Africa
+  countries:
+  - 436
+  - 620
+  active_years:
+  - 1989
+  - 2011
+- id: 112
+  name: Government of Sudan
+  government: true
+  region:
+  - Africa
+  countries:
+  - 483
+  - 625
+  - 626
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2024
+  - 2025
+- id: 113
+  name: Government of South Sudan
+  government: true
+  region:
+  - Africa
+  countries:
+  - 490
+  - 626
+  active_years:
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+- id: 114
+  name: Government of Iran
+  government: true
+  region:
+  - Middle East
+  countries:
+  - 630
+  active_years:
+  - 2005
+  - 2009
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+- id: 115
+  name: Government of Turkey
+  government: true
+  region:
+  - Middle East
+  countries:
+  - 645
+  active_years:
+  - 2000
+- id: 116
+  name: Government of Iraq
+  government: true
+  region:
+  - Middle East
+  countries:
+  - 640
+  - 645
+  - 660
+  - 663
+  - 690
+  active_years:
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1999
+  - 2005
+  - 2006
+  - 2007
+  - 2015
+  - 2016
+  - 2017
+  - 2019
+  - 2020
+  - 2021
+- id: 117
+  name: Government of Egypt
+  government: true
+  region:
+  - Middle East
+  countries:
+  - 651
+  active_years:
+  - 2005
+  - 2013
+- id: 118
+  name: Government of Syria
+  government: true
+  region:
+  - Middle East
+  countries:
+  - 652
+  - 660
+  active_years:
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2020
+  - 2025
+- id: 121
+  name: Government of Israel
+  government: true
+  region:
+  - Middle East
+  countries:
+  - 652
+  - 660
+  - 666
+  active_years:
+  - 1989
+  - 1996
+  - 2004
+  - 2005
+  - 2023
+  - 2024
+  - 2025
+- id: 123
+  name: Government of Yemen (North Yemen)
+  government: true
+  region:
+  - Middle East
+  countries:
+  - 678
+  active_years:
+  - 2011
+  - 2020
+  - 2021
+  - 2022
+  - 2024
+  - 2025
+- id: 126
+  name: Government of Bahrain
+  government: true
+  region:
+  - Middle East
+  countries:
+  - 692
+  active_years:
+  - 2011
+- id: 130
+  name: Government of Afghanistan
+  government: true
+  region:
+  - Asia
+  countries:
+  - 630
+  - 700
+  - 770
+  active_years:
+  - 1993
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2019
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 131
+  name: Government of Tajikistan
+  government: true
+  region:
+  - Asia
+  countries:
+  - 702
+  active_years:
+  - 1992
+- id: 135
+  name: Government of China
+  government: true
+  region:
+  - Asia
+  countries:
+  - 710
+  active_years:
+  - 1989
+  - 2008
+- id: 141
+  name: Government of India
+  government: true
+  region:
+  - Asia
+  countries:
+  - 750
+  - 770
+  - 771
+  active_years:
+  - 1990
+  - 1993
+  - 2002
+- id: 142
+  name: Government of Pakistan
+  government: true
+  region:
+  - Asia
+  countries:
+  - 700
+  - 770
+  active_years:
+  - 2025
+- id: 143
+  name: Government of Bangladesh
+  government: true
+  region:
+  - Asia
+  countries:
+  - 771
+  active_years:
+  - 1992
+  - 2024
+- id: 144
+  name: Government of Myanmar (Burma)
+  government: true
+  region:
+  - Asia
+  countries:
+  - 771
+  - 775
+  - 800
+  active_years:
+  - 1991
+  - 1992
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 145
+  name: Government of Sri Lanka
+  government: true
+  region:
+  - Asia
+  countries:
+  - 780
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1996
+  - 2006
+- id: 146
+  name: Government of Nepal
+  government: true
+  region:
+  - Asia
+  countries:
+  - 790
+  active_years:
+  - 1996
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+- id: 148
+  name: Government of Cambodia (Kampuchea)
+  government: true
+  region:
+  - Asia
+  countries:
+  - 811
+  active_years:
+  - 1993
+- id: 149
+  name: Government of Laos
+  government: true
+  region:
+  - Asia
+  countries:
+  - 812
+  active_years:
+  - 2006
+- id: 154
+  name: Government of Philippines
+  government: true
+  region:
+  - Asia
+  countries:
+  - 840
+  active_years:
+  - 1990
+  - 1991
+  - 2016
+- id: 155
+  name: Government of Indonesia
+  government: true
+  region:
+  - Asia
+  countries:
+  - 850
+  active_years:
+  - 1990
+  - 1991
+  - 1995
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+- id: 157
+  name: Government of Papua New Guinea
+  government: true
+  region:
+  - Asia
+  countries:
+  - 910
+  active_years:
+  - 1992
+  - 1996
+- id: 169
+  name: CPP
+  government: false
+  region:
+  - Asia
+  countries:
+  - 840
+  active_years:
+  - 2015
+  - 2020
+- id: 180
+  name: KNU
+  government: false
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 2021
+- id: 193
+  name: PWG
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1990
+- id: 194
+  name: MCC
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1992
+  - 1999
+  - 2000
+- id: 195
+  name: CPI-Maoist
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 208
+  name: PIJ
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 666
+  active_years:
+  - 2001
+  - 2002
+  - 2005
+- id: 209
+  name: Hamas
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 666
+  active_years:
+  - 1994
+  - 1996
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2023
+- id: 211
+  name: AMB
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 666
+  active_years:
+  - 2002
+  - 2003
+- id: 223
+  name: NSCN-IM
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1989
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+- id: 233
+  name: Ansar al-Islam
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 645
+  active_years:
+  - 2004
+  - 2005
+- id: 234
+  name: IS
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 2
+  - 200
+  - 211
+  - 220
+  - 230
+  - 260
+  - 305
+  - 365
+  - 380
+  - 432
+  - 434
+  - 436
+  - 439
+  - 471
+  - 475
+  - 483
+  - 490
+  - 500
+  - 510
+  - 520
+  - 541
+  - 560
+  - 616
+  - 620
+  - 630
+  - 640
+  - 645
+  - 651
+  - 652
+  - 660
+  - 663
+  - 670
+  - 678
+  - 690
+  - 700
+  - 702
+  - 750
+  - 770
+  - 771
+  - 780
+  - 840
+  - 900
+  active_years:
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 258
+  name: CPN-M
+  government: false
+  region:
+  - Asia
+  countries:
+  - 790
+  active_years:
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+- id: 266
+  name: OPM
+  government: false
+  region:
+  - Asia
+  countries:
+  - 850
+  active_years:
+  - 2023
+- id: 270
+  name: KR
+  government: false
+  region:
+  - Asia
+  countries:
+  - 811
+  active_years:
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1998
+- id: 276
+  name: MILF
+  government: false
+  region:
+  - Asia
+  countries:
+  - 840
+  active_years:
+  - 2000
+  - 2003
+  - 2008
+- id: 277
+  name: ASG
+  government: false
+  region:
+  - Asia
+  countries:
+  - 840
+  active_years:
+  - 1995
+  - 2001
+  - 2002
+  - 2004
+  - 2010
+- id: 281
+  name: JVP
+  government: false
+  region:
+  - Asia
+  countries:
+  - 780
+  active_years:
+  - 1989
+- id: 285
+  name: PCJSS
+  government: false
+  region:
+  - Asia
+  countries:
+  - 771
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1996
+- id: 287
+  name: BLA
+  government: false
+  region:
+  - Asia
+  countries:
+  - 770
+  active_years:
+  - 2010
+- id: 303
+  name: Taleban
+  government: false
+  region:
+  - Asia
+  countries:
+  - 700
+  - 770
+  active_years:
+  - 1996
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+- id: 304
+  name: UIFSA
+  government: false
+  region:
+  - Asia
+  countries:
+  - 700
+  active_years:
+  - 2001
+- id: 306
+  name: ATTF
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1993
+  - 1997
+  - 1998
+  - 2003
+- id: 307
+  name: NLFT
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  - 771
+  active_years:
+  - 1996
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+- id: 310
+  name: Jondullah
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 630
+  active_years:
+  - 2009
+- id: 319
+  name: Sikh insurgents
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  - 790
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+- id: 320
+  name: LTTE
+  government: false
+  region:
+  - Asia
+  countries:
+  - 780
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1994
+  - 1995
+  - 1996
+  - 1998
+  - 1999
+  - 2000
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+- id: 323
+  name: PKK
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 640
+  - 645
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1998
+  - 1999
+- id: 325
+  name: Kashmir insurgents
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1990
+  - 1993
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2017
+  - 2018
+  - 2019
+  - 2025
+- id: 326
+  name: ULFA
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2000
+  - 2001
+  - 2004
+  - 2006
+  - 2007
+  - 2009
+- id: 327
+  name: GAM
+  government: false
+  region:
+  - Asia
+  countries:
+  - 850
+  active_years:
+  - 1990
+  - 2003
+  - 2004
+- id: 338
+  name: Republic of Artsakh
+  government: false
+  region:
+  - Europe
+  countries:
+  - 373
+  active_years:
+  - 1992
+- id: 339
+  name: Serbian Republic of Bosnia-Herzegovina
+  government: false
+  region:
+  - Europe
+  countries:
+  - 345
+  - 346
+  active_years:
+  - 1992
+- id: 341
+  name: al-Gama'a al-Islamiyya
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 651
+  active_years:
+  - 1995
+  - 1996
+  - 1997
+- id: 342
+  name: Republic of Abkhazia
+  government: false
+  region:
+  - Europe
+  countries:
+  - 372
+  active_years:
+  - 1993
+  - 1995
+- id: 350
+  name: Croatian Republic of Bosnia-Herzegovina
+  government: false
+  region:
+  - Europe
+  countries:
+  - 346
+  active_years:
+  - 1993
+  - 1995
+- id: 352
+  name: Chechen Republic of Ichkeria
+  government: false
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 1999
+  - 2003
+  - 2004
+- id: 356
+  name: TTP
+  government: false
+  region:
+  - Asia
+  countries:
+  - 770
+  active_years:
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+- id: 362
+  name: ABSU
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1990
+- id: 363
+  name: NDFB
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  - 760
+  active_years:
+  - 1992
+  - 1994
+  - 1995
+  - 1997
+  - 1998
+  - 2000
+  - 2001
+  - 2002
+  - 2004
+  - 2008
+  - 2009
+- id: 365
+  name: Patani insurgents
+  government: false
+  region:
+  - Asia
+  countries:
+  - 800
+  active_years:
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2018
+- id: 366
+  name: Hezbollah
+  government: false
+  region:
+  - Americas
+  countries:
+  - 160
+  active_years:
+  - 1994
+- id: 367
+  name: Forces of the Caucasus Emirate
+  government: false
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 2010
+  - 2011
+  - 2013
+- id: 368
+  name: DHD - BW
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2008
+- id: 373
+  name: BLTF
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1996
+  - 1998
+- id: 382
+  name: Gazotan Murdash
+  government: false
+  region:
+  - Europe
+  countries:
+  - 365
+  active_years:
+  - 2004
+- id: 383
+  name: GICM
+  government: false
+  region:
+  - Europe
+  countries:
+  - 230
+  active_years:
+  - 2004
+- id: 384
+  name: Jamaat Jund al-Sahaba
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 645
+  active_years:
+  - 2005
+  - 2006
+- id: 385
+  name: Jemaah Islamiya
+  government: false
+  region:
+  - Asia
+  countries:
+  - 850
+  active_years:
+  - 2002
+- id: 388
+  name: LeJ
+  government: false
+  region:
+  - Asia
+  countries:
+  - 700
+  - 770
+  active_years:
+  - 1998
+  - 1999
+  - 2003
+  - 2004
+  - 2010
+  - 2011
+  - 2013
+  - 2014
+  - 2015
+  - 2017
+- id: 392
+  name: Ranvir Sena
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1997
+  - 1999
+  - 2000
+- id: 393
+  name: Salafia Jihadia
+  government: false
+  region:
+  - Africa
+  countries:
+  - 600
+  active_years:
+  - 2003
+- id: 395
+  name: Tawhid wal Jihad
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 651
+  active_years:
+  - 2004
+  - 2005
+- id: 396
+  name: UPDS
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2000
+- id: 397
+  name: VHP
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2002
+- id: 399
+  name: Lashkar-e-Islam
+  government: false
+  region:
+  - Asia
+  countries:
+  - 770
+  active_years:
+  - 2012
+- id: 410
+  name: TPLF
+  government: false
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 2020
+  - 2021
+  - 2022
+- id: 422
+  name: AFDL
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 1996
+  - 1997
+- id: 424
+  name: RCD
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+- id: 425
+  name: 'RCD-ML '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2001
+- id: 426
+  name: CNDP
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2007
+  - 2008
+- id: 430
+  name: Palipehutu
+  government: false
+  region:
+  - Africa
+  countries:
+  - 516
+  active_years:
+  - 1991
+- id: 431
+  name: CNDD
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  - 516
+  active_years:
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+- id: 432
+  name: Palipehutu-FNL
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  - 516
+  active_years:
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+- id: 434
+  name: 'CNDD-FDD '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  - 516
+  active_years:
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+- id: 448
+  name: CSNPD
+  government: false
+  region:
+  - Africa
+  countries:
+  - 483
+  active_years:
+  - 1994
+- id: 451
+  name: FARF
+  government: false
+  region:
+  - Africa
+  countries:
+  - 483
+  active_years:
+  - 1997
+- id: 466
+  name: SPLM/A
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  - 490
+  - 530
+  - 625
+  active_years:
+  - 1989
+  - 1992
+  - 1993
+  - 1995
+  - 1997
+  - 1998
+  - 2002
+  - 2004
+- id: 468
+  name: JEM
+  government: false
+  region:
+  - Africa
+  countries:
+  - 625
+  active_years:
+  - 2003
+- id: 469
+  name: SLM/A
+  government: false
+  region:
+  - Africa
+  countries:
+  - 625
+  active_years:
+  - 2005
+- id: 471
+  name: SLM/A - MM
+  government: false
+  region:
+  - Africa
+  countries:
+  - 625
+  active_years:
+  - 2006
+- id: 486
+  name: UPA
+  government: false
+  region:
+  - Africa
+  countries:
+  - 500
+  active_years:
+  - 1990
+- id: 488
+  name: LRA
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  - 490
+  - 500
+  - 625
+  - 626
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2017
+  - 2019
+- id: 489
+  name: ADF
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  - 500
+  active_years:
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2010
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+- id: 490
+  name: WNBF
+  government: false
+  region:
+  - Africa
+  countries:
+  - 500
+  active_years:
+  - 1996
+- id: 497
+  name: ONLF
+  government: false
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 2007
+- id: 498
+  name: Renamo
+  government: false
+  region:
+  - Africa
+  countries:
+  - 541
+  - 551
+  - 552
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+- id: 507
+  name: NPFL
+  government: false
+  region:
+  - Africa
+  countries:
+  - 437
+  - 450
+  - 451
+  active_years:
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+- id: 508
+  name: INPFL
+  government: false
+  region:
+  - Africa
+  countries:
+  - 450
+  active_years:
+  - 1990
+- id: 509
+  name: LURD
+  government: false
+  region:
+  - Africa
+  countries:
+  - 450
+  - 451
+  active_years:
+  - 2002
+  - 2003
+- id: 513
+  name: ANC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 560
+  active_years:
+  - 1993
+- id: 522
+  name: FIAA
+  government: false
+  region:
+  - Africa
+  countries:
+  - 432
+  active_years:
+  - 1994
+- id: 527
+  name: FPR
+  government: false
+  region:
+  - Africa
+  countries:
+  - 516
+  - 517
+  active_years:
+  - 1990
+  - 1992
+  - 1993
+  - 1994
+- id: 528
+  name: FDLR-FOCA
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  - 500
+  - 510
+  active_years:
+  - 2002
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2012
+  - 2015
+  - 2016
+  - 2020
+  - 2024
+- id: 529
+  name: MFDC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 433
+  active_years:
+  - 1992
+  - 1993
+  - 1997
+  - 1998
+- id: 532
+  name: RUF
+  government: false
+  region:
+  - Africa
+  countries:
+  - 438
+  - 451
+  active_years:
+  - 1991
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+- id: 533
+  name: AFRC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 438
+  - 451
+  active_years:
+  - 1998
+  - 1999
+- id: 534
+  name: Kamajors
+  government: false
+  region:
+  - Africa
+  countries:
+  - 451
+  active_years:
+  - 1995
+- id: 538
+  name: GIA
+  government: false
+  region:
+  - Africa
+  countries:
+  - 615
+  active_years:
+  - 1993
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+- id: 539
+  name: AQIM
+  government: false
+  region:
+  - Africa
+  countries:
+  - 432
+  - 435
+  - 437
+  - 439
+  - 600
+  - 615
+  active_years:
+  - 2004
+  - 2006
+  - 2007
+  - 2009
+  - 2011
+  - 2016
+- id: 545
+  name: Cobras
+  government: false
+  region:
+  - Africa
+  countries:
+  - 484
+  active_years:
+  - 1997
+- id: 548
+  name: Ntsiloulous
+  government: false
+  region:
+  - Africa
+  countries:
+  - 484
+  active_years:
+  - 1998
+  - 2002
+- id: 554
+  name: Seleka
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2013
+- id: 556
+  name: MPCI
+  government: false
+  region:
+  - Africa
+  countries:
+  - 437
+  active_years:
+  - 2002
+  - 2003
+- id: 557
+  name: MPIGO
+  government: false
+  region:
+  - Africa
+  countries:
+  - 437
+  active_years:
+  - 2003
+- id: 558
+  name: FRCI
+  government: false
+  region:
+  - Africa
+  countries:
+  - 437
+  active_years:
+  - 2011
+- id: 567
+  name: UNITA
+  government: false
+  region:
+  - Africa
+  countries:
+  - 540
+  - 551
+  - 565
+  active_years:
+  - 1989
+  - 1990
+  - 1993
+  - 1994
+  - 1995
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+- id: 586
+  name: AWB
+  government: false
+  region:
+  - Africa
+  countries:
+  - 560
+  active_years:
+  - 1994
+- id: 588
+  name: Bakassi boys
+  government: false
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2000
+- id: 603
+  name: FAPC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2004
+- id: 606
+  name: FNI
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+- id: 623
+  name: Interahamwe, ex-FAR
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  - 517
+  active_years:
+  - 1994
+  - 1995
+- id: 630
+  name: 'Janjaweed '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  - 483
+  - 625
+  active_years:
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2010
+- id: 639
+  name: LPC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 450
+  active_years:
+  - 1993
+  - 1994
+  - 1995
+- id: 645
+  name: Mayi Mayi - Chinja Chinja
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2004
+  - 2005
+- id: 648
+  name: Mayi Mayi
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+- id: 649
+  name: MFDC - FN
+  government: false
+  region:
+  - Africa
+  countries:
+  - 433
+  active_years:
+  - 2002
+- id: 659
+  name: 'Mayi Mayi - Ngilima '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 1996
+- id: 665
+  name: PAC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 560
+  active_years:
+  - 1993
+- id: 672
+  name: Rastas
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2005
+  - 2007
+- id: 674
+  name: RCD - LN
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2004
+- id: 678
+  name: RRA
+  government: false
+  region:
+  - Africa
+  countries:
+  - 520
+  active_years:
+  - 1999
+- id: 686
+  name: SSDF
+  government: false
+  region:
+  - Africa
+  countries:
+  - 625
+  active_years:
+  - 1991
+  - 1992
+  - 1993
+- id: 695
+  name: ULIMO - J
+  government: false
+  region:
+  - Africa
+  countries:
+  - 450
+  active_years:
+  - 1995
+  - 1996
+- id: 696
+  name: ULIMO - K
+  government: false
+  region:
+  - Africa
+  countries:
+  - 438
+  - 450
+  active_years:
+  - 1994
+  - 1995
+  - 1996
+- id: 697
+  name: ULIMO
+  government: false
+  region:
+  - Africa
+  countries:
+  - 450
+  - 451
+  active_years:
+  - 1993
+- id: 704
+  name: SLDF
+  government: false
+  region:
+  - Africa
+  countries:
+  - 501
+  active_years:
+  - 2007
+  - 2008
+- id: 714
+  name: Mungiki
+  government: false
+  region:
+  - Africa
+  countries:
+  - 501
+  active_years:
+  - 2007
+  - 2008
+  - 2009
+- id: 715
+  name: 'MPGK '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 432
+  active_years:
+  - 1994
+- id: 717
+  name: Al-Shabaab
+  government: false
+  region:
+  - Africa
+  countries:
+  - 500
+  - 501
+  - 520
+  - 522
+  active_years:
+  - 2008
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+- id: 743
+  name: FARC
+  government: false
+  region:
+  - Americas
+  countries:
+  - 95
+  - 100
+  - 101
+  active_years:
+  - 1994
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+- id: 744
+  name: ELN
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  - 101
+  active_years:
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2017
+  - 2018
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 750
+  name: Sendero Luminoso
+  government: false
+  region:
+  - Americas
+  countries:
+  - 135
+  active_years:
+  - 1989
+  - 1990
+  - 1991
+  - 1992
+  - 1993
+- id: 769
+  name: 'al-Qaida '
+  government: false
+  region:
+  - Americas
+  countries:
+  - 2
+  - 200
+  - 501
+  - 616
+  - 640
+  - 670
+  - 770
+  active_years:
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+- id: 771
+  name: AUC
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  - 101
+  - 130
+  active_years:
+  - 1989
+  - 1990
+  - 1995
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+- id: 772
+  name: Comando Vermelho
+  government: false
+  region:
+  - Americas
+  countries:
+  - 140
+  active_years:
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 774
+  name: Medellín Cartel
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 1989
+  - 1993
+- id: 775
+  name: Sinaloa Cartel
+  government: false
+  region:
+  - Americas
+  countries:
+  - 70
+  active_years:
+  - 2012
+  - 2022
+  - 2024
+  - 2025
+- id: 779
+  name: Paz y Justicia
+  government: false
+  region:
+  - Americas
+  countries:
+  - 70
+  active_years:
+  - 1997
+- id: 882
+  name: Ampatuan militia
+  government: false
+  region:
+  - Asia
+  countries:
+  - 840
+  active_years:
+  - 2009
+- id: 883
+  name: DHD
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2005
+- id: 884
+  name: KRA
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2004
+- id: 885
+  name: HPC
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2003
+- id: 886
+  name: AAH
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 645
+  active_years:
+  - 2009
+- id: 896
+  name: PARECO
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2008
+- id: 974
+  name: 'SPM/SNA '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 520
+  active_years:
+  - 1992
+- id: 1043
+  name: 'RCD - CP '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2004
+- id: 1045
+  name: Buxton gang
+  government: false
+  region:
+  - Americas
+  countries:
+  - 110
+  active_years:
+  - 2008
+- id: 1046
+  name: Fedayeen Islam
+  government: false
+  region:
+  - Asia
+  countries:
+  - 770
+  active_years:
+  - 2008
+- id: 1047
+  name: Indian Mujahideen
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2005
+  - 2006
+  - 2008
+  - 2011
+- id: 1051
+  name: JAS
+  government: false
+  region:
+  - Africa
+  countries:
+  - 436
+  - 471
+  - 475
+  - 483
+  active_years:
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 1066
+  name: NDFB - RD
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2010
+- id: 1070
+  name: Lashkar-e-Taiba
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2003
+  - 2007
+  - 2008
+- id: 1076
+  name: UPC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2002
+  - 2003
+- id: 1077
+  name: FRPI
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2002
+  - 2004
+  - 2012
+- id: 1088
+  name: Los Zetas
+  government: false
+  region:
+  - Americas
+  countries:
+  - 70
+  - 90
+  active_years:
+  - 2010
+  - 2011
+- id: 1104
+  name: Laskar Jihad
+  government: false
+  region:
+  - Asia
+  countries:
+  - 850
+  active_years:
+  - 2000
+- id: 1114
+  name: Mayi Mayi Complet
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2010
+- id: 1116
+  name: LDF
+  government: false
+  region:
+  - Africa
+  countries:
+  - 450
+  active_years:
+  - 1993
+- id: 1117
+  name: IFP
+  government: false
+  region:
+  - Africa
+  countries:
+  - 560
+  active_years:
+  - 1993
+- id: 1128
+  name: ALiR
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  - 500
+  - 517
+  active_years:
+  - 1996
+  - 1997
+  - 1998
+  - 1999
+  - 2000
+- id: 1131
+  name: AJPSN
+  government: false
+  region:
+  - Africa
+  countries:
+  - 437
+  active_years:
+  - 2011
+- id: 1151
+  name: Jalisco Cartel New Generation
+  government: false
+  region:
+  - Americas
+  countries:
+  - 70
+  - 130
+  active_years:
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 1160
+  name: M23
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2013
+  - 2022
+  - 2023
+- id: 1185
+  name: PCPA
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2010
+- id: 1186
+  name: PFT
+  government: false
+  region:
+  - Asia
+  countries:
+  - 702
+  active_years:
+  - 1992
+- id: 1187
+  name: PLFI
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2012
+- id: 1193
+  name: FNDIC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2003
+- id: 1198
+  name: Mayi Mayi Simba
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2012
+- id: 1199
+  name: Raia Mutomboki
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2012
+- id: 1212
+  name: Government of eSwatini (Swaziland)
+  government: true
+  region:
+  - Africa
+  countries:
+  - 572
+  active_years:
+  - 2021
+- id: 1218
+  name: JMB
+  government: false
+  region:
+  - Asia
+  countries:
+  - 771
+  active_years:
+  - 2004
+- id: 1645
+  name: FDPC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2015
+- id: 2027
+  name: 'MLIA '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2009
+- id: 2707
+  name: HuJI
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2007
+- id: 2933
+  name: Al-Khobar
+  government: false
+  region:
+  - Asia
+  countries:
+  - 840
+  active_years:
+  - 2007
+- id: 3037
+  name: NDC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2013
+- id: 3040
+  name: Nyatura
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2012
+  - 2013
+- id: 3043
+  name: CNPSC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2019
+  - 2020
+- id: 3047
+  name: TTP-Islahi
+  government: false
+  region:
+  - Asia
+  countries:
+  - 770
+  active_years:
+  - 2012
+- id: 3051
+  name: ULA
+  government: false
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 2024
+- id: 3176
+  name: PCC
+  government: false
+  region:
+  - Americas
+  countries:
+  - 140
+  active_years:
+  - 2019
+  - 2022
+- id: 3192
+  name: UBA
+  government: false
+  region:
+  - Asia
+  countries:
+  - 770
+  active_years:
+  - 2014
+- id: 3481
+  name: Signed-in-Blood Battalion
+  government: false
+  region:
+  - Africa
+  countries:
+  - 615
+  active_years:
+  - 2013
+- id: 3554
+  name: FPR
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2014
+- id: 3845
+  name: MLC, RCD-N
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2002
+- id: 3846
+  name: 'FNI, FRPI, RCD-K-ML '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2003
+- id: 3847
+  name: FNI, FRPI
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2003
+- id: 3848
+  name: 'FRPI, RCD-K-ML '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2002
+- id: 3851
+  name: MLC, RCD-N, UPC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2002
+- id: 3854
+  name: CNDD-FDD , Mayi Mayi
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2000
+- id: 3859
+  name: FAPC, FNI
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2003
+- id: 3861
+  name: GACI, Interahamwe, ex-FAR
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 1996
+- id: 3864
+  name: Serbian irregulars, Serbian Republic of Bosnia-Herzegovina
+  government: false
+  region:
+  - Europe
+  countries:
+  - 345
+  - 346
+  active_years:
+  - 1992
+  - 1993
+  - 1994
+  - 1995
+- id: 3967
+  name: Kata Katanga
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2013
+- id: 4007
+  name: FPRC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2018
+- id: 4149
+  name: Mayi Mayi Kifuafua, Raia Mutomboki
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2012
+- id: 4163
+  name: PYD
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 652
+  active_years:
+  - 2013
+  - 2014
+  - 2015
+- id: 4201
+  name: anti-Balaka
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2013
+  - 2014
+  - 2015
+  - 2017
+  - 2018
+- id: 4226
+  name: SPLM/A - IO
+  government: false
+  region:
+  - Africa
+  countries:
+  - 626
+  active_years:
+  - 2013
+  - 2014
+  - 2016
+  - 2018
+  - 2019
+- id: 4233
+  name: ADP
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 660
+  active_years:
+  - 2013
+- id: 4340
+  name: UDA
+  government: false
+  region:
+  - Europe
+  countries:
+  - 200
+  active_years:
+  - 1993
+- id: 4456
+  name: Syrian insurgents
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 652
+  active_years:
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+- id: 5546
+  name: Al-Umma
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 1998
+- id: 5621
+  name: Los Rastrojos
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 2009
+- id: 5632
+  name: Las Águilas Negras
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 2008
+  - 2009
+- id: 5659
+  name: al-Mahdi Army
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 645
+  active_years:
+  - 2006
+  - 2007
+- id: 5826
+  name: NDFB-S
+  government: false
+  region:
+  - Asia
+  countries:
+  - 750
+  active_years:
+  - 2014
+- id: 5895
+  name: Jaish-ul-Islam
+  government: false
+  region:
+  - Asia
+  countries:
+  - 770
+  active_years:
+  - 2014
+- id: 5986
+  name: UPLD
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2024
+- id: 5997
+  name: Mayi Mayi - Makabe
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2002
+  - 2003
+- id: 5999
+  name: UPC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2021
+- id: 6009
+  name: Los Ardillos
+  government: false
+  region:
+  - Americas
+  countries:
+  - 70
+  active_years:
+  - 2022
+- id: 6185
+  name: Elements (Luba militia)
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2015
+- id: 6186
+  name: Perci (Batwa militia)
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2015
+- id: 6287
+  name: IPOB
+  government: false
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2021
+  - 2025
+- id: 6288
+  name: SDF
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 652
+  active_years:
+  - 2015
+- id: 6354
+  name: MPC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2017
+- id: 6491
+  name: NDC-R
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2019
+  - 2020
+- id: 6506
+  name: Bloque Central Bolívar
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 2003
+  - 2004
+  - 2006
+- id: 6513
+  name: 'RED-TABARA '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 516
+  active_years:
+  - 2018
+- id: 6579
+  name: MAS
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 1991
+- id: 6587
+  name: Mayi Mayi Mazembe
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2016
+  - 2017
+  - 2020
+- id: 6590
+  name: Kamuina Nsapu
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2016
+  - 2017
+  - 2018
+- id: 6641
+  name: 3R
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2016
+  - 2017
+  - 2019
+- id: 6648
+  name: Ansaroul Islam
+  government: false
+  region:
+  - Africa
+  countries:
+  - 432
+  - 439
+  active_years:
+  - 2017
+- id: 6683
+  name: Mayi Mayi Mazembe, NDC-R
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2017
+- id: 6684
+  name: RMDC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  - 517
+  active_years:
+  - 2018
+- id: 6692
+  name: ARSA
+  government: false
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 2017
+- id: 6699
+  name: FPRC, MPC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2016
+- id: 6716
+  name: JNIM
+  government: false
+  region:
+  - Africa
+  countries:
+  - 432
+  - 434
+  - 436
+  - 439
+  - 461
+  active_years:
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 6739
+  name: Bana Mura
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2017
+- id: 6769
+  name: Dozos (Mali)
+  government: false
+  region:
+  - Africa
+  countries:
+  - 432
+  active_years:
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2024
+- id: 6802
+  name: ADF, Mayi Mayi Mayangose
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2014
+- id: 6807
+  name: ADF, Vuba militia
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2016
+- id: 6837
+  name: GATIA, MSA
+  government: false
+  region:
+  - Africa
+  countries:
+  - 432
+  - 436
+  active_years:
+  - 2018
+- id: 6845
+  name: Anti-Balaka - Mokom
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2016
+- id: 6857
+  name: Koglweogo
+  government: false
+  region:
+  - Africa
+  countries:
+  - 439
+  active_years:
+  - 2019
+  - 2020
+- id: 6918
+  name: Twiganeho
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2020
+- id: 6920
+  name: CMC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2017
+  - 2020
+- id: 6930
+  name: MNLC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2018
+- id: 6968
+  name: Anti-Balaka - Mokom, FPRC, MPC, RPRC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2017
+- id: 7032
+  name: ASWJ
+  government: false
+  region:
+  - Africa
+  countries:
+  - 541
+  active_years:
+  - 2018
+  - 2019
+- id: 7092
+  name: Dan na Ambassagou
+  government: false
+  region:
+  - Africa
+  countries:
+  - 432
+  active_years:
+  - 2018
+  - 2019
+  - 2020
+- id: 7163
+  name: FRGO
+  government: false
+  region:
+  - Africa
+  countries:
+  - 437
+  active_years:
+  - 2011
+- id: 7165
+  name: THKP-C Acilciler
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 640
+  active_years:
+  - 2013
+- id: 7214
+  name: EGC
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  - 101
+  active_years:
+  - 2017
+  - 2018
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 7306
+  name: FPRC, MPC, Self-Defense Mujahidin (CAR)
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2018
+- id: 7332
+  name: Ambazonia insurgents
+  government: false
+  region:
+  - Africa
+  countries:
+  - 471
+  - 475
+  active_years:
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 7372
+  name: Yan Sakai
+  government: false
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2018
+  - 2021
+- id: 7463
+  name: URDPC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 7542
+  name: BRAS
+  government: false
+  region:
+  - Asia
+  countries:
+  - 770
+  active_years:
+  - 2024
+  - 2025
+- id: 7559
+  name: ALC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2022
+- id: 7595
+  name: OLA
+  government: false
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 7644
+  name: FPIC Chambre noire sanduku
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+- id: 7669
+  name: IS, Syrian insurgents
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 652
+  active_years:
+  - 2013
+- id: 7734
+  name: Zaire self-defense group
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 7735
+  name: AFP-Gutabara, Ngumino
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2021
+- id: 7743
+  name: AFP-Gutabara, Ngumino, Twiganeho
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2022
+- id: 7793
+  name: G9
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2020
+  - 2021
+  - 2022
+  - 2024
+- id: 7819
+  name: FDBC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2022
+- id: 7846
+  name: FPIC Chambre noire sanduku, URDPC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2022
+- id: 7847
+  name: Forces of Micanor Altes
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2024
+- id: 7849
+  name: Grand Ravine
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2023
+  - 2024
+- id: 7863
+  name: Gran Grif
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2024
+  - 2025
+- id: 7870
+  name: CPC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  - 490
+  active_years:
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+- id: 7886
+  name: Delmas 19 gang , Delmas 6 gang, Delmas 95 gang, Forces of Micanor Altes, Nan Barozi gang, Nan Belekou gang, Nan Boston
+    gang, Nan Chabón, Nan Ti Bwa gang, Pilate Base gang, Simon Pele gang
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2020
+- id: 7889
+  name: '400 Mawozo '
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2022
+- id: 7922
+  name: Autodefensas Conquistadoras de la Sierra Nevada
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 2025
+- id: 7938
+  name: CODECO-BTD
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2020
+  - 2022
+- id: 7963
+  name: Government of Eritrea, Government of Ethiopia
+  government: true
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 2020
+  - 2021
+- id: 7974
+  name: 'Frente Oliver Sinisterra '
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 2018
+- id: 8058
+  name: Bonta Boys
+  government: false
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2021
+- id: 8060
+  name: NUG
+  government: false
+  region:
+  - Asia
+  countries:
+  - 775
+  active_years:
+  - 2021
+  - 2022
+- id: 8104
+  name: G-Pep
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2023
+- id: 8118
+  name: Fano
+  government: false
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 8175
+  name: FRODEBU
+  government: false
+  region:
+  - Africa
+  countries:
+  - 516
+  active_years:
+  - 1993
+- id: 8279
+  name: Bonde do Maluco
+  government: false
+  region:
+  - Americas
+  countries:
+  - 140
+  active_years:
+  - 2022
+  - 2023
+- id: 8442
+  name: Los Costenos
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 2025
+- id: 8468
+  name: FARC-EMC
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 2018
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+- id: 8469
+  name: 'FARC - Segunda Marquetalia '
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 2023
+- id: 8478
+  name: Comandos de la Frontera
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 2022
+- id: 8485
+  name: Mayi Mayi Chini ya Tuna
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2022
+- id: 8488
+  name: FDLR-FOCA, Forces of Nsengiyumva, NDC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2010
+- id: 8541
+  name: Katuku
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 1993
+- id: 8550
+  name: Government of Burundi, Government of Rwanda
+  government: true
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 1996
+- id: 8551
+  name: AFDL, Mayi Mayi
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 1996
+- id: 8586
+  name: Bonde dos 40
+  government: false
+  region:
+  - Americas
+  countries:
+  - 140
+  active_years:
+  - 2023
+- id: 8632
+  name: Mobondo
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2023
+  - 2024
+  - 2025
+- id: 8633
+  name: AAKG
+  government: false
+  region:
+  - Africa
+  countries:
+  - 482
+  active_years:
+  - 2024
+  - 2025
+- id: 8635
+  name: RSF
+  government: false
+  region:
+  - Africa
+  countries:
+  - 625
+  active_years:
+  - 2023
+  - 2024
+  - 2025
+- id: 8746
+  name: 5 Segond, Taliban
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2023
+- id: 8775
+  name: Sans Echec
+  government: false
+  region:
+  - Africa
+  countries:
+  - 516
+  active_years:
+  - 1995
+- id: 8785
+  name: Sans Défaite
+  government: false
+  region:
+  - Africa
+  countries:
+  - 516
+  active_years:
+  - 1994
+- id: 8803
+  name: OLA - Fekade Abdisa faction
+  government: false
+  region:
+  - Africa
+  countries:
+  - 530
+  active_years:
+  - 2021
+- id: 8818
+  name: CNDD-Benjamin
+  government: false
+  region:
+  - Africa
+  countries:
+  - 516
+  active_years:
+  - 1997
+- id: 8832
+  name: VDP
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2023
+  - 2024
+  - 2025
+- id: 8869
+  name: Kokorat sans ras
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2025
+- id: 8876
+  name: Terre Noire
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2023
+- id: 8885
+  name: AFC
+  government: false
+  region:
+  - Africa
+  countries:
+  - 490
+  active_years:
+  - 2023
+  - 2024
+  - 2025
+- id: 8895
+  name: 'Full Force '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2025
+- id: 9067
+  name: Viv Ansanm
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2024
+  - 2025
+- id: 9083
+  name: I don't care
+  government: false
+  region:
+  - Asia
+  countries:
+  - 910
+  active_years:
+  - 2024
+- id: 9110
+  name: 'Forces of Bello Turji '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2025
+- id: 9132
+  name: 'Forces of Dan Saadiya  '
+  government: false
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2025
+- id: 9156
+  name: Forces of Barbaru
+  government: false
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2025
+- id: 9191
+  name: EMBF
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 2024
+- id: 9194
+  name: Forces of Ayongou
+  government: false
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2024
+- id: 9195
+  name: Forces of Terwase Akwanza
+  government: false
+  region:
+  - Africa
+  countries:
+  - 475
+  active_years:
+  - 2023
+- id: 9237
+  name: Lakurawa
+  government: false
+  region:
+  - Africa
+  countries:
+  - 436
+  - 475
+  active_years:
+  - 2025
+- id: 9249
+  name: Government of Mali, Government of Russia (Soviet Union)
+  government: true
+  region:
+  - Africa
+  countries:
+  - 432
+  active_years:
+  - 2024
+  - 2025
+- id: 9321
+  name: Dignidad por Arauca
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 2008
+- id: 9336
+  name: 'Frente William Rivas '
+  government: false
+  region:
+  - Americas
+  countries:
+  - 100
+  active_years:
+  - 2003
+- id: 9363
+  name: Force Résistance Chandelle
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2024
+- id: 9449
+  name: Military Council for the Liberation of Syria
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 652
+  active_years:
+  - 2025
+- id: 9506
+  name: La Coalition
+  government: false
+  region:
+  - Americas
+  countries:
+  - 41
+  active_years:
+  - 2025
+- id: 9630
+  name: Los Monos
+  government: false
+  region:
+  - Americas
+  countries:
+  - 160
+  active_years:
+  - 2022
+  - 2024
+  - 2025
+- id: 9645
+  name: SFA
+  government: false
+  region:
+  - Africa
+  countries:
+  - 625
+  active_years:
+  - 2025
+- id: 9660
+  name: M18
+  government: false
+  region:
+  - Americas
+  countries:
+  - 90
+  - 91
+  active_years:
+  - 2023
+  - 2024
+- id: 9661
+  name: MS-13
+  government: false
+  region:
+  - Americas
+  countries:
+  - 70
+  - 90
+  - 91
+  - 92
+  active_years:
+  - 2003
+  - 2004
+  - 2022
+- id: 9771
+  name: Saraya Ansar al-Sunna
+  government: false
+  region:
+  - Middle East
+  countries:
+  - 652
+  active_years:
+  - 2025

@@ -1,0 +1,4643 @@
+dyad_id,conflict_id,year,acd_intensity,type,region,ged_events,ged_deaths
+399,200,1946,2,intrastate,Americas,,
+400,200,1949,1,intrastate,Americas,,
+400,200,1952,1,intrastate,Americas,,
+401,200,1967,1,intrastate,Americas,,
+402,201,1946,1,extrasystemic,Asia,,
+402,201,1947,1,extrasystemic,Asia,,
+402,201,1948,1,extrasystemic,Asia,,
+402,201,1949,1,extrasystemic,Asia,,
+402,201,1950,1,extrasystemic,Asia,,
+402,201,1951,1,extrasystemic,Asia,,
+402,201,1952,1,extrasystemic,Asia,,
+402,201,1953,1,extrasystemic,Asia,,
+403,202,1946,2,intrastate,Asia,,
+403,202,1947,2,intrastate,Asia,,
+403,202,1948,2,intrastate,Asia,,
+403,202,1949,2,intrastate,Asia,,
+404,203,1946,2,intrastate,Europe,,
+404,203,1947,2,intrastate,Europe,,
+404,203,1948,2,intrastate,Europe,,
+404,203,1949,2,intrastate,Europe,,
+405,204,1946,1,extrasystemic,Asia,,
+405,204,1947,1,extrasystemic,Asia,,
+405,204,1948,1,extrasystemic,Asia,,
+405,204,1949,1,extrasystemic,Asia,,
+406,205,1946,1,internationalized-intrastate,Middle East,,
+406,205,1966,1,internationalized-intrastate,Middle East,,
+406,205,1967,1,internationalized-intrastate,Middle East,,
+406,205,1968,1,internationalized-intrastate,Middle East,,
+406,205,1979,2,internationalized-intrastate,Middle East,,
+406,205,1980,2,internationalized-intrastate,Middle East,,
+406,205,1981,1,internationalized-intrastate,Middle East,,
+406,205,1982,2,internationalized-intrastate,Middle East,,
+406,205,1983,1,internationalized-intrastate,Middle East,,
+406,205,1984,1,internationalized-intrastate,Middle East,,
+406,205,1985,1,internationalized-intrastate,Middle East,,
+406,205,1986,1,internationalized-intrastate,Middle East,,
+406,205,1987,1,internationalized-intrastate,Middle East,,
+406,205,1988,1,internationalized-intrastate,Middle East,,
+406,205,1990,1,internationalized-intrastate,Middle East,14,31
+406,205,1991,0,internationalized-intrastate,Middle East,1,0
+406,205,1992,0,internationalized-intrastate,Middle East,1,4
+406,205,1993,1,internationalized-intrastate,Middle East,9,110
+406,205,1994,0,internationalized-intrastate,Middle East,5,18
+406,205,1995,0,internationalized-intrastate,Middle East,3,17
+406,205,1996,1,internationalized-intrastate,Middle East,4,27
+406,205,2016,1,internationalized-intrastate,Middle East,14,30
+406,205,2017,0,internationalized-intrastate,Middle East,2,2
+406,205,2018,1,internationalized-intrastate,Middle East,7,44
+406,205,2019,0,internationalized-intrastate,Middle East,8,18
+406,205,2020,0,internationalized-intrastate,Middle East,4,7
+406,205,2021,0,internationalized-intrastate,Middle East,5,13
+406,205,2022,0,internationalized-intrastate,Middle East,3,20
+407,206,1946,1,internationalized-intrastate,Middle East,,
+408,207,1946,1,extrasystemic,Middle East,,
+409,208,1946,1,extrasystemic,Asia,,
+409,208,1947,1,extrasystemic,Asia,,
+409,208,1948,1,extrasystemic,Asia,,
+409,208,1949,1,extrasystemic,Asia,,
+409,208,1950,1,extrasystemic,Asia,,
+409,208,1951,1,extrasystemic,Asia,,
+409,208,1952,1,extrasystemic,Asia,,
+409,208,1953,1,extrasystemic,Asia,,
+410,209,1946,2,intrastate,Asia,,
+410,209,1947,2,intrastate,Asia,,
+410,209,1948,2,intrastate,Asia,,
+410,209,1949,2,intrastate,Asia,,
+410,209,1950,2,intrastate,Asia,,
+410,209,1951,2,intrastate,Asia,,
+410,209,1952,2,intrastate,Asia,,
+410,209,1953,2,intrastate,Asia,,
+410,209,1954,2,intrastate,Asia,,
+411,209,1969,1,intrastate,Asia,,
+411,209,1970,1,intrastate,Asia,,
+411,209,1971,1,intrastate,Asia,,
+411,209,1972,1,intrastate,Asia,,
+411,209,1973,1,intrastate,Asia,,
+411,209,1974,1,intrastate,Asia,,
+411,209,1975,1,intrastate,Asia,,
+411,209,1976,1,intrastate,Asia,,
+411,209,1977,1,intrastate,Asia,,
+411,209,1978,1,intrastate,Asia,,
+411,209,1979,1,intrastate,Asia,,
+411,209,1980,1,intrastate,Asia,,
+411,209,1981,1,intrastate,Asia,,
+411,209,1982,2,intrastate,Asia,,
+411,209,1983,2,intrastate,Asia,,
+411,209,1984,2,intrastate,Asia,,
+411,209,1985,2,intrastate,Asia,,
+411,209,1986,2,intrastate,Asia,,
+411,209,1987,2,intrastate,Asia,,
+411,209,1988,1,intrastate,Asia,,
+411,209,1989,1,intrastate,Asia,92,725
+411,209,1990,2,intrastate,Asia,83,1140
+411,209,1991,2,intrastate,Asia,95,1514
+411,209,1992,1,intrastate,Asia,51,430
+411,209,1993,1,intrastate,Asia,21,99
+411,209,1994,1,intrastate,Asia,14,69
+411,209,1995,1,intrastate,Asia,7,36
+411,209,1996,0,intrastate,Asia,2,6
+411,209,1997,1,intrastate,Asia,11,32
+411,209,1998,0,intrastate,Asia,1,6
+411,209,1999,1,intrastate,Asia,32,93
+411,209,2000,1,intrastate,Asia,27,140
+411,209,2001,1,intrastate,Asia,32,142
+411,209,2002,1,intrastate,Asia,90,280
+411,209,2003,1,intrastate,Asia,46,231
+411,209,2004,1,intrastate,Asia,92,270
+411,209,2005,1,intrastate,Asia,64,234
+411,209,2006,1,intrastate,Asia,84,310
+411,209,2007,1,intrastate,Asia,44,132
+411,209,2008,1,intrastate,Asia,68,184
+411,209,2009,1,intrastate,Asia,51,377
+411,209,2010,1,intrastate,Asia,70,258
+411,209,2011,1,intrastate,Asia,94,204
+411,209,2012,1,intrastate,Asia,77,182
+411,209,2013,1,intrastate,Asia,72,165
+411,209,2014,1,intrastate,Asia,92,190
+411,209,2015,1,intrastate,Asia,91,168
+411,209,2016,1,intrastate,Asia,56,92
+411,209,2017,1,intrastate,Asia,79,177
+411,209,2018,1,intrastate,Asia,57,144
+411,209,2019,1,intrastate,Asia,64,138
+411,209,2020,1,intrastate,Asia,76,165
+411,209,2021,1,intrastate,Asia,82,195
+411,209,2022,1,intrastate,Asia,92,167
+411,209,2023,1,intrastate,Asia,73,164
+411,209,2024,1,intrastate,Asia,58,133
+411,209,2025,1,intrastate,Asia,47,141
+412,209,1987,1,intrastate,Asia,,
+412,209,1989,1,intrastate,Asia,6,97
+412,209,1990,1,intrastate,Asia,4,35
+413,210,1946,1,intrastate,Europe,,
+413,210,1947,1,intrastate,Europe,,
+413,210,1948,1,intrastate,Europe,,
+414,211,1946,1,intrastate,Europe,,
+415,211,1946,1,intrastate,Europe,,
+416,212,1946,2,intrastate,Europe,,
+416,212,1947,2,intrastate,Europe,,
+416,212,1948,1,intrastate,Europe,,
+417,213,1946,2,intrastate,Europe,,
+417,213,1947,2,intrastate,Europe,,
+417,213,1948,2,intrastate,Europe,,
+417,213,1949,1,intrastate,Europe,,
+417,213,1950,1,intrastate,Europe,,
+418,214,1946,1,interstate,Europe; Asia,,
+419,215,1946,1,interstate,Europe,,
+420,216,1946,2,extrasystemic,Asia,,
+420,216,1947,2,extrasystemic,Asia,,
+420,216,1948,2,extrasystemic,Asia,,
+420,216,1949,2,extrasystemic,Asia,,
+420,216,1950,2,extrasystemic,Asia,,
+420,216,1951,2,extrasystemic,Asia,,
+420,216,1952,2,extrasystemic,Asia,,
+420,216,1953,2,extrasystemic,Asia,,
+420,216,1954,2,extrasystemic,Asia,,
+421,217,1947,2,intrastate,Asia,,
+422,218,1948,2,interstate,Asia,,
+422,218,1964,1,interstate,Asia,,
+422,218,1965,2,interstate,Asia,,
+422,218,1971,2,interstate,Asia,,
+422,218,1984,1,interstate,Asia,,
+422,218,1987,1,interstate,Asia,,
+422,218,1989,1,interstate,Asia,1,25
+422,218,1990,1,interstate,Asia,7,28
+422,218,1991,1,interstate,Asia,15,99
+422,218,1992,1,interstate,Asia,5,25
+422,218,1993,0,interstate,Asia,8,10
+422,218,1994,1,interstate,Asia,10,42
+422,218,1995,0,interstate,Asia,10,16
+422,218,1996,1,interstate,Asia,6,35
+422,218,1997,1,interstate,Asia,24,127
+422,218,1998,1,interstate,Asia,54,147
+422,218,1999,1,interstate,Asia,100,934
+422,218,2000,1,interstate,Asia,84,225
+422,218,2001,1,interstate,Asia,25,48
+422,218,2002,1,interstate,Asia,109,212
+422,218,2003,1,interstate,Asia,120,237
+422,218,2008,0,interstate,Asia,4,2
+422,218,2010,0,interstate,Asia,10,13
+422,218,2011,0,interstate,Asia,3,5
+422,218,2012,0,interstate,Asia,6,8
+422,218,2013,1,interstate,Asia,24,31
+422,218,2014,1,interstate,Asia,38,49
+422,218,2015,1,interstate,Asia,40,63
+422,218,2016,1,interstate,Asia,43,100
+422,218,2017,1,interstate,Asia,83,151
+422,218,2018,1,interstate,Asia,80,129
+422,218,2019,1,interstate,Asia,73,164
+422,218,2020,1,interstate,Asia,78,162
+422,218,2021,0,interstate,Asia,6,8
+422,218,2023,0,interstate,Asia,1,1
+422,218,2025,1,interstate,Asia,25,67
+423,219,1947,2,extrasystemic,Africa,,
+424,220,1947,2,intrastate,Americas,,
+425,220,1954,1,intrastate,Americas,,
+426,220,1989,1,intrastate,Americas,1,150
+427,221,1949,2,intrastate,Asia,,
+427,221,1950,2,intrastate,Asia,,
+427,221,1951,1,intrastate,Asia,,
+427,221,1952,1,intrastate,Asia,,
+427,221,1953,1,intrastate,Asia,,
+427,221,1954,1,intrastate,Asia,,
+427,221,1955,2,intrastate,Asia,,
+427,221,1956,1,intrastate,Asia,,
+427,221,1957,1,intrastate,Asia,,
+427,221,1958,1,intrastate,Asia,,
+427,221,1959,1,intrastate,Asia,,
+427,221,1960,1,intrastate,Asia,,
+427,221,1961,1,intrastate,Asia,,
+427,221,1962,1,intrastate,Asia,,
+427,221,1963,1,intrastate,Asia,,
+427,221,1964,1,intrastate,Asia,,
+427,221,1965,1,intrastate,Asia,,
+427,221,1966,1,intrastate,Asia,,
+427,221,1967,1,intrastate,Asia,,
+427,221,1968,1,intrastate,Asia,,
+427,221,1969,1,intrastate,Asia,,
+427,221,1970,1,intrastate,Asia,,
+427,221,1971,2,intrastate,Asia,,
+427,221,1972,1,intrastate,Asia,,
+427,221,1973,1,intrastate,Asia,,
+427,221,1974,1,intrastate,Asia,,
+427,221,1975,1,intrastate,Asia,,
+428,221,1966,1,intrastate,Asia,,
+428,221,1967,1,intrastate,Asia,,
+428,221,1968,1,intrastate,Asia,,
+428,221,1969,1,intrastate,Asia,,
+428,221,1970,1,intrastate,Asia,,
+428,221,1971,1,intrastate,Asia,,
+428,221,1972,1,intrastate,Asia,,
+428,221,1973,1,intrastate,Asia,,
+428,221,1974,1,intrastate,Asia,,
+428,221,1975,1,intrastate,Asia,,
+428,221,1976,1,intrastate,Asia,,
+428,221,1977,1,intrastate,Asia,,
+428,221,1978,1,intrastate,Asia,,
+428,221,1979,1,intrastate,Asia,,
+428,221,1980,1,intrastate,Asia,,
+428,221,1981,1,intrastate,Asia,,
+428,221,1982,1,intrastate,Asia,,
+428,221,1983,2,intrastate,Asia,,
+428,221,1984,2,intrastate,Asia,,
+428,221,1985,1,intrastate,Asia,,
+428,221,1986,1,intrastate,Asia,,
+428,221,1987,1,intrastate,Asia,,
+428,221,1988,1,intrastate,Asia,,
+428,221,1989,2,intrastate,Asia,26,1304
+428,221,1990,1,intrastate,Asia,16,393
+428,221,1991,1,intrastate,Asia,15,552
+428,221,1992,2,intrastate,Asia,23,1163
+428,221,1993,0,intrastate,Asia,4,11
+428,221,1994,1,intrastate,Asia,6,25
+428,221,1995,1,intrastate,Asia,9,110
+428,221,1997,1,intrastate,Asia,1,41
+428,221,1998,1,intrastate,Asia,4,36
+428,221,1999,0,intrastate,Asia,2,14
+428,221,2000,1,intrastate,Asia,10,68
+428,221,2001,1,intrastate,Asia,6,36
+428,221,2002,1,intrastate,Asia,22,110
+428,221,2003,1,intrastate,Asia,7,38
+428,221,2004,1,intrastate,Asia,7,27
+428,221,2005,1,intrastate,Asia,8,42
+428,221,2006,1,intrastate,Asia,14,104
+428,221,2007,1,intrastate,Asia,11,104
+428,221,2008,1,intrastate,Asia,6,33
+428,221,2009,1,intrastate,Asia,8,63
+428,221,2010,1,intrastate,Asia,15,63
+428,221,2011,1,intrastate,Asia,109,219
+428,221,2012,0,intrastate,Asia,1,4
+428,221,2014,0,intrastate,Asia,2,2
+428,221,2015,0,intrastate,Asia,4,5
+428,221,2018,0,intrastate,Asia,4,3
+428,221,2019,0,intrastate,Asia,1,1
+428,221,2020,0,intrastate,Asia,3,1
+428,221,2021,1,intrastate,Asia,40,78
+428,221,2022,1,intrastate,Asia,131,241
+428,221,2023,1,intrastate,Asia,178,191
+428,221,2024,1,intrastate,Asia,95,177
+428,221,2025,1,intrastate,Asia,72,151
+429,221,2000,1,intrastate,Asia,2,46
+429,221,2001,0,intrastate,Asia,1,3
+430,221,2010,1,intrastate,Asia,9,58
+430,221,2011,1,intrastate,Asia,8,115
+430,221,2013,1,intrastate,Asia,4,41
+430,221,2014,0,intrastate,Asia,4,13
+430,221,2015,0,intrastate,Asia,6,16
+431,222,1948,2,intrastate,Asia,,
+431,222,1949,2,intrastate,Asia,,
+431,222,1950,2,intrastate,Asia,,
+431,222,1951,2,intrastate,Asia,,
+431,222,1952,2,intrastate,Asia,,
+431,222,1953,2,intrastate,Asia,,
+431,222,1954,1,intrastate,Asia,,
+431,222,1955,1,intrastate,Asia,,
+431,222,1956,1,intrastate,Asia,,
+431,222,1957,1,intrastate,Asia,,
+431,222,1958,1,intrastate,Asia,,
+431,222,1959,1,intrastate,Asia,,
+431,222,1960,1,intrastate,Asia,,
+431,222,1961,1,intrastate,Asia,,
+431,222,1962,1,intrastate,Asia,,
+431,222,1963,1,intrastate,Asia,,
+431,222,1964,1,intrastate,Asia,,
+431,222,1965,1,intrastate,Asia,,
+431,222,1966,1,intrastate,Asia,,
+431,222,1967,1,intrastate,Asia,,
+431,222,1968,2,intrastate,Asia,,
+431,222,1969,2,intrastate,Asia,,
+431,222,1970,2,intrastate,Asia,,
+431,222,1971,2,intrastate,Asia,,
+431,222,1972,2,intrastate,Asia,,
+431,222,1973,2,intrastate,Asia,,
+431,222,1974,2,intrastate,Asia,,
+431,222,1975,2,intrastate,Asia,,
+431,222,1976,2,intrastate,Asia,,
+431,222,1977,2,intrastate,Asia,,
+431,222,1978,2,intrastate,Asia,,
+431,222,1979,2,intrastate,Asia,,
+431,222,1980,2,intrastate,Asia,,
+431,222,1981,1,intrastate,Asia,,
+431,222,1982,2,intrastate,Asia,,
+431,222,1983,1,intrastate,Asia,,
+431,222,1984,1,intrastate,Asia,,
+431,222,1985,1,intrastate,Asia,,
+431,222,1986,2,intrastate,Asia,,
+431,222,1987,1,intrastate,Asia,,
+431,222,1988,2,intrastate,Asia,,
+432,222,1948,1,intrastate,Asia,,
+432,222,1949,1,intrastate,Asia,,
+432,222,1950,1,intrastate,Asia,,
+432,222,1970,1,intrastate,Asia,,
+433,222,1948,2,intrastate,Asia,,
+433,222,1949,2,intrastate,Asia,,
+433,222,1950,2,intrastate,Asia,,
+433,222,1951,1,intrastate,Asia,,
+433,222,1952,1,intrastate,Asia,,
+433,222,1953,2,intrastate,Asia,,
+434,222,1990,1,intrastate,Asia,1,25
+434,222,1991,1,intrastate,Asia,1,25
+434,222,1992,1,intrastate,Asia,1,25
+434,222,1994,1,intrastate,Asia,1,25
+434,222,1999,0,intrastate,Asia,1,1
+434,222,2022,0,intrastate,Asia,4,3
+434,222,2023,0,intrastate,Asia,10,12
+434,222,2024,0,intrastate,Asia,1,0
+435,223,1948,1,intrastate,Asia,,
+435,223,1949,1,intrastate,Asia,,
+435,223,1950,1,intrastate,Asia,,
+435,223,1951,1,intrastate,Asia,,
+435,223,1952,1,intrastate,Asia,,
+435,223,1953,1,intrastate,Asia,,
+435,223,1954,1,intrastate,Asia,,
+435,223,1955,1,intrastate,Asia,,
+435,223,1956,1,intrastate,Asia,,
+435,223,1957,1,intrastate,Asia,,
+436,223,1948,1,intrastate,Asia,,
+436,223,1949,1,intrastate,Asia,,
+436,223,1950,1,intrastate,Asia,,
+436,223,1951,1,intrastate,Asia,,
+436,223,1952,1,intrastate,Asia,,
+436,223,1953,1,intrastate,Asia,,
+436,223,1954,1,intrastate,Asia,,
+436,223,1955,1,intrastate,Asia,,
+436,223,1956,1,intrastate,Asia,,
+436,223,1957,1,intrastate,Asia,,
+436,223,1958,1,intrastate,Asia,,
+436,223,1959,1,intrastate,Asia,,
+436,223,1960,1,intrastate,Asia,,
+436,223,1961,1,intrastate,Asia,,
+437,223,1964,1,intrastate,Asia,,
+437,223,1965,1,intrastate,Asia,,
+437,223,1966,1,intrastate,Asia,,
+437,223,1967,1,intrastate,Asia,,
+437,223,1968,1,intrastate,Asia,,
+437,223,1969,1,intrastate,Asia,,
+437,223,1970,1,intrastate,Asia,,
+437,223,1971,1,intrastate,Asia,,
+437,223,1972,1,intrastate,Asia,,
+438,223,1964,1,intrastate,Asia,,
+438,223,1965,1,intrastate,Asia,,
+438,223,1966,1,intrastate,Asia,,
+438,223,1967,1,intrastate,Asia,,
+438,223,1968,1,intrastate,Asia,,
+438,223,1969,1,intrastate,Asia,,
+438,223,1970,1,intrastate,Asia,,
+438,223,1971,1,intrastate,Asia,,
+438,223,1972,1,intrastate,Asia,,
+438,223,1973,1,intrastate,Asia,,
+439,223,1973,1,intrastate,Asia,,
+439,223,1974,1,intrastate,Asia,,
+439,223,1975,1,intrastate,Asia,,
+439,223,1976,1,intrastate,Asia,,
+439,223,1977,1,intrastate,Asia,,
+439,223,1978,1,intrastate,Asia,,
+440,223,1977,1,intrastate,Asia,,
+442,223,1991,1,intrastate,Asia,3,25
+442,223,1994,1,intrastate,Asia,9,109
+442,223,1998,0,intrastate,Asia,1,3
+442,223,2000,0,intrastate,Asia,1,11
+442,223,2012,0,intrastate,Asia,1,1
+442,223,2014,0,intrastate,Asia,2,2
+443,224,1949,1,intrastate,Asia,,
+443,224,1950,1,intrastate,Asia,,
+443,224,1951,1,intrastate,Asia,,
+444,224,1952,1,intrastate,Asia,,
+444,224,1953,1,intrastate,Asia,,
+444,224,1954,1,intrastate,Asia,,
+444,224,1955,1,intrastate,Asia,,
+444,224,1956,1,intrastate,Asia,,
+444,224,1957,1,intrastate,Asia,,
+444,224,1958,1,intrastate,Asia,,
+445,224,1959,1,intrastate,Asia,,
+445,224,1960,1,intrastate,Asia,,
+445,224,1961,1,intrastate,Asia,,
+445,224,1962,1,intrastate,Asia,,
+445,224,1963,1,intrastate,Asia,,
+445,224,1990,1,intrastate,Asia,3,112
+445,224,1994,0,intrastate,Asia,5,15
+445,224,1995,0,intrastate,Asia,1,4
+445,224,2013,0,intrastate,Asia,1,3
+445,224,2019,0,intrastate,Asia,1,0
+446,224,1996,1,intrastate,Asia,1,80
+447,225,1948,2,intrastate,Americas,,
+448,226,1948,2,interstate,Asia,,
+449,227,1948,2,intrastate,Asia,,
+449,227,1949,2,intrastate,Asia,,
+449,227,1950,2,intrastate,Asia,,
+449,227,1951,2,intrastate,Asia,,
+450,227,1969,1,intrastate,Asia,,
+450,227,1970,1,intrastate,Asia,,
+450,227,1971,1,intrastate,Asia,,
+451,227,1989,0,intrastate,Asia,1,7
+451,227,1990,0,intrastate,Asia,1,7
+451,227,1991,1,intrastate,Asia,9,78
+451,227,1992,1,intrastate,Asia,10,322
+451,227,1993,1,intrastate,Asia,20,182
+451,227,1994,1,intrastate,Asia,9,68
+451,227,1996,1,intrastate,Asia,16,173
+451,227,1997,1,intrastate,Asia,14,84
+451,227,1998,1,intrastate,Asia,18,99
+451,227,1999,1,intrastate,Asia,30,91
+451,227,2000,1,intrastate,Asia,43,146
+451,227,2001,1,intrastate,Asia,22,108
+451,227,2002,1,intrastate,Asia,36,122
+451,227,2003,1,intrastate,Asia,24,66
+451,227,2004,1,intrastate,Asia,9,27
+452,227,1992,0,intrastate,Asia,1,1
+452,227,1995,0,intrastate,Asia,1,3
+452,227,1996,0,intrastate,Asia,1,7
+452,227,1998,0,intrastate,Asia,6,19
+452,227,1999,1,intrastate,Asia,7,35
+452,227,2000,1,intrastate,Asia,8,25
+452,227,2001,1,intrastate,Asia,10,65
+452,227,2002,1,intrastate,Asia,12,57
+452,227,2003,1,intrastate,Asia,8,33
+452,227,2004,1,intrastate,Asia,8,44
+453,227,2004,0,intrastate,Asia,1,18
+453,227,2005,1,intrastate,Asia,43,199
+453,227,2006,1,intrastate,Asia,159,546
+453,227,2007,1,intrastate,Asia,126,377
+453,227,2008,1,intrastate,Asia,111,384
+453,227,2009,1,intrastate,Asia,166,522
+453,227,2010,1,intrastate,Asia,166,569
+453,227,2011,1,intrastate,Asia,104,299
+453,227,2012,1,intrastate,Asia,124,245
+453,227,2013,1,intrastate,Asia,91,215
+453,227,2014,1,intrastate,Asia,89,198
+453,227,2015,1,intrastate,Asia,82,146
+453,227,2016,1,intrastate,Asia,147,268
+453,227,2017,1,intrastate,Asia,94,245
+453,227,2018,1,intrastate,Asia,124,309
+453,227,2019,1,intrastate,Asia,94,216
+453,227,2020,1,intrastate,Asia,79,153
+453,227,2021,1,intrastate,Asia,82,181
+453,227,2022,1,intrastate,Asia,55,75
+453,227,2023,1,intrastate,Asia,63,96
+453,227,2024,1,intrastate,Asia,98,326
+453,227,2025,1,intrastate,Asia,107,417
+454,228,1948,2,interstate,Middle East,,
+454,228,1949,1,interstate,Middle East,,
+455,229,1948,1,extrasystemic,Asia,,
+455,229,1949,1,extrasystemic,Asia,,
+455,229,1950,2,extrasystemic,Asia,,
+455,229,1951,2,extrasystemic,Asia,,
+455,229,1952,2,extrasystemic,Asia,,
+455,229,1953,2,extrasystemic,Asia,,
+455,229,1954,1,extrasystemic,Asia,,
+455,229,1955,1,extrasystemic,Asia,,
+455,229,1956,1,extrasystemic,Asia,,
+455,229,1957,1,extrasystemic,Asia,,
+456,230,1948,2,intrastate,Middle East,,
+457,230,1962,2,internationalized-intrastate,Middle East,,
+457,230,1963,2,internationalized-intrastate,Middle East,,
+457,230,1964,2,internationalized-intrastate,Middle East,,
+457,230,1965,1,internationalized-intrastate,Middle East,,
+457,230,1966,2,internationalized-intrastate,Middle East,,
+457,230,1967,2,internationalized-intrastate,Middle East,,
+457,230,1968,1,internationalized-intrastate,Middle East,,
+457,230,1969,1,internationalized-intrastate,Middle East,,
+457,230,1970,1,internationalized-intrastate,Middle East,,
+458,230,1979,1,intrastate,Middle East,,
+458,230,1980,1,intrastate,Middle East,,
+458,230,1981,1,intrastate,Middle East,,
+458,230,1982,1,intrastate,Middle East,,
+459,230,2009,1,internationalized-intrastate,Middle East,5,95
+459,230,2010,1,internationalized-intrastate,Middle East,70,224
+459,230,2011,2,internationalized-intrastate,Middle East,185,1193
+459,230,2012,2,internationalized-intrastate,Middle East,251,2450
+459,230,2013,1,internationalized-intrastate,Middle East,127,582
+459,230,2014,2,internationalized-intrastate,Middle East,218,1081
+459,230,2015,1,internationalized-intrastate,Middle East,18,159
+459,230,2016,1,internationalized-intrastate,Middle East,10,32
+459,230,2017,1,internationalized-intrastate,Middle East,35,132
+459,230,2018,1,internationalized-intrastate,Middle East,17,35
+459,230,2019,0,internationalized-intrastate,Middle East,4,6
+459,230,2020,0,internationalized-intrastate,Middle East,6,13
+459,230,2021,0,internationalized-intrastate,Middle East,11,14
+459,230,2022,0,internationalized-intrastate,Middle East,6,22
+460,231,1949,1,intrastate,Asia,,
+460,231,1950,1,intrastate,Asia,,
+461,231,1961,2,intrastate,Asia,,
+461,231,1962,2,intrastate,Asia,,
+461,231,1963,2,intrastate,Asia,,
+461,231,1964,2,intrastate,Asia,,
+461,231,1965,2,intrastate,Asia,,
+461,231,1966,2,intrastate,Asia,,
+461,231,1967,2,intrastate,Asia,,
+461,231,1968,2,intrastate,Asia,,
+461,231,1969,2,intrastate,Asia,,
+461,231,1970,2,intrastate,Asia,,
+461,231,1971,2,intrastate,Asia,,
+461,231,1972,1,intrastate,Asia,,
+461,231,1973,1,intrastate,Asia,,
+461,231,1974,1,intrastate,Asia,,
+461,231,1975,1,intrastate,Asia,,
+461,231,1976,1,intrastate,Asia,,
+461,231,1977,1,intrastate,Asia,,
+461,231,1978,1,intrastate,Asia,,
+461,231,1979,1,intrastate,Asia,,
+461,231,1980,1,intrastate,Asia,,
+461,231,1981,1,intrastate,Asia,,
+461,231,1982,1,intrastate,Asia,,
+461,231,1983,1,intrastate,Asia,,
+461,231,1984,2,intrastate,Asia,,
+461,231,1985,1,intrastate,Asia,,
+461,231,1986,1,intrastate,Asia,,
+461,231,1987,1,intrastate,Asia,,
+461,231,1988,1,intrastate,Asia,,
+461,231,1989,1,intrastate,Asia,4,194
+461,231,1990,1,intrastate,Asia,2,25
+461,231,1991,1,intrastate,Asia,1,25
+461,231,1992,1,intrastate,Asia,1,25
+461,231,2001,0,intrastate,Asia,2,11
+461,231,2006,0,intrastate,Asia,1,6
+461,231,2011,1,intrastate,Asia,57,209
+461,231,2012,1,intrastate,Asia,41,702
+461,231,2013,1,intrastate,Asia,34,125
+461,231,2014,1,intrastate,Asia,10,83
+461,231,2015,1,intrastate,Asia,44,142
+461,231,2016,1,intrastate,Asia,16,32
+461,231,2017,1,intrastate,Asia,7,43
+461,231,2018,1,intrastate,Asia,24,26
+461,231,2019,1,intrastate,Asia,8,29
+461,231,2020,0,intrastate,Asia,5,10
+461,231,2021,1,intrastate,Asia,48,136
+461,231,2022,1,intrastate,Asia,89,276
+461,231,2023,1,intrastate,Asia,151,293
+461,231,2024,1,intrastate,Asia,70,283
+461,231,2025,1,intrastate,Asia,37,220
+462,232,1949,2,interstate,Asia,,
+462,232,1950,1,interstate,Asia,,
+462,232,1954,2,interstate,Asia,,
+462,232,1958,2,interstate,Asia,,
+463,233,1949,1,intrastate,Americas,,
+464,233,1954,1,intrastate,Americas,,
+465,233,1963,1,intrastate,Americas,,
+465,233,1965,1,intrastate,Americas,,
+465,233,1966,1,intrastate,Americas,,
+465,233,1967,1,intrastate,Americas,,
+465,233,1968,1,intrastate,Americas,,
+465,233,1969,1,intrastate,Americas,,
+465,233,1970,1,intrastate,Americas,,
+465,233,1971,1,intrastate,Americas,,
+465,233,1972,1,intrastate,Americas,,
+465,233,1973,1,intrastate,Americas,,
+465,233,1974,1,intrastate,Americas,,
+465,233,1981,1,intrastate,Americas,,
+466,233,1970,1,intrastate,Americas,,
+466,233,1971,1,intrastate,Americas,,
+466,233,1972,1,intrastate,Americas,,
+466,233,1973,1,intrastate,Americas,,
+466,233,1974,1,intrastate,Americas,,
+466,233,1975,1,intrastate,Americas,,
+466,233,1976,1,intrastate,Americas,,
+466,233,1977,1,intrastate,Americas,,
+466,233,1978,1,intrastate,Americas,,
+466,233,1979,1,intrastate,Americas,,
+466,233,1980,1,intrastate,Americas,,
+466,233,1981,1,intrastate,Americas,,
+467,233,1975,1,intrastate,Americas,,
+467,233,1976,1,intrastate,Americas,,
+467,233,1977,1,intrastate,Americas,,
+467,233,1978,1,intrastate,Americas,,
+467,233,1979,1,intrastate,Americas,,
+467,233,1980,1,intrastate,Americas,,
+467,233,1981,1,intrastate,Americas,,
+468,233,1979,1,intrastate,Americas,,
+468,233,1980,1,intrastate,Americas,,
+468,233,1981,1,intrastate,Americas,,
+469,233,1982,1,intrastate,Americas,,
+469,233,1983,1,intrastate,Americas,,
+469,233,1984,1,intrastate,Americas,,
+469,233,1985,1,intrastate,Americas,,
+469,233,1986,1,intrastate,Americas,,
+469,233,1987,1,intrastate,Americas,,
+469,233,1988,1,intrastate,Americas,,
+469,233,1989,1,intrastate,Americas,49,82
+469,233,1990,1,intrastate,Americas,57,83
+469,233,1991,1,intrastate,Americas,46,72
+469,233,1992,1,intrastate,Americas,43,67
+469,233,1993,1,intrastate,Americas,36,58
+469,233,1994,1,intrastate,Americas,18,37
+469,233,1995,1,intrastate,Americas,17,27
+469,233,1996,0,intrastate,Americas,5,13
+470,234,1949,1,intrastate,Middle East,,
+470,234,1950,1,intrastate,Middle East,,
+470,234,1951,1,intrastate,Middle East,,
+470,234,1952,1,intrastate,Middle East,,
+470,234,1953,1,intrastate,Middle East,,
+470,234,1954,1,intrastate,Middle East,,
+470,234,1955,1,intrastate,Middle East,,
+470,234,1956,1,intrastate,Middle East,,
+470,234,1957,1,intrastate,Middle East,,
+470,234,1958,1,intrastate,Middle East,,
+470,234,1959,1,intrastate,Middle East,,
+470,234,1960,1,intrastate,Middle East,,
+470,234,1961,1,intrastate,Middle East,,
+470,234,1962,1,intrastate,Middle East,,
+470,234,1963,1,intrastate,Middle East,,
+470,234,1964,1,intrastate,Middle East,,
+471,234,1965,1,intrastate,Middle East,,
+471,234,1966,1,intrastate,Middle East,,
+471,234,1967,1,intrastate,Middle East,,
+471,234,1968,1,intrastate,Middle East,,
+471,234,1969,1,intrastate,Middle East,,
+471,234,1970,1,intrastate,Middle East,,
+471,234,1971,1,intrastate,Middle East,,
+471,234,1972,1,intrastate,Middle East,,
+471,234,1973,1,intrastate,Middle East,,
+472,234,1965,1,intrastate,Middle East,,
+472,234,1966,1,intrastate,Middle East,,
+472,234,1967,1,intrastate,Middle East,,
+472,234,1968,1,intrastate,Middle East,,
+472,234,1969,1,intrastate,Middle East,,
+472,234,1970,1,intrastate,Middle East,,
+472,234,1971,1,intrastate,Middle East,,
+472,234,1972,1,intrastate,Middle East,,
+472,234,1973,1,intrastate,Middle East,,
+472,234,1974,1,intrastate,Middle East,,
+472,234,1975,1,intrastate,Middle East,,
+472,234,1976,1,intrastate,Middle East,,
+472,234,1977,1,intrastate,Middle East,,
+472,234,1978,1,intrastate,Middle East,,
+472,234,1979,1,intrastate,Middle East,,
+472,234,1980,1,intrastate,Middle East,,
+472,234,1981,1,intrastate,Middle East,,
+472,234,1982,2,intrastate,Middle East,,
+472,234,1983,1,intrastate,Middle East,,
+472,234,1984,1,intrastate,Middle East,,
+472,234,1985,1,intrastate,Middle East,,
+472,234,1986,1,intrastate,Middle East,,
+472,234,1987,1,intrastate,Middle East,,
+472,234,1988,1,intrastate,Middle East,,
+473,234,1974,1,intrastate,Middle East,,
+473,234,1975,1,intrastate,Middle East,,
+473,234,1976,1,intrastate,Middle East,,
+473,234,1977,1,intrastate,Middle East,,
+473,234,1978,1,intrastate,Middle East,,
+473,234,1979,1,intrastate,Middle East,,
+473,234,1980,1,intrastate,Middle East,,
+473,234,1981,1,intrastate,Middle East,,
+473,234,1982,1,intrastate,Middle East,,
+473,234,1983,1,intrastate,Middle East,,
+473,234,1984,1,intrastate,Middle East,,
+473,234,1985,1,intrastate,Middle East,,
+473,234,1986,1,intrastate,Middle East,,
+473,234,1987,1,intrastate,Middle East,,
+473,234,1988,1,intrastate,Middle East,,
+474,234,1989,1,intrastate,Middle East,11,27
+474,234,1990,0,intrastate,Middle East,1,7
+474,234,1991,0,intrastate,Middle East,1,2
+474,234,1992,0,intrastate,Middle East,4,4
+474,234,1993,0,intrastate,Middle East,10,15
+474,234,1994,0,intrastate,Middle East,3,4
+474,234,1995,0,intrastate,Middle East,1,4
+474,234,1996,0,intrastate,Middle East,1,2
+474,234,2001,1,intrastate,Middle East,12,27
+474,234,2002,0,intrastate,Middle East,7,8
+474,234,2003,0,intrastate,Middle East,4,4
+474,234,2004,0,intrastate,Middle East,5,9
+474,234,2005,0,intrastate,Middle East,2,5
+474,234,2006,0,intrastate,Middle East,3,1
+474,234,2008,0,intrastate,Middle East,2,2
+474,234,2009,0,intrastate,Middle East,1,1
+474,234,2010,0,intrastate,Middle East,2,2
+474,234,2012,0,intrastate,Middle East,1,1
+474,234,2014,0,intrastate,Middle East,5,11
+474,234,2017,0,intrastate,Middle East,2,3
+474,234,2018,0,intrastate,Middle East,2,2
+474,234,2021,0,intrastate,Middle East,2,2
+474,234,2022,0,intrastate,Middle East,1,1
+474,234,2023,0,intrastate,Middle East,4,7
+474,234,2024,0,intrastate,Middle East,1,4
+474,234,2025,0,intrastate,Middle East,1,1
+475,234,1989,1,intrastate,Middle East,5,27
+475,234,1990,0,intrastate,Middle East,2,5
+475,234,1991,0,intrastate,Middle East,1,3
+475,234,1992,0,intrastate,Middle East,1,12
+475,234,1993,0,intrastate,Middle East,1,3
+475,234,1994,0,intrastate,Middle East,2,7
+475,234,1995,0,intrastate,Middle East,6,17
+475,234,1997,0,intrastate,Middle East,1,1
+475,234,2000,0,intrastate,Middle East,1,4
+475,234,2001,0,intrastate,Middle East,1,2
+475,234,2002,0,intrastate,Middle East,1,0
+475,234,2006,0,intrastate,Middle East,4,5
+476,234,1989,0,intrastate,Middle East,2,5
+476,234,1990,1,intrastate,Middle East,14,29
+476,234,1991,1,intrastate,Middle East,16,28
+476,234,1992,1,intrastate,Middle East,22,33
+476,234,1993,0,intrastate,Middle East,6,13
+476,234,1994,0,intrastate,Middle East,2,7
+476,234,1995,0,intrastate,Middle East,1,3
+476,234,2000,1,intrastate,Middle East,16,30
+476,234,2001,1,intrastate,Middle East,21,37
+476,234,2002,1,intrastate,Middle East,34,62
+476,234,2004,0,intrastate,Middle East,3,6
+476,234,2005,1,intrastate,Middle East,24,40
+476,234,2006,1,intrastate,Middle East,42,72
+476,234,2007,1,intrastate,Middle East,30,41
+476,234,2008,0,intrastate,Middle East,16,20
+476,234,2009,0,intrastate,Middle East,3,6
+476,234,2010,0,intrastate,Middle East,2,6
+476,234,2014,0,intrastate,Middle East,6,12
+476,234,2015,0,intrastate,Middle East,2,2
+476,234,2016,0,intrastate,Middle East,1,1
+476,234,2018,0,intrastate,Middle East,1,1
+476,234,2019,0,intrastate,Middle East,4,7
+476,234,2022,1,intrastate,Middle East,13,29
+476,234,2023,1,intrastate,Middle East,19,30
+476,234,2024,1,intrastate,Middle East,36,79
+476,234,2025,0,intrastate,Middle East,10,20
+477,234,1989,0,intrastate,Middle East,2,3
+477,234,1990,0,intrastate,Middle East,2,2
+477,234,1991,0,intrastate,Middle East,4,10
+477,234,1992,0,intrastate,Middle East,11,17
+477,234,1993,1,intrastate,Middle East,31,47
+477,234,1994,1,intrastate,Middle East,24,44
+477,234,1995,0,intrastate,Middle East,8,12
+477,234,1996,0,intrastate,Middle East,4,4
+477,234,1997,0,intrastate,Middle East,1,1
+477,234,1998,0,intrastate,Middle East,2,4
+477,234,1999,0,intrastate,Middle East,1,2
+477,234,2000,0,intrastate,Middle East,6,15
+477,234,2001,1,intrastate,Middle East,39,79
+477,234,2002,1,intrastate,Middle East,70,195
+477,234,2003,1,intrastate,Middle East,59,220
+477,234,2004,1,intrastate,Middle East,78,207
+477,234,2005,1,intrastate,Middle East,18,36
+477,234,2006,1,intrastate,Middle East,74,186
+477,234,2007,1,intrastate,Middle East,59,141
+477,234,2008,1,intrastate,Middle East,83,606
+477,234,2009,1,intrastate,Middle East,119,657
+477,234,2010,0,intrastate,Middle East,18,24
+477,234,2011,1,intrastate,Middle East,19,35
+477,234,2012,1,intrastate,Middle East,109,197
+477,234,2013,0,intrastate,Middle East,6,8
+477,234,2014,2,intrastate,Middle East,826,2150
+477,234,2015,0,intrastate,Middle East,5,7
+477,234,2016,0,intrastate,Middle East,5,6
+477,234,2017,0,intrastate,Middle East,3,6
+477,234,2018,1,intrastate,Middle East,30,53
+477,234,2019,0,intrastate,Middle East,16,23
+477,234,2020,0,intrastate,Middle East,1,3
+477,234,2021,1,intrastate,Middle East,74,233
+477,234,2022,0,intrastate,Middle East,8,12
+477,234,2023,2,intrastate,Middle East,1234,26355
+477,234,2024,2,intrastate,Middle East,2898,20961
+477,234,2025,2,intrastate,Middle East,3032,14127
+478,234,1990,0,intrastate,Middle East,1,0
+478,234,1991,0,intrastate,Middle East,1,1
+478,234,1992,0,intrastate,Middle East,5,8
+478,234,1993,0,intrastate,Middle East,7,8
+478,234,1994,0,intrastate,Middle East,5,10
+478,234,1995,1,intrastate,Middle East,6,34
+478,234,1997,0,intrastate,Middle East,1,0
+478,234,1998,0,intrastate,Middle East,1,1
+478,234,1999,0,intrastate,Middle East,1,2
+478,234,2000,0,intrastate,Middle East,4,7
+478,234,2001,1,intrastate,Middle East,18,26
+478,234,2002,1,intrastate,Middle East,44,107
+478,234,2003,1,intrastate,Middle East,24,52
+478,234,2004,1,intrastate,Middle East,35,71
+478,234,2005,1,intrastate,Middle East,20,47
+478,234,2006,1,intrastate,Middle East,48,104
+478,234,2007,1,intrastate,Middle East,49,94
+478,234,2008,1,intrastate,Middle East,32,62
+478,234,2009,1,intrastate,Middle East,19,39
+478,234,2010,1,intrastate,Middle East,13,27
+478,234,2011,1,intrastate,Middle East,24,43
+478,234,2012,1,intrastate,Middle East,22,38
+478,234,2013,0,intrastate,Middle East,3,3
+478,234,2014,1,intrastate,Middle East,73,228
+478,234,2015,0,intrastate,Middle East,2,1
+478,234,2017,0,intrastate,Middle East,1,10
+478,234,2018,0,intrastate,Middle East,3,6
+478,234,2019,1,intrastate,Middle East,20,50
+478,234,2020,0,intrastate,Middle East,2,7
+478,234,2021,1,intrastate,Middle East,21,36
+478,234,2022,1,intrastate,Middle East,22,55
+478,234,2023,1,intrastate,Middle East,106,367
+478,234,2024,1,intrastate,Middle East,157,498
+478,234,2025,1,intrastate,Middle East,55,211
+479,234,1995,0,intrastate,Middle East,1,3
+479,234,1996,1,intrastate,Middle East,14,66
+479,234,2000,1,intrastate,Middle East,26,47
+479,234,2001,1,intrastate,Middle East,43,75
+479,234,2002,1,intrastate,Middle East,54,116
+479,234,2004,0,intrastate,Middle East,7,10
+479,234,2005,0,intrastate,Middle East,1,6
+479,234,2006,0,intrastate,Middle East,9,11
+479,234,2007,0,intrastate,Middle East,2,2
+479,234,2013,0,intrastate,Middle East,1,1
+479,234,2020,0,intrastate,Middle East,2,3
+479,234,2023,0,intrastate,Middle East,4,4
+479,234,2024,0,intrastate,Middle East,1,1
+479,234,2025,0,intrastate,Middle East,1,1
+480,234,2000,0,intrastate,Middle East,1,1
+480,234,2001,0,intrastate,Middle East,3,2
+480,234,2002,1,intrastate,Middle East,73,133
+480,234,2003,1,intrastate,Middle East,22,36
+480,234,2004,1,intrastate,Middle East,58,108
+481,234,2001,0,intrastate,Middle East,3,7
+481,234,2002,0,intrastate,Middle East,3,5
+481,234,2004,0,intrastate,Middle East,11,21
+481,234,2005,0,intrastate,Middle East,4,7
+481,234,2006,1,intrastate,Middle East,19,45
+481,234,2007,0,intrastate,Middle East,5,8
+481,234,2008,0,intrastate,Middle East,10,18
+481,234,2009,0,intrastate,Middle East,4,6
+481,234,2010,0,intrastate,Middle East,5,8
+481,234,2011,0,intrastate,Middle East,7,23
+481,234,2012,0,intrastate,Middle East,11,16
+481,234,2014,0,intrastate,Middle East,4,7
+481,234,2017,0,intrastate,Middle East,1,5
+481,234,2018,0,intrastate,Middle East,2,3
+481,234,2019,0,intrastate,Middle East,1,2
+481,234,2021,0,intrastate,Middle East,2,2
+481,234,2024,1,intrastate,Middle East,4,27
+481,234,2025,1,intrastate,Middle East,10,26
+482,235,1949,1,interstate,Asia,,
+482,235,1950,2,interstate,Asia,,
+482,235,1951,2,interstate,Asia,,
+482,235,1952,2,interstate,Asia,,
+482,235,1953,2,interstate,Asia,,
+483,236,1950,1,intrastate,Asia,,
+483,236,1956,2,intrastate,Asia,,
+483,236,1959,2,intrastate,Asia,,
+484,237,1950,2,intrastate,Asia,,
+485,238,1950,1,extrasystemic,Americas,,
+486,239,1951,1,interstate,Europe; Middle East,,
+486,239,1952,1,interstate,Europe; Middle East,,
+487,240,1951,1,intrastate,Asia,,
+488,240,1974,1,intrastate,Asia,,
+488,240,1975,1,intrastate,Asia,,
+488,240,1976,1,intrastate,Asia,,
+488,240,1977,1,intrastate,Asia,,
+488,240,1978,1,intrastate,Asia,,
+488,240,1979,1,intrastate,Asia,,
+488,240,1980,1,intrastate,Asia,,
+488,240,1981,1,intrastate,Asia,,
+488,240,1982,1,intrastate,Asia,,
+489,241,1952,1,extrasystemic,Africa,,
+489,241,1953,2,extrasystemic,Africa,,
+489,241,1954,2,extrasystemic,Africa,,
+489,241,1955,2,extrasystemic,Africa,,
+489,241,1956,2,extrasystemic,Africa,,
+490,242,1953,1,intrastate,Americas,,
+490,242,1956,1,intrastate,Americas,,
+490,242,1957,1,intrastate,Americas,,
+490,242,1958,2,intrastate,Americas,,
+491,242,1961,1,internationalized-intrastate,Americas,,
+492,243,1953,2,intrastate,Asia,,
+492,243,1958,1,intrastate,Asia,,
+492,243,1959,1,intrastate,Asia,,
+492,243,1960,1,intrastate,Asia,,
+492,243,1961,1,intrastate,Asia,,
+493,243,1958,1,intrastate,Asia,,
+493,243,1959,1,intrastate,Asia,,
+493,243,1960,1,intrastate,Asia,,
+493,243,1961,1,intrastate,Asia,,
+494,243,1958,1,intrastate,Asia,,
+494,243,1959,1,intrastate,Asia,,
+494,243,1960,1,intrastate,Asia,,
+494,243,1961,1,intrastate,Asia,,
+495,244,1953,1,extrasystemic,Africa,,
+495,244,1954,1,extrasystemic,Africa,,
+495,244,1955,1,extrasystemic,Africa,,
+495,244,1956,1,extrasystemic,Africa,,
+496,245,1953,1,extrasystemic,Africa,,
+496,245,1954,1,extrasystemic,Africa,,
+496,245,1955,1,extrasystemic,Africa,,
+496,245,1956,1,extrasystemic,Africa,,
+497,246,1954,1,extrasystemic,Africa,,
+497,246,1955,2,extrasystemic,Africa,,
+497,246,1956,2,extrasystemic,Africa,,
+497,246,1957,2,extrasystemic,Africa,,
+497,246,1958,2,extrasystemic,Africa,,
+497,246,1959,2,extrasystemic,Africa,,
+497,246,1960,2,extrasystemic,Africa,,
+497,246,1961,2,extrasystemic,Africa,,
+497,246,1962,1,extrasystemic,Africa,,
+498,246,1955,1,extrasystemic,Africa,,
+498,246,1956,1,extrasystemic,Africa,,
+498,246,1957,1,extrasystemic,Africa,,
+499,247,1955,1,intrastate,Americas,,
+500,247,1955,1,intrastate,Americas,,
+501,247,1963,1,intrastate,Americas,,
+502,247,1974,1,intrastate,Americas,,
+502,247,1975,1,intrastate,Americas,,
+502,247,1976,1,intrastate,Americas,,
+502,247,1977,1,intrastate,Americas,,
+503,247,1975,1,intrastate,Americas,,
+503,247,1976,1,intrastate,Americas,,
+503,247,1977,1,intrastate,Americas,,
+504,248,1955,1,extrasystemic,Europe,,
+504,248,1956,1,extrasystemic,Europe,,
+504,248,1957,1,extrasystemic,Europe,,
+504,248,1958,1,extrasystemic,Europe,,
+504,248,1959,1,extrasystemic,Europe,,
+505,249,1955,2,intrastate,Asia,,
+505,249,1956,2,intrastate,Asia,,
+505,249,1957,2,intrastate,Asia,,
+505,249,1958,2,intrastate,Asia,,
+505,249,1959,2,intrastate,Asia,,
+505,249,1960,2,intrastate,Asia,,
+505,249,1961,2,intrastate,Asia,,
+505,249,1962,2,intrastate,Asia,,
+505,249,1963,2,intrastate,Asia,,
+505,249,1964,2,intrastate,Asia,,
+506,250,1956,2,interstate,Europe,,
+507,251,1956,1,intrastate,Asia,,
+507,251,1957,1,intrastate,Asia,,
+507,251,1958,1,intrastate,Asia,,
+507,251,1959,1,intrastate,Asia,,
+507,251,1961,1,intrastate,Asia,,
+507,251,1962,1,intrastate,Asia,,
+507,251,1963,1,intrastate,Asia,,
+507,251,1964,1,intrastate,Asia,,
+507,251,1965,1,intrastate,Asia,,
+507,251,1966,1,intrastate,Asia,,
+507,251,1967,1,intrastate,Asia,,
+507,251,1968,1,intrastate,Asia,,
+508,251,1992,1,intrastate,Asia,6,47
+508,251,1993,1,intrastate,Asia,17,92
+508,251,1994,1,intrastate,Asia,8,60
+508,251,1995,1,intrastate,Asia,14,95
+508,251,1996,1,intrastate,Asia,8,40
+508,251,1997,1,intrastate,Asia,7,37
+508,251,1999,0,intrastate,Asia,1,2
+508,251,2000,1,intrastate,Asia,5,30
+508,251,2001,0,intrastate,Asia,6,18
+508,251,2002,0,intrastate,Asia,1,11
+508,251,2003,0,intrastate,Asia,1,1
+508,251,2005,0,intrastate,Asia,2,10
+508,251,2006,0,intrastate,Asia,2,2
+508,251,2007,0,intrastate,Asia,1,1
+508,251,2009,0,intrastate,Asia,7,8
+508,251,2010,0,intrastate,Asia,1,1
+508,251,2011,0,intrastate,Asia,1,8
+508,251,2012,0,intrastate,Asia,6,6
+508,251,2013,0,intrastate,Asia,2,3
+508,251,2014,0,intrastate,Asia,7,14
+508,251,2016,0,intrastate,Asia,2,3
+508,251,2017,0,intrastate,Asia,1,2
+508,251,2018,0,intrastate,Asia,4,5
+508,251,2020,0,intrastate,Asia,2,7
+508,251,2022,0,intrastate,Asia,1,2
+508,251,2023,0,intrastate,Asia,1,1
+508,251,2025,0,intrastate,Asia,1,3
+510,252,1956,2,interstate,Europe; Middle East,,
+511,253,1957,1,intrastate,Asia,,
+511,253,1987,1,intrastate,Asia,,
+511,253,1989,0,intrastate,Asia,3,18
+511,253,1992,1,intrastate,Asia,6,404
+511,253,1995,0,intrastate,Asia,3,3
+511,253,1996,1,intrastate,Asia,13,124
+511,253,1997,0,intrastate,Asia,1,7
+511,253,1998,0,intrastate,Asia,1,1
+511,253,1999,0,intrastate,Asia,2,12
+511,253,2001,0,intrastate,Asia,3,21
+511,253,2002,0,intrastate,Asia,6,20
+511,253,2003,0,intrastate,Asia,1,5
+511,253,2004,0,intrastate,Asia,6,22
+511,253,2005,1,intrastate,Asia,4,35
+511,253,2006,0,intrastate,Asia,2,6
+511,253,2007,0,intrastate,Asia,8,15
+511,253,2010,0,intrastate,Asia,3,9
+511,253,2012,0,intrastate,Asia,3,15
+511,253,2017,0,intrastate,Asia,1,0
+511,253,2021,1,intrastate,Asia,46,62
+511,253,2022,1,intrastate,Asia,57,74
+511,253,2023,1,intrastate,Asia,48,150
+511,253,2024,1,intrastate,Asia,13,28
+511,253,2025,1,intrastate,Asia,12,73
+512,254,1957,1,extrasystemic,Africa,,
+512,254,1958,1,extrasystemic,Africa,,
+512,254,1959,1,extrasystemic,Africa,,
+513,255,1957,1,interstate,Americas,,
+514,256,1957,1,extrasystemic,Africa,,
+514,256,1958,1,extrasystemic,Africa,,
+515,257,1957,1,extrasystemic,Africa,,
+515,257,1958,1,extrasystemic,Africa,,
+516,258,1957,1,internationalized-intrastate,Middle East,,
+517,259,1958,1,intrastate,Middle East,,
+518,259,1959,1,intrastate,Middle East,,
+519,259,1963,1,intrastate,Middle East,,
+520,259,1963,2,intrastate,Middle East,,
+521,259,1982,1,intrastate,Middle East,,
+521,259,1983,1,intrastate,Middle East,,
+521,259,1984,1,intrastate,Middle East,,
+521,259,1987,1,intrastate,Middle East,,
+521,259,1991,1,intrastate,Middle East,13,237
+521,259,1992,1,intrastate,Middle East,22,280
+521,259,1993,1,intrastate,Middle East,17,75
+521,259,1994,1,intrastate,Middle East,6,34
+521,259,1995,1,intrastate,Middle East,11,325
+521,259,1996,1,intrastate,Middle East,19,42
+521,259,2004,0,intrastate,Middle East,1,5
+523,259,2003,0,internationalized-intrastate,Middle East,1,2
+523,259,2004,1,internationalized-intrastate,Middle East,36,414
+523,259,2005,1,internationalized-intrastate,Middle East,40,302
+523,259,2006,1,internationalized-intrastate,Middle East,35,160
+523,259,2007,1,internationalized-intrastate,Middle East,9,25
+523,259,2008,0,internationalized-intrastate,Middle East,2,6
+523,259,2009,0,internationalized-intrastate,Middle East,2,3
+523,259,2011,1,internationalized-intrastate,Middle East,2,27
+524,259,2004,2,internationalized-intrastate,Middle East,135,2422
+524,259,2005,2,internationalized-intrastate,Middle East,359,2208
+524,259,2006,2,internationalized-intrastate,Middle East,399,3732
+524,259,2007,2,internationalized-intrastate,Middle East,250,1741
+524,259,2008,2,internationalized-intrastate,Middle East,189,1246
+524,259,2009,2,internationalized-intrastate,Middle East,211,1036
+524,259,2010,1,internationalized-intrastate,Middle East,247,989
+524,259,2011,1,internationalized-intrastate,Middle East,145,837
+524,259,2012,1,internationalized-intrastate,Middle East,145,565
+524,259,2013,2,internationalized-intrastate,Middle East,328,1872
+524,259,2014,2,internationalized-intrastate,Middle East,738,13797
+524,259,2015,2,internationalized-intrastate,Middle East,695,10982
+524,259,2016,2,internationalized-intrastate,Middle East,597,9775
+524,259,2017,2,internationalized-intrastate,Middle East,530,10012
+524,259,2018,1,internationalized-intrastate,Middle East,151,866
+524,259,2019,1,internationalized-intrastate,Middle East,128,498
+524,259,2020,1,internationalized-intrastate,Middle East,161,674
+524,259,2021,1,internationalized-intrastate,Middle East,170,707
+524,259,2022,1,internationalized-intrastate,Middle East,93,340
+524,259,2023,1,internationalized-intrastate,Middle East,50,203
+524,259,2024,1,internationalized-intrastate,Middle East,61,217
+524,259,2025,1,internationalized-intrastate,Middle East,25,77
+525,259,2004,0,internationalized-intrastate,Middle East,4,5
+525,259,2005,1,internationalized-intrastate,Middle East,13,98
+525,259,2006,1,internationalized-intrastate,Middle East,12,31
+525,259,2007,1,internationalized-intrastate,Middle East,12,75
+526,260,1958,2,intrastate,Middle East,,
+527,260,1975,1,intrastate,Middle East,,
+527,260,1976,2,intrastate,Middle East,,
+527,260,1982,1,intrastate,Middle East,,
+527,260,1983,1,intrastate,Middle East,,
+527,260,1984,2,intrastate,Middle East,,
+528,260,1976,2,intrastate,Middle East,,
+529,260,1983,1,internationalized-intrastate,Middle East,,
+529,260,1984,2,internationalized-intrastate,Middle East,,
+530,260,1985,1,intrastate,Middle East,,
+530,260,1986,1,intrastate,Middle East,,
+531,260,1986,1,intrastate,Middle East,,
+532,260,1989,1,internationalized-intrastate,Middle East,78,458
+532,260,1990,1,internationalized-intrastate,Middle East,1,700
+533,260,1989,1,internationalized-intrastate,Middle East,61,253
+534,261,1958,1,internationalized-intrastate,Asia,,
+534,261,1959,1,internationalized-intrastate,Asia,,
+534,261,1960,1,internationalized-intrastate,Asia,,
+534,261,1974,1,internationalized-intrastate,Asia,,
+534,261,1975,1,internationalized-intrastate,Asia,,
+534,261,1981,1,internationalized-intrastate,Asia,,
+535,262,1959,2,intrastate,Asia,,
+535,262,1960,2,intrastate,Asia,,
+535,262,1961,2,intrastate,Asia,,
+535,262,1963,2,intrastate,Asia,,
+535,262,1964,2,intrastate,Asia,,
+535,262,1965,2,intrastate,Asia,,
+535,262,1966,2,intrastate,Asia,,
+535,262,1967,2,intrastate,Asia,,
+535,262,1968,2,intrastate,Asia,,
+535,262,1969,2,intrastate,Asia,,
+535,262,1970,2,intrastate,Asia,,
+535,262,1971,2,intrastate,Asia,,
+535,262,1972,2,intrastate,Asia,,
+535,262,1973,2,intrastate,Asia,,
+536,262,1960,1,internationalized-intrastate,Asia,,
+537,262,1989,1,intrastate,Asia,1,30
+537,262,1990,1,intrastate,Asia,5,249
+537,262,2000,0,intrastate,Asia,1,5
+538,263,1961,2,extrasystemic,Africa,,
+538,263,1962,2,extrasystemic,Africa,,
+538,263,1963,1,extrasystemic,Africa,,
+538,263,1964,1,extrasystemic,Africa,,
+538,263,1965,1,extrasystemic,Africa,,
+538,263,1966,1,extrasystemic,Africa,,
+538,263,1968,1,extrasystemic,Africa,,
+538,263,1969,1,extrasystemic,Africa,,
+538,263,1970,1,extrasystemic,Africa,,
+538,263,1971,1,extrasystemic,Africa,,
+538,263,1972,1,extrasystemic,Africa,,
+538,263,1973,1,extrasystemic,Africa,,
+538,263,1974,1,extrasystemic,Africa,,
+539,263,1961,1,extrasystemic,Africa,,
+539,263,1963,1,extrasystemic,Africa,,
+539,263,1964,1,extrasystemic,Africa,,
+539,263,1965,1,extrasystemic,Africa,,
+539,263,1966,1,extrasystemic,Africa,,
+539,263,1967,1,extrasystemic,Africa,,
+539,263,1968,1,extrasystemic,Africa,,
+539,263,1969,1,extrasystemic,Africa,,
+539,263,1970,1,extrasystemic,Africa,,
+539,263,1971,1,extrasystemic,Africa,,
+539,263,1972,1,extrasystemic,Africa,,
+539,263,1973,1,extrasystemic,Africa,,
+539,263,1974,1,extrasystemic,Africa,,
+540,263,1966,1,extrasystemic,Africa,,
+540,263,1967,1,extrasystemic,Africa,,
+541,264,1959,1,intrastate,Asia,,
+542,264,1960,1,intrastate,Asia,,
+542,264,1961,1,intrastate,Asia,,
+543,264,1962,1,intrastate,Asia,,
+543,264,1963,1,intrastate,Asia,,
+544,264,1964,2,intrastate,Asia,,
+544,264,1965,2,intrastate,Asia,,
+544,264,1966,2,intrastate,Asia,,
+544,264,1967,2,intrastate,Asia,,
+544,264,1968,2,intrastate,Asia,,
+544,264,1969,2,intrastate,Asia,,
+544,264,1970,1,intrastate,Asia,,
+544,264,1972,1,intrastate,Asia,,
+544,264,1973,1,intrastate,Asia,,
+545,264,1969,1,intrastate,Asia,,
+545,264,1970,2,intrastate,Asia,,
+546,264,1969,1,intrastate,Asia,,
+546,264,1970,1,intrastate,Asia,,
+546,264,1976,1,intrastate,Asia,,
+546,264,1977,1,intrastate,Asia,,
+546,264,1978,1,intrastate,Asia,,
+546,264,1979,1,intrastate,Asia,,
+546,264,1980,1,intrastate,Asia,,
+546,264,1981,1,intrastate,Asia,,
+546,264,1982,1,intrastate,Asia,,
+546,264,1983,1,intrastate,Asia,,
+547,264,1976,1,intrastate,Asia,,
+548,264,1984,1,intrastate,Asia,,
+549,264,1985,1,intrastate,Asia,,
+549,264,1986,1,intrastate,Asia,,
+549,264,1987,1,intrastate,Asia,,
+549,264,1988,1,intrastate,Asia,,
+549,264,1993,1,intrastate,Asia,4,130
+549,264,1994,1,intrastate,Asia,18,526
+549,264,1995,1,intrastate,Asia,7,174
+549,264,1996,0,intrastate,Asia,1,3
+550,264,1996,1,intrastate,Asia,9,25
+550,264,1997,1,intrastate,Asia,5,152
+550,264,1998,1,intrastate,Asia,2,25
+550,264,1999,1,intrastate,Asia,4,25
+550,264,2000,1,intrastate,Asia,4,69
+550,264,2001,1,intrastate,Asia,13,117
+550,264,2002,1,intrastate,Asia,13,184
+550,264,2004,0,intrastate,Asia,3,10
+550,264,2005,1,intrastate,Asia,3,27
+550,264,2006,1,intrastate,Asia,7,48
+550,264,2007,1,intrastate,Asia,7,29
+550,264,2008,1,intrastate,Asia,9,31
+550,264,2009,1,intrastate,Asia,4,52
+550,264,2010,1,intrastate,Asia,6,36
+550,264,2011,1,intrastate,Asia,8,29
+550,264,2012,0,intrastate,Asia,4,10
+550,264,2013,1,intrastate,Asia,9,32
+550,264,2015,0,intrastate,Asia,10,20
+550,264,2016,0,intrastate,Asia,1,0
+550,264,2018,0,intrastate,Asia,3,4
+550,264,2020,0,intrastate,Asia,4,4
+550,264,2021,0,intrastate,Asia,1,1
+550,264,2024,0,intrastate,Asia,1,1
+551,265,1961,1,intrastate,Africa,,
+551,265,1962,1,intrastate,Africa,,
+552,266,1960,1,intrastate,Africa,,
+552,266,1961,1,intrastate,Africa,,
+552,266,1962,1,intrastate,Africa,,
+553,267,1960,1,intrastate,Africa,,
+554,267,1976,1,intrastate,Africa,,
+554,267,1977,1,intrastate,Africa,,
+554,267,1984,1,intrastate,Africa,,
+554,267,1985,1,intrastate,Africa,,
+554,267,1986,1,intrastate,Africa,,
+554,267,1987,1,intrastate,Africa,,
+555,267,1976,2,intrastate,Africa,,
+555,267,1978,1,intrastate,Africa,,
+555,267,1979,1,intrastate,Africa,,
+555,267,1980,2,intrastate,Africa,,
+555,267,1981,2,intrastate,Africa,,
+555,267,1982,2,intrastate,Africa,,
+555,267,1983,2,intrastate,Africa,,
+555,267,1984,2,intrastate,Africa,,
+555,267,1985,2,intrastate,Africa,,
+555,267,1986,1,intrastate,Africa,,
+555,267,1987,2,intrastate,Africa,,
+555,267,1988,2,intrastate,Africa,,
+555,267,2020,2,intrastate,Africa,60,20888
+555,267,2021,2,intrastate,Africa,297,124266
+555,267,2022,2,intrastate,Africa,353,162414
+555,267,2025,0,intrastate,Africa,3,19
+556,267,1977,1,intrastate,Africa,,
+556,267,1978,1,intrastate,Africa,,
+557,267,1983,1,intrastate,Africa,,
+557,267,1984,1,intrastate,Africa,,
+557,267,1985,1,intrastate,Africa,,
+558,267,1989,2,intrastate,Africa,39,18366
+558,267,1990,2,intrastate,Africa,48,18985
+558,267,1991,2,intrastate,Africa,12,3918
+559,267,1989,1,intrastate,Africa,4,37
+560,268,1964,1,interstate,Africa,,
+560,268,1977,2,interstate,Africa,,
+560,268,1978,2,interstate,Africa,,
+560,268,1980,1,interstate,Africa,,
+561,269,1960,1,intrastate,Asia,,
+561,269,1961,1,intrastate,Asia,,
+561,269,1962,1,intrastate,Asia,,
+562,269,1996,1,intrastate,Asia,32,44
+562,269,1997,1,intrastate,Asia,31,40
+562,269,1998,1,intrastate,Asia,164,250
+562,269,1999,1,intrastate,Asia,135,156
+562,269,2000,1,intrastate,Asia,111,268
+562,269,2001,1,intrastate,Asia,115,429
+562,269,2002,2,intrastate,Asia,1256,3946
+562,269,2003,2,intrastate,Asia,529,1341
+562,269,2004,2,intrastate,Asia,836,1880
+562,269,2005,2,intrastate,Asia,374,1104
+562,269,2006,1,intrastate,Asia,116,457
+562,269,2009,0,intrastate,Asia,2,9
+563,270,1961,2,intrastate,Europe,,
+563,270,1962,2,intrastate,Europe,,
+564,271,1961,2,intrastate,Middle East,,
+564,271,1962,2,intrastate,Middle East,,
+564,271,1963,2,intrastate,Middle East,,
+564,271,1964,1,intrastate,Middle East,,
+564,271,1965,2,intrastate,Middle East,,
+564,271,1966,2,intrastate,Middle East,,
+564,271,1967,1,intrastate,Middle East,,
+564,271,1968,1,intrastate,Middle East,,
+564,271,1969,2,intrastate,Middle East,,
+564,271,1970,1,intrastate,Middle East,,
+564,271,1973,1,intrastate,Middle East,,
+564,271,1974,2,intrastate,Middle East,,
+564,271,1975,2,intrastate,Middle East,,
+564,271,1979,1,intrastate,Middle East,,
+564,271,1980,1,intrastate,Middle East,,
+564,271,1981,1,intrastate,Middle East,,
+564,271,1982,1,intrastate,Middle East,,
+564,271,1983,1,intrastate,Middle East,,
+564,271,1984,1,intrastate,Middle East,,
+564,271,1986,1,intrastate,Middle East,,
+564,271,1987,1,intrastate,Middle East,,
+564,271,1988,2,intrastate,Middle East,,
+564,271,1989,1,intrastate,Middle East,1,25
+564,271,1990,1,intrastate,Middle East,1,34
+564,271,1991,1,intrastate,Middle East,5,298
+564,271,1992,0,intrastate,Middle East,1,1
+565,271,1976,1,intrastate,Middle East,,
+565,271,1977,1,intrastate,Middle East,,
+565,271,1978,1,intrastate,Middle East,,
+565,271,1980,1,intrastate,Middle East,,
+565,271,1981,1,intrastate,Middle East,,
+565,271,1982,1,intrastate,Middle East,,
+565,271,1983,1,intrastate,Middle East,,
+565,271,1985,1,intrastate,Middle East,,
+565,271,1986,1,intrastate,Middle East,,
+565,271,1987,1,intrastate,Middle East,,
+565,271,1988,2,intrastate,Middle East,,
+565,271,1989,1,intrastate,Middle East,1,25
+565,271,1990,1,intrastate,Middle East,1,60
+565,271,1991,1,intrastate,Middle East,7,949
+565,271,1992,1,intrastate,Middle East,3,26
+565,271,1995,1,intrastate,Middle East,6,262
+565,271,1996,1,intrastate,Middle East,11,356
+566,271,1977,1,intrastate,Middle East,,
+566,271,1978,1,intrastate,Middle East,,
+567,272,1961,2,interstate,Europe; Africa,,
+568,273,1962,1,extrasystemic,Asia,,
+569,274,1962,2,interstate,Asia,,
+569,274,1967,1,interstate,Asia,,
+569,274,2020,1,interstate,Asia,2,25
+570,275,1964,1,intrastate,Africa,,
+570,275,1965,1,intrastate,Africa,,
+570,275,1966,1,intrastate,Africa,,
+570,275,1967,1,intrastate,Africa,,
+570,275,1968,1,intrastate,Africa,,
+570,275,1969,1,intrastate,Africa,,
+570,275,1970,1,intrastate,Africa,,
+570,275,1971,1,intrastate,Africa,,
+570,275,1972,1,intrastate,Africa,,
+570,275,1973,1,intrastate,Africa,,
+570,275,1974,1,intrastate,Africa,,
+570,275,1975,2,intrastate,Africa,,
+570,275,1976,2,intrastate,Africa,,
+570,275,1977,2,intrastate,Africa,,
+570,275,1978,2,intrastate,Africa,,
+570,275,1979,1,intrastate,Africa,,
+570,275,1980,1,intrastate,Africa,,
+571,275,1973,1,intrastate,Africa,,
+571,275,1975,2,intrastate,Africa,,
+571,275,1976,2,intrastate,Africa,,
+571,275,1977,2,intrastate,Africa,,
+571,275,1978,2,intrastate,Africa,,
+571,275,1979,2,intrastate,Africa,,
+571,275,1980,1,intrastate,Africa,,
+571,275,1981,1,intrastate,Africa,,
+571,275,1982,2,intrastate,Africa,,
+571,275,1983,2,intrastate,Africa,,
+571,275,1984,2,intrastate,Africa,,
+571,275,1985,2,intrastate,Africa,,
+571,275,1986,1,intrastate,Africa,,
+571,275,1987,2,intrastate,Africa,,
+571,275,1988,2,intrastate,Africa,,
+571,275,1989,2,intrastate,Africa,10,5930
+571,275,1990,2,intrastate,Africa,31,30633
+571,275,1991,2,intrastate,Africa,9,6907
+572,276,1962,1,interstate,Europe; Asia,,
+573,277,1962,1,intrastate,Americas,,
+574,277,1982,1,intrastate,Americas,,
+575,277,1992,1,intrastate,Americas,4,144
+576,278,1963,1,interstate,Africa,,
+577,279,1963,1,extrasystemic,Africa,,
+577,279,1964,1,extrasystemic,Africa,,
+577,279,1965,1,extrasystemic,Africa,,
+577,279,1966,1,extrasystemic,Africa,,
+577,279,1967,1,extrasystemic,Africa,,
+577,279,1968,1,extrasystemic,Africa,,
+577,279,1969,1,extrasystemic,Africa,,
+577,279,1970,1,extrasystemic,Africa,,
+577,279,1971,1,extrasystemic,Africa,,
+577,279,1972,1,extrasystemic,Africa,,
+577,279,1973,1,extrasystemic,Africa,,
+578,280,1963,1,intrastate,Asia,,
+578,280,1964,1,intrastate,Asia,,
+578,280,1965,1,intrastate,Asia,,
+578,280,1966,1,intrastate,Asia,,
+579,281,1963,1,interstate,Asia,,
+579,281,1964,1,interstate,Asia,,
+579,281,1965,1,interstate,Asia,,
+579,281,1966,1,interstate,Asia,,
+580,282,1963,2,intrastate,Africa,,
+580,282,1964,2,intrastate,Africa,,
+580,282,1965,2,intrastate,Africa,,
+580,282,1966,2,intrastate,Africa,,
+580,282,1967,2,intrastate,Africa,,
+580,282,1968,2,intrastate,Africa,,
+580,282,1969,2,intrastate,Africa,,
+580,282,1970,2,intrastate,Africa,,
+580,282,1971,2,intrastate,Africa,,
+580,282,1972,2,intrastate,Africa,,
+581,283,1964,2,intrastate,Africa,,
+581,283,1965,2,intrastate,Africa,,
+582,283,1967,1,intrastate,Africa,,
+583,283,1977,1,internationalized-intrastate,Africa,,
+583,283,1978,1,internationalized-intrastate,Africa,,
+584,283,1996,2,internationalized-intrastate,Africa,15,1289
+584,283,1997,2,internationalized-intrastate,Africa,29,4465
+585,283,1998,1,internationalized-intrastate,Africa,8,374
+585,283,1999,2,internationalized-intrastate,Africa,18,1807
+585,283,2000,1,internationalized-intrastate,Africa,9,389
+585,283,2001,0,internationalized-intrastate,Africa,5,8
+586,283,1998,2,internationalized-intrastate,Africa,44,2971
+586,283,1999,2,internationalized-intrastate,Africa,29,1118
+586,283,2000,1,internationalized-intrastate,Africa,28,905
+586,283,2001,1,internationalized-intrastate,Africa,5,454
+588,283,2006,1,intrastate,Africa,9,182
+588,283,2007,1,intrastate,Africa,17,516
+588,283,2008,1,intrastate,Africa,12,486
+589,284,1964,1,internationalized-intrastate,Africa,,
+590,285,1964,1,extrasystemic,Africa,,
+590,285,1965,1,extrasystemic,Africa,,
+590,285,1966,1,extrasystemic,Africa,,
+590,285,1967,1,extrasystemic,Africa,,
+590,285,1968,1,extrasystemic,Africa,,
+590,285,1969,1,extrasystemic,Africa,,
+590,285,1970,1,extrasystemic,Africa,,
+590,285,1971,1,extrasystemic,Africa,,
+590,285,1972,2,extrasystemic,Africa,,
+590,285,1973,2,extrasystemic,Africa,,
+590,285,1974,1,extrasystemic,Africa,,
+591,286,1964,1,extrasystemic,Middle East,,
+591,286,1965,1,extrasystemic,Middle East,,
+591,286,1966,1,extrasystemic,Middle East,,
+591,286,1967,1,extrasystemic,Middle East,,
+592,287,1965,1,intrastate,Africa,,
+593,287,1991,1,intrastate,Africa,11,272
+593,287,1992,1,intrastate,Africa,3,61
+594,287,1994,1,intrastate,Africa,13,56
+594,287,1995,1,intrastate,Africa,40,332
+594,287,1996,1,intrastate,Africa,52,782
+594,287,1997,1,intrastate,Africa,68,795
+594,287,1998,1,intrastate,Africa,20,393
+594,287,2000,0,intrastate,Africa,1,1
+594,287,2003,0,intrastate,Africa,1,1
+595,287,1990,0,intrastate,Africa,1,7
+595,287,1993,0,intrastate,Africa,1,0
+595,287,1995,0,intrastate,Africa,2,4
+595,287,1996,0,intrastate,Africa,1,1
+595,287,1997,1,intrastate,Africa,9,187
+596,287,1993,0,intrastate,Africa,1,6
+596,287,1995,1,intrastate,Africa,11,50
+596,287,1996,1,intrastate,Africa,11,205
+596,287,1997,1,intrastate,Africa,12,177
+596,287,1998,1,intrastate,Africa,22,286
+596,287,1999,1,intrastate,Africa,68,620
+596,287,2000,1,intrastate,Africa,64,567
+596,287,2001,1,intrastate,Africa,48,746
+596,287,2002,1,intrastate,Africa,88,540
+596,287,2003,1,intrastate,Africa,58,597
+596,287,2004,1,intrastate,Africa,52,433
+596,287,2005,1,intrastate,Africa,54,298
+596,287,2006,1,intrastate,Africa,27,141
+596,287,2007,0,intrastate,Africa,3,5
+596,287,2008,1,intrastate,Africa,29,226
+597,287,1998,1,intrastate,Africa,15,164
+597,287,1999,1,intrastate,Africa,13,161
+597,287,2000,1,intrastate,Africa,90,962
+597,287,2001,1,intrastate,Africa,71,500
+597,287,2002,1,intrastate,Africa,81,753
+597,287,2003,1,intrastate,Africa,42,315
+597,287,2004,0,intrastate,Africa,1,2
+598,288,1966,1,intrastate,Africa,,
+598,288,1967,1,intrastate,Africa,,
+598,288,1968,1,intrastate,Africa,,
+598,288,1969,1,intrastate,Africa,,
+598,288,1970,1,intrastate,Africa,,
+599,288,1971,1,internationalized-intrastate,Africa,,
+599,288,1972,1,internationalized-intrastate,Africa,,
+600,288,1971,1,internationalized-intrastate,Africa,,
+601,288,1976,1,intrastate,Africa,,
+601,288,1977,1,intrastate,Africa,,
+601,288,1979,2,intrastate,Africa,,
+601,288,1980,2,intrastate,Africa,,
+601,288,1981,1,intrastate,Africa,,
+601,288,1982,1,intrastate,Africa,,
+602,288,1977,1,intrastate,Africa,,
+602,288,1978,2,intrastate,Africa,,
+602,288,1979,1,intrastate,Africa,,
+603,288,1982,1,intrastate,Africa,,
+604,288,1983,1,internationalized-intrastate,Africa,,
+604,288,1984,1,internationalized-intrastate,Africa,,
+604,288,1986,1,internationalized-intrastate,Africa,,
+605,288,1987,2,internationalized-intrastate,Africa,,
+606,288,1989,1,intrastate,Africa,2,235
+606,288,1990,1,intrastate,Africa,10,252
+607,288,1989,1,intrastate,Africa,2,50
+608,288,1989,1,intrastate,Africa,1,30
+609,288,1990,2,intrastate,Africa,7,1100
+610,288,1991,1,intrastate,Africa,1,25
+610,288,1992,1,intrastate,Africa,14,726
+610,288,1993,1,intrastate,Africa,1,40
+610,288,1994,0,intrastate,Africa,1,2
+610,288,1995,0,intrastate,Africa,1,4
+610,288,1997,1,intrastate,Africa,1,39
+611,288,1991,1,intrastate,Africa,3,43
+612,288,1992,1,intrastate,Africa,3,115
+612,288,1993,1,intrastate,Africa,1,25
+612,288,1994,1,intrastate,Africa,1,25
+613,288,1992,1,intrastate,Africa,2,33
+613,288,1993,1,intrastate,Africa,2,30
+613,288,1994,1,intrastate,Africa,2,100
+613,288,2000,0,intrastate,Africa,1,4
+614,288,1992,1,intrastate,Africa,1,25
+614,288,1993,1,intrastate,Africa,1,25
+614,288,1994,1,intrastate,Africa,1,31
+615,288,1994,0,intrastate,Africa,1,9
+615,288,1997,1,intrastate,Africa,1,58
+615,288,1998,1,intrastate,Africa,1,34
+616,288,1999,1,intrastate,Africa,10,394
+616,288,2000,1,intrastate,Africa,9,989
+616,288,2001,1,intrastate,Africa,4,226
+616,288,2002,1,intrastate,Africa,8,294
+616,288,2003,1,intrastate,Africa,4,37
+617,288,2005,1,intrastate,Africa,1,100
+617,288,2006,1,intrastate,Africa,9,879
+617,288,2007,0,intrastate,Africa,3,21
+618,288,2006,1,intrastate,Africa,4,32
+618,288,2007,0,intrastate,Africa,2,9
+619,288,2006,1,intrastate,Africa,7,339
+619,288,2007,1,intrastate,Africa,5,69
+620,288,2008,1,intrastate,Africa,12,991
+621,288,2009,1,intrastate,Africa,8,131
+621,288,2019,0,intrastate,Africa,1,2
+622,288,2007,0,intrastate,Africa,1,1
+622,288,2010,1,intrastate,Africa,3,42
+623,289,1964,1,intrastate,Americas,,
+623,289,1965,1,intrastate,Americas,,
+623,289,1966,1,intrastate,Americas,,
+623,289,1967,1,intrastate,Americas,,
+623,289,1968,1,intrastate,Americas,,
+623,289,1971,1,intrastate,Americas,,
+623,289,1972,1,intrastate,Americas,,
+623,289,1974,1,intrastate,Americas,,
+623,289,1975,1,intrastate,Americas,,
+623,289,1976,1,intrastate,Americas,,
+623,289,1977,1,intrastate,Americas,,
+623,289,1978,1,intrastate,Americas,,
+623,289,1979,1,intrastate,Americas,,
+623,289,1980,1,intrastate,Americas,,
+623,289,1981,1,intrastate,Americas,,
+623,289,1982,1,intrastate,Americas,,
+623,289,1983,1,intrastate,Americas,,
+623,289,1984,1,intrastate,Americas,,
+623,289,1985,1,intrastate,Americas,,
+623,289,1986,1,intrastate,Americas,,
+623,289,1987,1,intrastate,Americas,,
+623,289,1988,1,intrastate,Americas,,
+623,289,1989,1,intrastate,Americas,12,63
+623,289,1990,1,intrastate,Americas,44,351
+623,289,1991,1,intrastate,Americas,80,666
+623,289,1992,2,intrastate,Americas,72,1404
+623,289,1993,1,intrastate,Americas,22,130
+623,289,1994,2,intrastate,Americas,48,1082
+623,289,1995,1,intrastate,Americas,47,770
+623,289,1996,1,intrastate,Americas,74,885
+623,289,1997,1,intrastate,Americas,92,450
+623,289,1998,1,intrastate,Americas,70,876
+623,289,1999,2,intrastate,Americas,262,1587
+623,289,2000,2,intrastate,Americas,384,1545
+623,289,2001,2,intrastate,Americas,382,1490
+623,289,2002,2,intrastate,Americas,739,2942
+623,289,2003,2,intrastate,Americas,629,1765
+623,289,2004,2,intrastate,Americas,516,1072
+623,289,2005,2,intrastate,Americas,443,1379
+623,289,2006,1,intrastate,Americas,92,469
+623,289,2007,1,intrastate,Americas,83,320
+623,289,2008,1,intrastate,Americas,65,250
+623,289,2009,1,intrastate,Americas,76,388
+623,289,2010,1,intrastate,Americas,74,367
+623,289,2011,1,intrastate,Americas,50,202
+623,289,2012,1,intrastate,Americas,31,211
+623,289,2013,1,intrastate,Americas,19,113
+623,289,2014,1,intrastate,Americas,33,119
+623,289,2015,1,intrastate,Americas,16,84
+623,289,2016,0,intrastate,Americas,3,3
+623,289,2017,0,intrastate,Americas,1,1
+623,289,2020,0,intrastate,Americas,1,0
+624,289,1966,1,intrastate,Americas,,
+624,289,1969,1,intrastate,Americas,,
+624,289,1970,1,intrastate,Americas,,
+624,289,1973,1,intrastate,Americas,,
+624,289,1984,1,intrastate,Americas,,
+624,289,1985,1,intrastate,Americas,,
+624,289,1986,1,intrastate,Americas,,
+624,289,1987,1,intrastate,Americas,,
+624,289,1988,1,intrastate,Americas,,
+624,289,1989,1,intrastate,Americas,21,142
+624,289,1990,1,intrastate,Americas,19,115
+624,289,1991,1,intrastate,Americas,15,59
+624,289,1992,1,intrastate,Americas,18,75
+624,289,1993,1,intrastate,Americas,8,52
+624,289,1994,1,intrastate,Americas,10,41
+624,289,1995,1,intrastate,Americas,11,53
+624,289,1996,1,intrastate,Americas,35,312
+624,289,1997,1,intrastate,Americas,32,118
+624,289,1998,1,intrastate,Americas,12,63
+624,289,1999,1,intrastate,Americas,88,380
+624,289,2000,1,intrastate,Americas,137,298
+624,289,2001,1,intrastate,Americas,157,374
+624,289,2002,1,intrastate,Americas,167,408
+624,289,2003,1,intrastate,Americas,177,321
+624,289,2004,1,intrastate,Americas,116,260
+624,289,2005,1,intrastate,Americas,100,183
+624,289,2006,1,intrastate,Americas,11,34
+624,289,2007,0,intrastate,Americas,6,15
+624,289,2008,1,intrastate,Americas,7,32
+624,289,2009,0,intrastate,Americas,6,12
+624,289,2010,1,intrastate,Americas,7,52
+624,289,2013,1,intrastate,Americas,3,27
+624,289,2014,0,intrastate,Americas,7,22
+624,289,2015,1,intrastate,Americas,11,50
+624,289,2016,1,intrastate,Americas,11,30
+624,289,2017,1,intrastate,Americas,26,44
+624,289,2018,1,intrastate,Americas,51,95
+624,289,2019,1,intrastate,Americas,31,89
+624,289,2020,0,intrastate,Americas,10,18
+624,289,2021,1,intrastate,Americas,30,50
+624,289,2022,1,intrastate,Americas,14,34
+624,289,2023,1,intrastate,Americas,17,45
+624,289,2024,1,intrastate,Americas,34,66
+624,289,2025,1,intrastate,Americas,57,98
+625,289,1978,1,intrastate,Americas,,
+625,289,1979,1,intrastate,Americas,,
+625,289,1981,1,intrastate,Americas,,
+625,289,1982,1,intrastate,Americas,,
+625,289,1983,1,intrastate,Americas,,
+625,289,1984,1,intrastate,Americas,,
+625,289,1985,1,intrastate,Americas,,
+625,289,1986,1,intrastate,Americas,,
+625,289,1988,1,intrastate,Americas,,
+626,289,1984,1,intrastate,Americas,,
+626,289,1987,1,intrastate,Americas,,
+626,289,1988,1,intrastate,Americas,,
+626,289,1989,1,intrastate,Americas,4,33
+626,289,1990,1,intrastate,Americas,7,35
+626,289,1999,0,intrastate,Americas,1,2
+627,290,1965,1,intrastate,Americas,,
+628,291,1965,1,intrastate,Asia,,
+628,291,1967,1,intrastate,Asia,,
+628,291,1968,1,intrastate,Asia,,
+628,291,1969,1,intrastate,Asia,,
+628,291,1976,2,intrastate,Asia,,
+628,291,1977,2,intrastate,Asia,,
+628,291,1978,2,intrastate,Asia,,
+628,291,1981,2,intrastate,Asia,,
+628,291,1984,1,intrastate,Asia,,
+628,291,1989,0,intrastate,Asia,1,1
+628,291,1991,0,intrastate,Asia,1,3
+628,291,1992,0,intrastate,Asia,1,1
+628,291,1995,0,intrastate,Asia,2,1
+628,291,1996,0,intrastate,Asia,2,2
+628,291,1998,0,intrastate,Asia,1,0
+628,291,2000,0,intrastate,Asia,1,1
+628,291,2001,0,intrastate,Asia,1,0
+628,291,2006,0,intrastate,Asia,2,10
+628,291,2013,0,intrastate,Asia,6,20
+628,291,2014,0,intrastate,Asia,4,12
+628,291,2017,0,intrastate,Asia,2,2
+628,291,2018,1,intrastate,Asia,7,28
+628,291,2019,1,intrastate,Asia,18,34
+628,291,2020,1,intrastate,Asia,17,31
+628,291,2021,1,intrastate,Asia,33,52
+628,291,2022,1,intrastate,Asia,20,46
+628,291,2023,1,intrastate,Asia,26,59
+628,291,2024,1,intrastate,Asia,41,57
+628,291,2025,1,intrastate,Asia,50,104
+629,292,1965,1,intrastate,Americas,,
+630,292,1965,1,intrastate,Americas,,
+631,292,1982,1,intrastate,Americas,,
+631,292,1983,2,intrastate,Americas,,
+631,292,1984,2,intrastate,Americas,,
+631,292,1985,2,intrastate,Americas,,
+631,292,1986,1,intrastate,Americas,,
+631,292,1987,1,intrastate,Americas,,
+631,292,1988,2,intrastate,Americas,,
+631,292,1989,2,intrastate,Americas,122,1650
+631,292,1990,2,intrastate,Americas,89,1052
+631,292,1991,2,intrastate,Americas,76,1050
+631,292,1992,1,intrastate,Americas,88,981
+631,292,1993,1,intrastate,Americas,46,612
+631,292,1994,1,intrastate,Americas,22,253
+631,292,1995,1,intrastate,Americas,16,178
+631,292,1996,1,intrastate,Americas,16,80
+631,292,1997,1,intrastate,Americas,15,93
+631,292,1998,1,intrastate,Americas,5,25
+631,292,1999,1,intrastate,Americas,13,75
+631,292,2000,0,intrastate,Americas,4,5
+631,292,2001,0,intrastate,Americas,3,21
+631,292,2002,0,intrastate,Americas,3,12
+631,292,2003,0,intrastate,Americas,4,13
+631,292,2004,0,intrastate,Americas,2,3
+631,292,2006,0,intrastate,Americas,2,8
+631,292,2007,1,intrastate,Americas,9,32
+631,292,2008,1,intrastate,Americas,13,40
+631,292,2009,1,intrastate,Americas,10,50
+631,292,2010,1,intrastate,Americas,12,28
+631,292,2011,0,intrastate,Americas,9,12
+631,292,2013,0,intrastate,Americas,1,3
+631,292,2014,0,intrastate,Americas,4,6
+631,292,2015,0,intrastate,Americas,4,9
+631,292,2016,0,intrastate,Americas,1,10
+631,292,2017,0,intrastate,Americas,2,7
+631,292,2021,0,intrastate,Americas,3,20
+631,292,2022,0,intrastate,Americas,2,13
+631,292,2023,0,intrastate,Americas,2,12
+632,292,1989,1,intrastate,Americas,10,177
+632,292,1990,1,intrastate,Americas,6,47
+632,292,1991,1,intrastate,Americas,7,88
+632,292,1992,1,intrastate,Americas,6,61
+632,292,1993,1,intrastate,Americas,6,60
+632,292,1994,0,intrastate,Americas,2,20
+632,292,1996,0,intrastate,Americas,2,16
+632,292,1997,0,intrastate,Americas,1,17
+633,293,1965,2,interstate,Asia,,
+633,293,1966,2,interstate,Asia,,
+633,293,1967,2,interstate,Asia,,
+633,293,1968,2,interstate,Asia,,
+633,293,1969,2,interstate,Asia,,
+633,293,1970,2,interstate,Asia,,
+633,293,1971,2,interstate,Asia,,
+633,293,1972,2,interstate,Asia,,
+633,293,1973,2,interstate,Asia,,
+633,293,1974,2,interstate,Asia,,
+633,293,1975,2,interstate,Asia,,
+634,294,1977,1,interstate,Asia,,
+634,294,1978,1,interstate,Asia,,
+634,294,1995,0,interstate,Asia,5,7
+634,294,1997,0,interstate,Asia,1,0
+634,294,1998,0,interstate,Asia,4,12
+634,294,2008,0,interstate,Asia,1,2
+634,294,2009,0,interstate,Asia,1,2
+634,294,2011,1,interstate,Asia,12,29
+634,294,2025,1,interstate,Asia,55,252
+635,295,1966,1,intrastate,Africa,,
+636,295,1981,1,intrastate,Africa,,
+637,295,1983,1,intrastate,Africa,,
+638,296,1966,1,intrastate,Asia,,
+638,296,1967,1,intrastate,Asia,,
+638,296,1968,1,intrastate,Asia,,
+639,297,1966,1,intrastate,Africa,,
+640,297,2009,1,intrastate,Africa,15,405
+640,297,2010,0,intrastate,Africa,16,18
+640,297,2011,1,intrastate,Africa,73,325
+640,297,2012,1,intrastate,Africa,183,811
+640,297,2013,2,intrastate,Africa,121,1629
+640,297,2014,2,intrastate,Africa,188,4788
+640,297,2015,2,intrastate,Africa,72,2703
+640,297,2016,1,intrastate,Africa,32,164
+640,297,2017,2,intrastate,Africa,183,1062
+640,297,2018,1,intrastate,Africa,94,335
+640,297,2019,1,intrastate,Africa,73,328
+640,297,2020,1,intrastate,Africa,106,465
+640,297,2021,1,intrastate,Africa,28,276
+640,297,2022,1,intrastate,Africa,19,428
+640,297,2023,1,intrastate,Africa,26,464
+640,297,2024,1,intrastate,Africa,34,222
+640,297,2025,1,intrastate,Africa,42,195
+641,298,1966,1,intrastate,Africa,,
+641,298,1967,1,intrastate,Africa,,
+641,298,1968,1,intrastate,Africa,,
+641,298,1969,1,intrastate,Africa,,
+641,298,1970,1,intrastate,Africa,,
+641,298,1971,1,intrastate,Africa,,
+641,298,1972,1,intrastate,Africa,,
+641,298,1973,1,intrastate,Africa,,
+641,298,1974,1,intrastate,Africa,,
+641,298,1975,1,intrastate,Africa,,
+641,298,1976,1,intrastate,Africa,,
+641,298,1977,1,intrastate,Africa,,
+641,298,1978,2,intrastate,Africa,,
+641,298,1979,1,intrastate,Africa,,
+641,298,1980,2,intrastate,Africa,,
+641,298,1981,2,intrastate,Africa,,
+641,298,1982,2,intrastate,Africa,,
+641,298,1983,2,intrastate,Africa,,
+641,298,1984,1,intrastate,Africa,,
+641,298,1985,1,intrastate,Africa,,
+641,298,1986,2,intrastate,Africa,,
+641,298,1987,2,intrastate,Africa,,
+641,298,1988,2,intrastate,Africa,,
+641,298,1989,1,intrastate,Africa,57,361
+642,299,1966,1,intrastate,Middle East,,
+643,299,1979,1,intrastate,Middle East,,
+643,299,1980,1,intrastate,Middle East,,
+643,299,1981,1,intrastate,Middle East,,
+643,299,1982,2,intrastate,Middle East,,
+644,300,1967,2,intrastate,Asia,,
+644,300,1968,1,intrastate,Asia,,
+644,300,1969,1,intrastate,Asia,,
+644,300,1970,2,intrastate,Asia,,
+644,300,1971,2,intrastate,Asia,,
+644,300,1972,2,intrastate,Asia,,
+644,300,1973,2,intrastate,Asia,,
+644,300,1974,2,intrastate,Asia,,
+644,300,1975,2,intrastate,Asia,,
+644,300,1979,1,intrastate,Asia,,
+644,300,1980,1,intrastate,Asia,,
+644,300,1981,1,intrastate,Asia,,
+644,300,1982,1,intrastate,Asia,,
+644,300,1983,1,intrastate,Asia,,
+644,300,1984,1,intrastate,Asia,,
+644,300,1985,1,intrastate,Asia,,
+644,300,1986,1,intrastate,Asia,,
+644,300,1987,1,intrastate,Asia,,
+644,300,1988,1,intrastate,Asia,,
+644,300,1989,1,intrastate,Asia,25,404
+644,300,1990,1,intrastate,Asia,20,174
+644,300,1991,1,intrastate,Asia,10,40
+644,300,1992,1,intrastate,Asia,6,118
+644,300,1993,1,intrastate,Asia,41,274
+644,300,1994,1,intrastate,Asia,51,464
+644,300,1995,1,intrastate,Asia,96,694
+644,300,1996,1,intrastate,Asia,83,788
+644,300,1997,1,intrastate,Asia,18,117
+644,300,1998,1,intrastate,Asia,20,127
+645,300,1978,2,internationalized-intrastate,Asia,,
+645,300,1979,1,internationalized-intrastate,Asia,,
+646,300,1979,1,internationalized-intrastate,Asia,,
+646,300,1980,1,internationalized-intrastate,Asia,,
+646,300,1981,1,internationalized-intrastate,Asia,,
+646,300,1982,1,internationalized-intrastate,Asia,,
+646,300,1983,1,internationalized-intrastate,Asia,,
+646,300,1984,1,internationalized-intrastate,Asia,,
+646,300,1985,1,internationalized-intrastate,Asia,,
+646,300,1986,1,internationalized-intrastate,Asia,,
+646,300,1987,1,internationalized-intrastate,Asia,,
+646,300,1988,1,internationalized-intrastate,Asia,,
+646,300,1989,1,internationalized-intrastate,Asia,16,271
+646,300,1990,1,internationalized-intrastate,Asia,2,100
+646,300,1991,1,internationalized-intrastate,Asia,4,30
+647,300,1982,1,internationalized-intrastate,Asia,,
+647,300,1983,1,internationalized-intrastate,Asia,,
+647,300,1984,1,internationalized-intrastate,Asia,,
+647,300,1985,1,internationalized-intrastate,Asia,,
+647,300,1986,1,internationalized-intrastate,Asia,,
+647,300,1987,1,internationalized-intrastate,Asia,,
+647,300,1988,1,internationalized-intrastate,Asia,,
+647,300,1989,1,internationalized-intrastate,Asia,3,143
+647,300,1991,1,internationalized-intrastate,Asia,1,150
+647,300,1997,0,internationalized-intrastate,Asia,1,1
+648,301,1967,2,interstate,Middle East,,
+649,302,1967,2,interstate,Middle East,,
+649,302,1973,2,interstate,Middle East,,
+649,302,1996,0,interstate,Middle East,1,2
+649,302,2001,0,interstate,Middle East,1,3
+649,302,2014,0,interstate,Middle East,5,20
+649,302,2015,0,interstate,Middle East,1,7
+649,302,2016,0,interstate,Middle East,1,1
+649,302,2017,0,interstate,Middle East,4,11
+649,302,2018,0,interstate,Middle East,2,3
+649,302,2019,0,interstate,Middle East,6,20
+649,302,2020,0,interstate,Middle East,1,1
+649,302,2021,0,interstate,Middle East,2,2
+649,302,2023,0,interstate,Middle East,3,17
+649,302,2024,0,interstate,Middle East,2,4
+649,302,2025,1,interstate,Middle East,14,35
+650,303,1967,2,intrastate,Africa,,
+650,303,1968,2,intrastate,Africa,,
+650,303,1969,2,intrastate,Africa,,
+650,303,1970,2,intrastate,Africa,,
+651,304,1969,1,interstate,Asia,,
+652,305,1969,1,interstate,Europe; Asia,,
+653,306,1969,2,interstate,Americas,,
+654,307,2000,1,intrastate,Africa,20,217
+654,307,2001,1,intrastate,Africa,9,432
+655,308,1970,1,intrastate,Asia,,
+655,308,1971,1,intrastate,Asia,,
+656,308,1972,1,intrastate,Asia,,
+656,308,1973,1,intrastate,Asia,,
+656,308,1974,1,intrastate,Asia,,
+656,308,1975,1,intrastate,Asia,,
+656,308,1976,1,intrastate,Asia,,
+656,308,1977,1,intrastate,Asia,,
+656,308,1978,2,intrastate,Asia,,
+656,308,1979,1,intrastate,Asia,,
+656,308,1980,1,intrastate,Asia,,
+656,308,1981,2,intrastate,Asia,,
+656,308,1982,1,intrastate,Asia,,
+656,308,1983,1,intrastate,Asia,,
+656,308,1984,1,intrastate,Asia,,
+656,308,1985,1,intrastate,Asia,,
+656,308,1986,1,intrastate,Asia,,
+656,308,1987,1,intrastate,Asia,,
+656,308,1988,1,intrastate,Asia,,
+656,308,1989,1,intrastate,Asia,11,115
+656,308,1990,1,intrastate,Asia,10,64
+656,308,1993,1,intrastate,Asia,8,124
+656,308,1994,0,intrastate,Asia,2,11
+656,308,1996,0,intrastate,Asia,1,5
+656,308,2000,0,intrastate,Asia,1,4
+656,308,2001,0,intrastate,Asia,4,7
+656,308,2009,0,intrastate,Asia,2,10
+657,308,1990,1,intrastate,Asia,4,77
+657,308,1994,1,intrastate,Asia,8,104
+657,308,1996,1,intrastate,Asia,14,135
+657,308,1997,1,intrastate,Asia,14,201
+657,308,1998,1,intrastate,Asia,7,38
+657,308,1999,1,intrastate,Asia,8,106
+657,308,2000,2,intrastate,Asia,76,1055
+657,308,2001,1,intrastate,Asia,19,129
+657,308,2002,1,intrastate,Asia,30,129
+657,308,2003,1,intrastate,Asia,47,692
+657,308,2004,1,intrastate,Asia,12,30
+657,308,2005,1,intrastate,Asia,7,39
+657,308,2006,0,intrastate,Asia,6,16
+657,308,2007,1,intrastate,Asia,6,49
+657,308,2008,1,intrastate,Asia,81,297
+657,308,2009,1,intrastate,Asia,46,318
+657,308,2010,0,intrastate,Asia,3,2
+657,308,2011,1,intrastate,Asia,11,83
+657,308,2012,0,intrastate,Asia,1,1
+657,308,2013,0,intrastate,Asia,2,2
+657,308,2014,0,intrastate,Asia,2,2
+657,308,2015,1,intrastate,Asia,1,65
+657,308,2016,0,intrastate,Asia,1,2
+657,308,2019,0,intrastate,Asia,1,4
+657,308,2020,0,intrastate,Asia,1,1
+657,308,2022,0,intrastate,Asia,2,11
+657,308,2025,0,intrastate,Asia,2,9
+658,308,1993,1,intrastate,Asia,2,30
+658,308,1994,1,intrastate,Asia,6,92
+658,308,1995,1,intrastate,Asia,6,116
+658,308,1996,1,intrastate,Asia,6,45
+658,308,1997,1,intrastate,Asia,8,69
+658,308,1998,1,intrastate,Asia,10,55
+658,308,1999,0,intrastate,Asia,4,6
+658,308,2000,1,intrastate,Asia,33,372
+658,308,2001,1,intrastate,Asia,54,531
+658,308,2002,1,intrastate,Asia,60,253
+658,308,2003,1,intrastate,Asia,32,128
+658,308,2004,1,intrastate,Asia,21,39
+658,308,2005,1,intrastate,Asia,38,165
+658,308,2006,1,intrastate,Asia,23,50
+658,308,2007,1,intrastate,Asia,34,233
+658,308,2008,0,intrastate,Asia,13,23
+658,308,2009,1,intrastate,Asia,28,199
+658,308,2010,1,intrastate,Asia,23,74
+658,308,2011,1,intrastate,Asia,20,63
+658,308,2012,1,intrastate,Asia,12,78
+658,308,2013,1,intrastate,Asia,11,48
+658,308,2014,1,intrastate,Asia,18,142
+658,308,2015,1,intrastate,Asia,44,161
+658,308,2016,1,intrastate,Asia,27,145
+658,308,2017,1,intrastate,Asia,26,84
+658,308,2018,1,intrastate,Asia,17,56
+658,308,2019,1,intrastate,Asia,14,35
+658,308,2020,1,intrastate,Asia,33,108
+658,308,2021,0,intrastate,Asia,13,23
+658,308,2022,0,intrastate,Asia,5,7
+658,308,2023,0,intrastate,Asia,1,1
+659,308,2001,1,intrastate,Asia,11,199
+659,308,2002,0,intrastate,Asia,3,22
+659,308,2005,1,intrastate,Asia,5,32
+659,308,2013,1,intrastate,Asia,27,239
+660,308,2007,1,intrastate,Asia,5,25
+660,308,2009,0,intrastate,Asia,3,7
+661,309,1971,1,intrastate,Africa,,
+662,309,1976,1,intrastate,Africa,,
+663,309,1983,2,intrastate,Africa,,
+663,309,1984,2,intrastate,Africa,,
+663,309,1985,2,intrastate,Africa,,
+663,309,1986,2,intrastate,Africa,,
+663,309,1987,2,intrastate,Africa,,
+663,309,1988,2,intrastate,Africa,,
+663,309,1989,2,intrastate,Africa,25,4253
+663,309,1990,2,intrastate,Africa,54,4335
+663,309,1991,2,intrastate,Africa,21,1317
+663,309,1992,2,intrastate,Africa,12,1083
+663,309,1993,1,intrastate,Africa,14,942
+663,309,1994,1,intrastate,Africa,8,337
+663,309,1995,2,intrastate,Africa,16,1000
+663,309,1996,2,intrastate,Africa,10,2152
+663,309,1997,2,intrastate,Africa,45,3005
+663,309,1998,2,intrastate,Africa,61,4211
+663,309,1999,2,intrastate,Africa,23,1000
+663,309,2000,2,intrastate,Africa,43,1930
+663,309,2001,2,intrastate,Africa,54,3357
+663,309,2002,2,intrastate,Africa,20,2021
+663,309,2003,1,intrastate,Africa,1,44
+663,309,2004,1,intrastate,Africa,3,253
+664,309,1996,1,intrastate,Africa,11,137
+664,309,1997,1,intrastate,Africa,14,704
+664,309,1998,1,intrastate,Africa,38,680
+664,309,1999,1,intrastate,Africa,19,408
+664,309,2000,1,intrastate,Africa,12,911
+664,309,2001,1,intrastate,Africa,4,51
+664,309,2002,0,intrastate,Africa,1,0
+665,309,2003,1,internationalized-intrastate,Africa,6,900
+665,309,2004,1,internationalized-intrastate,Africa,2,37
+665,309,2007,1,internationalized-intrastate,Africa,8,131
+665,309,2008,1,internationalized-intrastate,Africa,17,422
+665,309,2009,1,internationalized-intrastate,Africa,20,304
+665,309,2010,1,internationalized-intrastate,Africa,23,717
+665,309,2011,1,internationalized-intrastate,Africa,8,63
+666,309,2003,2,internationalized-intrastate,Africa,14,1055
+666,309,2004,2,internationalized-intrastate,Africa,40,2988
+666,309,2005,1,internationalized-intrastate,Africa,10,161
+666,309,2006,1,internationalized-intrastate,Africa,2,58
+666,309,2007,0,internationalized-intrastate,Africa,1,2
+666,309,2008,1,internationalized-intrastate,Africa,19,140
+666,309,2009,1,internationalized-intrastate,Africa,8,49
+666,309,2010,1,internationalized-intrastate,Africa,10,203
+666,309,2011,1,internationalized-intrastate,Africa,8,127
+666,309,2016,0,internationalized-intrastate,Africa,5,7
+666,309,2017,1,internationalized-intrastate,Africa,5,50
+666,309,2018,1,internationalized-intrastate,Africa,46,243
+666,309,2019,0,internationalized-intrastate,Africa,9,23
+666,309,2020,1,internationalized-intrastate,Africa,4,45
+666,309,2021,1,internationalized-intrastate,Africa,5,31
+666,309,2022,1,internationalized-intrastate,Africa,5,47
+667,309,2006,1,intrastate,Africa,17,810
+668,309,2006,1,intrastate,Africa,11,134
+668,309,2007,0,intrastate,Africa,3,20
+668,309,2010,0,intrastate,Africa,1,2
+668,309,2011,0,intrastate,Africa,1,0
+669,309,2007,1,intrastate,Africa,4,86
+669,309,2008,1,intrastate,Africa,6,36
+669,309,2013,0,intrastate,Africa,1,3
+670,309,2010,1,intrastate,Africa,9,90
+670,309,2011,1,intrastate,Africa,14,492
+671,310,1971,1,intrastate,Africa,,
+672,311,1971,1,intrastate,Africa,,
+673,312,1971,2,intrastate,Asia,,
+674,313,1971,2,intrastate,Asia,,
+674,313,1989,1,intrastate,Asia,107,388
+674,313,1990,1,intrastate,Asia,11,61
+675,314,1971,1,intrastate,Africa,,
+676,314,1972,1,intrastate,Africa,,
+676,314,1979,1,intrastate,Africa,,
+677,314,1974,1,intrastate,Africa,,
+678,314,1979,1,internationalized-intrastate,Africa,,
+679,314,1979,1,internationalized-intrastate,Africa,,
+680,314,1980,1,internationalized-intrastate,Africa,,
+680,314,1981,1,internationalized-intrastate,Africa,,
+681,314,1981,1,internationalized-intrastate,Africa,,
+681,314,1982,2,internationalized-intrastate,Africa,,
+681,314,1983,2,internationalized-intrastate,Africa,,
+681,314,1984,2,internationalized-intrastate,Africa,,
+681,314,1985,2,internationalized-intrastate,Africa,,
+681,314,1986,2,internationalized-intrastate,Africa,,
+682,314,1981,1,internationalized-intrastate,Africa,,
+682,314,1982,1,internationalized-intrastate,Africa,,
+682,314,1983,1,internationalized-intrastate,Africa,,
+683,314,1982,1,intrastate,Africa,,
+684,314,1986,1,intrastate,Africa,,
+684,314,1987,2,intrastate,Africa,,
+685,314,1986,1,intrastate,Africa,,
+685,314,1987,1,intrastate,Africa,,
+686,314,1987,1,intrastate,Africa,,
+686,314,1988,1,intrastate,Africa,,
+686,314,1989,1,intrastate,Africa,10,453
+686,314,1990,1,intrastate,Africa,10,544
+686,314,1991,1,intrastate,Africa,1,37
+686,314,1992,1,intrastate,Africa,2,72
+686,314,1994,0,intrastate,Africa,1,1
+687,314,1988,1,intrastate,Africa,,
+688,314,1988,2,intrastate,Africa,,
+688,314,1989,1,intrastate,Africa,7,566
+688,314,1990,1,intrastate,Africa,4,77
+688,314,1991,1,intrastate,Africa,6,816
+688,314,1994,1,intrastate,Africa,12,149
+688,314,1995,1,intrastate,Africa,16,295
+688,314,1996,1,intrastate,Africa,32,689
+688,314,1997,1,intrastate,Africa,33,502
+688,314,1998,1,intrastate,Africa,47,551
+688,314,1999,0,intrastate,Africa,4,11
+688,314,2000,1,intrastate,Africa,32,164
+688,314,2001,1,intrastate,Africa,20,110
+688,314,2002,2,intrastate,Africa,105,1010
+688,314,2003,1,intrastate,Africa,96,642
+688,314,2004,2,intrastate,Africa,220,1610
+688,314,2005,1,intrastate,Africa,170,695
+688,314,2006,1,intrastate,Africa,79,221
+688,314,2007,0,intrastate,Africa,3,5
+688,314,2008,1,intrastate,Africa,9,53
+688,314,2009,1,intrastate,Africa,53,238
+688,314,2010,1,intrastate,Africa,15,51
+688,314,2011,1,intrastate,Africa,27,64
+688,314,2012,0,intrastate,Africa,7,16
+688,314,2013,1,intrastate,Africa,11,47
+688,314,2014,1,intrastate,Africa,8,29
+688,314,2015,0,intrastate,Africa,9,24
+688,314,2016,0,intrastate,Africa,2,9
+688,314,2017,0,intrastate,Africa,9,17
+688,314,2018,0,intrastate,Africa,1,2
+688,314,2019,0,intrastate,Africa,2,10
+688,314,2020,0,intrastate,Africa,1,2
+688,314,2024,0,intrastate,Africa,1,0
+689,314,1996,1,intrastate,Africa,13,381
+689,314,1997,1,intrastate,Africa,21,351
+689,314,1998,1,intrastate,Africa,28,284
+689,314,1999,1,intrastate,Africa,29,355
+689,314,2000,1,intrastate,Africa,34,224
+689,314,2001,1,intrastate,Africa,18,79
+689,314,2002,1,intrastate,Africa,5,76
+689,314,2006,0,intrastate,Africa,10,22
+689,314,2007,1,intrastate,Africa,10,91
+689,314,2010,1,intrastate,Africa,8,87
+689,314,2011,1,intrastate,Africa,5,72
+689,314,2012,0,intrastate,Africa,2,22
+689,314,2013,1,intrastate,Africa,14,53
+689,314,2014,1,intrastate,Africa,16,835
+689,314,2015,1,intrastate,Africa,23,197
+689,314,2016,1,intrastate,Africa,24,142
+689,314,2017,1,intrastate,Africa,11,141
+689,314,2021,0,intrastate,Africa,1,2
+690,314,1995,0,intrastate,Africa,1,6
+690,314,1996,1,intrastate,Africa,16,198
+690,314,1998,0,intrastate,Africa,2,9
+691,314,1996,0,intrastate,Africa,1,1
+691,314,1997,1,intrastate,Africa,1,35
+691,314,1998,0,intrastate,Africa,1,10
+692,315,1971,1,intrastate,Europe,,
+692,315,1972,1,intrastate,Europe,,
+692,315,1973,1,intrastate,Europe,,
+692,315,1974,1,intrastate,Europe,,
+692,315,1975,1,intrastate,Europe,,
+692,315,1976,1,intrastate,Europe,,
+692,315,1977,1,intrastate,Europe,,
+692,315,1978,1,intrastate,Europe,,
+692,315,1979,1,intrastate,Europe,,
+692,315,1980,1,intrastate,Europe,,
+692,315,1981,1,intrastate,Europe,,
+692,315,1982,1,intrastate,Europe,,
+692,315,1983,1,intrastate,Europe,,
+692,315,1984,1,intrastate,Europe,,
+692,315,1985,1,intrastate,Europe,,
+692,315,1986,1,intrastate,Europe,,
+692,315,1987,1,intrastate,Europe,,
+692,315,1988,1,intrastate,Europe,,
+692,315,1989,1,intrastate,Europe,23,38
+692,315,1990,1,intrastate,Europe,28,44
+692,315,1991,1,intrastate,Europe,20,26
+692,315,1992,0,intrastate,Europe,14,17
+692,315,1993,0,intrastate,Europe,14,15
+692,315,1994,0,intrastate,Europe,6,6
+692,315,1996,0,intrastate,Europe,2,2
+692,315,1997,0,intrastate,Europe,2,3
+693,315,1998,1,intrastate,Europe,1,29
+693,315,2009,0,intrastate,Europe,1,2
+693,315,2011,0,intrastate,Europe,1,1
+693,315,2019,0,intrastate,Europe,1,1
+694,316,1972,1,intrastate,Americas,,
+695,316,1979,1,intrastate,Americas,,
+696,316,1979,1,intrastate,Americas,,
+697,316,1980,1,intrastate,Americas,,
+697,316,1981,2,intrastate,Americas,,
+697,316,1982,2,intrastate,Americas,,
+697,316,1983,2,intrastate,Americas,,
+697,316,1984,2,intrastate,Americas,,
+697,316,1985,2,intrastate,Americas,,
+697,316,1986,2,intrastate,Americas,,
+697,316,1987,2,intrastate,Americas,,
+697,316,1988,2,intrastate,Americas,,
+697,316,1989,2,intrastate,Americas,58,4924
+697,316,1990,1,intrastate,Americas,46,849
+697,316,1991,1,intrastate,Americas,10,88
+697,316,1992,0,intrastate,Americas,1,4
+698,317,1969,1,internationalized-intrastate,Middle East,,
+698,317,1970,1,internationalized-intrastate,Middle East,,
+698,317,1971,1,internationalized-intrastate,Middle East,,
+698,317,1972,1,internationalized-intrastate,Middle East,,
+698,317,1973,1,internationalized-intrastate,Middle East,,
+698,317,1974,1,internationalized-intrastate,Middle East,,
+698,317,1975,1,internationalized-intrastate,Middle East,,
+699,318,1967,1,intrastate,Africa,,
+699,318,1968,1,intrastate,Africa,,
+699,318,1973,1,intrastate,Africa,,
+699,318,1974,1,intrastate,Africa,,
+700,318,1973,1,intrastate,Africa,,
+700,318,1974,1,intrastate,Africa,,
+700,318,1975,1,intrastate,Africa,,
+700,318,1976,2,intrastate,Africa,,
+701,318,1976,1,intrastate,Africa,,
+701,318,1977,2,intrastate,Africa,,
+701,318,1978,2,intrastate,Africa,,
+701,318,1979,2,intrastate,Africa,,
+702,319,1972,1,intrastate,Americas,,
+703,320,1972,1,interstate,Middle East,,
+703,320,1979,1,interstate,Middle East,,
+704,321,1973,1,intrastate,Americas,,
+705,322,1975,1,intrastate,Asia,,
+705,322,1976,1,intrastate,Asia,,
+705,322,1977,1,intrastate,Asia,,
+705,322,1978,1,intrastate,Asia,,
+705,322,1979,1,intrastate,Asia,,
+705,322,1980,1,intrastate,Asia,,
+705,322,1981,1,intrastate,Asia,,
+705,322,1982,1,intrastate,Asia,,
+705,322,1983,1,intrastate,Asia,,
+705,322,1984,1,intrastate,Asia,,
+705,322,1985,1,intrastate,Asia,,
+705,322,1986,1,intrastate,Asia,,
+705,322,1987,1,intrastate,Asia,,
+705,322,1988,1,intrastate,Asia,,
+705,322,1989,1,intrastate,Asia,7,26
+705,322,1990,1,intrastate,Asia,13,45
+705,322,1991,1,intrastate,Asia,11,25
+705,322,1992,0,intrastate,Asia,9,24
+705,322,1993,0,intrastate,Asia,4,5
+705,322,1994,0,intrastate,Asia,1,1
+705,322,1995,0,intrastate,Asia,4,5
+705,322,1996,0,intrastate,Asia,5,5
+705,322,1997,0,intrastate,Asia,3,4
+705,322,2002,0,intrastate,Asia,1,1
+705,322,2020,0,intrastate,Asia,1,1
+705,322,2022,0,intrastate,Asia,1,4
+706,323,1974,2,interstate,Europe; Middle East,,
+707,324,1974,1,interstate,Middle East,,
+707,324,1980,2,interstate,Middle East,,
+707,324,1981,2,interstate,Middle East,,
+707,324,1982,2,interstate,Middle East,,
+707,324,1983,2,interstate,Middle East,,
+707,324,1984,2,interstate,Middle East,,
+707,324,1985,2,interstate,Middle East,,
+707,324,1986,2,interstate,Middle East,,
+707,324,1987,2,interstate,Middle East,,
+707,324,1988,2,interstate,Middle East,,
+708,325,1974,2,intrastate,Asia,,
+708,325,1975,1,intrastate,Asia,,
+708,325,1976,1,intrastate,Asia,,
+708,325,1977,1,intrastate,Asia,,
+708,325,2012,1,intrastate,Asia,3,25
+708,325,2013,0,intrastate,Asia,3,12
+708,325,2014,0,intrastate,Asia,2,11
+708,325,2015,1,intrastate,Asia,5,44
+708,325,2017,0,intrastate,Asia,1,1
+708,325,2018,0,intrastate,Asia,3,12
+709,325,2004,1,intrastate,Asia,5,43
+709,325,2005,0,intrastate,Asia,6,18
+709,325,2006,1,intrastate,Asia,12,43
+709,325,2007,1,intrastate,Asia,67,83
+709,325,2008,1,intrastate,Asia,33,54
+709,325,2009,1,intrastate,Asia,16,32
+709,325,2010,0,intrastate,Asia,12,14
+709,325,2011,1,intrastate,Asia,13,42
+709,325,2012,1,intrastate,Asia,3,31
+709,325,2013,1,intrastate,Asia,9,45
+709,325,2014,1,intrastate,Asia,2,46
+709,325,2015,1,intrastate,Asia,5,31
+709,325,2016,1,intrastate,Asia,9,59
+709,325,2017,0,intrastate,Asia,2,10
+709,325,2018,0,intrastate,Asia,3,13
+710,325,2006,1,intrastate,Asia,9,157
+711,325,2007,0,intrastate,Asia,6,11
+711,325,2008,1,intrastate,Asia,19,143
+711,325,2009,1,intrastate,Asia,9,49
+711,325,2010,0,intrastate,Asia,2,5
+711,325,2011,0,intrastate,Asia,5,10
+711,325,2012,1,intrastate,Asia,92,62
+711,325,2013,0,intrastate,Asia,1,9
+711,325,2014,1,intrastate,Asia,3,44
+711,325,2015,1,intrastate,Asia,6,32
+711,325,2016,0,intrastate,Asia,5,15
+712,326,1993,0,intrastate,Africa,1,21
+712,326,1996,0,intrastate,Africa,2,14
+712,326,1997,1,intrastate,Africa,9,31
+712,326,1999,1,intrastate,Africa,2,25
+712,326,2003,1,intrastate,Africa,9,57
+713,327,1975,1,internationalized-intrastate,Africa,,
+713,327,1976,1,internationalized-intrastate,Africa,,
+713,327,1977,1,internationalized-intrastate,Africa,,
+713,327,1978,1,internationalized-intrastate,Africa,,
+713,327,1979,1,internationalized-intrastate,Africa,,
+714,327,1975,2,internationalized-intrastate,Africa,,
+714,327,1976,2,internationalized-intrastate,Africa,,
+714,327,1977,2,internationalized-intrastate,Africa,,
+714,327,1978,2,internationalized-intrastate,Africa,,
+714,327,1979,2,internationalized-intrastate,Africa,,
+714,327,1980,2,internationalized-intrastate,Africa,,
+714,327,1981,2,internationalized-intrastate,Africa,,
+714,327,1982,2,internationalized-intrastate,Africa,,
+714,327,1983,2,internationalized-intrastate,Africa,,
+714,327,1984,2,internationalized-intrastate,Africa,,
+714,327,1985,2,internationalized-intrastate,Africa,,
+714,327,1986,2,internationalized-intrastate,Africa,,
+714,327,1987,2,internationalized-intrastate,Africa,,
+714,327,1988,2,internationalized-intrastate,Africa,,
+714,327,1989,2,internationalized-intrastate,Africa,240,2828
+714,327,1990,2,internationalized-intrastate,Africa,165,2558
+714,327,1991,1,internationalized-intrastate,Africa,16,491
+714,327,1992,2,internationalized-intrastate,Africa,30,2321
+714,327,1993,2,internationalized-intrastate,Africa,200,12054
+714,327,1994,2,internationalized-intrastate,Africa,281,3925
+714,327,1995,1,internationalized-intrastate,Africa,58,162
+714,327,1996,0,internationalized-intrastate,Africa,19,2
+714,327,1997,0,internationalized-intrastate,Africa,10,0
+714,327,1998,2,internationalized-intrastate,Africa,64,1041
+714,327,1999,2,internationalized-intrastate,Africa,201,2273
+714,327,2000,2,internationalized-intrastate,Africa,83,1000
+714,327,2001,2,internationalized-intrastate,Africa,61,1123
+714,327,2002,1,internationalized-intrastate,Africa,27,465
+714,327,2013,0,internationalized-intrastate,Africa,1,2
+715,328,1975,1,interstate,Asia,,
+715,328,1976,1,interstate,Asia,,
+715,328,1977,1,interstate,Asia,,
+716,329,1964,1,intrastate,Africa,,
+717,329,1976,1,intrastate,Africa,,
+717,329,1977,2,intrastate,Africa,,
+717,329,1978,2,intrastate,Africa,,
+717,329,1979,1,intrastate,Africa,,
+717,329,1980,1,intrastate,Africa,,
+717,329,1981,1,intrastate,Africa,,
+717,329,1982,1,intrastate,Africa,,
+717,329,1983,1,intrastate,Africa,,
+718,329,1993,1,intrastate,Africa,2,36
+718,329,1994,0,intrastate,Africa,1,1
+718,329,1996,1,intrastate,Africa,9,186
+718,329,1999,1,intrastate,Africa,4,25
+719,329,1994,1,intrastate,Africa,1,50
+719,329,1995,0,intrastate,Africa,3,14
+719,329,1996,1,intrastate,Africa,2,25
+719,329,1998,1,intrastate,Africa,7,25
+719,329,1999,1,intrastate,Africa,5,25
+719,329,2000,1,intrastate,Africa,24,25
+719,329,2001,1,intrastate,Africa,15,25
+719,329,2002,1,intrastate,Africa,55,25
+719,329,2003,1,intrastate,Africa,31,25
+719,329,2004,1,intrastate,Africa,62,25
+719,329,2005,1,intrastate,Africa,44,58
+719,329,2006,1,intrastate,Africa,51,25
+719,329,2007,1,intrastate,Africa,66,152
+719,329,2008,1,intrastate,Africa,37,25
+719,329,2009,1,intrastate,Africa,59,473
+719,329,2010,1,intrastate,Africa,87,126
+719,329,2011,1,intrastate,Africa,60,25
+719,329,2012,1,intrastate,Africa,20,25
+719,329,2013,1,intrastate,Africa,28,52
+719,329,2014,1,intrastate,Africa,13,25
+719,329,2015,1,intrastate,Africa,20,25
+719,329,2016,1,intrastate,Africa,8,25
+719,329,2017,0,intrastate,Africa,1,0
+719,329,2018,0,intrastate,Africa,1,0
+720,330,1975,2,intrastate,Asia,,
+720,330,1976,2,intrastate,Asia,,
+720,330,1977,2,intrastate,Asia,,
+720,330,1978,2,intrastate,Asia,,
+720,330,1979,1,intrastate,Asia,,
+720,330,1980,1,intrastate,Asia,,
+720,330,1981,1,intrastate,Asia,,
+720,330,1982,1,intrastate,Asia,,
+720,330,1983,1,intrastate,Asia,,
+720,330,1984,1,intrastate,Asia,,
+720,330,1985,1,intrastate,Asia,,
+720,330,1986,1,intrastate,Asia,,
+720,330,1987,1,intrastate,Asia,,
+720,330,1988,1,intrastate,Asia,,
+720,330,1990,0,intrastate,Asia,2,2
+720,330,1992,1,intrastate,Asia,5,39
+720,330,1993,0,intrastate,Asia,3,16
+720,330,1994,0,intrastate,Asia,2,5
+720,330,1995,0,intrastate,Asia,7,23
+720,330,1996,0,intrastate,Asia,6,17
+720,330,1997,1,intrastate,Asia,15,56
+720,330,1998,1,intrastate,Asia,11,47
+720,330,1999,1,intrastate,Asia,11,77
+721,331,1975,1,intrastate,Africa,,
+721,331,1976,1,intrastate,Africa,,
+721,331,1977,1,intrastate,Africa,,
+721,331,1978,1,intrastate,Africa,,
+721,331,1979,2,intrastate,Africa,,
+721,331,1980,2,intrastate,Africa,,
+721,331,1981,1,intrastate,Africa,,
+721,331,1982,1,intrastate,Africa,,
+721,331,1983,1,intrastate,Africa,,
+721,331,1984,1,intrastate,Africa,,
+721,331,1985,1,intrastate,Africa,,
+721,331,1986,1,intrastate,Africa,,
+721,331,1987,1,intrastate,Africa,,
+721,331,1988,1,intrastate,Africa,,
+721,331,1989,1,intrastate,Africa,6,207
+721,331,1991,0,intrastate,Africa,2,19
+721,331,2020,0,intrastate,Africa,1,2
+721,331,2021,0,intrastate,Africa,7,6
+721,331,2022,0,intrastate,Africa,4,14
+721,331,2023,0,intrastate,Africa,2,5
+721,331,2024,0,intrastate,Africa,2,7
+721,331,2025,0,intrastate,Africa,2,7
+722,332,1977,1,intrastate,Africa,,
+722,332,1978,1,intrastate,Africa,,
+722,332,1979,1,intrastate,Africa,,
+722,332,1980,1,intrastate,Africa,,
+722,332,1981,2,intrastate,Africa,,
+722,332,1982,2,intrastate,Africa,,
+722,332,1983,2,intrastate,Africa,,
+722,332,1984,2,intrastate,Africa,,
+722,332,1985,2,intrastate,Africa,,
+722,332,1986,2,intrastate,Africa,,
+722,332,1987,2,intrastate,Africa,,
+722,332,1988,2,intrastate,Africa,,
+722,332,1989,2,intrastate,Africa,127,1614
+722,332,1990,2,intrastate,Africa,24,1577
+722,332,1991,2,intrastate,Africa,17,1326
+722,332,1992,1,intrastate,Africa,11,309
+722,332,2004,0,intrastate,Africa,1,1
+722,332,2005,0,intrastate,Africa,1,12
+722,332,2012,0,intrastate,Africa,1,2
+722,332,2013,1,intrastate,Africa,15,42
+722,332,2014,1,intrastate,Africa,12,30
+722,332,2016,1,intrastate,Africa,25,55
+722,332,2023,0,intrastate,Africa,9,0
+723,333,1978,2,intrastate,Asia,,
+724,333,1979,2,intrastate,Asia,,
+724,333,1980,2,intrastate,Asia,,
+724,333,1981,2,intrastate,Asia,,
+724,333,1982,2,intrastate,Asia,,
+724,333,1983,2,intrastate,Asia,,
+724,333,1984,2,intrastate,Asia,,
+724,333,1985,2,intrastate,Asia,,
+724,333,1986,2,intrastate,Asia,,
+724,333,1987,2,intrastate,Asia,,
+724,333,1988,2,intrastate,Asia,,
+724,333,1989,2,intrastate,Asia,51,1545
+724,333,1990,1,intrastate,Asia,10,581
+724,333,1991,1,intrastate,Asia,12,385
+724,333,1992,1,intrastate,Asia,2,35
+724,333,1996,1,intrastate,Asia,6,314
+725,333,1980,2,internationalized-intrastate,Asia,,
+725,333,1981,2,internationalized-intrastate,Asia,,
+725,333,1982,2,internationalized-intrastate,Asia,,
+725,333,1983,2,internationalized-intrastate,Asia,,
+725,333,1984,2,internationalized-intrastate,Asia,,
+725,333,1985,2,internationalized-intrastate,Asia,,
+725,333,1986,2,internationalized-intrastate,Asia,,
+725,333,1987,1,internationalized-intrastate,Asia,,
+725,333,1988,1,internationalized-intrastate,Asia,,
+726,333,1980,2,internationalized-intrastate,Asia,,
+726,333,1981,2,internationalized-intrastate,Asia,,
+726,333,1982,2,internationalized-intrastate,Asia,,
+726,333,1983,2,internationalized-intrastate,Asia,,
+726,333,1984,2,internationalized-intrastate,Asia,,
+726,333,1985,2,internationalized-intrastate,Asia,,
+726,333,1986,2,internationalized-intrastate,Asia,,
+726,333,1987,2,internationalized-intrastate,Asia,,
+726,333,1988,2,internationalized-intrastate,Asia,,
+726,333,1989,1,internationalized-intrastate,Asia,2,181
+726,333,1990,1,internationalized-intrastate,Asia,9,586
+726,333,1991,1,internationalized-intrastate,Asia,9,451
+726,333,1992,2,internationalized-intrastate,Asia,48,3890
+726,333,1993,2,internationalized-intrastate,Asia,66,3160
+726,333,1994,1,internationalized-intrastate,Asia,47,669
+726,333,1995,1,internationalized-intrastate,Asia,14,207
+726,333,2002,1,internationalized-intrastate,Asia,1,30
+726,333,2003,1,internationalized-intrastate,Asia,7,32
+726,333,2006,1,internationalized-intrastate,Asia,9,40
+726,333,2008,1,internationalized-intrastate,Asia,14,97
+726,333,2009,1,internationalized-intrastate,Asia,12,54
+726,333,2010,1,internationalized-intrastate,Asia,27,98
+726,333,2011,1,internationalized-intrastate,Asia,19,49
+726,333,2012,0,internationalized-intrastate,Asia,4,10
+726,333,2013,1,internationalized-intrastate,Asia,8,35
+726,333,2014,0,internationalized-intrastate,Asia,5,10
+726,333,2016,0,internationalized-intrastate,Asia,3,2
+727,333,1980,2,internationalized-intrastate,Asia,,
+727,333,1981,2,internationalized-intrastate,Asia,,
+727,333,1982,2,internationalized-intrastate,Asia,,
+727,333,1983,2,internationalized-intrastate,Asia,,
+727,333,1984,2,internationalized-intrastate,Asia,,
+727,333,1985,2,internationalized-intrastate,Asia,,
+727,333,1986,2,internationalized-intrastate,Asia,,
+727,333,1987,2,internationalized-intrastate,Asia,,
+727,333,1988,2,internationalized-intrastate,Asia,,
+727,333,1989,2,internationalized-intrastate,Asia,80,3393
+727,333,1990,1,internationalized-intrastate,Asia,17,178
+727,333,1991,2,internationalized-intrastate,Asia,37,2441
+727,333,1992,0,internationalized-intrastate,Asia,4,11
+728,333,1980,1,internationalized-intrastate,Asia,,
+728,333,1981,1,internationalized-intrastate,Asia,,
+728,333,1982,1,internationalized-intrastate,Asia,,
+728,333,1983,1,internationalized-intrastate,Asia,,
+728,333,1984,1,internationalized-intrastate,Asia,,
+728,333,1985,1,internationalized-intrastate,Asia,,
+728,333,1986,1,internationalized-intrastate,Asia,,
+728,333,1987,1,internationalized-intrastate,Asia,,
+728,333,1988,1,internationalized-intrastate,Asia,,
+729,333,1980,2,internationalized-intrastate,Asia,,
+729,333,1981,2,internationalized-intrastate,Asia,,
+729,333,1982,2,internationalized-intrastate,Asia,,
+729,333,1983,2,internationalized-intrastate,Asia,,
+729,333,1984,2,internationalized-intrastate,Asia,,
+729,333,1985,2,internationalized-intrastate,Asia,,
+729,333,1986,2,internationalized-intrastate,Asia,,
+729,333,1987,2,internationalized-intrastate,Asia,,
+729,333,1988,2,internationalized-intrastate,Asia,,
+729,333,1989,1,internationalized-intrastate,Asia,2,30
+730,333,1981,1,internationalized-intrastate,Asia,,
+730,333,1982,1,internationalized-intrastate,Asia,,
+730,333,1983,2,internationalized-intrastate,Asia,,
+730,333,1984,2,internationalized-intrastate,Asia,,
+730,333,1985,2,internationalized-intrastate,Asia,,
+730,333,1986,2,internationalized-intrastate,Asia,,
+730,333,1987,2,internationalized-intrastate,Asia,,
+730,333,1988,2,internationalized-intrastate,Asia,,
+731,333,1984,1,internationalized-intrastate,Asia,,
+732,333,1989,1,internationalized-intrastate,Asia,2,25
+732,333,1990,1,internationalized-intrastate,Asia,1,25
+732,333,1991,1,internationalized-intrastate,Asia,2,25
+732,333,1992,1,internationalized-intrastate,Asia,15,351
+732,333,1993,1,internationalized-intrastate,Asia,35,476
+732,333,1994,1,internationalized-intrastate,Asia,11,191
+732,333,1995,1,internationalized-intrastate,Asia,14,168
+733,333,1990,1,intrastate,Asia,2,108
+734,333,1993,1,intrastate,Asia,3,85
+734,333,1994,2,intrastate,Asia,176,8077
+734,333,1995,1,intrastate,Asia,75,871
+735,333,1995,2,intrastate,Asia,105,4270
+735,333,1996,2,intrastate,Asia,163,1922
+735,333,2002,0,intrastate,Asia,1,10
+735,333,2003,1,intrastate,Asia,125,628
+735,333,2004,1,intrastate,Asia,207,711
+735,333,2005,2,intrastate,Asia,373,1628
+735,333,2006,2,intrastate,Asia,765,4694
+735,333,2007,2,intrastate,Asia,960,6848
+735,333,2008,2,intrastate,Asia,1063,5558
+735,333,2009,2,intrastate,Asia,1444,6336
+735,333,2010,2,intrastate,Asia,1725,6940
+735,333,2011,2,intrastate,Asia,2129,7374
+735,333,2012,2,intrastate,Asia,2254,7730
+735,333,2013,2,intrastate,Asia,1865,8013
+735,333,2014,2,intrastate,Asia,2028,12351
+735,333,2015,2,intrastate,Asia,2050,16606
+735,333,2016,2,intrastate,Asia,2045,15775
+735,333,2017,2,intrastate,Asia,2005,16179
+735,333,2018,2,intrastate,Asia,2865,22837
+735,333,2019,2,intrastate,Asia,4335,28828
+735,333,2020,2,intrastate,Asia,3091,20104
+735,333,2021,2,intrastate,Asia,4147,34795
+736,333,1996,1,intrastate,Asia,52,941
+736,333,1997,2,intrastate,Asia,195,6396
+736,333,1998,2,intrastate,Asia,194,6256
+736,333,1999,2,intrastate,Asia,184,4629
+736,333,2000,2,intrastate,Asia,194,5235
+736,333,2001,2,intrastate,Asia,92,2328
+737,334,1974,1,interstate,Asia,,
+737,334,1978,1,interstate,Asia,,
+737,334,1979,2,interstate,Asia,,
+737,334,1980,1,interstate,Asia,,
+737,334,1981,1,interstate,Asia,,
+737,334,1983,1,interstate,Asia,,
+737,334,1984,1,interstate,Asia,,
+737,334,1986,1,interstate,Asia,,
+737,334,1987,1,interstate,Asia,,
+737,334,1988,1,interstate,Asia,,
+738,335,1979,1,intrastate,Asia,,
+738,335,1980,1,intrastate,Asia,,
+738,335,1981,1,intrastate,Asia,,
+738,335,1982,1,intrastate,Asia,,
+738,335,1983,1,intrastate,Asia,,
+738,335,1984,1,intrastate,Asia,,
+738,335,1985,1,intrastate,Asia,,
+738,335,1986,1,intrastate,Asia,,
+738,335,1987,1,intrastate,Asia,,
+738,335,1988,1,intrastate,Asia,,
+739,335,1992,1,intrastate,Asia,4,29
+739,335,1993,0,intrastate,Asia,1,7
+739,335,1996,0,intrastate,Asia,3,14
+739,335,1997,1,intrastate,Asia,3,32
+739,335,1998,0,intrastate,Asia,3,8
+739,335,1999,0,intrastate,Asia,3,15
+739,335,2000,0,intrastate,Asia,1,3
+739,335,2001,0,intrastate,Asia,3,14
+739,335,2003,0,intrastate,Asia,7,17
+739,335,2004,0,intrastate,Asia,10,17
+739,335,2005,0,intrastate,Asia,4,7
+739,335,2006,0,intrastate,Asia,7,8
+739,335,2007,0,intrastate,Asia,7,8
+739,335,2008,0,intrastate,Asia,1,2
+740,335,1992,0,intrastate,Asia,1,9
+740,335,1993,0,intrastate,Asia,1,7
+740,335,1994,0,intrastate,Asia,2,6
+740,335,1995,0,intrastate,Asia,4,17
+740,335,1996,0,intrastate,Asia,3,15
+740,335,1997,1,intrastate,Asia,3,40
+740,335,1998,0,intrastate,Asia,4,13
+740,335,1999,1,intrastate,Asia,8,32
+740,335,2000,1,intrastate,Asia,28,61
+740,335,2001,1,intrastate,Asia,7,32
+740,335,2002,1,intrastate,Asia,5,40
+740,335,2003,1,intrastate,Asia,14,32
+740,335,2004,0,intrastate,Asia,1,5
+740,335,2005,0,intrastate,Asia,11,18
+740,335,2006,0,intrastate,Asia,11,18
+740,335,2007,0,intrastate,Asia,2,2
+740,335,2008,0,intrastate,Asia,5,10
+740,335,2009,0,intrastate,Asia,1,1
+740,335,2012,0,intrastate,Asia,1,1
+740,335,2014,0,intrastate,Asia,2,3
+741,336,1977,1,intrastate,Americas,,
+741,336,1978,2,intrastate,Americas,,
+741,336,1979,2,intrastate,Americas,,
+742,336,1982,1,intrastate,Americas,,
+742,336,1983,2,intrastate,Americas,,
+742,336,1984,2,intrastate,Americas,,
+742,336,1985,2,intrastate,Americas,,
+742,336,1986,2,intrastate,Americas,,
+742,336,1987,2,intrastate,Americas,,
+742,336,1988,2,intrastate,Americas,,
+742,336,1989,1,intrastate,Americas,21,526
+742,336,1990,1,intrastate,Americas,6,39
+743,337,1982,1,intrastate,Africa,,
+743,337,1983,1,intrastate,Africa,,
+743,337,1984,1,intrastate,Africa,,
+744,337,1983,1,intrastate,Africa,,
+744,337,1984,1,intrastate,Africa,,
+744,337,1986,1,intrastate,Africa,,
+744,337,1987,1,intrastate,Africa,,
+744,337,1988,2,intrastate,Africa,,
+744,337,1989,1,intrastate,Africa,26,350
+744,337,1990,2,intrastate,Africa,36,1229
+744,337,1991,1,intrastate,Africa,2,300
+745,337,1989,1,intrastate,Africa,4,29
+745,337,1990,1,intrastate,Africa,3,25
+745,337,1991,1,intrastate,Africa,4,705
+746,337,1990,2,intrastate,Africa,10,1456
+746,337,1991,2,intrastate,Africa,2,3000
+747,337,1991,2,intrastate,Africa,7,4000
+747,337,1992,2,intrastate,Africa,10,1154
+747,337,1993,1,intrastate,Africa,3,25
+747,337,1994,1,intrastate,Africa,21,237
+747,337,1995,1,intrastate,Africa,24,104
+747,337,1996,1,intrastate,Africa,27,256
+748,337,2001,1,intrastate,Africa,12,228
+748,337,2002,1,intrastate,Africa,10,114
+749,337,2006,1,internationalized-intrastate,Africa,32,547
+749,337,2007,2,internationalized-intrastate,Africa,278,1546
+749,337,2008,1,internationalized-intrastate,Africa,24,207
+749,337,2009,0,internationalized-intrastate,Africa,3,13
+750,337,2008,2,internationalized-intrastate,Africa,202,1284
+750,337,2009,2,internationalized-intrastate,Africa,161,1399
+750,337,2010,2,internationalized-intrastate,Africa,225,2068
+750,337,2011,2,internationalized-intrastate,Africa,225,1938
+750,337,2012,2,internationalized-intrastate,Africa,382,2646
+750,337,2013,1,internationalized-intrastate,Africa,310,940
+750,337,2014,2,internationalized-intrastate,Africa,355,1153
+750,337,2015,2,internationalized-intrastate,Africa,286,1206
+750,337,2016,2,internationalized-intrastate,Africa,332,1933
+750,337,2017,2,internationalized-intrastate,Africa,230,1918
+750,337,2018,2,internationalized-intrastate,Africa,405,2083
+750,337,2019,2,internationalized-intrastate,Africa,341,1910
+750,337,2020,2,internationalized-intrastate,Africa,332,1901
+750,337,2021,2,internationalized-intrastate,Africa,341,2119
+750,337,2022,2,internationalized-intrastate,Africa,319,3034
+750,337,2023,2,internationalized-intrastate,Africa,213,3859
+750,337,2024,2,internationalized-intrastate,Africa,140,2191
+750,337,2025,2,internationalized-intrastate,Africa,285,2989
+752,337,2009,1,internationalized-intrastate,Africa,12,68
+752,337,2010,1,internationalized-intrastate,Africa,12,82
+753,338,1979,1,intrastate,Middle East,,
+753,338,1980,1,intrastate,Middle East,,
+753,338,1981,2,intrastate,Middle East,,
+753,338,1982,2,intrastate,Middle East,,
+753,338,1986,1,intrastate,Middle East,,
+753,338,1987,1,intrastate,Middle East,,
+753,338,1988,1,intrastate,Middle East,,
+753,338,1991,1,intrastate,Middle East,3,45
+753,338,1992,0,intrastate,Middle East,4,6
+753,338,1993,1,intrastate,Middle East,19,76
+753,338,1995,0,intrastate,Middle East,4,9
+753,338,1996,0,intrastate,Middle East,1,2
+753,338,1997,1,intrastate,Middle East,15,38
+753,338,1998,0,intrastate,Middle East,7,14
+753,338,1999,1,intrastate,Middle East,10,28
+753,338,2000,1,intrastate,Middle East,19,40
+753,338,2001,1,intrastate,Middle East,20,119
+753,338,2015,0,intrastate,Middle East,1,0
+754,338,2005,1,intrastate,Middle East,7,28
+754,338,2006,1,intrastate,Middle East,14,31
+754,338,2007,1,intrastate,Middle East,15,61
+754,338,2008,1,intrastate,Middle East,12,42
+754,338,2009,1,intrastate,Middle East,7,67
+754,338,2010,0,intrastate,Middle East,8,23
+754,338,2011,1,intrastate,Middle East,20,242
+754,338,2012,0,intrastate,Middle East,1,4
+754,338,2013,0,intrastate,Middle East,4,11
+754,338,2014,0,intrastate,Middle East,1,2
+754,338,2015,0,intrastate,Middle East,3,9
+754,338,2016,0,intrastate,Middle East,8,23
+754,338,2017,0,intrastate,Middle East,5,13
+754,338,2018,1,intrastate,Middle East,5,28
+754,338,2019,0,intrastate,Middle East,4,13
+754,338,2020,1,intrastate,Middle East,14,35
+754,338,2021,1,intrastate,Middle East,9,30
+754,338,2022,0,intrastate,Middle East,1,1
+754,338,2023,0,intrastate,Middle East,1,2
+754,338,2024,0,intrastate,Middle East,1,1
+754,338,2025,0,intrastate,Middle East,3,6
+755,338,2003,0,intrastate,Middle East,1,2
+755,338,2005,0,intrastate,Middle East,2,10
+755,338,2006,1,intrastate,Middle East,8,26
+755,338,2007,1,intrastate,Middle East,7,25
+755,338,2008,1,intrastate,Middle East,9,79
+755,338,2009,1,intrastate,Middle East,6,66
+755,338,2010,1,intrastate,Middle East,4,74
+755,338,2011,0,intrastate,Middle East,1,1
+755,338,2012,0,intrastate,Middle East,4,13
+756,339,1979,1,intrastate,Middle East,,
+756,339,1980,1,intrastate,Middle East,,
+757,340,1979,1,intrastate,Middle East,,
+758,341,1980,1,intrastate,Africa,,
+759,341,1989,1,intrastate,Africa,4,27
+759,341,1990,1,intrastate,Africa,28,236
+760,341,1990,1,intrastate,Africa,14,111
+761,341,2000,1,intrastate,Africa,3,57
+761,341,2001,1,intrastate,Africa,12,341
+761,341,2002,1,intrastate,Africa,24,492
+761,341,2003,2,intrastate,Africa,28,1711
+762,341,2003,1,intrastate,Africa,6,76
+763,342,1978,1,intrastate,Europe,,
+763,342,1979,1,intrastate,Europe,,
+763,342,1980,1,intrastate,Europe,,
+763,342,1981,1,intrastate,Europe,,
+763,342,1982,1,intrastate,Europe,,
+763,342,1985,1,intrastate,Europe,,
+763,342,1986,1,intrastate,Europe,,
+763,342,1987,1,intrastate,Europe,,
+763,342,1989,0,intrastate,Europe,12,17
+763,342,1990,0,intrastate,Europe,10,19
+763,342,1991,1,intrastate,Europe,23,45
+763,342,1992,0,intrastate,Europe,15,23
+763,342,1993,0,intrastate,Europe,6,12
+763,342,1994,0,intrastate,Europe,9,11
+763,342,1995,0,intrastate,Europe,10,13
+763,342,1996,0,intrastate,Europe,4,4
+763,342,1997,0,intrastate,Europe,11,12
+763,342,1998,0,intrastate,Europe,6,7
+763,342,2000,0,intrastate,Europe,15,20
+763,342,2001,0,intrastate,Europe,12,13
+763,342,2002,0,intrastate,Europe,4,5
+763,342,2003,0,intrastate,Europe,2,3
+763,342,2007,0,intrastate,Europe,1,2
+763,342,2008,0,intrastate,Europe,2,2
+763,342,2009,0,intrastate,Europe,2,3
+764,343,1980,1,intrastate,Africa,,
+765,344,1981,1,internationalized-intrastate,Africa,,
+766,345,1981,1,intrastate,Africa,,
+766,345,1982,1,intrastate,Africa,,
+766,345,1983,1,intrastate,Africa,,
+766,345,1985,1,intrastate,Africa,,
+766,345,1986,1,intrastate,Africa,,
+766,345,1987,1,intrastate,Africa,,
+766,345,1988,1,intrastate,Africa,,
+767,346,1982,1,interstate,Europe; Americas,,
+768,347,1982,1,intrastate,Asia,,
+768,347,1983,1,intrastate,Asia,,
+768,347,1984,1,intrastate,Asia,,
+768,347,1985,1,intrastate,Asia,,
+768,347,1986,1,intrastate,Asia,,
+768,347,1987,1,intrastate,Asia,,
+768,347,1988,1,intrastate,Asia,,
+768,347,1992,0,intrastate,Asia,1,6
+768,347,1993,0,intrastate,Asia,4,9
+768,347,1995,1,intrastate,Asia,4,25
+768,347,1996,1,intrastate,Asia,6,28
+768,347,1998,1,intrastate,Asia,2,25
+768,347,1999,0,intrastate,Asia,3,12
+768,347,2000,1,intrastate,Asia,8,29
+768,347,2001,0,intrastate,Asia,2,9
+768,347,2002,0,intrastate,Asia,1,1
+768,347,2003,0,intrastate,Asia,10,20
+768,347,2004,1,intrastate,Asia,14,26
+768,347,2005,0,intrastate,Asia,5,18
+768,347,2006,1,intrastate,Asia,24,42
+768,347,2007,0,intrastate,Asia,9,14
+768,347,2008,0,intrastate,Asia,5,5
+768,347,2009,0,intrastate,Asia,9,14
+768,347,2010,0,intrastate,Asia,5,4
+768,347,2011,0,intrastate,Asia,3,4
+768,347,2012,0,intrastate,Asia,1,1
+768,347,2013,0,intrastate,Asia,4,3
+768,347,2014,0,intrastate,Asia,4,6
+768,347,2015,0,intrastate,Asia,2,4
+768,347,2018,0,intrastate,Asia,4,5
+768,347,2025,0,intrastate,Asia,1,2
+769,347,1993,1,intrastate,Asia,2,25
+769,347,1994,1,intrastate,Asia,2,25
+769,347,1997,0,intrastate,Asia,2,8
+769,347,1998,0,intrastate,Asia,1,6
+769,347,1999,1,intrastate,Asia,3,31
+769,347,2000,1,intrastate,Asia,8,31
+769,347,2001,0,intrastate,Asia,3,7
+769,347,2002,0,intrastate,Asia,2,8
+769,347,2003,1,intrastate,Asia,10,27
+769,347,2004,1,intrastate,Asia,13,34
+769,347,2005,1,intrastate,Asia,19,47
+769,347,2006,1,intrastate,Asia,18,31
+769,347,2007,1,intrastate,Asia,19,45
+769,347,2008,0,intrastate,Asia,14,21
+769,347,2009,1,intrastate,Asia,15,29
+769,347,2010,0,intrastate,Asia,5,6
+769,347,2011,0,intrastate,Asia,1,1
+769,347,2012,0,intrastate,Asia,2,5
+769,347,2013,0,intrastate,Asia,2,6
+769,347,2014,0,intrastate,Asia,1,2
+770,347,1997,0,intrastate,Asia,1,6
+770,347,2001,0,intrastate,Asia,1,8
+770,347,2005,0,intrastate,Asia,5,11
+770,347,2006,0,intrastate,Asia,6,11
+770,347,2007,0,intrastate,Asia,2,3
+770,347,2008,1,intrastate,Asia,29,63
+770,347,2009,1,intrastate,Asia,25,29
+770,347,2010,0,intrastate,Asia,5,9
+770,347,2011,0,intrastate,Asia,3,3
+770,347,2012,0,intrastate,Asia,1,1
+771,347,1999,0,intrastate,Asia,1,2
+771,347,2000,0,intrastate,Asia,2,6
+771,347,2001,0,intrastate,Asia,1,2
+771,347,2002,0,intrastate,Asia,1,3
+771,347,2003,0,intrastate,Asia,3,10
+771,347,2005,0,intrastate,Asia,1,2
+771,347,2006,0,intrastate,Asia,5,5
+771,347,2007,0,intrastate,Asia,14,24
+771,347,2008,1,intrastate,Asia,21,36
+771,347,2009,1,intrastate,Asia,21,38
+771,347,2010,0,intrastate,Asia,4,5
+772,348,1982,1,intrastate,Africa,,
+773,349,1983,1,interstate,Africa,,
+774,350,1983,1,interstate,Americas,,
+775,351,1983,1,intrastate,Asia,,
+775,351,1984,1,intrastate,Asia,,
+775,351,1985,1,intrastate,Asia,,
+775,351,1986,1,intrastate,Asia,,
+775,351,1987,1,intrastate,Asia,,
+775,351,1988,2,intrastate,Asia,,
+775,351,1989,1,intrastate,Asia,33,905
+775,351,1990,2,intrastate,Asia,46,1839
+775,351,1991,2,intrastate,Asia,46,2673
+775,351,1992,2,intrastate,Asia,51,2390
+775,351,1993,1,intrastate,Asia,30,358
+775,351,1994,0,intrastate,Asia,8,17
+776,352,1984,1,intrastate,Asia,,
+776,352,1985,1,intrastate,Asia,,
+776,352,1986,1,intrastate,Asia,,
+776,352,1987,2,intrastate,Asia,,
+776,352,1988,1,intrastate,Asia,,
+776,352,1989,1,intrastate,Asia,4,34
+776,352,1990,2,intrastate,Asia,185,3561
+776,352,1991,2,intrastate,Asia,299,6432
+776,352,1992,2,intrastate,Asia,166,4091
+776,352,1993,2,intrastate,Asia,107,2075
+776,352,1994,1,intrastate,Asia,65,657
+776,352,1995,2,intrastate,Asia,238,4755
+776,352,1996,2,intrastate,Asia,110,3868
+776,352,1997,2,intrastate,Asia,129,2880
+776,352,1998,2,intrastate,Asia,172,3762
+776,352,1999,2,intrastate,Asia,174,1882
+776,352,2000,2,intrastate,Asia,166,2525
+776,352,2001,2,intrastate,Asia,129,1144
+776,352,2002,0,intrastate,Asia,3,6
+776,352,2003,1,intrastate,Asia,9,29
+776,352,2004,0,intrastate,Asia,12,17
+776,352,2005,1,intrastate,Asia,40,88
+776,352,2006,2,intrastate,Asia,196,1970
+776,352,2007,2,intrastate,Asia,456,2494
+776,352,2008,2,intrastate,Asia,992,8262
+776,352,2009,2,intrastate,Asia,356,10165
+777,352,1984,1,intrastate,Asia,,
+777,352,1985,1,intrastate,Asia,,
+778,352,1985,1,intrastate,Asia,,
+778,352,1989,1,intrastate,Asia,2,111
+778,352,1990,0,intrastate,Asia,1,8
+779,353,1960,2,internationalized-intrastate,Africa,,
+779,353,1961,1,internationalized-intrastate,Africa,,
+780,353,1984,1,intrastate,Africa,,
+781,354,1984,1,intrastate,Middle East,,
+781,354,1985,1,intrastate,Middle East,,
+781,354,1986,1,intrastate,Middle East,,
+781,354,1987,1,intrastate,Middle East,,
+781,354,1988,1,intrastate,Middle East,,
+781,354,1989,1,intrastate,Middle East,163,442
+781,354,1990,1,intrastate,Middle East,177,526
+781,354,1991,1,intrastate,Middle East,127,370
+781,354,1992,2,intrastate,Middle East,259,1663
+781,354,1993,2,intrastate,Middle East,389,2309
+781,354,1994,2,intrastate,Middle East,590,4165
+781,354,1995,2,intrastate,Middle East,820,3738
+781,354,1996,2,intrastate,Middle East,656,3974
+781,354,1997,2,intrastate,Middle East,546,3902
+781,354,1998,2,intrastate,Middle East,328,2074
+781,354,1999,2,intrastate,Middle East,254,1363
+781,354,2000,1,intrastate,Middle East,28,177
+781,354,2001,1,intrastate,Middle East,66,186
+781,354,2002,1,intrastate,Middle East,60,105
+781,354,2003,1,intrastate,Middle East,72,153
+781,354,2004,1,intrastate,Middle East,171,276
+781,354,2005,1,intrastate,Middle East,170,377
+781,354,2006,1,intrastate,Middle East,151,349
+781,354,2007,1,intrastate,Middle East,212,664
+781,354,2008,1,intrastate,Middle East,181,681
+781,354,2009,1,intrastate,Middle East,93,219
+781,354,2010,1,intrastate,Middle East,79,356
+781,354,2011,1,intrastate,Middle East,116,558
+781,354,2012,1,intrastate,Middle East,140,853
+781,354,2013,1,intrastate,Middle East,10,32
+781,354,2014,0,intrastate,Middle East,7,10
+781,354,2015,1,intrastate,Middle East,226,906
+781,354,2016,2,intrastate,Middle East,211,1074
+781,354,2017,1,intrastate,Middle East,99,756
+781,354,2018,1,intrastate,Middle East,272,940
+781,354,2019,1,intrastate,Middle East,280,630
+781,354,2020,1,intrastate,Middle East,204,431
+781,354,2021,1,intrastate,Middle East,230,493
+781,354,2022,1,intrastate,Middle East,340,760
+781,354,2023,1,intrastate,Middle East,251,386
+781,354,2024,1,intrastate,Middle East,244,239
+781,354,2025,1,intrastate,Middle East,61,55
+782,355,1985,1,interstate,Africa,,
+783,356,1986,1,interstate,Asia,,
+783,356,1987,1,interstate,Asia,,
+783,356,1988,1,interstate,Asia,,
+784,357,1987,1,intrastate,Americas,,
+785,358,1986,1,intrastate,Africa,,
+786,359,1986,2,intrastate,Middle East,,
+787,360,1987,1,intrastate,Africa,,
+788,361,1987,2,interstate,Africa,,
+789,362,1989,1,intrastate,Africa,2,29
+790,363,1975,1,intrastate,Africa,,
+790,363,1976,1,intrastate,Africa,,
+791,363,1996,1,intrastate,Africa,1,25
+792,364,1989,0,intrastate,Asia,6,19
+792,364,1990,1,intrastate,Asia,68,474
+792,364,1991,1,intrastate,Asia,60,330
+792,364,1992,1,intrastate,Asia,66,265
+792,364,1993,1,intrastate,Asia,143,846
+792,364,1994,1,intrastate,Asia,182,958
+792,364,1995,1,intrastate,Asia,159,687
+792,364,1996,1,intrastate,Asia,65,489
+792,364,1997,1,intrastate,Asia,120,533
+792,364,1998,1,intrastate,Asia,149,576
+792,364,1999,1,intrastate,Asia,201,864
+792,364,2000,2,intrastate,Asia,992,2356
+792,364,2001,1,intrastate,Asia,132,893
+792,364,2002,2,intrastate,Asia,687,1499
+792,364,2003,2,intrastate,Asia,466,1328
+792,364,2004,2,intrastate,Asia,612,1404
+792,364,2005,2,intrastate,Asia,513,1058
+792,364,2006,1,intrastate,Asia,372,705
+792,364,2007,1,intrastate,Asia,227,550
+792,364,2008,1,intrastate,Asia,195,500
+792,364,2009,1,intrastate,Asia,199,361
+792,364,2010,1,intrastate,Asia,199,370
+792,364,2011,1,intrastate,Asia,94,140
+792,364,2012,1,intrastate,Asia,79,144
+792,364,2013,1,intrastate,Asia,65,146
+792,364,2014,1,intrastate,Asia,93,179
+792,364,2015,1,intrastate,Asia,76,165
+792,364,2016,1,intrastate,Asia,107,282
+792,364,2017,1,intrastate,Asia,130,322
+792,364,2018,1,intrastate,Asia,157,386
+792,364,2019,1,intrastate,Asia,102,267
+792,364,2020,1,intrastate,Asia,135,311
+792,364,2021,1,intrastate,Asia,129,250
+792,364,2022,1,intrastate,Asia,136,235
+792,364,2023,1,intrastate,Asia,61,119
+792,364,2024,1,intrastate,Asia,60,112
+792,364,2025,1,intrastate,Asia,39,93
+793,365,1989,0,intrastate,Asia,1,2
+793,365,1990,1,intrastate,Asia,2,30
+793,365,1991,0,intrastate,Asia,2,2
+793,365,1993,0,intrastate,Asia,3,16
+793,365,1994,1,intrastate,Asia,5,25
+793,365,1995,1,intrastate,Asia,5,29
+793,365,1996,1,intrastate,Asia,14,48
+793,365,1997,1,intrastate,Asia,29,112
+793,365,1998,1,intrastate,Asia,21,55
+793,365,1999,1,intrastate,Asia,19,53
+793,365,2000,1,intrastate,Asia,38,87
+793,365,2001,1,intrastate,Asia,49,113
+793,365,2002,1,intrastate,Asia,26,59
+793,365,2003,1,intrastate,Asia,13,43
+793,365,2004,1,intrastate,Asia,38,70
+793,365,2005,1,intrastate,Asia,32,78
+793,365,2006,1,intrastate,Asia,31,49
+793,365,2007,1,intrastate,Asia,71,114
+793,365,2008,1,intrastate,Asia,47,75
+793,365,2009,1,intrastate,Asia,45,63
+793,365,2010,1,intrastate,Asia,22,32
+793,365,2011,0,intrastate,Asia,5,10
+793,365,2013,0,intrastate,Asia,2,2
+793,365,2014,0,intrastate,Asia,4,5
+793,365,2015,0,intrastate,Asia,1,1
+793,365,2016,0,intrastate,Asia,1,2
+794,366,1989,0,intrastate,Asia,4,6
+794,366,1990,1,intrastate,Asia,29,72
+794,366,1991,1,intrastate,Asia,18,58
+794,366,1992,0,intrastate,Asia,5,8
+794,366,1993,0,intrastate,Asia,1,2
+794,366,1994,0,intrastate,Asia,2,2
+794,366,1995,0,intrastate,Asia,2,7
+794,366,1998,0,intrastate,Asia,3,9
+794,366,1999,1,intrastate,Asia,65,187
+794,366,2000,1,intrastate,Asia,107,286
+794,366,2001,1,intrastate,Asia,47,278
+794,366,2002,1,intrastate,Asia,207,466
+794,366,2003,1,intrastate,Asia,191,868
+794,366,2004,1,intrastate,Asia,288,935
+794,366,2005,1,intrastate,Asia,26,213
+794,366,2008,0,intrastate,Asia,2,5
+795,367,1989,1,intrastate,Americas,1,77
+796,368,1989,1,interstate,Americas,2,843
+797,369,1989,0,intrastate,Asia,4,12
+797,369,1990,1,intrastate,Asia,13,55
+797,369,1991,0,intrastate,Asia,2,18
+797,369,1992,1,intrastate,Asia,9,35
+797,369,1993,1,intrastate,Asia,12,34
+797,369,1994,1,intrastate,Asia,6,26
+797,369,1995,1,intrastate,Asia,9,29
+797,369,1996,1,intrastate,Asia,19,78
+797,369,1997,0,intrastate,Asia,4,12
+798,370,1989,1,intrastate,Europe,5,196
+799,371,1990,2,interstate,Middle East,11,1058
+799,371,1991,2,interstate,Middle East,69,21790
+800,372,1990,1,intrastate,Africa,7,457
+801,372,1991,0,intrastate,Africa,1,12
+801,372,1994,1,intrastate,Africa,10,106
+801,372,1995,0,intrastate,Africa,3,9
+802,372,2007,1,intrastate,Africa,8,39
+802,372,2008,1,intrastate,Africa,9,112
+802,372,2009,1,intrastate,Africa,3,39
+803,373,1994,1,intrastate,Africa,9,50
+803,373,1995,0,intrastate,Africa,1,2
+804,374,1990,2,internationalized-intrastate,Africa,28,1126
+804,374,1991,1,internationalized-intrastate,Africa,31,153
+804,374,1992,1,internationalized-intrastate,Africa,17,87
+804,374,1993,1,internationalized-intrastate,Africa,8,353
+804,374,1994,2,internationalized-intrastate,Africa,57,1882
+805,374,1996,1,intrastate,Africa,23,124
+805,374,1997,2,intrastate,Africa,37,1086
+805,374,1998,2,intrastate,Africa,34,1096
+805,374,1999,1,intrastate,Africa,2,315
+805,374,2000,1,intrastate,Africa,2,155
+806,375,1990,1,intrastate,Africa,5,58
+806,375,1992,1,intrastate,Africa,3,78
+806,375,1993,1,intrastate,Africa,10,233
+806,375,1995,1,intrastate,Africa,22,299
+806,375,1996,0,intrastate,Africa,1,3
+806,375,1997,1,intrastate,Africa,21,319
+806,375,1998,1,intrastate,Africa,14,242
+806,375,1999,0,intrastate,Africa,4,23
+806,375,2000,1,intrastate,Africa,18,47
+806,375,2001,0,intrastate,Africa,3,10
+806,375,2002,0,intrastate,Africa,6,13
+806,375,2003,1,intrastate,Africa,5,39
+806,375,2004,0,intrastate,Africa,1,3
+806,375,2005,0,intrastate,Africa,1,1
+806,375,2006,0,intrastate,Africa,2,2
+806,375,2008,0,intrastate,Africa,3,11
+806,375,2009,0,intrastate,Africa,4,4
+806,375,2010,0,intrastate,Africa,6,16
+806,375,2011,1,intrastate,Africa,11,25
+806,375,2012,0,intrastate,Africa,7,15
+806,375,2013,0,intrastate,Africa,4,8
+806,375,2020,0,intrastate,Africa,1,0
+806,375,2021,0,intrastate,Africa,2,0
+807,376,1990,1,intrastate,Europe,9,49
+807,376,1991,1,intrastate,Europe,31,220
+808,377,1990,1,intrastate,Europe,7,143
+809,378,1990,1,intrastate,Americas,3,39
+810,379,1991,1,intrastate,Africa,7,60
+810,379,1992,1,intrastate,Africa,10,129
+810,379,1993,1,intrastate,Africa,8,33
+810,379,1994,1,intrastate,Africa,3,39
+810,379,1995,0,intrastate,Africa,1,0
+811,379,1997,0,intrastate,Africa,1,11
+811,379,1998,0,intrastate,Africa,2,16
+811,379,1999,1,intrastate,Africa,8,25
+812,380,1991,1,intrastate,Europe,6,52
+812,380,1992,0,intrastate,Europe,2,4
+813,380,1992,1,intrastate,Europe,15,71
+813,380,1993,1,intrastate,Europe,25,152
+814,381,1989,1,intrastate,Americas,4,48
+815,381,1991,1,intrastate,Americas,1,160
+816,381,2004,1,intrastate,Americas,14,146
+817,381,2004,1,intrastate,Americas,5,61
+818,382,1991,1,internationalized-intrastate,Africa,48,552
+818,382,1992,1,internationalized-intrastate,Africa,24,218
+818,382,1993,1,internationalized-intrastate,Africa,47,415
+818,382,1994,1,internationalized-intrastate,Africa,48,628
+818,382,1995,2,internationalized-intrastate,Africa,77,1472
+818,382,1996,1,internationalized-intrastate,Africa,29,570
+818,382,1997,1,internationalized-intrastate,Africa,7,47
+818,382,1998,1,internationalized-intrastate,Africa,51,802
+818,382,1999,1,internationalized-intrastate,Africa,38,457
+818,382,2000,1,internationalized-intrastate,Africa,30,355
+818,382,2001,1,internationalized-intrastate,Africa,12,48
+819,382,1997,1,intrastate,Africa,1,40
+819,382,1998,2,intrastate,Africa,96,2103
+819,382,1999,2,intrastate,Africa,48,2696
+820,382,1997,1,internationalized-intrastate,Africa,60,661
+820,382,1998,1,internationalized-intrastate,Africa,13,382
+821,382,2000,1,internationalized-intrastate,Africa,1,27
+822,383,1990,0,intrastate,Middle East,6,7
+822,383,1991,1,intrastate,Middle East,16,39
+822,383,1992,1,intrastate,Middle East,28,71
+822,383,1993,1,intrastate,Middle East,10,32
+822,383,1994,0,intrastate,Middle East,3,6
+822,383,1995,0,intrastate,Middle East,8,22
+822,383,1996,0,intrastate,Middle East,3,14
+822,383,1998,0,intrastate,Middle East,1,3
+822,383,1999,0,intrastate,Middle East,1,2
+822,383,2001,0,intrastate,Middle East,2,6
+822,383,2002,0,intrastate,Middle East,2,4
+822,383,2004,0,intrastate,Middle East,3,13
+822,383,2005,0,intrastate,Middle East,1,1
+822,383,2007,0,intrastate,Middle East,1,1
+822,383,2012,0,intrastate,Middle East,2,3
+822,383,2015,0,intrastate,Middle East,2,4
+822,383,2016,0,intrastate,Middle East,1,2
+822,383,2024,0,intrastate,Middle East,1,3
+823,383,2003,0,intrastate,Middle East,4,9
+823,383,2004,0,intrastate,Middle East,3,6
+823,383,2005,1,intrastate,Middle East,5,30
+823,383,2011,0,intrastate,Middle East,1,3
+823,383,2014,0,intrastate,Middle East,1,1
+823,383,2017,0,intrastate,Middle East,4,13
+824,384,1991,1,intrastate,Europe,15,64
+825,385,1991,1,intrastate,Europe,2,25
+826,385,1991,2,intrastate,Europe,174,2933
+826,385,1992,1,intrastate,Europe,55,153
+827,386,1990,0,intrastate,Africa,1,1
+827,386,1991,1,intrastate,Africa,4,34
+827,386,1992,0,intrastate,Africa,5,8
+828,386,1992,1,intrastate,Africa,113,257
+828,386,1993,1,intrastate,Africa,263,775
+828,386,1994,2,intrastate,Africa,260,1346
+828,386,1995,1,intrastate,Africa,3,25
+828,386,1996,1,intrastate,Africa,9,25
+828,386,1997,1,intrastate,Africa,2,40
+828,386,1999,0,intrastate,Africa,2,9
+829,386,1992,0,intrastate,Africa,2,9
+829,386,1993,1,intrastate,Africa,2,25
+829,386,1994,1,intrastate,Africa,81,570
+829,386,1995,2,intrastate,Africa,388,2983
+829,386,1996,2,intrastate,Africa,113,1059
+829,386,1997,2,intrastate,Africa,115,1363
+829,386,1998,2,intrastate,Africa,358,3029
+829,386,1999,1,intrastate,Africa,196,965
+829,386,2000,1,intrastate,Africa,6,26
+829,386,2001,1,intrastate,Africa,12,136
+829,386,2002,1,intrastate,Africa,5,35
+829,386,2003,1,intrastate,Africa,6,25
+829,386,2004,0,intrastate,Africa,5,13
+830,386,1998,0,intrastate,Africa,1,3
+830,386,1999,1,intrastate,Africa,7,66
+830,386,2000,1,intrastate,Africa,210,921
+830,386,2001,1,intrastate,Africa,62,506
+830,386,2002,1,intrastate,Africa,132,504
+830,386,2003,1,intrastate,Africa,192,645
+830,386,2004,1,intrastate,Africa,179,451
+830,386,2005,1,intrastate,Africa,69,229
+830,386,2006,1,intrastate,Africa,79,255
+830,386,2007,1,intrastate,Africa,124,472
+830,386,2008,1,intrastate,Africa,108,339
+830,386,2009,1,intrastate,Africa,174,505
+830,386,2010,1,intrastate,Africa,84,236
+830,386,2011,1,intrastate,Africa,114,267
+830,386,2012,1,intrastate,Africa,110,231
+830,386,2013,1,intrastate,Africa,62,147
+830,386,2014,1,intrastate,Africa,41,107
+830,386,2015,1,intrastate,Africa,43,84
+830,386,2016,1,intrastate,Africa,25,86
+830,386,2017,1,intrastate,Africa,19,60
+830,386,2018,1,intrastate,Africa,9,33
+830,386,2019,0,intrastate,Africa,7,12
+830,386,2020,1,intrastate,Africa,16,26
+830,386,2021,0,intrastate,Africa,6,18
+830,386,2022,0,intrastate,Africa,3,14
+830,386,2023,0,intrastate,Africa,1,1
+831,387,1991,1,intrastate,Africa,3,25
+831,387,1992,0,intrastate,Africa,1,0
+831,387,1994,1,intrastate,Africa,4,25
+831,387,1995,0,intrastate,Africa,2,4
+831,387,1997,1,intrastate,Africa,5,25
+831,387,1998,0,intrastate,Africa,2,21
+831,387,2001,0,intrastate,Africa,1,0
+831,387,2002,1,intrastate,Africa,4,25
+831,387,2004,0,intrastate,Africa,2,0
+832,387,1989,0,intrastate,Africa,2,0
+832,387,1992,1,intrastate,Africa,5,25
+832,387,1994,1,intrastate,Africa,6,25
+832,387,1995,1,intrastate,Africa,5,25
+832,387,1996,1,intrastate,Africa,7,29
+832,387,1997,1,intrastate,Africa,3,26
+832,387,1998,1,intrastate,Africa,6,25
+832,387,1999,0,intrastate,Africa,1,0
+832,387,2000,0,intrastate,Africa,2,5
+832,387,2001,0,intrastate,Africa,5,2
+832,387,2002,1,intrastate,Africa,16,31
+832,387,2003,1,intrastate,Africa,17,25
+832,387,2004,1,intrastate,Africa,12,25
+832,387,2005,0,intrastate,Africa,6,8
+832,387,2006,0,intrastate,Africa,10,3
+832,387,2007,1,intrastate,Africa,21,25
+832,387,2008,0,intrastate,Africa,11,8
+832,387,2009,1,intrastate,Africa,9,25
+832,387,2010,0,intrastate,Africa,2,5
+832,387,2011,0,intrastate,Africa,2,2
+832,387,2012,0,intrastate,Africa,1,2
+832,387,2014,0,intrastate,Africa,6,0
+832,387,2015,0,intrastate,Africa,1,1
+832,387,2019,0,intrastate,Africa,1,0
+832,387,2020,0,intrastate,Africa,2,0
+832,387,2022,0,intrastate,Africa,2,0
+833,388,1991,1,internationalized-intrastate,Europe,3,35
+833,388,1992,2,internationalized-intrastate,Europe,189,2167
+833,388,1993,2,internationalized-intrastate,Europe,75,1171
+833,388,1994,2,internationalized-intrastate,Europe,57,1507
+833,388,1995,0,internationalized-intrastate,Europe,10,18
+833,388,1996,0,internationalized-intrastate,Europe,3,5
+833,388,1997,1,internationalized-intrastate,Europe,3,29
+833,388,1998,1,internationalized-intrastate,Europe,4,34
+833,388,1999,0,internationalized-intrastate,Europe,6,18
+833,388,2000,0,internationalized-intrastate,Europe,7,13
+833,388,2001,0,internationalized-intrastate,Europe,5,6
+833,388,2004,0,internationalized-intrastate,Europe,3,8
+833,388,2005,1,internationalized-intrastate,Europe,23,25
+833,388,2006,0,internationalized-intrastate,Europe,10,7
+833,388,2007,0,internationalized-intrastate,Europe,11,12
+833,388,2008,1,internationalized-intrastate,Europe,7,30
+833,388,2009,0,internationalized-intrastate,Europe,6,7
+833,388,2010,0,internationalized-intrastate,Europe,14,20
+833,388,2011,0,internationalized-intrastate,Europe,20,21
+833,388,2012,1,internationalized-intrastate,Europe,17,25
+833,388,2013,0,internationalized-intrastate,Europe,11,12
+833,388,2014,1,internationalized-intrastate,Europe,33,46
+833,388,2015,1,internationalized-intrastate,Europe,50,72
+833,388,2016,1,internationalized-intrastate,Europe,32,141
+833,388,2017,1,internationalized-intrastate,Europe,21,36
+833,388,2018,0,internationalized-intrastate,Europe,18,17
+833,388,2019,0,internationalized-intrastate,Europe,12,11
+833,388,2020,2,internationalized-intrastate,Europe,149,7538
+833,388,2021,1,internationalized-intrastate,Europe,26,40
+833,388,2022,1,internationalized-intrastate,Europe,17,308
+833,388,2023,1,internationalized-intrastate,Europe,21,462
+834,389,1992,1,internationalized-intrastate,Europe,2,25
+834,389,1993,1,internationalized-intrastate,Europe,1,25
+834,389,1994,1,internationalized-intrastate,Europe,1,25
+834,389,1995,1,internationalized-intrastate,Europe,1,25
+835,389,1992,2,intrastate,Europe,2658,16777
+835,389,1993,2,intrastate,Europe,1017,4955
+835,389,1994,2,intrastate,Europe,1341,4848
+835,389,1995,2,intrastate,Europe,524,8036
+836,390,1992,1,internationalized-intrastate,Europe,2,25
+837,390,1992,2,internationalized-intrastate,Europe,1064,4009
+837,390,1993,1,internationalized-intrastate,Europe,91,418
+837,390,1994,1,internationalized-intrastate,Europe,24,86
+837,390,1995,2,internationalized-intrastate,Europe,171,1132
+838,391,1992,0,intrastate,Middle East,3,11
+838,391,1993,1,intrastate,Middle East,38,103
+838,391,1994,1,intrastate,Middle East,58,145
+838,391,1995,1,intrastate,Middle East,77,191
+838,391,1996,1,intrastate,Middle East,46,85
+838,391,1997,1,intrastate,Middle East,24,66
+838,391,1998,1,intrastate,Middle East,9,27
+838,391,1999,0,intrastate,Middle East,2,4
+838,391,2000,0,intrastate,Middle East,3,2
+839,392,1992,1,intrastate,Europe,56,566
+839,392,1993,2,intrastate,Europe,83,1611
+839,392,2010,0,intrastate,Europe,4,3
+839,392,2011,0,intrastate,Europe,1,0
+840,393,1992,1,intrastate,Europe,23,134
+840,393,2004,1,intrastate,Europe,13,27
+840,393,2008,1,intrastate,Europe,12,621
+841,394,1992,1,intrastate,Europe,77,585
+842,395,1992,2,internationalized-intrastate,Asia,12,2936
+842,395,1993,2,internationalized-intrastate,Asia,35,1395
+842,395,1994,1,internationalized-intrastate,Asia,29,356
+842,395,1995,1,internationalized-intrastate,Asia,47,368
+842,395,1996,2,internationalized-intrastate,Asia,63,2790
+842,395,1997,0,internationalized-intrastate,Asia,3,10
+842,395,1998,1,internationalized-intrastate,Asia,7,83
+843,395,1997,1,intrastate,Asia,7,87
+843,395,1998,1,intrastate,Asia,12,517
+843,395,1999,0,intrastate,Asia,1,1
+844,396,1993,1,intrastate,Europe,4,60
+844,396,1994,0,intrastate,Europe,1,10
+845,396,1994,0,intrastate,Europe,1,2
+845,396,1995,1,intrastate,Europe,5,44
+846,397,1992,0,intrastate,Europe,2,4
+846,397,1993,1,intrastate,Europe,59,231
+846,397,1994,2,intrastate,Europe,248,1385
+846,397,1995,1,intrastate,Europe,146,488
+847,398,1993,1,internationalized-intrastate,Europe,2,25
+847,398,1994,1,internationalized-intrastate,Europe,1,25
+848,398,1992,1,intrastate,Europe,27,80
+848,398,1993,2,intrastate,Europe,1626,7924
+848,398,1994,1,intrastate,Europe,192,653
+849,399,1993,1,intrastate,Europe,12,145
+850,400,1994,1,intrastate,Americas,10,145
+850,400,1995,0,intrastate,Americas,2,4
+850,400,1996,0,intrastate,Americas,2,6
+851,400,1996,1,intrastate,Americas,13,37
+851,400,1997,0,intrastate,Americas,4,10
+851,400,1998,0,intrastate,Americas,4,6
+852,401,1994,1,intrastate,Europe,22,229
+852,401,1995,2,intrastate,Europe,191,1754
+852,401,1996,2,intrastate,Europe,141,2721
+852,401,1997,0,intrastate,Europe,4,11
+852,401,1998,0,intrastate,Europe,2,7
+852,401,1999,2,intrastate,Europe,46,5769
+852,401,2000,2,intrastate,Europe,130,2907
+852,401,2001,1,intrastate,Europe,116,791
+852,401,2002,2,intrastate,Europe,348,1289
+852,401,2003,1,intrastate,Europe,69,480
+852,401,2004,2,intrastate,Europe,240,1151
+852,401,2005,1,intrastate,Europe,243,682
+852,401,2006,1,intrastate,Europe,151,259
+852,401,2007,1,intrastate,Europe,104,146
+852,401,2023,0,intrastate,Europe,1,2
+853,402,1994,2,intrastate,Middle East,72,1489
+854,403,1995,1,interstate,Americas,26,99
+855,404,1990,1,intrastate,Asia,1,70
+855,404,1994,1,intrastate,Asia,8,38
+855,404,1995,1,intrastate,Asia,3,52
+855,404,1996,1,intrastate,Asia,16,42
+855,404,1997,0,intrastate,Asia,1,3
+855,404,1998,0,intrastate,Asia,3,6
+855,404,2015,0,intrastate,Asia,1,1
+855,404,2021,0,intrastate,Asia,1,1
+855,404,2022,0,intrastate,Asia,1,1
+857,404,2007,1,intrastate,Asia,53,585
+857,404,2008,2,intrastate,Asia,435,2998
+857,404,2009,2,intrastate,Asia,674,5968
+857,404,2010,2,intrastate,Asia,680,5502
+857,404,2011,2,intrastate,Asia,431,2598
+857,404,2012,2,intrastate,Asia,356,2309
+857,404,2013,2,intrastate,Asia,205,1630
+857,404,2014,2,intrastate,Asia,293,2616
+857,404,2015,2,intrastate,Asia,206,1954
+857,404,2016,1,intrastate,Asia,97,526
+857,404,2017,1,intrastate,Asia,82,506
+857,404,2018,1,intrastate,Asia,41,147
+857,404,2019,1,intrastate,Asia,51,148
+857,404,2020,1,intrastate,Asia,64,186
+857,404,2021,1,intrastate,Asia,113,259
+857,404,2022,1,intrastate,Asia,170,494
+857,404,2023,1,intrastate,Asia,239,752
+857,404,2024,2,intrastate,Asia,384,1192
+857,404,2025,2,intrastate,Asia,513,2268
+858,405,1994,0,interstate,Africa,3,13
+858,405,1996,1,interstate,Africa,3,56
+858,405,1998,0,interstate,Africa,2,1
+858,405,2005,0,interstate,Africa,1,0
+859,406,1995,1,intrastate,Africa,4,34
+859,406,1996,0,intrastate,Africa,2,11
+859,406,1997,0,intrastate,Africa,2,7
+860,407,1997,1,intrastate,Africa,2,56
+861,408,1993,1,intrastate,Africa,4,53
+861,408,1994,0,intrastate,Africa,5,14
+861,408,1998,1,intrastate,Africa,5,101
+862,408,1994,0,internationalized-intrastate,Africa,2,2
+862,408,1995,0,internationalized-intrastate,Africa,1,2
+862,408,1997,2,internationalized-intrastate,Africa,29,10000
+863,408,1997,1,internationalized-intrastate,Africa,1,33
+863,408,1998,1,internationalized-intrastate,Africa,7,155
+863,408,1999,1,internationalized-intrastate,Africa,13,117
+864,408,1998,2,internationalized-intrastate,Africa,8,3016
+864,408,1999,1,internationalized-intrastate,Africa,22,509
+864,408,2001,0,internationalized-intrastate,Africa,1,3
+864,408,2002,1,internationalized-intrastate,Africa,15,167
+864,408,2003,0,internationalized-intrastate,Africa,4,22
+864,408,2005,0,internationalized-intrastate,Africa,3,11
+864,408,2007,0,internationalized-intrastate,Africa,1,2
+864,408,2016,1,internationalized-intrastate,Africa,8,73
+864,408,2017,0,internationalized-intrastate,Africa,3,20
+865,409,1998,2,interstate,Africa,11,1000
+865,409,1999,2,interstate,Africa,14,47192
+865,409,2000,2,interstate,Africa,8,50000
+865,409,2016,1,interstate,Africa,1,25
+866,410,1998,1,internationalized-intrastate,Africa,16,505
+866,410,1999,1,internationalized-intrastate,Africa,3,199
+867,411,1998,1,internationalized-intrastate,Africa,5,78
+868,412,1996,0,intrastate,Europe,3,2
+868,412,1997,0,intrastate,Europe,3,7
+868,412,1998,2,intrastate,Europe,154,1235
+868,412,1999,2,intrastate,Europe,311,1404
+869,413,1977,1,intrastate,Africa,,
+869,413,1978,1,intrastate,Africa,,
+869,413,1980,1,intrastate,Africa,,
+869,413,1981,2,intrastate,Africa,,
+869,413,1983,1,intrastate,Africa,,
+869,413,1984,1,intrastate,Africa,,
+869,413,1985,1,intrastate,Africa,,
+869,413,1986,1,intrastate,Africa,,
+869,413,1987,1,intrastate,Africa,,
+869,413,1988,1,intrastate,Africa,,
+869,413,1989,1,intrastate,Africa,6,25
+869,413,1990,1,intrastate,Africa,22,80
+869,413,1991,1,intrastate,Africa,3,700
+869,413,1992,1,intrastate,Africa,5,165
+869,413,1993,0,intrastate,Africa,3,0
+869,413,1994,1,intrastate,Africa,3,25
+869,413,1995,1,intrastate,Africa,4,25
+869,413,1997,0,intrastate,Africa,2,6
+869,413,1998,1,intrastate,Africa,1,25
+869,413,1999,1,intrastate,Africa,30,683
+869,413,2000,1,intrastate,Africa,20,25
+869,413,2001,1,intrastate,Africa,18,25
+869,413,2002,1,intrastate,Africa,34,25
+869,413,2003,1,intrastate,Africa,9,25
+869,413,2004,1,intrastate,Africa,23,25
+869,413,2005,1,intrastate,Africa,11,25
+869,413,2006,1,intrastate,Africa,25,25
+869,413,2007,1,intrastate,Africa,24,25
+869,413,2008,1,intrastate,Africa,18,25
+869,413,2009,1,intrastate,Africa,10,42
+869,413,2010,1,intrastate,Africa,10,25
+869,413,2011,1,intrastate,Africa,30,25
+869,413,2012,1,intrastate,Africa,56,25
+869,413,2013,1,intrastate,Africa,23,25
+869,413,2014,0,intrastate,Africa,6,5
+869,413,2015,1,intrastate,Africa,22,25
+869,413,2016,1,intrastate,Africa,38,25
+869,413,2018,0,intrastate,Africa,3,18
+869,413,2019,0,intrastate,Africa,2,0
+870,414,1999,1,intrastate,Europe,4,85
+871,415,1999,1,intrastate,Asia,10,67
+871,415,2000,1,intrastate,Asia,33,471
+871,415,2006,0,intrastate,Asia,4,6
+872,415,2004,1,intrastate,Asia,8,37
+872,415,2009,0,intrastate,Asia,2,16
+873,416,2001,1,internationalized-intrastate,Africa,7,195
+874,416,2002,1,intrastate,Africa,9,131
+874,416,2003,0,intrastate,Africa,1,13
+875,416,2006,1,internationalized-intrastate,Africa,7,46
+875,416,2007,0,internationalized-intrastate,Africa,4,11
+875,416,2012,1,internationalized-intrastate,Africa,6,45
+875,416,2013,1,internationalized-intrastate,Africa,4,114
+876,416,2009,1,intrastate,Africa,8,28
+876,416,2010,1,intrastate,Africa,9,25
+876,416,2011,1,intrastate,Africa,7,44
+877,417,2000,0,intrastate,Europe,1,3
+877,417,2001,1,intrastate,Europe,54,72
+878,418,2001,2,internationalized-intrastate,Americas,41,1583
+878,418,2002,1,internationalized-intrastate,Americas,62,880
+878,418,2003,1,internationalized-intrastate,Americas,13,65
+878,418,2004,1,internationalized-intrastate,Americas,88,378
+878,418,2005,1,internationalized-intrastate,Americas,48,108
+878,418,2006,1,internationalized-intrastate,Americas,29,246
+878,418,2007,1,internationalized-intrastate,Americas,31,186
+878,418,2008,1,internationalized-intrastate,Americas,47,291
+878,418,2009,1,internationalized-intrastate,Americas,53,493
+878,418,2010,1,internationalized-intrastate,Americas,107,329
+878,418,2011,1,internationalized-intrastate,Americas,62,203
+878,418,2012,1,internationalized-intrastate,Americas,47,225
+878,418,2013,1,internationalized-intrastate,Americas,30,38
+878,418,2014,1,internationalized-intrastate,Americas,36,138
+878,418,2015,1,internationalized-intrastate,Americas,25,87
+878,418,2016,1,internationalized-intrastate,Americas,21,117
+878,418,2017,1,internationalized-intrastate,Americas,18,111
+878,418,2018,0,internationalized-intrastate,Americas,8,20
+878,418,2019,1,internationalized-intrastate,Americas,8,37
+878,418,2020,0,internationalized-intrastate,Americas,4,16
+878,418,2022,0,internationalized-intrastate,Americas,1,1
+879,419,2002,1,intrastate,Africa,19,580
+880,419,2002,1,intrastate,Africa,5,81
+880,419,2003,1,intrastate,Africa,12,96
+881,419,2002,0,intrastate,Africa,3,16
+881,419,2003,1,intrastate,Africa,7,44
+882,419,2004,1,intrastate,Africa,5,47
+882,419,2010,0,intrastate,Africa,2,6
+882,419,2011,1,intrastate,Africa,6,48
+883,420,2003,2,interstate,Europe; Middle East; Asia; Americas,95,7927
+884,421,1989,1,intrastate,Asia,11,72
+884,421,1990,1,intrastate,Asia,2,25
+885,421,1992,0,intrastate,Asia,4,14
+885,421,1993,0,intrastate,Asia,1,6
+885,421,1994,1,intrastate,Asia,5,36
+885,421,1995,0,intrastate,Asia,2,16
+885,421,1996,1,intrastate,Asia,6,25
+885,421,1997,1,intrastate,Asia,8,34
+885,421,1998,1,intrastate,Asia,7,31
+885,421,1999,1,intrastate,Asia,8,33
+885,421,2000,0,intrastate,Asia,15,19
+885,421,2001,1,intrastate,Asia,23,77
+885,421,2002,1,intrastate,Asia,17,44
+885,421,2003,1,intrastate,Asia,59,109
+885,421,2004,1,intrastate,Asia,15,27
+885,421,2005,0,intrastate,Asia,8,9
+885,421,2006,0,intrastate,Asia,4,10
+885,421,2007,0,intrastate,Asia,1,1
+885,421,2008,0,intrastate,Asia,3,7
+885,421,2009,0,intrastate,Asia,11,13
+885,421,2011,0,intrastate,Asia,5,17
+885,421,2018,0,intrastate,Asia,1,1
+886,421,2009,1,intrastate,Asia,45,73
+886,421,2010,1,intrastate,Asia,49,57
+886,421,2011,0,intrastate,Asia,4,9
+886,421,2012,0,intrastate,Asia,3,6
+886,421,2013,0,intrastate,Asia,1,1
+886,421,2019,0,intrastate,Asia,1,1
+887,422,1997,1,intrastate,Asia,4,130
+887,422,2003,0,intrastate,Asia,1,9
+887,422,2004,0,intrastate,Asia,1,2
+887,422,2007,0,intrastate,Asia,1,0
+887,422,2009,0,intrastate,Asia,1,12
+887,422,2011,0,intrastate,Asia,1,1
+887,422,2015,0,intrastate,Asia,1,1
+888,423,2003,1,intrastate,Asia,16,26
+888,423,2004,1,intrastate,Asia,66,164
+888,423,2005,1,intrastate,Asia,174,205
+888,423,2006,1,intrastate,Asia,160,212
+888,423,2007,1,intrastate,Asia,123,197
+888,423,2008,1,intrastate,Asia,92,130
+888,423,2009,1,intrastate,Asia,78,138
+888,423,2010,1,intrastate,Asia,59,76
+888,423,2011,1,intrastate,Asia,93,143
+888,423,2012,1,intrastate,Asia,78,131
+888,423,2013,1,intrastate,Asia,96,189
+888,423,2014,1,intrastate,Asia,40,68
+888,423,2015,1,intrastate,Asia,34,57
+888,423,2016,1,intrastate,Asia,34,50
+888,423,2017,1,intrastate,Asia,23,43
+888,423,2018,1,intrastate,Asia,24,36
+888,423,2019,1,intrastate,Asia,24,55
+888,423,2020,1,intrastate,Asia,32,46
+888,423,2021,1,intrastate,Asia,27,38
+888,423,2022,1,intrastate,Asia,21,29
+888,423,2023,1,intrastate,Asia,22,30
+888,423,2024,1,intrastate,Asia,26,34
+888,423,2025,1,intrastate,Asia,25,36
+889,424,2003,0,intrastate,Africa,1,1
+889,424,2004,1,intrastate,Africa,8,84
+890,425,2004,1,intrastate,Africa,5,67
+890,425,2009,0,intrastate,Africa,1,0
+891,426,1989,0,intrastate,Middle East,7,20
+891,426,1990,1,intrastate,Middle East,12,42
+891,426,1991,1,intrastate,Middle East,11,28
+891,426,1992,1,intrastate,Middle East,34,87
+891,426,1993,1,intrastate,Middle East,52,124
+891,426,1994,1,intrastate,Middle East,32,82
+891,426,1995,1,intrastate,Middle East,41,74
+891,426,1996,1,intrastate,Middle East,39,96
+891,426,1997,1,intrastate,Middle East,48,88
+891,426,1998,1,intrastate,Middle East,34,54
+891,426,1999,1,intrastate,Middle East,24,41
+891,426,2000,1,intrastate,Middle East,15,27
+891,426,2001,0,intrastate,Middle East,2,2
+891,426,2002,0,intrastate,Middle East,1,1
+891,426,2003,0,intrastate,Middle East,3,3
+891,426,2005,0,intrastate,Middle East,4,8
+891,426,2006,2,intrastate,Middle East,261,1242
+891,426,2008,0,intrastate,Middle East,1,1
+891,426,2014,0,intrastate,Middle East,2,5
+891,426,2015,0,intrastate,Middle East,4,14
+891,426,2016,0,intrastate,Middle East,1,1
+891,426,2019,0,intrastate,Middle East,2,6
+891,426,2020,0,intrastate,Middle East,1,1
+891,426,2023,1,intrastate,Middle East,55,139
+891,426,2024,2,intrastate,Middle East,1132,4362
+891,426,2025,1,intrastate,Middle East,206,337
+892,427,1978,1,interstate,Africa,,
+893,428,1975,1,intrastate,Africa,,
+893,428,1976,1,intrastate,Africa,,
+893,428,1977,1,intrastate,Africa,,
+893,428,1978,1,intrastate,Africa,,
+894,429,1998,0,intrastate,Africa,1,8
+894,429,2002,0,intrastate,Africa,2,14
+894,429,2007,1,intrastate,Africa,4,116
+894,429,2008,1,intrastate,Africa,13,250
+894,429,2017,1,intrastate,Africa,10,86
+894,429,2020,1,intrastate,Africa,6,64
+895,430,1991,1,intrastate,Africa,8,40
+895,430,1992,1,intrastate,Africa,11,29
+895,430,1993,0,intrastate,Africa,1,6
+896,430,1996,0,intrastate,Africa,1,3
+896,430,1997,1,intrastate,Africa,5,62
+897,430,2007,1,intrastate,Africa,15,81
+897,430,2008,1,intrastate,Africa,10,47
+898,431,1979,1,interstate,Europe; Asia,,
+899,432,2007,1,intrastate,Europe,31,30
+899,432,2008,1,intrastate,Europe,188,404
+899,432,2009,1,intrastate,Europe,314,697
+899,432,2010,1,intrastate,Europe,236,418
+899,432,2011,1,intrastate,Europe,232,359
+899,432,2012,1,intrastate,Europe,215,516
+899,432,2013,1,intrastate,Europe,172,321
+899,432,2014,1,intrastate,Europe,71,173
+899,432,2015,1,intrastate,Europe,12,30
+899,432,2016,0,intrastate,Europe,4,8
+899,432,2017,0,intrastate,Europe,2,0
+899,432,2018,0,intrastate,Europe,1,2
+901,434,2000,0,intrastate,Asia,1,2
+901,434,2005,0,intrastate,Asia,1,2
+901,434,2006,0,intrastate,Asia,4,8
+901,434,2007,0,intrastate,Asia,7,8
+901,434,2008,1,intrastate,Asia,22,25
+901,434,2009,0,intrastate,Asia,7,11
+901,434,2010,0,intrastate,Asia,3,4
+901,434,2011,0,intrastate,Asia,1,1
+902,435,2008,1,interstate,Africa,2,35
+903,436,1977,1,intrastate,Africa,,
+903,436,1978,1,intrastate,Africa,,
+903,436,1979,1,intrastate,Africa,,
+903,436,1980,1,intrastate,Africa,,
+904,437,1981,2,intrastate,Africa,,
+904,437,1983,1,intrastate,Africa,,
+906,439,2009,1,intrastate,Asia,10,80
+906,439,2010,0,intrastate,Asia,1,1
+906,439,2014,1,intrastate,Asia,2,67
+906,439,2015,1,intrastate,Asia,61,309
+906,439,2017,1,intrastate,Asia,2,35
+906,439,2018,0,intrastate,Asia,2,11
+906,439,2019,0,intrastate,Asia,1,3
+906,439,2021,1,intrastate,Asia,16,71
+906,439,2022,0,intrastate,Asia,3,3
+906,439,2023,1,intrastate,Asia,19,49
+906,439,2024,1,intrastate,Asia,22,99
+907,440,1973,1,intrastate,Asia,,
+907,440,1974,1,intrastate,Asia,,
+907,440,1975,1,intrastate,Asia,,
+907,440,1976,1,intrastate,Asia,,
+907,440,1977,1,intrastate,Asia,,
+907,440,1978,1,intrastate,Asia,,
+907,440,1979,1,intrastate,Asia,,
+907,440,1980,1,intrastate,Asia,,
+907,440,1981,1,intrastate,Asia,,
+907,440,1982,1,intrastate,Asia,,
+908,395,2005,0,intrastate,Asia,1,1
+908,395,2006,0,intrastate,Asia,3,8
+908,395,2009,0,intrastate,Asia,7,17
+908,395,2010,1,intrastate,Asia,18,66
+908,395,2011,1,intrastate,Asia,5,28
+908,395,2013,0,intrastate,Asia,2,3
+909,442,2008,0,internationalized-intrastate,Africa,1,12
+909,442,2010,1,internationalized-intrastate,Africa,3,29
+909,442,2011,0,internationalized-intrastate,Africa,5,12
+909,442,2012,0,internationalized-intrastate,Africa,1,1
+909,442,2023,0,internationalized-intrastate,Africa,2,6
+10006,11447,1991,1,intrastate,Africa,3,100
+10006,11447,1992,0,intrastate,Africa,2,9
+10054,372,1991,1,intrastate,Africa,6,59
+10054,372,1992,0,intrastate,Africa,3,9
+10509,283,2012,0,internationalized-intrastate,Africa,2,15
+10509,283,2013,1,internationalized-intrastate,Africa,4,136
+10509,283,2014,1,internationalized-intrastate,Africa,6,29
+10509,283,2015,0,internationalized-intrastate,Africa,2,5
+10509,283,2016,0,internationalized-intrastate,Africa,3,21
+10509,283,2017,0,internationalized-intrastate,Africa,9,22
+10509,283,2018,0,internationalized-intrastate,Africa,1,1
+10509,283,2019,0,internationalized-intrastate,Africa,1,1
+10509,283,2020,1,internationalized-intrastate,Africa,23,48
+10509,283,2021,1,internationalized-intrastate,Africa,71,147
+10509,283,2022,0,internationalized-intrastate,Africa,6,15
+10516,383,2005,0,intrastate,Middle East,1,1
+10516,383,2006,0,intrastate,Middle East,1,1
+10516,383,2008,0,intrastate,Middle East,2,3
+10516,383,2010,0,intrastate,Middle East,2,6
+10516,383,2011,0,intrastate,Middle East,1,1
+10516,383,2016,1,intrastate,Middle East,9,160
+10516,383,2017,0,intrastate,Middle East,1,4
+10589,13646,2015,1,intrastate,Africa,20,42
+10589,13646,2016,1,intrastate,Africa,23,49
+10589,13646,2017,1,intrastate,Africa,33,85
+10589,13646,2018,1,intrastate,Africa,24,69
+10589,13646,2019,1,intrastate,Africa,21,61
+10589,13646,2020,1,intrastate,Africa,37,94
+10589,13646,2021,1,intrastate,Africa,39,78
+10589,13646,2022,1,intrastate,Africa,23,72
+10589,13646,2023,1,intrastate,Africa,43,196
+10589,13646,2024,1,intrastate,Africa,15,52
+10589,13646,2025,1,intrastate,Africa,23,44
+10842,419,2011,1,intrastate,Africa,7,50
+10855,230,2008,1,intrastate,Middle East,5,33
+10855,230,2009,2,intrastate,Middle East,92,1318
+10855,230,2010,1,intrastate,Middle East,55,492
+10855,230,2011,1,intrastate,Middle East,4,69
+10855,230,2012,0,intrastate,Middle East,2,12
+10855,230,2013,0,intrastate,Middle East,2,17
+10855,230,2014,1,intrastate,Middle East,33,774
+10855,230,2015,1,intrastate,Middle East,2,35
+10857,230,2011,1,intrastate,Middle East,17,185
+10882,343,2011,0,intrastate,Africa,2,8
+10882,343,2012,0,intrastate,Africa,2,3
+10882,343,2013,1,intrastate,Africa,8,29
+10882,343,2014,1,intrastate,Africa,21,50
+10882,343,2015,1,intrastate,Africa,11,27
+10882,343,2016,0,intrastate,Africa,3,7
+10882,343,2017,0,intrastate,Africa,8,12
+10882,343,2018,0,intrastate,Africa,6,17
+10882,343,2019,0,intrastate,Africa,4,7
+10882,343,2020,0,intrastate,Africa,1,1
+10882,343,2021,0,intrastate,Africa,3,6
+10882,343,2023,0,intrastate,Africa,1,3
+10885,11346,2011,1,intrastate,Africa,41,713
+10961,404,2013,0,intrastate,Asia,1,11
+10961,404,2014,1,intrastate,Asia,3,159
+10985,11350,1994,0,intrastate,Asia,1,2
+10985,11350,2002,0,intrastate,Asia,2,5
+10985,11350,2003,0,intrastate,Asia,11,7
+10985,11350,2004,0,intrastate,Asia,12,10
+10985,11350,2005,1,intrastate,Asia,26,32
+10985,11350,2006,0,intrastate,Asia,16,17
+10985,11350,2007,0,intrastate,Asia,5,7
+10985,11350,2008,0,intrastate,Asia,4,3
+10985,11350,2010,0,intrastate,Asia,1,1
+10985,11350,2017,0,intrastate,Asia,5,0
+10988,222,2001,0,intrastate,Asia,1,2
+10988,222,2005,0,intrastate,Asia,1,2
+10988,222,2007,0,intrastate,Asia,2,4
+10988,222,2011,0,intrastate,Asia,1,1
+10988,222,2021,0,intrastate,Asia,8,14
+10988,222,2022,0,intrastate,Asia,11,11
+10988,222,2023,1,intrastate,Asia,38,68
+10988,222,2024,0,intrastate,Asia,9,18
+10988,222,2025,0,intrastate,Asia,3,3
+11018,11475,1991,1,intrastate,Asia,1,150
+11018,11475,1995,1,intrastate,Asia,3,33
+11018,11475,2000,1,intrastate,Asia,2,43
+11018,11475,2001,1,intrastate,Asia,1,62
+11018,11475,2004,0,intrastate,Asia,1,2
+11018,11475,2005,1,intrastate,Asia,3,38
+11018,11475,2006,1,intrastate,Asia,4,92
+11018,11475,2007,1,intrastate,Asia,3,215
+11018,11475,2011,0,intrastate,Asia,1,5
+11199,13692,2001,2,interstate,Europe; Asia; Americas,100,1397
+11246,308,2012,1,intrastate,Asia,10,35
+11246,308,2013,1,intrastate,Asia,18,62
+11246,308,2014,1,intrastate,Asia,30,138
+11246,308,2015,1,intrastate,Asia,28,178
+11246,308,2016,1,intrastate,Asia,9,71
+11299,335,2003,0,intrastate,Asia,2,5
+11299,335,2004,1,intrastate,Asia,4,26
+11299,335,2005,0,intrastate,Asia,2,3
+11299,335,2006,0,intrastate,Asia,7,9
+11299,335,2007,0,intrastate,Asia,6,10
+11299,335,2008,0,intrastate,Asia,1,2
+11299,335,2010,0,intrastate,Asia,1,2
+11299,335,2021,0,intrastate,Asia,1,2
+11299,335,2022,0,intrastate,Asia,1,1
+11336,404,2008,0,intrastate,Asia,3,4
+11336,404,2009,1,intrastate,Asia,37,335
+11336,404,2010,1,intrastate,Asia,7,72
+11336,404,2012,1,intrastate,Asia,41,334
+11336,404,2013,1,intrastate,Asia,11,99
+11336,404,2014,1,intrastate,Asia,24,136
+11336,404,2015,0,intrastate,Asia,1,7
+11377,283,2010,0,intrastate,Africa,1,10
+11377,283,2011,1,intrastate,Africa,8,82
+11377,283,2012,1,intrastate,Africa,7,43
+11377,283,2013,0,intrastate,Africa,4,11
+11377,283,2014,1,intrastate,Africa,9,57
+11377,283,2015,0,intrastate,Africa,5,11
+11377,283,2017,1,intrastate,Africa,29,242
+11377,283,2018,1,intrastate,Africa,31,302
+11377,283,2019,1,intrastate,Africa,20,75
+11377,283,2020,1,intrastate,Africa,23,90
+11377,283,2021,1,intrastate,Africa,21,92
+11377,283,2022,1,intrastate,Africa,10,41
+11377,283,2024,0,intrastate,Africa,1,4
+11387,223,2015,0,intrastate,Asia,4,4
+11387,223,2016,0,intrastate,Asia,4,3
+11387,223,2017,0,intrastate,Asia,4,14
+11387,223,2018,1,intrastate,Asia,15,27
+11387,223,2019,1,intrastate,Asia,97,480
+11387,223,2020,1,intrastate,Asia,54,170
+11387,223,2022,1,intrastate,Asia,54,134
+11387,223,2023,1,intrastate,Asia,36,80
+11387,223,2024,1,intrastate,Asia,179,515
+11387,223,2025,1,intrastate,Asia,57,286
+11497,404,2012,1,intrastate,Asia,2,30
+11497,404,2013,0,intrastate,Asia,1,3
+11521,325,2012,0,intrastate,Asia,1,1
+11521,325,2013,0,intrastate,Asia,2,13
+11521,325,2014,0,intrastate,Asia,3,8
+11521,325,2015,0,intrastate,Asia,3,21
+11521,325,2016,1,intrastate,Asia,1,35
+11521,325,2020,0,intrastate,Asia,1,7
+11521,325,2021,0,intrastate,Asia,2,7
+11545,14074,2016,0,intrastate,Africa,2,10
+11545,14074,2018,1,intrastate,Africa,6,121
+11545,14074,2019,0,intrastate,Africa,1,3
+11545,14074,2020,0,intrastate,Africa,2,3
+11545,14074,2024,0,intrastate,Africa,1,7
+11758,230,2011,1,intrastate,Middle East,24,97
+11798,287,2012,0,internationalized-intrastate,Africa,1,1
+11798,287,2014,0,internationalized-intrastate,Africa,8,16
+11798,287,2017,0,internationalized-intrastate,Africa,3,7
+11798,287,2018,0,internationalized-intrastate,Africa,2,6
+11798,287,2020,1,internationalized-intrastate,Africa,9,56
+11798,287,2021,0,internationalized-intrastate,Africa,3,5
+11798,287,2022,1,internationalized-intrastate,Africa,4,73
+11805,11345,2013,1,intrastate,Africa,4,76
+11932,227,1998,0,intrastate,Asia,1,2
+11932,227,1999,0,intrastate,Asia,1,1
+11932,227,2000,1,intrastate,Asia,9,25
+11932,227,2001,0,intrastate,Asia,1,3
+11932,227,2002,0,intrastate,Asia,1,7
+11932,227,2003,0,intrastate,Asia,2,3
+11932,227,2006,0,intrastate,Asia,1,2
+11932,227,2007,0,intrastate,Asia,2,5
+11932,227,2008,0,intrastate,Asia,2,4
+11971,11342,2010,0,intrastate,Asia,2,6
+11971,11342,2011,0,intrastate,Asia,6,16
+11971,11342,2012,1,intrastate,Asia,18,27
+11971,11342,2013,0,intrastate,Asia,11,19
+11971,11342,2014,1,intrastate,Asia,21,26
+11971,11342,2015,0,intrastate,Asia,14,19
+11971,11342,2016,0,intrastate,Asia,4,4
+11972,264,2006,0,intrastate,Asia,1,2
+11972,264,2011,1,intrastate,Asia,22,141
+11972,264,2013,1,intrastate,Asia,6,51
+11972,264,2014,0,intrastate,Asia,1,7
+11972,264,2015,1,intrastate,Asia,8,77
+11972,264,2016,0,intrastate,Asia,4,4
+11972,264,2018,0,intrastate,Asia,1,1
+11972,264,2019,0,intrastate,Asia,1,1
+11972,264,2022,0,intrastate,Asia,2,1
+11972,264,2023,0,intrastate,Asia,2,2
+11972,264,2024,0,intrastate,Asia,1,1
+11973,299,2011,2,intrastate,Middle East,243,1203
+11973,299,2012,2,intrastate,Middle East,11105,50444
+11973,299,2013,2,intrastate,Middle East,17705,70516
+11973,299,2014,2,intrastate,Middle East,13383,57957
+11973,299,2015,2,intrastate,Middle East,8146,39715
+11973,299,2016,2,intrastate,Middle East,6093,32595
+11973,299,2017,2,intrastate,Middle East,3822,12206
+11973,299,2018,2,intrastate,Middle East,1822,8690
+11973,299,2019,2,intrastate,Middle East,1478,6856
+11973,299,2020,2,intrastate,Middle East,637,3513
+11973,299,2021,1,intrastate,Middle East,385,676
+11973,299,2022,1,intrastate,Middle East,392,563
+11973,299,2023,2,intrastate,Middle East,505,1001
+11973,299,2024,2,intrastate,Middle East,470,1459
+11974,11343,1967,2,interstate,Middle East,,
+11974,11343,1969,1,interstate,Middle East,,
+11974,11343,1970,1,interstate,Middle East,,
+11974,11343,1973,2,interstate,Middle East,,
+11975,309,2011,1,internationalized-intrastate,Africa,37,190
+11975,309,2015,1,internationalized-intrastate,Africa,9,42
+11975,309,2016,1,internationalized-intrastate,Africa,46,486
+11975,309,2017,0,internationalized-intrastate,Africa,2,6
+11975,309,2020,0,internationalized-intrastate,Africa,1,3
+11975,309,2023,1,internationalized-intrastate,Africa,7,50
+11975,309,2025,1,internationalized-intrastate,Africa,1,80
+11976,309,2011,1,intrastate,Africa,15,320
+11977,11344,2011,1,intrastate,Africa,8,145
+11978,11345,2011,1,intrastate,Africa,6,105
+11979,11345,2011,1,intrastate,Africa,6,111
+11979,11345,2012,1,intrastate,Africa,3,137
+11980,11346,2011,2,internationalized-intrastate,Africa,187,3049
+11982,283,2012,1,internationalized-intrastate,Africa,29,658
+11982,283,2013,2,internationalized-intrastate,Africa,31,1152
+11982,283,2017,1,internationalized-intrastate,Africa,4,28
+11982,283,2020,0,internationalized-intrastate,Africa,2,4
+11982,283,2021,1,internationalized-intrastate,Africa,6,33
+11982,283,2022,1,internationalized-intrastate,Africa,64,385
+11982,283,2023,1,internationalized-intrastate,Africa,33,202
+11984,386,2012,1,intrastate,Africa,4,25
+11984,386,2013,0,intrastate,Africa,3,22
+11985,372,2012,1,intrastate,Africa,15,131
+11985,372,2013,0,intrastate,Africa,3,12
+11985,372,2014,1,intrastate,Africa,2,94
+11985,372,2015,1,intrastate,Africa,7,54
+11985,372,2017,0,intrastate,Africa,1,1
+11986,11347,2012,1,intrastate,Africa,5,60
+11986,11347,2013,1,intrastate,Africa,12,133
+11986,11347,2014,0,intrastate,Africa,2,4
+11986,11347,2015,1,intrastate,Africa,10,36
+11986,11347,2016,1,intrastate,Africa,22,71
+11986,11347,2017,0,intrastate,Africa,1,1
+11987,11347,2012,1,intrastate,Africa,2,27
+11987,11347,2013,0,intrastate,Africa,1,2
+11988,309,2011,1,intrastate,Africa,9,67
+11988,309,2012,2,intrastate,Africa,93,1173
+11988,309,2013,1,intrastate,Africa,91,594
+11988,309,2014,1,intrastate,Africa,66,489
+11988,309,2015,2,intrastate,Africa,102,1169
+11988,309,2016,1,intrastate,Africa,76,823
+11988,309,2017,1,intrastate,Africa,10,65
+11988,309,2018,0,intrastate,Africa,2,10
+11989,11348,2012,1,interstate,Africa,21,367
+11989,11348,2013,0,interstate,Africa,5,1
+11989,11348,2014,0,interstate,Africa,1,0
+11990,11349,1990,0,intrastate,Asia,3,22
+11990,11349,1999,0,intrastate,Asia,3,0
+11990,11349,2003,0,intrastate,Asia,1,1
+11990,11349,2007,0,intrastate,Asia,1,0
+11990,11349,2008,1,intrastate,Asia,5,36
+11990,11349,2017,0,intrastate,Asia,2,6
+11991,11350,2004,0,intrastate,Asia,14,14
+11991,11350,2005,1,intrastate,Asia,30,30
+11991,11350,2006,1,intrastate,Asia,39,57
+11991,11350,2007,0,intrastate,Asia,8,11
+11991,11350,2008,0,intrastate,Asia,6,7
+11991,11350,2009,0,intrastate,Asia,1,1
+11991,11350,2019,0,intrastate,Asia,1,1
+12009,265,2011,0,internationalized-intrastate,Africa,1,4
+12009,265,2012,0,internationalized-intrastate,Africa,1,14
+12009,265,2013,1,internationalized-intrastate,Africa,14,94
+12009,265,2014,1,internationalized-intrastate,Africa,10,60
+12009,265,2015,0,internationalized-intrastate,Africa,3,11
+12009,265,2016,0,internationalized-intrastate,Africa,3,14
+12009,265,2019,0,internationalized-intrastate,Africa,2,10
+12009,265,2020,1,internationalized-intrastate,Africa,5,54
+12009,265,2021,0,internationalized-intrastate,Africa,1,16
+12009,265,2022,0,internationalized-intrastate,Africa,1,0
+12009,265,2023,0,internationalized-intrastate,Africa,1,1
+12009,265,2024,0,internationalized-intrastate,Africa,4,15
+12009,265,2025,0,internationalized-intrastate,Africa,2,6
+12102,374,2001,2,intrastate,Africa,23,2054
+12102,374,2002,1,intrastate,Africa,3,83
+12102,374,2004,0,intrastate,Africa,2,18
+12102,374,2009,2,intrastate,Africa,71,1807
+12102,374,2010,1,intrastate,Africa,20,212
+12102,374,2011,1,intrastate,Africa,27,116
+12102,374,2012,1,intrastate,Africa,15,83
+12102,374,2015,0,intrastate,Africa,1,8
+12102,374,2016,1,intrastate,Africa,12,136
+12102,374,2017,0,intrastate,Africa,6,24
+12102,374,2018,0,intrastate,Africa,7,22
+12102,374,2019,1,intrastate,Africa,12,60
+12102,374,2020,1,intrastate,Africa,8,52
+12102,374,2021,0,intrastate,Africa,4,4
+12102,374,2022,1,intrastate,Africa,10,25
+12102,374,2023,1,intrastate,Africa,15,132
+12102,374,2024,1,intrastate,Africa,2,44
+12102,374,2025,1,intrastate,Africa,4,60
+12104,267,1991,1,intrastate,Africa,1,600
+12139,11487,2013,1,intrastate,Asia,14,70
+12287,404,2023,1,intrastate,Asia,6,25
+12287,404,2024,1,intrastate,Asia,18,113
+12287,404,2025,1,intrastate,Asia,5,49
+12291,11639,2005,0,interstate,Asia,1,15
+12291,11639,2007,0,interstate,Asia,3,14
+12291,11639,2008,0,interstate,Asia,1,1
+12291,11639,2012,0,interstate,Asia,1,1
+12291,11639,2015,0,interstate,Asia,1,1
+12291,11639,2016,0,interstate,Asia,2,6
+12291,11639,2017,0,interstate,Asia,1,8
+12291,11639,2018,0,interstate,Asia,1,6
+12291,11639,2022,0,interstate,Asia,8,16
+12291,11639,2023,0,interstate,Asia,4,17
+12291,11639,2024,1,interstate,Asia,24,61
+12291,11639,2025,1,interstate,Asia,27,178
+12298,395,1992,1,internationalized-intrastate,Asia,16,419
+12300,395,2000,1,intrastate,Asia,2,46
+12300,395,2010,1,intrastate,Asia,3,32
+12380,416,2013,1,intrastate,Africa,18,262
+12380,416,2014,1,intrastate,Africa,33,136
+12380,416,2015,0,intrastate,Africa,2,2
+12380,416,2017,1,intrastate,Africa,7,35
+12380,416,2018,1,intrastate,Africa,10,48
+12380,416,2019,0,intrastate,Africa,1,1
+12380,416,2020,0,intrastate,Africa,2,7
+12380,416,2022,0,intrastate,Africa,2,2
+12380,416,2023,0,intrastate,Africa,1,23
+12380,416,2024,0,intrastate,Africa,2,6
+12391,15283,2015,1,internationalized-intrastate,Africa,3,27
+12391,15283,2017,0,internationalized-intrastate,Africa,4,17
+12391,15283,2019,0,internationalized-intrastate,Africa,1,6
+12391,15283,2020,0,internationalized-intrastate,Africa,3,14
+12413,11345,2013,1,intrastate,Africa,31,850
+12413,11345,2014,2,intrastate,Africa,62,1667
+12413,11345,2015,1,intrastate,Africa,32,493
+12413,11345,2016,1,intrastate,Africa,29,735
+12413,11345,2017,1,intrastate,Africa,53,484
+12413,11345,2018,1,intrastate,Africa,78,526
+12413,11345,2019,0,intrastate,Africa,3,5
+12413,11345,2020,0,intrastate,Africa,2,6
+12413,11345,2025,1,intrastate,Africa,31,282
+12422,353,2015,1,internationalized-intrastate,Africa,7,712
+12422,353,2016,1,internationalized-intrastate,Africa,9,32
+12422,353,2017,1,internationalized-intrastate,Africa,31,63
+12422,353,2018,0,internationalized-intrastate,Africa,13,24
+12422,353,2019,0,internationalized-intrastate,Africa,10,21
+12422,353,2020,1,internationalized-intrastate,Africa,14,28
+12422,353,2021,0,internationalized-intrastate,Africa,9,22
+12422,353,2022,1,internationalized-intrastate,Africa,18,31
+12422,353,2023,1,internationalized-intrastate,Africa,41,113
+12422,353,2024,1,internationalized-intrastate,Africa,30,63
+12422,353,2025,1,internationalized-intrastate,Africa,18,45
+12463,283,2013,1,intrastate,Africa,4,92
+12487,391,2014,1,intrastate,Middle East,24,184
+12556,338,2014,0,intrastate,Middle East,1,3
+12556,338,2015,0,intrastate,Middle East,5,16
+12556,338,2016,0,intrastate,Middle East,2,10
+12556,338,2017,0,intrastate,Middle East,4,17
+12556,338,2018,0,intrastate,Middle East,5,23
+12556,338,2019,1,intrastate,Middle East,3,31
+12556,338,2020,0,intrastate,Middle East,1,1
+12556,338,2021,0,intrastate,Middle East,4,14
+12556,338,2022,0,intrastate,Middle East,1,19
+12556,338,2023,1,intrastate,Middle East,8,34
+12556,338,2024,1,intrastate,Middle East,26,113
+12556,338,2025,1,intrastate,Middle East,24,52
+12571,11347,2013,1,internationalized-intrastate,Africa,31,333
+12575,11347,2009,1,intrastate,Africa,5,87
+12575,11347,2011,0,intrastate,Africa,3,22
+12575,11347,2013,1,intrastate,Africa,23,305
+12575,11347,2014,1,intrastate,Africa,10,47
+12575,11347,2015,1,intrastate,Africa,8,38
+12575,11347,2016,1,intrastate,Africa,12,26
+12575,11347,2017,1,intrastate,Africa,9,66
+12578,11347,2013,1,internationalized-intrastate,Africa,7,65
+12582,11347,2013,0,internationalized-intrastate,Africa,2,4
+12582,11347,2014,1,internationalized-intrastate,Africa,7,48
+12582,11347,2015,0,internationalized-intrastate,Africa,7,13
+12618,11884,1947,2,intrastate,Asia,,
+12618,11884,1948,2,intrastate,Asia,,
+13821,13042,2011,0,intrastate,Middle East,1,3
+13821,13042,2012,1,intrastate,Middle East,9,46
+13821,13042,2013,1,intrastate,Middle East,16,78
+13821,13042,2014,1,intrastate,Middle East,18,52
+13821,13042,2015,1,intrastate,Middle East,11,84
+13891,259,2004,2,internationalized-intrastate,Middle East,108,1258
+13891,259,2005,0,internationalized-intrastate,Middle East,2,9
+13891,259,2007,1,internationalized-intrastate,Middle East,66,371
+13891,259,2008,1,internationalized-intrastate,Middle East,125,866
+13891,259,2009,0,internationalized-intrastate,Middle East,1,1
+14059,11346,2014,1,intrastate,Africa,14,131
+14059,11346,2015,1,intrastate,Africa,11,156
+14059,11346,2016,0,intrastate,Africa,1,6
+14059,11346,2017,1,intrastate,Africa,7,166
+14059,11346,2019,2,intrastate,Africa,160,1588
+14059,11346,2020,1,intrastate,Africa,127,668
+14059,11346,2021,0,intrastate,Africa,4,7
+14059,11346,2022,0,intrastate,Africa,2,2
+14059,11346,2023,0,intrastate,Africa,1,2
+14085,13219,2014,1,intrastate,Europe,6,88
+14102,421,2013,1,intrastate,Asia,19,28
+14102,421,2014,1,intrastate,Asia,31,39
+14102,421,2015,0,intrastate,Asia,9,12
+14117,13243,2014,0,interstate,Europe,2,3
+14117,13243,2016,0,interstate,Europe,1,2
+14117,13243,2022,2,interstate,Europe,7272,99473
+14117,13243,2023,2,interstate,Europe,10800,76254
+14117,13243,2024,2,interstate,Europe,11792,102120
+14117,13243,2025,2,interstate,Europe,8025,94741
+14124,13246,2014,2,internationalized-intrastate,Europe,663,2277
+14134,309,2014,1,intrastate,Africa,3,111
+14134,309,2017,1,intrastate,Africa,2,45
+14134,309,2018,0,intrastate,Africa,1,1
+14150,309,2014,1,intrastate,Africa,14,256
+14150,309,2015,1,intrastate,Africa,1,53
+14184,13247,2014,2,internationalized-intrastate,Europe,294,1072
+14210,13306,2014,2,internationalized-intrastate,Europe,338,1462
+14210,13306,2015,2,internationalized-intrastate,Europe,540,1402
+14227,404,2014,1,intrastate,Asia,3,36
+14227,404,2015,0,intrastate,Asia,1,9
+14236,13324,2014,0,interstate,Asia,2,3
+14236,13324,2015,0,interstate,Asia,1,1
+14236,13324,2019,0,interstate,Asia,1,4
+14236,13324,2021,1,interstate,Asia,8,56
+14236,13324,2022,1,interstate,Asia,53,150
+14244,13675,2014,1,intrastate,Middle East,8,126
+14244,13675,2015,1,intrastate,Middle East,10,76
+14244,13675,2016,0,intrastate,Middle East,7,17
+14244,13675,2017,1,intrastate,Middle East,14,70
+14244,13675,2018,0,intrastate,Middle East,1,2
+14244,13675,2020,0,intrastate,Middle East,4,20
+14249,11346,2014,1,intrastate,Africa,9,143
+14273,222,1994,0,intrastate,Asia,1,1
+14273,222,2002,0,intrastate,Asia,2,2
+14273,222,2013,1,intrastate,Asia,8,29
+14273,222,2014,1,intrastate,Asia,8,37
+14273,222,2015,1,intrastate,Asia,42,106
+14273,222,2016,0,intrastate,Asia,5,1
+14273,222,2017,1,intrastate,Asia,13,46
+14273,222,2018,1,intrastate,Asia,18,46
+14273,222,2019,1,intrastate,Asia,27,49
+14273,222,2020,0,intrastate,Asia,3,5
+14273,222,2021,0,intrastate,Asia,2,24
+14273,222,2022,1,intrastate,Asia,6,44
+14273,222,2023,1,intrastate,Asia,88,216
+14273,222,2024,1,intrastate,Asia,72,241
+14273,222,2025,1,intrastate,Asia,61,252
+14319,13936,2016,1,intrastate,Asia,3,68
+14319,13936,2017,1,intrastate,Asia,6,80
+14319,13936,2018,1,intrastate,Asia,6,51
+14319,13936,2019,1,intrastate,Asia,9,29
+14319,13936,2020,0,intrastate,Asia,3,16
+14319,13936,2021,1,intrastate,Asia,9,26
+14319,13936,2022,1,intrastate,Asia,8,29
+14319,13936,2023,1,intrastate,Asia,11,86
+14319,13936,2024,0,intrastate,Asia,12,15
+14319,13936,2025,1,intrastate,Asia,15,54
+14320,13637,2015,1,internationalized-intrastate,Asia,59,679
+14320,13637,2016,2,internationalized-intrastate,Asia,221,2141
+14320,13637,2017,2,internationalized-intrastate,Asia,311,2795
+14320,13637,2018,2,internationalized-intrastate,Asia,697,2842
+14320,13637,2019,2,internationalized-intrastate,Asia,193,1075
+14320,13637,2020,1,internationalized-intrastate,Asia,50,316
+14320,13637,2021,1,internationalized-intrastate,Asia,102,264
+14320,13637,2022,1,internationalized-intrastate,Asia,87,258
+14320,13637,2023,1,internationalized-intrastate,Asia,42,163
+14320,13637,2024,1,internationalized-intrastate,Asia,35,105
+14320,13637,2025,1,internationalized-intrastate,Asia,21,56
+14471,370,1989,1,intrastate,Europe,5,53
+14528,287,2015,1,intrastate,Africa,6,46
+14595,230,2015,2,internationalized-intrastate,Middle East,547,7365
+14595,230,2016,2,internationalized-intrastate,Middle East,263,3243
+14595,230,2017,2,internationalized-intrastate,Middle East,258,2839
+14595,230,2018,2,internationalized-intrastate,Middle East,303,4671
+14595,230,2019,2,internationalized-intrastate,Middle East,225,2637
+14595,230,2020,2,internationalized-intrastate,Middle East,568,6260
+14595,230,2021,2,internationalized-intrastate,Middle East,720,23360
+14595,230,2022,2,internationalized-intrastate,Middle East,394,2920
+14595,230,2023,1,internationalized-intrastate,Middle East,275,808
+14595,230,2024,1,internationalized-intrastate,Middle East,120,779
+14595,230,2025,1,internationalized-intrastate,Middle East,228,444
+14609,13645,2015,1,intrastate,Middle East,11,283
+14609,13645,2016,0,intrastate,Middle East,2,6
+14609,13645,2017,1,intrastate,Middle East,4,26
+14609,13645,2018,0,intrastate,Middle East,6,9
+14609,13645,2019,0,intrastate,Middle East,2,3
+14609,13645,2020,1,intrastate,Middle East,16,33
+14609,13645,2021,0,intrastate,Middle East,2,1
+14609,13645,2022,0,intrastate,Middle East,1,1
+14609,13645,2025,0,intrastate,Middle East,6,1
+14610,13611,2015,1,intrastate,Africa,15,44
+14610,13611,2016,0,intrastate,Africa,4,3
+14610,13611,2017,0,intrastate,Africa,4,22
+14619,13588,2015,1,intrastate,Europe,19,55
+14619,13588,2016,1,intrastate,Europe,24,69
+14619,13588,2017,1,intrastate,Europe,26,53
+14619,13588,2018,1,intrastate,Europe,18,30
+14619,13588,2019,1,intrastate,Europe,12,26
+14619,13588,2020,1,intrastate,Europe,16,30
+14619,13588,2021,0,intrastate,Europe,2,2
+14619,13588,2022,0,intrastate,Europe,2,10
+14619,13588,2023,0,intrastate,Europe,3,5
+14619,13588,2024,1,intrastate,Europe,10,53
+14619,13588,2025,0,intrastate,Europe,7,13
+14620,13604,2013,2,intrastate,Middle East,136,1422
+14620,13604,2014,2,intrastate,Middle East,761,7336
+14620,13604,2015,2,intrastate,Middle East,1462,10382
+14620,13604,2016,2,intrastate,Middle East,1382,10903
+14620,13604,2017,2,intrastate,Middle East,1657,11920
+14620,13604,2018,2,intrastate,Middle East,401,4347
+14620,13604,2019,1,intrastate,Middle East,106,523
+14620,13604,2020,2,intrastate,Middle East,118,1076
+14620,13604,2021,1,intrastate,Middle East,155,680
+14620,13604,2022,1,intrastate,Middle East,144,348
+14620,13604,2023,1,intrastate,Middle East,185,459
+14620,13604,2024,1,intrastate,Middle East,188,629
+14620,13604,2025,1,intrastate,Middle East,9,29
+14636,303,2021,1,intrastate,Africa,50,132
+14636,303,2022,1,intrastate,Africa,47,84
+14636,303,2023,1,intrastate,Africa,52,116
+14636,303,2024,1,intrastate,Africa,71,194
+14636,303,2025,1,intrastate,Africa,28,48
+14649,287,2015,1,intrastate,Africa,2,96
+14649,287,2016,0,intrastate,Africa,4,8
+14666,13638,2015,1,internationalized-intrastate,Africa,21,283
+14666,13638,2016,1,internationalized-intrastate,Africa,26,189
+14666,13638,2017,0,internationalized-intrastate,Africa,6,23
+14666,13638,2018,0,internationalized-intrastate,Africa,3,24
+14666,13638,2019,1,internationalized-intrastate,Africa,9,135
+14666,13638,2020,0,internationalized-intrastate,Africa,3,11
+14666,13638,2021,1,internationalized-intrastate,Africa,17,62
+14666,13638,2022,0,internationalized-intrastate,Africa,6,9
+14666,13638,2023,1,internationalized-intrastate,Africa,19,53
+14666,13638,2024,0,internationalized-intrastate,Africa,10,23
+14666,13638,2025,1,internationalized-intrastate,Africa,22,62
+14667,13640,2015,1,intrastate,Africa,13,272
+14667,13640,2016,0,intrastate,Africa,3,18
+14667,13640,2017,1,intrastate,Africa,2,57
+14667,13640,2018,1,intrastate,Africa,8,108
+14667,13640,2019,1,intrastate,Africa,11,144
+14667,13640,2020,1,intrastate,Africa,20,143
+14667,13640,2021,1,intrastate,Africa,6,55
+14667,13640,2022,1,intrastate,Africa,4,35
+14667,13640,2024,0,intrastate,Africa,1,1
+14668,13639,2015,1,internationalized-intrastate,Africa,15,171
+14668,13639,2016,1,internationalized-intrastate,Africa,13,274
+14668,13639,2017,1,internationalized-intrastate,Africa,11,229
+14668,13639,2018,1,internationalized-intrastate,Africa,12,74
+14668,13639,2019,1,internationalized-intrastate,Africa,31,283
+14668,13639,2020,1,internationalized-intrastate,Africa,26,512
+14668,13639,2021,1,internationalized-intrastate,Africa,32,380
+14668,13639,2022,1,internationalized-intrastate,Africa,38,323
+14668,13639,2023,1,internationalized-intrastate,Africa,47,247
+14668,13639,2024,1,internationalized-intrastate,Africa,31,485
+14668,13639,2025,1,internationalized-intrastate,Africa,51,535
+14669,13641,2015,2,internationalized-intrastate,Africa,112,2063
+14669,13641,2016,2,internationalized-intrastate,Africa,204,2287
+14669,13641,2017,1,internationalized-intrastate,Africa,78,817
+14669,13641,2018,1,internationalized-intrastate,Africa,102,836
+14669,13641,2019,2,internationalized-intrastate,Africa,178,1013
+14669,13641,2020,2,internationalized-intrastate,Africa,287,1559
+14669,13641,2021,2,internationalized-intrastate,Africa,233,1597
+14669,13641,2022,2,internationalized-intrastate,Africa,176,1052
+14669,13641,2023,2,internationalized-intrastate,Africa,277,1545
+14669,13641,2024,2,internationalized-intrastate,Africa,186,1163
+14669,13641,2025,2,internationalized-intrastate,Africa,264,1662
+14677,13648,2014,0,intrastate,Middle East,7,24
+14677,13648,2015,1,intrastate,Middle East,59,767
+14677,13648,2016,1,intrastate,Middle East,30,355
+14677,13648,2017,1,intrastate,Middle East,64,394
+14677,13648,2018,1,intrastate,Middle East,74,652
+14677,13648,2019,1,intrastate,Middle East,102,589
+14677,13648,2020,1,intrastate,Middle East,112,527
+14677,13648,2021,1,intrastate,Middle East,57,112
+14677,13648,2022,1,intrastate,Middle East,65,231
+14677,13648,2023,0,intrastate,Middle East,1,1
+14685,13653,2015,1,intrastate,Asia,34,161
+14685,13653,2016,1,intrastate,Asia,39,47
+14685,13653,2017,1,intrastate,Asia,25,39
+14685,13653,2018,1,intrastate,Asia,17,27
+14685,13653,2019,0,intrastate,Asia,5,10
+14685,13653,2020,0,intrastate,Asia,7,8
+14685,13653,2021,0,intrastate,Asia,7,20
+14685,13653,2022,0,intrastate,Asia,2,2
+14685,13653,2023,0,intrastate,Asia,3,4
+14685,13653,2024,0,intrastate,Asia,1,1
+14685,13653,2025,1,intrastate,Asia,6,27
+14701,13902,2015,1,intrastate,Middle East,7,26
+14701,13902,2016,2,intrastate,Middle East,91,1107
+14701,13902,2017,1,intrastate,Middle East,90,750
+14701,13902,2025,0,intrastate,Middle East,1,9
+14718,13674,2015,0,intrastate,Asia,1,1
+14718,13674,2016,1,intrastate,Asia,12,41
+14718,13674,2017,1,intrastate,Asia,17,47
+14718,13674,2018,0,intrastate,Asia,1,2
+14718,13674,2019,0,intrastate,Asia,1,2
+14741,13886,2016,1,intrastate,Middle East,5,34
+14744,343,2014,0,intrastate,Africa,1,1
+14744,343,2015,1,intrastate,Africa,8,32
+14744,343,2016,0,intrastate,Africa,5,10
+14744,343,2017,0,intrastate,Africa,2,3
+14744,343,2018,0,intrastate,Africa,6,7
+14744,343,2019,0,intrastate,Africa,3,8
+14744,343,2020,0,intrastate,Africa,2,4
+14744,343,2021,0,intrastate,Africa,6,12
+14745,13694,2015,1,intrastate,Africa,16,118
+14745,13694,2016,2,intrastate,Africa,107,1678
+14745,13694,2017,1,intrastate,Africa,5,96
+14745,13694,2018,1,intrastate,Africa,7,44
+14745,13694,2019,1,intrastate,Africa,4,43
+14745,13694,2021,0,intrastate,Africa,2,3
+14745,13694,2022,0,intrastate,Africa,1,0
+14747,14333,2015,0,intrastate,Africa,4,18
+14747,14333,2016,1,intrastate,Africa,7,71
+14747,14333,2019,0,intrastate,Africa,2,5
+14747,14333,2020,0,intrastate,Africa,2,7
+14747,14333,2022,0,intrastate,Africa,1,3
+14784,13809,2015,0,intrastate,Middle East,3,7
+14784,13809,2016,1,intrastate,Middle East,23,152
+14784,13809,2017,0,intrastate,Middle East,5,7
+14784,13809,2018,1,intrastate,Middle East,7,35
+14784,13809,2019,0,intrastate,Middle East,2,6
+14784,13809,2020,0,intrastate,Middle East,2,6
+14784,13809,2021,0,intrastate,Middle East,5,19
+14784,13809,2022,0,intrastate,Middle East,4,7
+14784,13809,2023,1,intrastate,Middle East,22,40
+14784,13809,2024,1,intrastate,Middle East,34,78
+14784,13809,2025,1,intrastate,Middle East,65,171
+14808,283,2012,1,intrastate,Africa,3,33
+14808,283,2015,0,intrastate,Africa,1,5
+14842,287,2012,0,intrastate,Africa,2,10
+14842,287,2014,1,intrastate,Africa,4,56
+14842,287,2015,1,intrastate,Africa,7,43
+14842,287,2018,0,intrastate,Africa,4,23
+14842,287,2019,1,intrastate,Africa,6,61
+14842,287,2020,1,intrastate,Africa,15,83
+14842,287,2021,1,intrastate,Africa,4,26
+14842,287,2022,1,intrastate,Africa,18,169
+14842,287,2023,1,intrastate,Africa,5,93
+14842,287,2024,1,intrastate,Africa,10,60
+14842,287,2025,0,intrastate,Africa,2,1
+14847,13721,2014,0,intrastate,Africa,2,4
+14847,13721,2015,1,intrastate,Africa,3,26
+14847,13721,2016,0,intrastate,Africa,2,3
+14847,13721,2017,0,intrastate,Africa,7,17
+14847,13721,2019,0,intrastate,Africa,1,2
+14847,13721,2020,0,intrastate,Africa,1,2
+14847,13721,2024,0,intrastate,Africa,1,3
+14895,14268,2016,0,intrastate,Middle East,3,14
+14895,14268,2017,1,intrastate,Middle East,2,27
+14895,14268,2018,0,intrastate,Middle East,1,8
+14895,14268,2021,0,intrastate,Middle East,2,4
+14895,14268,2022,0,intrastate,Middle East,1,20
+14895,14268,2023,0,intrastate,Middle East,1,4
+14895,14268,2024,0,intrastate,Middle East,4,7
+14895,14268,2025,0,intrastate,Middle East,1,2
+14913,308,2016,1,intrastate,Asia,3,30
+14929,283,2016,1,intrastate,Africa,29,477
+14929,283,2017,2,intrastate,Africa,121,2966
+14929,283,2018,1,intrastate,Africa,11,57
+14929,283,2019,0,intrastate,Africa,3,6
+14953,13840,2017,0,internationalized-intrastate,Africa,1,2
+14953,13840,2018,0,internationalized-intrastate,Africa,7,19
+14953,13840,2019,1,internationalized-intrastate,Africa,9,78
+14953,13840,2020,1,internationalized-intrastate,Africa,32,160
+14953,13840,2021,1,internationalized-intrastate,Africa,30,170
+14953,13840,2022,1,internationalized-intrastate,Africa,43,402
+14953,13840,2023,1,internationalized-intrastate,Africa,63,817
+14953,13840,2024,1,internationalized-intrastate,Africa,14,63
+14953,13840,2025,1,internationalized-intrastate,Africa,16,92
+14973,391,2016,0,intrastate,Middle East,4,12
+14973,391,2017,1,intrastate,Middle East,25,55
+14973,391,2018,1,intrastate,Middle East,7,28
+14973,391,2019,1,intrastate,Middle East,11,48
+14973,391,2025,0,intrastate,Middle East,1,3
+15065,383,2016,1,intrastate,Middle East,3,274
+15069,223,2016,1,intrastate,Asia,11,86
+15069,223,2017,1,intrastate,Asia,13,393
+15069,223,2020,0,intrastate,Asia,3,9
+15069,223,2021,0,intrastate,Asia,1,3
+15077,14197,2018,0,internationalized-intrastate,Africa,13,9
+15077,14197,2019,1,internationalized-intrastate,Africa,10,33
+15077,14197,2020,1,internationalized-intrastate,Africa,9,41
+15077,14197,2021,1,internationalized-intrastate,Africa,17,53
+15077,14197,2022,0,internationalized-intrastate,Africa,3,8
+15077,14197,2023,0,internationalized-intrastate,Africa,5,15
+15077,14197,2024,0,internationalized-intrastate,Africa,1,3
+15077,14197,2025,1,internationalized-intrastate,Africa,11,106
+15100,13306,2015,1,internationalized-intrastate,Europe,253,353
+15100,13306,2016,1,internationalized-intrastate,Europe,416,578
+15100,13306,2017,1,internationalized-intrastate,Europe,172,375
+15100,13306,2018,1,internationalized-intrastate,Europe,114,172
+15100,13306,2019,1,internationalized-intrastate,Europe,172,279
+15100,13306,2020,1,internationalized-intrastate,Europe,94,133
+15100,13306,2021,1,internationalized-intrastate,Europe,128,168
+15100,13306,2022,1,internationalized-intrastate,Europe,42,57
+15101,13306,2015,1,internationalized-intrastate,Europe,78,139
+15101,13306,2016,1,internationalized-intrastate,Europe,97,119
+15101,13306,2017,1,internationalized-intrastate,Europe,44,72
+15101,13306,2018,1,internationalized-intrastate,Europe,39,71
+15101,13306,2019,1,internationalized-intrastate,Europe,27,32
+15101,13306,2020,1,internationalized-intrastate,Europe,51,63
+15101,13306,2021,1,internationalized-intrastate,Europe,39,40
+15101,13306,2022,0,internationalized-intrastate,Europe,10,9
+15108,11347,2017,1,internationalized-intrastate,Africa,71,246
+15108,11347,2018,1,internationalized-intrastate,Africa,83,402
+15108,11347,2019,1,internationalized-intrastate,Africa,94,422
+15108,11347,2020,1,internationalized-intrastate,Africa,88,520
+15108,11347,2021,1,internationalized-intrastate,Africa,104,616
+15108,11347,2022,2,internationalized-intrastate,Africa,206,1117
+15108,11347,2023,1,internationalized-intrastate,Africa,140,886
+15108,11347,2024,1,internationalized-intrastate,Africa,178,760
+15108,11347,2025,2,internationalized-intrastate,Africa,276,1086
+15135,283,2017,1,internationalized-intrastate,Africa,4,73
+15174,430,2017,0,internationalized-intrastate,Africa,1,5
+15174,430,2018,0,internationalized-intrastate,Africa,1,2
+15174,430,2019,0,internationalized-intrastate,Africa,1,2
+15174,430,2020,0,internationalized-intrastate,Africa,4,2
+15174,430,2021,1,internationalized-intrastate,Africa,6,76
+15174,430,2022,1,internationalized-intrastate,Africa,13,165
+15174,430,2023,1,internationalized-intrastate,Africa,8,48
+15174,430,2024,1,internationalized-intrastate,Africa,25,440
+15174,430,2025,1,internationalized-intrastate,Africa,30,167
+15175,360,2017,0,internationalized-intrastate,Africa,3,10
+15175,360,2018,1,internationalized-intrastate,Africa,23,79
+15175,360,2019,1,internationalized-intrastate,Africa,71,271
+15175,360,2020,1,internationalized-intrastate,Africa,56,352
+15175,360,2021,1,internationalized-intrastate,Africa,100,821
+15175,360,2022,2,internationalized-intrastate,Africa,137,1703
+15175,360,2023,2,internationalized-intrastate,Africa,364,3989
+15175,360,2024,2,internationalized-intrastate,Africa,209,2136
+15175,360,2025,2,internationalized-intrastate,Africa,546,2939
+15195,11345,2018,0,intrastate,Africa,4,17
+15195,11345,2019,1,intrastate,Africa,20,110
+15195,11345,2020,1,intrastate,Africa,15,58
+15195,11345,2021,1,intrastate,Africa,9,35
+15195,11345,2022,0,intrastate,Africa,4,23
+15195,11345,2023,0,intrastate,Africa,3,5
+15195,11345,2024,0,intrastate,Africa,3,23
+15225,11346,2016,0,intrastate,Africa,2,9
+15225,11346,2017,1,intrastate,Africa,4,72
+15259,14113,2017,1,internationalized-intrastate,Africa,9,47
+15259,14113,2018,1,internationalized-intrastate,Africa,20,119
+15259,14113,2019,1,internationalized-intrastate,Africa,22,181
+15259,14113,2020,1,internationalized-intrastate,Africa,40,63
+15259,14113,2021,1,internationalized-intrastate,Africa,27,110
+15259,14113,2022,1,internationalized-intrastate,Africa,26,323
+15259,14113,2023,1,internationalized-intrastate,Africa,18,182
+15259,14113,2024,1,internationalized-intrastate,Africa,34,128
+15259,14113,2025,1,internationalized-intrastate,Africa,34,189
+15262,391,2017,1,intrastate,Middle East,4,48
+15298,230,2017,1,intrastate,Middle East,11,238
+15333,11346,2017,1,intrastate,Africa,2,70
+15336,283,2018,1,internationalized-intrastate,Africa,15,41
+15336,283,2019,1,internationalized-intrastate,Africa,6,37
+15336,283,2022,0,internationalized-intrastate,Africa,1,3
+15389,283,2017,0,internationalized-intrastate,Africa,17,22
+15389,283,2018,1,internationalized-intrastate,Africa,20,39
+15389,283,2019,1,internationalized-intrastate,Africa,12,67
+15389,283,2020,1,internationalized-intrastate,Africa,39,86
+15389,283,2021,1,internationalized-intrastate,Africa,33,92
+15389,283,2022,0,internationalized-intrastate,Africa,5,5
+15473,14275,2016,1,intrastate,Asia,23,155
+15473,14275,2017,2,intrastate,Asia,130,1363
+15473,14275,2018,1,intrastate,Asia,37,193
+15473,14275,2019,1,intrastate,Asia,31,136
+15473,14275,2020,1,intrastate,Asia,29,75
+15473,14275,2021,1,intrastate,Asia,29,71
+15473,14275,2022,1,intrastate,Asia,22,53
+15473,14275,2023,1,intrastate,Asia,24,79
+15473,14275,2024,1,intrastate,Asia,10,43
+15473,14275,2025,0,intrastate,Asia,8,14
+15474,308,2016,1,intrastate,Asia,7,57
+15475,308,2016,0,intrastate,Asia,1,7
+15475,308,2017,0,intrastate,Asia,1,4
+15475,308,2018,1,intrastate,Asia,2,27
+15475,308,2021,0,intrastate,Asia,2,3
+15475,308,2022,0,intrastate,Asia,2,3
+15475,308,2023,0,intrastate,Asia,1,1
+15475,308,2024,0,intrastate,Asia,5,20
+15516,332,2018,1,intrastate,Africa,15,51
+15516,332,2019,1,intrastate,Africa,12,97
+15539,11346,2012,0,intrastate,Africa,1,1
+15539,11346,2013,1,intrastate,Africa,15,31
+15539,11346,2014,0,intrastate,Africa,3,12
+15547,374,2019,1,internationalized-intrastate,Africa,9,35
+15547,374,2020,1,internationalized-intrastate,Africa,14,30
+15547,374,2021,0,internationalized-intrastate,Africa,4,5
+15547,374,2022,0,internationalized-intrastate,Africa,1,9
+15547,374,2023,0,internationalized-intrastate,Africa,4,15
+15558,289,1991,0,intrastate,Americas,1,6
+15558,289,1993,0,intrastate,Americas,2,4
+15558,289,1994,0,intrastate,Americas,1,9
+15558,289,1996,0,intrastate,Americas,1,3
+15558,289,1997,0,intrastate,Americas,1,1
+15558,289,1998,0,intrastate,Americas,1,1
+15558,289,1999,0,intrastate,Americas,13,19
+15558,289,2000,1,intrastate,Americas,11,38
+15558,289,2001,0,intrastate,Americas,9,16
+15558,289,2002,1,intrastate,Americas,14,37
+15558,289,2003,0,intrastate,Americas,7,12
+15558,289,2004,1,intrastate,Americas,13,26
+15558,289,2005,0,intrastate,Americas,8,16
+15558,289,2006,0,intrastate,Americas,2,6
+15558,289,2007,0,intrastate,Americas,1,1
+15558,289,2015,0,intrastate,Americas,1,5
+15558,289,2016,0,intrastate,Americas,1,2
+15558,289,2017,0,intrastate,Americas,2,2
+15558,289,2018,0,intrastate,Americas,3,3
+15558,289,2019,0,intrastate,Americas,4,9
+15558,289,2020,0,intrastate,Americas,1,1
+15593,416,2017,0,internationalized-intrastate,Africa,1,2
+15593,416,2018,1,internationalized-intrastate,Africa,8,55
+15593,416,2019,1,internationalized-intrastate,Africa,6,51
+15593,416,2020,1,internationalized-intrastate,Africa,3,26
+15593,416,2021,1,internationalized-intrastate,Africa,17,175
+15633,14609,2017,0,interstate,Middle East,2,2
+15633,14609,2018,1,interstate,Middle East,9,111
+15633,14609,2019,1,interstate,Middle East,16,138
+15633,14609,2020,1,interstate,Middle East,41,461
+15633,14609,2021,1,interstate,Middle East,24,166
+15633,14609,2022,1,interstate,Middle East,21,56
+15633,14609,2023,1,interstate,Middle East,39,160
+15633,14609,2024,1,interstate,Middle East,94,549
+15633,14609,2025,2,interstate,Middle East,45,1222
+15661,16292,2018,1,intrastate,Asia,2,52
+15661,16292,2019,1,intrastate,Asia,2,49
+15676,288,2017,0,intrastate,Africa,1,3
+15676,288,2018,1,intrastate,Africa,3,42
+15676,288,2020,1,intrastate,Africa,1,53
+15676,288,2022,0,intrastate,Africa,1,10
+15676,288,2023,1,intrastate,Africa,5,61
+15800,300,1997,1,intrastate,Asia,22,233
+15800,300,1998,1,intrastate,Asia,10,119
+15801,300,1997,1,intrastate,Asia,5,65
+15895,14129,2017,1,intrastate,Africa,14,35
+15895,14129,2018,1,intrastate,Africa,146,754
+15895,14129,2019,1,intrastate,Africa,152,558
+15895,14129,2020,1,intrastate,Africa,114,401
+15895,14129,2021,1,intrastate,Africa,159,519
+15895,14129,2022,1,intrastate,Africa,108,375
+15895,14129,2023,1,intrastate,Africa,82,193
+15895,14129,2024,1,intrastate,Africa,68,168
+15895,14129,2025,1,intrastate,Africa,56,133
+15993,387,2010,0,intrastate,Africa,1,2
+15993,387,2011,0,intrastate,Africa,2,2
+15993,387,2012,0,intrastate,Africa,2,2
+15993,387,2015,0,intrastate,Africa,2,0
+15993,387,2016,1,intrastate,Africa,17,25
+15993,387,2017,1,intrastate,Africa,23,25
+15993,387,2018,0,intrastate,Africa,1,1
+15993,387,2019,1,intrastate,Africa,10,25
+15993,387,2020,1,intrastate,Africa,23,25
+15993,387,2022,1,intrastate,Africa,21,25
+15993,387,2023,0,intrastate,Africa,1,0
+15993,387,2024,1,intrastate,Africa,10,25
+15993,387,2025,1,intrastate,Africa,7,25
+15998,14692,2017,1,internationalized-intrastate,Africa,3,96
+15998,14692,2018,1,internationalized-intrastate,Africa,50,378
+15998,14692,2019,1,internationalized-intrastate,Africa,45,335
+15998,14692,2020,1,internationalized-intrastate,Africa,84,644
+15998,14692,2021,1,internationalized-intrastate,Africa,94,616
+15998,14692,2022,1,internationalized-intrastate,Africa,103,914
+15998,14692,2023,1,internationalized-intrastate,Africa,82,348
+15998,14692,2024,1,internationalized-intrastate,Africa,75,150
+15998,14692,2025,1,internationalized-intrastate,Africa,38,36
+16022,14845,2019,1,intrastate,Africa,33,194
+16022,14845,2020,1,intrastate,Africa,87,939
+16022,14845,2021,1,intrastate,Africa,136,867
+16022,14845,2022,1,intrastate,Africa,109,378
+16022,14845,2023,1,intrastate,Africa,48,176
+16022,14845,2024,1,intrastate,Africa,37,151
+16022,14845,2025,1,intrastate,Africa,47,245
+16023,14935,2019,1,intrastate,Africa,4,27
+16081,374,2018,0,internationalized-intrastate,Africa,1,3
+16081,374,2019,1,internationalized-intrastate,Africa,12,131
+16081,374,2020,1,internationalized-intrastate,Africa,9,52
+16081,374,2021,0,internationalized-intrastate,Africa,3,15
+16081,374,2022,0,internationalized-intrastate,Africa,2,12
+16129,283,2019,0,internationalized-intrastate,Africa,1,3
+16129,283,2020,0,internationalized-intrastate,Africa,7,23
+16129,283,2021,0,internationalized-intrastate,Africa,6,15
+16129,283,2022,1,internationalized-intrastate,Africa,9,32
+16139,15283,2015,0,internationalized-intrastate,Africa,1,1
+16139,15283,2017,0,internationalized-intrastate,Africa,2,17
+16139,15283,2019,0,internationalized-intrastate,Africa,2,10
+16139,15283,2023,1,internationalized-intrastate,Africa,1,31
+16177,325,2019,1,intrastate,Asia,6,37
+16177,325,2020,1,intrastate,Asia,34,120
+16177,325,2021,1,intrastate,Asia,50,129
+16177,325,2022,1,intrastate,Asia,97,154
+16177,325,2023,1,intrastate,Asia,77,110
+16177,325,2024,1,intrastate,Asia,162,318
+16177,325,2025,1,intrastate,Asia,385,526
+16210,333,2020,1,internationalized-intrastate,Asia,1,55
+16240,413,2019,1,intrastate,Africa,9,40
+16240,413,2020,1,intrastate,Africa,13,28
+16240,413,2021,1,intrastate,Africa,149,283
+16240,413,2022,1,intrastate,Africa,352,766
+16240,413,2023,1,intrastate,Africa,161,464
+16240,413,2024,1,intrastate,Africa,331,685
+16240,413,2025,1,intrastate,Africa,275,477
+16286,283,2005,1,intrastate,Africa,1,34
+16286,283,2007,0,intrastate,Africa,1,1
+16286,283,2016,1,intrastate,Africa,3,29
+16286,283,2017,0,intrastate,Africa,1,1
+16286,283,2020,0,intrastate,Africa,1,3
+16286,283,2021,1,intrastate,Africa,15,37
+16286,283,2022,1,intrastate,Africa,15,47
+16286,283,2023,0,intrastate,Africa,6,14
+16286,283,2024,0,intrastate,Africa,1,3
+16474,15183,2020,1,intrastate,Africa,2,25
+16474,15183,2021,0,intrastate,Africa,4,14
+16474,15183,2022,0,intrastate,Africa,1,2
+16562,416,2020,1,internationalized-intrastate,Africa,8,31
+16562,416,2021,1,internationalized-intrastate,Africa,102,731
+16562,416,2022,1,internationalized-intrastate,Africa,75,675
+16562,416,2023,1,internationalized-intrastate,Africa,57,230
+16562,416,2024,1,internationalized-intrastate,Africa,45,177
+16562,416,2025,1,internationalized-intrastate,Africa,13,55
+16617,402,2020,0,intrastate,Middle East,1,4
+16617,402,2025,1,intrastate,Middle East,9,25
+16685,15256,2020,0,intrastate,Africa,1,1
+16685,15256,2021,0,intrastate,Africa,6,11
+16685,15256,2022,1,intrastate,Africa,8,30
+16685,15256,2023,1,intrastate,Africa,15,28
+16685,15256,2024,1,intrastate,Africa,23,77
+16685,15256,2025,1,intrastate,Africa,29,149
+16743,288,2021,1,intrastate,Africa,3,431
+16759,222,2021,1,intrastate,Asia,377,684
+16759,222,2022,2,intrastate,Asia,907,1269
+16759,222,2023,2,intrastate,Asia,1240,1406
+16759,222,2024,1,intrastate,Asia,452,955
+16759,222,2025,2,intrastate,Asia,374,1101
+16823,283,2021,0,internationalized-intrastate,Africa,2,6
+16823,283,2022,1,internationalized-intrastate,Africa,2,39
+16823,283,2023,0,internationalized-intrastate,Africa,2,3
+16823,283,2024,0,internationalized-intrastate,Africa,1,1
+16825,333,2021,1,intrastate,Asia,39,534
+16825,333,2022,1,intrastate,Asia,168,640
+16825,333,2023,1,intrastate,Asia,41,48
+16825,333,2024,1,intrastate,Asia,60,29
+16825,333,2025,1,intrastate,Asia,34,25
+16900,383,1990,0,intrastate,Middle East,4,11
+16900,383,1991,0,intrastate,Middle East,5,11
+16900,383,1992,0,intrastate,Middle East,8,14
+16900,383,1993,0,intrastate,Middle East,5,12
+16900,383,1994,0,intrastate,Middle East,7,17
+16900,383,1995,0,intrastate,Middle East,2,9
+16900,383,1996,0,intrastate,Middle East,2,4
+16900,383,1997,0,intrastate,Middle East,3,14
+16900,383,1998,0,intrastate,Middle East,4,6
+16900,383,1999,0,intrastate,Middle East,9,16
+16900,383,2000,1,intrastate,Middle East,7,30
+16900,383,2001,0,intrastate,Middle East,7,11
+16900,383,2002,0,intrastate,Middle East,2,2
+16900,383,2003,0,intrastate,Middle East,2,3
+16900,383,2004,0,intrastate,Middle East,3,7
+16900,383,2010,0,intrastate,Middle East,1,2
+16900,383,2011,0,intrastate,Middle East,1,1
+16900,383,2015,0,intrastate,Middle East,1,3
+16900,383,2016,0,intrastate,Middle East,1,14
+16900,383,2020,0,intrastate,Middle East,3,6
+16920,267,2021,0,intrastate,Africa,2,3
+16920,267,2022,1,intrastate,Africa,1,39
+16920,267,2024,0,intrastate,Africa,1,10
+16938,15438,2021,0,intrastate,Africa,10,22
+16938,15438,2022,1,intrastate,Africa,6,25
+16938,15438,2023,0,intrastate,Africa,6,22
+16938,15438,2025,0,intrastate,Africa,2,4
+16955,358,2022,1,intrastate,Africa,4,34
+16955,358,2023,1,intrastate,Africa,12,29
+16955,358,2024,1,intrastate,Africa,10,46
+16955,358,2025,1,intrastate,Africa,5,69
+17033,11345,2021,1,intrastate,Africa,5,153
+17083,333,2022,1,intrastate,Asia,23,49
+17083,333,2023,1,intrastate,Asia,29,30
+17083,333,2024,0,intrastate,Asia,40,3
+17083,333,2025,0,intrastate,Asia,36,2
+17147,16069,2023,2,intrastate,Africa,172,1255
+17147,16069,2024,2,intrastate,Africa,159,2191
+17147,16069,2025,2,intrastate,Africa,568,3835
+17247,289,2017,0,intrastate,Americas,12,18
+17247,289,2018,1,intrastate,Americas,28,96
+17247,289,2019,1,intrastate,Americas,20,51
+17247,289,2020,1,intrastate,Americas,8,28
+17247,289,2021,1,intrastate,Americas,11,65
+17247,289,2022,1,intrastate,Americas,23,88
+17247,289,2023,1,intrastate,Americas,17,44
+17247,289,2024,1,intrastate,Americas,54,129
+17247,289,2025,1,intrastate,Americas,60,155
+17249,289,2019,0,intrastate,Americas,1,2
+17249,289,2020,0,intrastate,Americas,4,5
+17249,289,2021,0,intrastate,Americas,4,19
+17249,289,2022,0,intrastate,Americas,2,11
+17249,289,2023,0,intrastate,Americas,2,3
+17249,289,2024,1,intrastate,Americas,12,31
+17249,289,2025,0,intrastate,Americas,9,9
+17474,230,2011,1,intrastate,Middle East,22,155
+17497,309,2023,2,intrastate,Africa,274,11710
+17497,309,2024,2,intrastate,Africa,470,4684
+17497,309,2025,2,intrastate,Africa,85,1936
+17509,399,2023,1,intrastate,Europe,14,27
+17509,399,2024,0,intrastate,Europe,4,5
+17511,399,2023,1,intrastate,Europe,17,43
+17511,399,2024,1,intrastate,Europe,17,28
+17528,399,2023,1,intrastate,Europe,3,27
+17628,404,2023,1,intrastate,Asia,9,95
+17666,16038,2023,1,intrastate,Africa,26,170
+17666,16038,2024,1,intrastate,Africa,13,123
+17666,16038,2025,1,intrastate,Africa,27,82
+17738,16099,2023,0,interstate,Europe; Middle East; Americas,1,17
+17738,16099,2024,1,interstate,Europe; Middle East; Americas,33,130
+17738,16099,2025,1,interstate,Europe; Middle East; Americas,64,781
+17740,283,2023,0,internationalized-intrastate,Africa,4,4
+17740,283,2024,1,internationalized-intrastate,Africa,125,909
+17740,283,2025,2,internationalized-intrastate,Africa,247,4253
+17806,222,2024,1,intrastate,Asia,17,36
+17806,222,2025,0,intrastate,Asia,2,4
+17970,381,2024,1,internationalized-intrastate,Americas,52,217
+17970,381,2025,2,internationalized-intrastate,Americas,82,1211
+18128,289,2024,0,intrastate,Americas,2,7
+18128,289,2025,1,intrastate,Americas,22,45
+18188,332,2025,1,intrastate,Africa,7,51
+18195,16470,2024,0,interstate,Middle East,4,7
+18195,16470,2025,1,interstate,Middle East,17,164
+18287,416,2025,1,internationalized-intrastate,Africa,6,51
+18304,416,2024,0,internationalized-intrastate,Africa,7,13
+18304,416,2025,1,internationalized-intrastate,Africa,6,91
+18395,299,2025,1,intrastate,Middle East,4,500
+18458,404,2025,1,intrastate,Asia,22,194
+18485,283,2025,1,intrastate,Africa,41,175
+18621,309,2025,2,intrastate,Africa,424,10253
+18806,234,2018,0,intrastate,Middle East,1,1
+18806,234,2023,1,intrastate,Middle East,2,37
+18806,234,2024,1,intrastate,Middle East,9,30
+18806,234,2025,1,intrastate,Middle East,16,70

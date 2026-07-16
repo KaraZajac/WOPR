@@ -1,0 +1,1828 @@
+- gwno: 2
+  abbrev: USA
+  name: United States of America
+  region: Americas
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 20
+  abbrev: CAN
+  name: Canada
+  region: Americas
+  microstate: false
+  system:
+  - from: 1867
+    to: null
+- gwno: 31
+  abbrev: BHM
+  name: Bahamas
+  region: Americas
+  microstate: false
+  system:
+  - from: 1973
+    to: null
+- gwno: 40
+  abbrev: CUB
+  name: Cuba
+  region: Americas
+  microstate: false
+  system:
+  - from: 1902
+    to: null
+- gwno: 41
+  abbrev: HAI
+  name: Haiti
+  region: Americas
+  microstate: false
+  system:
+  - from: 1816
+    to: 1915
+  - from: 1934
+    to: null
+- gwno: 42
+  abbrev: DOM
+  name: Dominican Republic
+  region: Americas
+  microstate: false
+  system:
+  - from: 1844
+    to: null
+- gwno: 51
+  abbrev: JAM
+  name: Jamaica
+  region: Americas
+  microstate: false
+  system:
+  - from: 1962
+    to: null
+- gwno: 52
+  abbrev: TRI
+  name: Trinidad and Tobago
+  region: Americas
+  microstate: false
+  system:
+  - from: 1962
+    to: null
+- gwno: 53
+  abbrev: BAR
+  name: Barbados
+  region: Americas
+  microstate: false
+  system:
+  - from: 1966
+    to: null
+- gwno: 54
+  abbrev: DMA
+  name: Dominica
+  region: Americas
+  microstate: true
+  system:
+  - from: 1978
+    to: null
+- gwno: 55
+  abbrev: GRN
+  name: Grenada
+  region: Americas
+  microstate: true
+  system:
+  - from: 1974
+    to: null
+- gwno: 56
+  abbrev: SLU
+  name: Saint Lucia
+  region: Americas
+  microstate: true
+  system:
+  - from: 1979
+    to: null
+- gwno: 57
+  abbrev: SVG
+  name: Saint Vincent and the Grenadines
+  region: Americas
+  microstate: true
+  system:
+  - from: 1979
+    to: null
+- gwno: 58
+  abbrev: AAB
+  name: Antigua & Barbuda
+  region: Americas
+  microstate: true
+  system:
+  - from: 1981
+    to: null
+- gwno: 60
+  abbrev: SKN
+  name: Saint Kitts and Nevis
+  region: Americas
+  microstate: true
+  system:
+  - from: 1983
+    to: null
+- gwno: 70
+  abbrev: MEX
+  name: Mexico
+  region: Americas
+  microstate: false
+  system:
+  - from: 1821
+    to: null
+- gwno: 80
+  abbrev: BLZ
+  name: Belize
+  region: Americas
+  microstate: false
+  system:
+  - from: 1981
+    to: null
+- gwno: 89
+  abbrev: UPC
+  name: United Provinces of Central America
+  region: Americas
+  microstate: false
+  system:
+  - from: 1823
+    to: 1839
+- gwno: 90
+  abbrev: GUA
+  name: Guatemala
+  region: Americas
+  microstate: false
+  system:
+  - from: 1840
+    to: null
+- gwno: 91
+  abbrev: HON
+  name: Honduras
+  region: Americas
+  microstate: false
+  system:
+  - from: 1840
+    to: null
+- gwno: 92
+  abbrev: SAL
+  name: El Salvador
+  region: Americas
+  microstate: false
+  system:
+  - from: 1840
+    to: null
+- gwno: 93
+  abbrev: NIC
+  name: Nicaragua
+  region: Americas
+  microstate: false
+  system:
+  - from: 1840
+    to: null
+- gwno: 94
+  abbrev: COS
+  name: Costa Rica
+  region: Americas
+  microstate: false
+  system:
+  - from: 1840
+    to: null
+- gwno: 95
+  abbrev: PAN
+  name: Panama
+  region: Americas
+  microstate: false
+  system:
+  - from: 1903
+    to: null
+- gwno: 99
+  abbrev: GCL
+  name: Great Colombia
+  region: Americas
+  microstate: false
+  system:
+  - from: 1821
+    to: 1830
+- gwno: 100
+  abbrev: COL
+  name: Colombia
+  region: Americas
+  microstate: false
+  system:
+  - from: 1830
+    to: null
+- gwno: 101
+  abbrev: VEN
+  name: Venezuela
+  region: Americas
+  microstate: false
+  system:
+  - from: 1829
+    to: null
+- gwno: 110
+  abbrev: GUY
+  name: Guyana
+  region: Americas
+  microstate: false
+  system:
+  - from: 1966
+    to: null
+- gwno: 115
+  abbrev: SUR
+  name: Suriname
+  region: Americas
+  microstate: false
+  system:
+  - from: 1975
+    to: null
+- gwno: 130
+  abbrev: ECU
+  name: Ecuador
+  region: Americas
+  microstate: false
+  system:
+  - from: 1830
+    to: null
+- gwno: 135
+  abbrev: PER
+  name: Peru
+  region: Americas
+  microstate: false
+  system:
+  - from: 1824
+    to: null
+- gwno: 140
+  abbrev: BRA
+  name: Brazil
+  region: Americas
+  microstate: false
+  system:
+  - from: 1822
+    to: null
+- gwno: 145
+  abbrev: BOL
+  name: Bolivia
+  region: Americas
+  microstate: false
+  system:
+  - from: 1825
+    to: null
+- gwno: 150
+  abbrev: PAR
+  name: Paraguay
+  region: Americas
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 155
+  abbrev: CHL
+  name: Chile
+  region: Americas
+  microstate: false
+  system:
+  - from: 1818
+    to: null
+- gwno: 160
+  abbrev: ARG
+  name: Argentina
+  region: Americas
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 165
+  abbrev: URU
+  name: Uruguay
+  region: Americas
+  microstate: false
+  system:
+  - from: 1830
+    to: null
+- gwno: 200
+  abbrev: UKG
+  name: United Kingdom
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 205
+  abbrev: IRE
+  name: Ireland
+  region: Europe
+  microstate: false
+  system:
+  - from: 1921
+    to: null
+- gwno: 210
+  abbrev: NTH
+  name: Netherlands
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 211
+  abbrev: BEL
+  name: Belgium
+  region: Europe
+  microstate: false
+  system:
+  - from: 1830
+    to: null
+- gwno: 212
+  abbrev: LUX
+  name: Luxembourg
+  region: Europe
+  microstate: false
+  system:
+  - from: 1867
+    to: null
+- gwno: 220
+  abbrev: FRN
+  name: France
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 221
+  abbrev: MNC
+  name: Monaco
+  region: Europe
+  microstate: true
+  system:
+  - from: 1816
+    to: null
+- gwno: 223
+  abbrev: LIE
+  name: Liechtenstein
+  region: Europe
+  microstate: true
+  system:
+  - from: 1816
+    to: null
+- gwno: 225
+  abbrev: SWZ
+  name: Switzerland
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 230
+  abbrev: SPN
+  name: Spain
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 232
+  abbrev: AND
+  name: Andorra
+  region: Europe
+  microstate: true
+  system:
+  - from: 1816
+    to: null
+- gwno: 235
+  abbrev: POR
+  name: Portugal
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 240
+  abbrev: HAN
+  name: Hanover
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1871
+- gwno: 245
+  abbrev: BAV
+  name: Bavaria
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1871
+- gwno: 255
+  abbrev: GMY
+  name: Germany (Prussia)
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1945
+- gwno: 260
+  abbrev: GFR
+  name: Germany
+  region: Europe
+  microstate: false
+  system:
+  - from: 1949
+    to: null
+- gwno: 265
+  abbrev: GDR
+  name: German Democratic Republic
+  region: Europe
+  microstate: false
+  system:
+  - from: 1949
+    to: 1990
+- gwno: 267
+  abbrev: BAD
+  name: Baden
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1871
+- gwno: 269
+  abbrev: SAX
+  name: Saxony
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1871
+- gwno: 271
+  abbrev: WRT
+  name: Württemberg
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1871
+- gwno: 273
+  abbrev: HSE
+  name: Hesse-Kassel (Electoral)
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1871
+- gwno: 275
+  abbrev: HSD
+  name: Hesse-Darmstadt (Ducal)
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1871
+- gwno: 280
+  abbrev: MEC
+  name: Mecklenburg-Schwerin
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1871
+- gwno: 290
+  abbrev: POL
+  name: Poland
+  region: Europe
+  microstate: false
+  system:
+  - from: 1918
+    to: null
+- gwno: 300
+  abbrev: AUH
+  name: Austria-Hungary
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1918
+- gwno: 305
+  abbrev: AUS
+  name: Austria
+  region: Europe
+  microstate: false
+  system:
+  - from: 1918
+    to: null
+- gwno: 310
+  abbrev: HUN
+  name: Hungary
+  region: Europe
+  microstate: false
+  system:
+  - from: 1918
+    to: null
+- gwno: 315
+  abbrev: CZE
+  name: Czechoslovakia
+  region: Europe
+  microstate: false
+  system:
+  - from: 1918
+    to: 1992
+- gwno: 316
+  abbrev: CZR
+  name: Czech Republic
+  region: Europe
+  microstate: false
+  system:
+  - from: 1993
+    to: null
+- gwno: 317
+  abbrev: SLO
+  name: Slovakia
+  region: Europe
+  microstate: false
+  system:
+  - from: 1993
+    to: null
+- gwno: 325
+  abbrev: ITA
+  name: Italy
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 327
+  abbrev: PAP
+  name: Vatican City State
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1870
+- gwno: 329
+  abbrev: SIC
+  name: Two Sicilies
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1861
+- gwno: 331
+  abbrev: SNM
+  name: San Marino
+  region: Europe
+  microstate: true
+  system:
+  - from: 1816
+    to: null
+- gwno: 332
+  abbrev: MOD
+  name: Modena
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1861
+- gwno: 335
+  abbrev: PMA
+  name: Parma
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1861
+- gwno: 337
+  abbrev: TUS
+  name: Tuscany
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: 1861
+- gwno: 338
+  abbrev: MLT
+  name: Malta
+  region: Europe
+  microstate: false
+  system:
+  - from: 1964
+    to: null
+- gwno: 339
+  abbrev: ALB
+  name: Albania
+  region: Europe
+  microstate: false
+  system:
+  - from: 1913
+    to: null
+- gwno: 340
+  abbrev: SER
+  name: Serbia
+  region: Europe
+  microstate: false
+  system:
+  - from: 1878
+    to: 1915
+  - from: 2007
+    to: null
+- gwno: 341
+  abbrev: MNG
+  name: Montenegro
+  region: Europe
+  microstate: false
+  system:
+  - from: 1868
+    to: 1915
+  - from: 2006
+    to: null
+- gwno: 343
+  abbrev: MAC
+  name: North Macedonia
+  region: Europe
+  microstate: false
+  system:
+  - from: 1991
+    to: null
+- gwno: 344
+  abbrev: CRO
+  name: Croatia
+  region: Europe
+  microstate: false
+  system:
+  - from: 1992
+    to: null
+- gwno: 345
+  abbrev: YUG
+  name: Serbia (Yugoslavia)
+  region: Europe
+  microstate: false
+  system:
+  - from: 1918
+    to: 2006
+- gwno: 346
+  abbrev: BOS
+  name: Bosnia-Herzegovina
+  region: Europe
+  microstate: false
+  system:
+  - from: 1992
+    to: null
+- gwno: 347
+  abbrev: KOS
+  name: Kosovo
+  region: Europe
+  microstate: false
+  system:
+  - from: 2008
+    to: null
+- gwno: 349
+  abbrev: SLV
+  name: Slovenia
+  region: Europe
+  microstate: false
+  system:
+  - from: 1992
+    to: null
+- gwno: 350
+  abbrev: GRC
+  name: Greece
+  region: Europe
+  microstate: false
+  system:
+  - from: 1828
+    to: null
+- gwno: 352
+  abbrev: CYP
+  name: Cyprus
+  region: Europe
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 355
+  abbrev: BUL
+  name: Bulgaria
+  region: Europe
+  microstate: false
+  system:
+  - from: 1878
+    to: null
+- gwno: 359
+  abbrev: MLD
+  name: Moldova
+  region: Europe
+  microstate: false
+  system:
+  - from: 1991
+    to: null
+- gwno: 360
+  abbrev: RUM
+  name: Romania
+  region: Europe
+  microstate: false
+  system:
+  - from: 1878
+    to: null
+- gwno: 365
+  abbrev: RUS
+  name: Russia (Soviet Union)
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 366
+  abbrev: EST
+  name: Estonia
+  region: Europe
+  microstate: false
+  system:
+  - from: 1918
+    to: 1940
+  - from: 1991
+    to: null
+- gwno: 367
+  abbrev: LAT
+  name: Latvia
+  region: Europe
+  microstate: false
+  system:
+  - from: 1918
+    to: 1940
+  - from: 1991
+    to: null
+- gwno: 368
+  abbrev: LIT
+  name: Lithuania
+  region: Europe
+  microstate: false
+  system:
+  - from: 1918
+    to: 1940
+  - from: 1991
+    to: null
+- gwno: 369
+  abbrev: UKR
+  name: Ukraine
+  region: Europe
+  microstate: false
+  system:
+  - from: 1991
+    to: null
+- gwno: 370
+  abbrev: BLR
+  name: Belarus
+  region: Europe
+  microstate: false
+  system:
+  - from: 1991
+    to: null
+- gwno: 371
+  abbrev: ARM
+  name: Armenia
+  region: Europe
+  microstate: false
+  system:
+  - from: 1991
+    to: null
+- gwno: 372
+  abbrev: GRG
+  name: Georgia
+  region: Europe
+  microstate: false
+  system:
+  - from: 1991
+    to: null
+- gwno: 373
+  abbrev: AZE
+  name: Azerbaijan
+  region: Europe
+  microstate: false
+  system:
+  - from: 1991
+    to: null
+- gwno: 375
+  abbrev: FIN
+  name: Finland
+  region: Europe
+  microstate: false
+  system:
+  - from: 1917
+    to: null
+- gwno: 380
+  abbrev: SWD
+  name: Sweden
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 385
+  abbrev: NOR
+  name: Norway
+  region: Europe
+  microstate: false
+  system:
+  - from: 1905
+    to: null
+- gwno: 390
+  abbrev: DEN
+  name: Denmark
+  region: Europe
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 395
+  abbrev: ICE
+  name: Iceland
+  region: Europe
+  microstate: false
+  system:
+  - from: 1944
+    to: null
+- gwno: 396
+  abbrev: ABK
+  name: Abkhazia
+  region: Europe
+  microstate: true
+  system:
+  - from: 2008
+    to: null
+- gwno: 397
+  abbrev: SOT
+  name: South Ossetia
+  region: Europe
+  microstate: true
+  system:
+  - from: 2008
+    to: null
+- gwno: 402
+  abbrev: CAP
+  name: Cape Verde
+  region: Africa
+  microstate: false
+  system:
+  - from: 1975
+    to: null
+- gwno: 403
+  abbrev: STP
+  name: Sao Tome and Principe
+  region: Africa
+  microstate: true
+  system:
+  - from: 1975
+    to: null
+- gwno: 404
+  abbrev: GNB
+  name: Guinea-Bissau
+  region: Africa
+  microstate: false
+  system:
+  - from: 1974
+    to: null
+- gwno: 411
+  abbrev: EQG
+  name: Equatorial Guinea
+  region: Africa
+  microstate: false
+  system:
+  - from: 1968
+    to: null
+- gwno: 420
+  abbrev: GAM
+  name: Gambia
+  region: Africa
+  microstate: false
+  system:
+  - from: 1965
+    to: null
+- gwno: 432
+  abbrev: MLI
+  name: Mali
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 433
+  abbrev: SEN
+  name: Senegal
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 434
+  abbrev: BEN
+  name: Benin
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 435
+  abbrev: MAA
+  name: Mauritania
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 436
+  abbrev: NIR
+  name: Niger
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 437
+  abbrev: CDI
+  name: Ivory Coast
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 438
+  abbrev: GUI
+  name: Guinea
+  region: Africa
+  microstate: false
+  system:
+  - from: 1958
+    to: null
+- gwno: 439
+  abbrev: BFO
+  name: Burkina Faso
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 450
+  abbrev: LBR
+  name: Liberia
+  region: Africa
+  microstate: false
+  system:
+  - from: 1847
+    to: null
+- gwno: 451
+  abbrev: SIE
+  name: Sierra Leone
+  region: Africa
+  microstate: false
+  system:
+  - from: 1961
+    to: null
+- gwno: 452
+  abbrev: GHA
+  name: Ghana
+  region: Africa
+  microstate: false
+  system:
+  - from: 1957
+    to: null
+- gwno: 461
+  abbrev: TOG
+  name: Togo
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 471
+  abbrev: CAO
+  name: Cameroon
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 475
+  abbrev: NIG
+  name: Nigeria
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 481
+  abbrev: GAB
+  name: Gabon
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 482
+  abbrev: CEN
+  name: Central African Republic
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 483
+  abbrev: CHA
+  name: Chad
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 484
+  abbrev: CON
+  name: Congo
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 490
+  abbrev: DRC
+  name: DR Congo (Zaire)
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 500
+  abbrev: UGA
+  name: Uganda
+  region: Africa
+  microstate: false
+  system:
+  - from: 1962
+    to: null
+- gwno: 501
+  abbrev: KEN
+  name: Kenya
+  region: Africa
+  microstate: false
+  system:
+  - from: 1963
+    to: null
+- gwno: 510
+  abbrev: TAZ
+  name: Tanzania
+  region: Africa
+  microstate: false
+  system:
+  - from: 1961
+    to: null
+- gwno: 511
+  abbrev: ZAN
+  name: Zanzibar
+  region: Africa
+  microstate: false
+  system:
+  - from: 1963
+    to: 1964
+- gwno: 516
+  abbrev: BUI
+  name: Burundi
+  region: Africa
+  microstate: false
+  system:
+  - from: 1962
+    to: null
+- gwno: 517
+  abbrev: RWA
+  name: Rwanda
+  region: Africa
+  microstate: false
+  system:
+  - from: 1962
+    to: null
+- gwno: 520
+  abbrev: SOM
+  name: Somalia
+  region: Africa
+  microstate: false
+  system:
+  - from: 1960
+    to: null
+- gwno: 522
+  abbrev: DJI
+  name: Djibouti
+  region: Africa
+  microstate: false
+  system:
+  - from: 1977
+    to: null
+- gwno: 530
+  abbrev: ETH
+  name: Ethiopia
+  region: Africa
+  microstate: false
+  system:
+  - from: 1855
+    to: null
+- gwno: 531
+  abbrev: ERI
+  name: Eritrea
+  region: Africa
+  microstate: false
+  system:
+  - from: 1993
+    to: null
+- gwno: 540
+  abbrev: ANG
+  name: Angola
+  region: Africa
+  microstate: false
+  system:
+  - from: 1975
+    to: null
+- gwno: 541
+  abbrev: MZM
+  name: Mozambique
+  region: Africa
+  microstate: false
+  system:
+  - from: 1975
+    to: null
+- gwno: 551
+  abbrev: ZAM
+  name: Zambia
+  region: Africa
+  microstate: false
+  system:
+  - from: 1964
+    to: null
+- gwno: 552
+  abbrev: ZIM
+  name: Zimbabwe (Rhodesia)
+  region: Africa
+  microstate: false
+  system:
+  - from: 1965
+    to: null
+- gwno: 553
+  abbrev: MAW
+  name: Malawi
+  region: Africa
+  microstate: false
+  system:
+  - from: 1964
+    to: null
+- gwno: 560
+  abbrev: SAF
+  name: South Africa
+  region: Africa
+  microstate: false
+  system:
+  - from: 1910
+    to: null
+- gwno: 563
+  abbrev: TRA
+  name: Transvaal
+  region: Africa
+  microstate: false
+  system:
+  - from: 1852
+    to: 1910
+- gwno: 564
+  abbrev: OFS
+  name: Orange Free State
+  region: Africa
+  microstate: false
+  system:
+  - from: 1854
+    to: 1910
+- gwno: 565
+  abbrev: NAM
+  name: Namibia
+  region: Africa
+  microstate: false
+  system:
+  - from: 1990
+    to: null
+- gwno: 570
+  abbrev: LES
+  name: Lesotho
+  region: Africa
+  microstate: false
+  system:
+  - from: 1966
+    to: null
+- gwno: 571
+  abbrev: BOT
+  name: Botswana
+  region: Africa
+  microstate: false
+  system:
+  - from: 1966
+    to: null
+- gwno: 572
+  abbrev: SWA
+  name: Kingdom of eSwatini (Swaziland)
+  region: Africa
+  microstate: false
+  system:
+  - from: 1968
+    to: null
+- gwno: 580
+  abbrev: MAG
+  name: Madagascar (Malagasy)
+  region: Africa
+  microstate: false
+  system:
+  - from: 1816
+    to: 1896
+  - from: 1960
+    to: null
+- gwno: 581
+  abbrev: COM
+  name: Comoros
+  region: Africa
+  microstate: false
+  system:
+  - from: 1975
+    to: null
+- gwno: 590
+  abbrev: MAS
+  name: Mauritius
+  region: Africa
+  microstate: false
+  system:
+  - from: 1968
+    to: null
+- gwno: 591
+  abbrev: SEY
+  name: Seychelles
+  region: Africa
+  microstate: true
+  system:
+  - from: 1976
+    to: null
+- gwno: 600
+  abbrev: MOR
+  name: Morocco
+  region: Africa
+  microstate: false
+  system:
+  - from: 1816
+    to: 1904
+  - from: 1956
+    to: null
+- gwno: 615
+  abbrev: ALG
+  name: Algeria
+  region: Africa
+  microstate: false
+  system:
+  - from: 1816
+    to: 1830
+  - from: 1962
+    to: null
+- gwno: 616
+  abbrev: TUN
+  name: Tunisia
+  region: Africa
+  microstate: false
+  system:
+  - from: 1816
+    to: 1881
+  - from: 1956
+    to: null
+- gwno: 620
+  abbrev: LIB
+  name: Libya
+  region: Africa
+  microstate: false
+  system:
+  - from: 1816
+    to: 1834
+  - from: 1951
+    to: null
+- gwno: 625
+  abbrev: SUD
+  name: Sudan
+  region: Africa
+  microstate: false
+  system:
+  - from: 1956
+    to: null
+- gwno: 626
+  abbrev: SSD
+  name: South Sudan
+  region: Africa
+  microstate: false
+  system:
+  - from: 2011
+    to: null
+- gwno: 630
+  abbrev: IRN
+  name: Iran
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 640
+  abbrev: TUR
+  name: Turkey
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 645
+  abbrev: IRQ
+  name: Iraq
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1932
+    to: null
+- gwno: 651
+  abbrev: EGY
+  name: Egypt
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1827
+    to: 1855
+  - from: 1922
+    to: null
+- gwno: 652
+  abbrev: SYR
+  name: Syria
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1946
+    to: null
+- gwno: 660
+  abbrev: LEB
+  name: Lebanon
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1944
+    to: null
+- gwno: 663
+  abbrev: JOR
+  name: Jordan
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1946
+    to: null
+- gwno: 666
+  abbrev: ISR
+  name: Israel
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1948
+    to: null
+- gwno: 670
+  abbrev: SAU
+  name: Saudi Arabia
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1932
+    to: null
+- gwno: 678
+  abbrev: YEM
+  name: Yemen (North Yemen)
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1918
+    to: null
+- gwno: 680
+  abbrev: YPR
+  name: Yemen (South Yemen)
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1967
+    to: 1990
+- gwno: 690
+  abbrev: KUW
+  name: Kuwait
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1961
+    to: null
+- gwno: 692
+  abbrev: BAH
+  name: Bahrain
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1971
+    to: null
+- gwno: 694
+  abbrev: QAT
+  name: Qatar
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1971
+    to: null
+- gwno: 696
+  abbrev: UAE
+  name: United Arab Emirates
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1971
+    to: null
+- gwno: 698
+  abbrev: OMA
+  name: Oman
+  region: Middle East
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 700
+  abbrev: AFG
+  name: Afghanistan
+  region: Asia
+  microstate: false
+  system:
+  - from: 1816
+    to: 1888
+  - from: 1919
+    to: null
+- gwno: 701
+  abbrev: TKM
+  name: Turkmenistan
+  region: Asia
+  microstate: false
+  system:
+  - from: 1991
+    to: null
+- gwno: 702
+  abbrev: TAJ
+  name: Tajikistan
+  region: Asia
+  microstate: false
+  system:
+  - from: 1991
+    to: null
+- gwno: 703
+  abbrev: KYR
+  name: Kyrgyzstan
+  region: Asia
+  microstate: false
+  system:
+  - from: 1991
+    to: null
+- gwno: 704
+  abbrev: UZB
+  name: Uzbekistan
+  region: Asia
+  microstate: false
+  system:
+  - from: 1991
+    to: null
+- gwno: 705
+  abbrev: KZK
+  name: Kazakhstan
+  region: Asia
+  microstate: false
+  system:
+  - from: 1991
+    to: null
+- gwno: 710
+  abbrev: CHN
+  name: China
+  region: Asia
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 711
+  abbrev: TBT
+  name: Tibet
+  region: Asia
+  microstate: false
+  system:
+  - from: 1913
+    to: 1950
+- gwno: 712
+  abbrev: MON
+  name: Mongolia
+  region: Asia
+  microstate: false
+  system:
+  - from: 1921
+    to: null
+- gwno: 713
+  abbrev: TAW
+  name: Taiwan
+  region: Asia
+  microstate: false
+  system:
+  - from: 1949
+    to: null
+- gwno: 730
+  abbrev: KOR
+  name: Korea
+  region: Asia
+  microstate: false
+  system:
+  - from: 1816
+    to: 1910
+- gwno: 731
+  abbrev: PRK
+  name: North Korea
+  region: Asia
+  microstate: false
+  system:
+  - from: 1948
+    to: null
+- gwno: 732
+  abbrev: ROK
+  name: South Korea
+  region: Asia
+  microstate: false
+  system:
+  - from: 1948
+    to: null
+- gwno: 740
+  abbrev: JPN
+  name: Japan
+  region: Asia
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 750
+  abbrev: IND
+  name: India
+  region: Asia
+  microstate: false
+  system:
+  - from: 1947
+    to: null
+- gwno: 760
+  abbrev: BHU
+  name: Bhutan
+  region: Asia
+  microstate: false
+  system:
+  - from: 1949
+    to: null
+- gwno: 770
+  abbrev: PAK
+  name: Pakistan
+  region: Asia
+  microstate: false
+  system:
+  - from: 1947
+    to: null
+- gwno: 771
+  abbrev: BNG
+  name: Bangladesh
+  region: Asia
+  microstate: false
+  system:
+  - from: 1971
+    to: null
+- gwno: 775
+  abbrev: MYA
+  name: Myanmar (Burma)
+  region: Asia
+  microstate: false
+  system:
+  - from: 1816
+    to: 1885
+  - from: 1948
+    to: null
+- gwno: 780
+  abbrev: SRI
+  name: Sri Lanka
+  region: Asia
+  microstate: false
+  system:
+  - from: 1948
+    to: null
+- gwno: 781
+  abbrev: MAD
+  name: Maldives
+  region: Asia
+  microstate: false
+  system:
+  - from: 1965
+    to: null
+- gwno: 790
+  abbrev: NEP
+  name: Nepal
+  region: Asia
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 800
+  abbrev: THI
+  name: Thailand
+  region: Asia
+  microstate: false
+  system:
+  - from: 1816
+    to: null
+- gwno: 811
+  abbrev: CAM
+  name: Cambodia (Kampuchea)
+  region: Asia
+  microstate: false
+  system:
+  - from: 1953
+    to: null
+- gwno: 812
+  abbrev: LAO
+  name: Laos
+  region: Asia
+  microstate: false
+  system:
+  - from: 1954
+    to: null
+- gwno: 815
+  abbrev: VNM
+  name: Vietnam (Annam/Cochin China/Tonkin)
+  region: Asia
+  microstate: false
+  system:
+  - from: 1816
+    to: 1893
+- gwno: 816
+  abbrev: DRV
+  name: Vietnam (North Vietnam)
+  region: Asia
+  microstate: false
+  system:
+  - from: 1954
+    to: null
+- gwno: 817
+  abbrev: RVN
+  name: Vietnam, Republic of
+  region: Asia
+  microstate: false
+  system:
+  - from: 1954
+    to: 1975
+- gwno: 820
+  abbrev: MAL
+  name: Malaysia
+  region: Asia
+  microstate: false
+  system:
+  - from: 1957
+    to: null
+- gwno: 830
+  abbrev: SIN
+  name: Singapore
+  region: Asia
+  microstate: false
+  system:
+  - from: 1965
+    to: null
+- gwno: 835
+  abbrev: BRU
+  name: Brunei
+  region: Asia
+  microstate: false
+  system:
+  - from: 1984
+    to: null
+- gwno: 840
+  abbrev: PHI
+  name: Philippines
+  region: Asia
+  microstate: false
+  system:
+  - from: 1946
+    to: null
+- gwno: 850
+  abbrev: INS
+  name: Indonesia
+  region: Asia
+  microstate: false
+  system:
+  - from: 1945
+    to: null
+- gwno: 860
+  abbrev: ETM
+  name: East Timor
+  region: Asia
+  microstate: false
+  system:
+  - from: 2002
+    to: null
+- gwno: 900
+  abbrev: AUL
+  name: Australia
+  region: Asia
+  microstate: false
+  system:
+  - from: 1901
+    to: null
+- gwno: 910
+  abbrev: PNG
+  name: Papua New Guinea
+  region: Asia
+  microstate: false
+  system:
+  - from: 1975
+    to: null
+- gwno: 920
+  abbrev: NEW
+  name: New Zealand
+  region: Asia
+  microstate: false
+  system:
+  - from: 1907
+    to: null
+- gwno: 935
+  abbrev: VAN
+  name: Vanuatu
+  region: Asia
+  microstate: true
+  system:
+  - from: 1980
+    to: null
+- gwno: 940
+  abbrev: SOL
+  name: Solomon Islands
+  region: Asia
+  microstate: false
+  system:
+  - from: 1978
+    to: null
+- gwno: 950
+  abbrev: FJI
+  name: Fiji
+  region: Asia
+  microstate: false
+  system:
+  - from: 1970
+    to: null
+- gwno: 970
+  abbrev: KBI
+  name: Kiribati
+  region: Asia
+  microstate: true
+  system:
+  - from: 1979
+    to: null
+- gwno: 971
+  abbrev: NAU
+  name: Nauru
+  region: Asia
+  microstate: true
+  system:
+  - from: 1968
+    to: null
+- gwno: 972
+  abbrev: TON
+  name: Tonga
+  region: Asia
+  microstate: true
+  system:
+  - from: 1970
+    to: null
+- gwno: 973
+  abbrev: TUV
+  name: Tuvalu
+  region: Asia
+  microstate: true
+  system:
+  - from: 1978
+    to: null
+- gwno: 983
+  abbrev: MSI
+  name: Marshall Islands
+  region: Asia
+  microstate: true
+  system:
+  - from: 1986
+    to: null
+- gwno: 986
+  abbrev: PAL
+  name: Palau
+  region: Asia
+  microstate: true
+  system:
+  - from: 1994
+    to: null
+- gwno: 987
+  abbrev: FSM
+  name: Federated States of Micronesia
+  region: Asia
+  microstate: true
+  system:
+  - from: 1986
+    to: null
+- gwno: 990
+  abbrev: WSM
+  name: Samoa (Western Samoa)
+  region: Asia
+  microstate: true
+  system:
+  - from: 1962
+    to: null
