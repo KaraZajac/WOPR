@@ -23,6 +23,8 @@ const deathRows = c.deaths.map(([y, sb, ns, os]) => [y, sb, ns, os]);
 const lastDeaths = c.deaths.at(-1);
 const tempoRows = c.tempo.map(([m, v, prov]) => [fmtMonth(m), v, prov === 1]);
 const ladderRows = ["self", "region", "global"].map((lvl) => ({ lvl, ...c.ladder[lvl] }));
+const coups = c.coups || [];
+const lastCoup = coups.at(-1);
 ---
 
 <Base title={c.name} description={`Base rates and conflict history for ${c.name}.`}>
@@ -43,6 +45,11 @@ const ladderRows = ["self", "region", "global"].map((lvl) => ({ lvl, ...c.ladder
       sub={lastDeaths ? `sb ${num(lastDeaths[1])} · ns ${num(lastDeaths[2])} · os ${num(lastDeaths[3])}` : ""}
     />
     <StatTile label="UCDP conflicts on territory" value={num(c.conflicts.length)} sub="state-based, 1946–present" />
+    {c.coup_p != null && (
+      <StatTile label={`P(coup attempt in ${nextYear})`} value={pct(c.coup_p, 1)} sub={`Powell–Thyne · bucket: ${c.coup_bucket}${lastCoup ? ` · last attempt ${lastCoup[0]}` : ""}`}>
+        <Meter p={c.coup_p} label={`${c.name} coup`} />
+      </StatTile>
+    )}
   </div>
 
   <div class="card viz">
@@ -102,6 +109,27 @@ const ladderRows = ["self", "region", "global"].map((lvl) => ({ lvl, ...c.ladder
   <div class="card viz">
     <ActivityStrip years={c.activity} to={lastYear} label={`${c.name} state-based conflict activity`} />
   </div>
+
+  {coups.length > 0 && (
+    <>
+      <h2>Coups (Powell–Thyne)</h2>
+      <div class="card viz">
+        <p class="viz-sub">
+          {coups.length} coup {coups.length === 1 ? "event-year" : "event-years"} on record ·
+          {" "}{coups.reduce((t, c) => t + c[2], 0)} successful of {coups.reduce((t, c) => t + c[1], 0)} attempts
+        </p>
+        <div class="chips">
+          {coups.map(([yr, att, succ]) => (
+            <span class="chip">
+              <b>{yr}</b>
+              {succ > 0 ? <span class="dot" style="background:var(--crit)"></span> : <span class="dot" style="background:var(--ns)"></span>}
+              {succ > 0 ? `${succ} successful` : `${att} failed`}
+            </span>
+          ))}
+        </div>
+      </div>
+    </>
+  )}
 
   {c.conflicts.length > 0 && (
     <>

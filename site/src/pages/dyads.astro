@@ -1,0 +1,64 @@
+---
+import Base from "../layouts/Base.astro";
+import Meter from "../components/Meter.astro";
+import { dyads, summary } from "../lib/data.js";
+import { num, pct, url } from "../lib/format.js";
+
+const s = summary();
+const rows = dyads();
+const nextYear = Number(s.annual_end.slice(0, 4)) + 1;
+const interstate = rows.filter((d) => d.type === "interstate");
+const other = rows.filter((d) => d.type !== "interstate");
+---
+
+<Base title="Dyads" description="Conflict dyads active in the last decade, with continuation and termination priors.">
+  <h1>Dyads</h1>
+  <p class="lede">
+    Every conflict dyad UCDP recorded as active in the last ten years, with the engine's
+    recurrence prior for {nextYear} — P(active again) — and, for dyads still active in the last
+    complete year, the termination prior (P the episode ends). Dyad rates are recurrence rates
+    over dyads UCDP has observed, not rates for arbitrary pairs; for those, see the
+    <a href={url("/")}>board's</a> pair questions.
+  </p>
+
+  <input
+    id="filter" type="search" placeholder="filter dyads…"
+    style="font:inherit;padding:6px 12px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--ink);width:min(340px,100%);margin-bottom:14px"
+  />
+
+  {[["Interstate", interstate], ["Intrastate & internationalized", other]].map(([label, list]) => (
+    <>
+      <h2>{label} ({list.length})</h2>
+      <div class="card viz">
+        <table class="data dyad-table">
+          <thead>
+            <tr><th>dyad</th><th class="n">since</th><th class="n">last</th><th class="n">years</th>
+              <th>P(active {nextYear})</th><th class="n"></th><th class="n">P(ends)</th></tr>
+          </thead>
+          <tbody>
+            {list.map((d) => (
+              <tr data-name={d.name.toLowerCase()}>
+                <td>{d.name}</td>
+                <td class="n">{d.first}</td>
+                <td class="n">{d.last}</td>
+                <td class="n">{d.years_active}</td>
+                <td><Meter p={d.p_continue} label={d.name} /></td>
+                <td class="n">{pct(d.p_continue, 1)}</td>
+                <td class="n">{d.p_terminate != null ? pct(d.p_terminate, 1) : "—"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  ))}
+
+  <script is:inline>
+    document.getElementById("filter").addEventListener("input", function () {
+      var q = this.value.trim().toLowerCase();
+      document.querySelectorAll(".dyad-table tbody tr").forEach(function (tr) {
+        tr.style.display = !q || tr.dataset.name.includes(q) ? "" : "none";
+      });
+    });
+  </script>
+</Base>

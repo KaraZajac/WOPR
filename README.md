@@ -61,14 +61,16 @@ tests/                 stdlib unittest; `make verify` gates data + journal
 ## The site
 
 `make site-dev` (or `make site` for the static build; needs `npm install` in
-`site/` once). A dashboard with the Global War Index (percentile of global
-organized-violence deaths), a world map of engine priors, the operationally
-defined WWIII panel (P5-war base rates — the long peace, quantified), per-
-country pages with walk-forward prior histories, deaths, monthly tempo and
-80-year activity strips, the journal, and the engine's reliability curves.
-Catppuccin Latte/Mocha with a toggle; every chart has tooltips and a table
-view; all SVG is rendered at build time — zero client JS beyond the tooltip
-layer and theme switch.
+`site/` once). The board leads with the Global War Index and a world risk
+map; the **watchfloor** ranks where conflict is diverging from its own base
+rate right now (heating/cooling/onset, with ACLED corroboration); the
+**dyads** page lists continuation and termination priors; **country** pages
+carry the reference-class ladder, walk-forward prior history, deaths, monthly
+tempo, an 80-year activity strip, and coup history/risk; the **methods** page
+shows the walk-forward reliability curves and the VIEWS arena. Catppuccin
+Latte/Mocha with a toggle; every chart has tooltips and a table view; all SVG
+is rendered at build time — zero client JS beyond the tooltip layer and theme
+switch.
 
 ## The loop
 

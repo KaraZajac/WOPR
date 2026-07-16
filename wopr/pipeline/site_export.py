@@ -145,6 +145,13 @@ def build_countries(meta, states, conflicts, substrate):
     for rec in walk("country", "deaths", ("sb",), 25, substrate):
         series[rec["unit"]].append([rec["year"], round(rec["p"], 4)])
 
+    # coup history + prior per country (from the Powell–Thyne substrate)
+    coups = defaultdict(list)
+    with open(TABLES / "coup.csv", newline="") as f:
+        for r in csv.DictReader(f):
+            if int(r["attempts"]) > 0:
+                coups[int(r["gwno"])].append([int(r["year"]), int(r["attempts"]), int(r["successes"])])
+
     by_country = defaultdict(list)
     for c in conflicts:
         for g in c["countries"]:
@@ -166,7 +173,7 @@ def build_countries(meta, states, conflicts, substrate):
         if st["microstate"] or not current or g not in substrate["country"]:
             continue  # dead states keep their history in the aggregates, not a risk page
         r = baserate.rate(baserate.Spec("country", g, "deaths", ("sb",), 25, as_of=last_year + 1), substrate)
-        out[str(g)] = {
+        entry = {
             "gwno": g,
             "name": st["name"],
             "abbrev": st["abbrev"],
@@ -185,7 +192,16 @@ def build_countries(meta, states, conflicts, substrate):
             "activity": activity.get(g, []),
             "tempo": [[mk, v["deaths"], v["provisional"]] for mk, v in sorted(tempo.get(g, {}).items())],
             "conflicts": sorted(by_country.get(g, []), key=lambda c: -c["last"]),
+            "coups": sorted(coups.get(g, [])),
         }
+        if coups.get(g) is not None and g in substrate["country"]:
+            try:
+                cr = baserate.rate(baserate.Spec("country", g, "coup", (), 1, as_of=last_year + 1), substrate)
+                entry["coup_p"] = cr["p"]
+                entry["coup_bucket"] = cr["bucket"]
+            except (KeyError, ValueError):
+                pass
+        out[str(g)] = entry
     return out
 
 
@@ -382,6 +398,46 @@ def build_wwiii(meta, dyads, substrate):
     }
 
 
+# ---------------------------------------------------------------- dyads & watchfloor
+
+
+def build_dyads(dyads, substrate, last_year):
+    """Interstate + intrastate dyads active in the last decade, with the
+    continuation and (for still-active dyads) termination priors — the
+    browsable face of the dyad grain and the termination measure."""
+    out = []
+    for d in dyads:
+        if not d["active_years"] or d["active_years"][-1] < last_year - 10:
+            continue
+        if d["id"] not in substrate["dyad"]:
+            continue
+        cont = baserate.rate(baserate.Spec("dyad", d["id"], "acd-active", (), 25, last_year + 1), substrate)
+        row = {
+            "id": d["id"],
+            "name": d["name"],
+            "type": d["type"],
+            "region": d["region"],
+            "first": d["active_years"][0],
+            "last": d["active_years"][-1],
+            "years_active": len(d["active_years"]),
+            "p_continue": cont["p"],
+            "bucket": cont["bucket_coarse"],
+        }
+        if d["active_years"][-1] == last_year:
+            term = baserate.rate(baserate.Spec("dyad", d["id"], "terminates", (), 25, last_year + 1), substrate)
+            row["p_terminate"] = term["p"]
+        out.append(row)
+    out.sort(key=lambda d: (-d["last"], -d["p_continue"]))
+    return out
+
+
+def build_watchfloor():
+    from wopr.engine import watchfloor as wf
+
+    board = wf.compute(baserate.load_substrate())
+    return board
+
+
 # ---------------------------------------------------------------- main
 
 
@@ -452,10 +508,26 @@ def main() -> None:
             }
         )
 
+    print("computing dyads…")
+    dyad_rows = build_dyads(dyads, substrate, meta["counts"] and int(meta["annual_coverage_end"][:4]))
+    print("computing watchfloor…")
+    watch = build_watchfloor()
+    summary["watchfloor_top"] = watch["units"][:8]
+    summary["coup_top"] = sorted(
+        (
+            {"gwno": c["gwno"], "name": c["name"], "p": c.get("coup_p"), "bucket": c.get("coup_bucket")}
+            for c in countries.values()
+            if c.get("coup_p") is not None
+        ),
+        key=lambda c: -c["p"],
+    )[:12]
+
     dump("summary.json", summary)
     dump("countries.json", countries)
     dump("map.json", build_map(states, countries))
     dump("questions.json", questions)
+    dump("dyads.json", dyad_rows)
+    dump("watchfloor.json", watch)
     backtest_path = DATA / "backtest.yaml"
     if backtest_path.exists():
         dump("backtest.json", yaml.safe_load(backtest_path.read_text()))

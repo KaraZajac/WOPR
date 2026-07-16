@@ -331,6 +331,12 @@ def cmd_score(args) -> None:
         print(f"\nwrote {DATA / 'scorecard.yaml'}")
 
 
+def cmd_watchfloor(_args) -> None:
+    from wopr.engine import watchfloor
+
+    print(watchfloor.render(watchfloor.compute()))
+
+
 def cmd_list(_args) -> None:
     questions = store.load_all()
     if not questions:
@@ -442,6 +448,7 @@ def main(argv: list[str] | None = None) -> None:
     p = sub.add_parser("benchmark", help="the arena: WOPR vs VIEWS vs baselines, retrospectively")
     p.add_argument("--force-pull", action="store_true", help="re-fetch cached VIEWS runs")
 
+    sub.add_parser("watchfloor", help="tempo divergence board — heating/cooling/onsets")
     sub.add_parser("list", help="all questions, one line each")
     p = sub.add_parser("show", help="one question in full")
     p.add_argument("id")
@@ -480,6 +487,7 @@ def main(argv: list[str] | None = None) -> None:
     else:
         {
             "rate": cmd_rate,
+            "watchfloor": cmd_watchfloor,
             "ask": cmd_ask,
             "call": cmd_call,
             "resolve": cmd_resolve,

@@ -24,6 +24,8 @@ const interstateRows = s.conflict_series
   .map(([y, _a, inter, wars]) => [y, inter, false, wars]);
 const tempoRows = s.tempo.map(([m, v, prov]) => [fmtMonth(m), v, prov === 1]);
 const provisionalMonths = new Set(tempoRows.filter((r) => r[2]).map((r) => r[0]));
+const watchTop = s.watchfloor_top || [];
+const coupTop = s.coup_top || [];
 ---
 
 <Base title="Board" description="Conflict base rates, the Global War Index, and the state of organized violence.">
@@ -58,6 +60,33 @@ const provisionalMonths = new Set(tempoRows.filter((r) => r[2]).map((r) => r[0])
   )}
 
   <WorldMap sub={`Engine headline prior for ${Number(s.annual_end.slice(0, 4)) + 1}, bucket-conditional (self → region → global ladder). Click a country for its full ladder.`} />
+
+  {watchTop.length > 0 && (
+    <>
+      <h2 id="watchfloor">Watchfloor — diverging from the base rate now</h2>
+      <p class="lede">
+        Where {s.watchfloor_top[0] ? watchTop[0].name + " and others are" : "conflicts are"} moving
+        fastest against their own history this year. The full board — heating, cooling, and onsets,
+        with ACLED corroboration — is on the <a href={url("/watchfloor")}>watchfloor</a>.
+      </p>
+      <div class="card viz">
+        <table class="data">
+          <thead><tr><th>country</th><th>signal</th><th class="n">baseline/yr</th><th class="n">{partial?.year} pace</th><th class="n">vs base</th></tr></thead>
+          <tbody>
+            {watchTop.map((u) => (
+              <tr>
+                <td><a href={url(`/country/${u.gwno}`)}>{u.name}</a></td>
+                <td><span class="badge" style={`color:var(--${u.direction === "cooling" ? "accent" : u.direction === "onset" ? "crit" : "serious"})`}>{u.direction}</span></td>
+                <td class="n">{num(u.baseline)}</td>
+                <td class="n">{num(u.annualized)}</td>
+                <td class="n"><b>{u.ratio}×</b></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
 
   <h2>Percentages over time</h2>
   <div class="grid-2">
@@ -132,7 +161,7 @@ const provisionalMonths = new Set(tempoRows.filter((r) => r[2]).map((r) => r[0])
 
   <div class="card viz">
     <h3>Interstate dyads active now — will they continue?</h3>
-    <p class="viz-sub">engine recurrence prior for next year (bucket-conditional, dyad grain — measured overconfident at the top; see methods)</p>
+    <p class="viz-sub">engine recurrence prior for next year (bucket-conditional, dyad grain — measured overconfident at the top; see methods). Full list on the <a href={url("/dyads")}>dyads page</a>.</p>
     <table class="data">
       <thead><tr><th>dyad</th><th class="n">active since</th><th>P(active next year)</th><th class="n"></th></tr></thead>
       <tbody>
@@ -147,6 +176,27 @@ const provisionalMonths = new Set(tempoRows.filter((r) => r[2]).map((r) => r[0])
       </tbody>
     </table>
   </div>
+
+  {coupTop.length > 0 && (
+    <>
+      <h2>Coup risk next year (Powell–Thyne)</h2>
+      <div class="card viz">
+        <p class="viz-sub">P(≥1 coup attempt) — the reference-class method applied to a non-UCDP outcome; +18% backtest skill vs climatology</p>
+        <table class="data">
+          <tbody>
+            {coupTop.map((c) => (
+              <tr>
+                <td><a href={url(`/country/${c.gwno}`)}>{c.name}</a></td>
+                <td><span class={`badge bucket-${c.bucket?.split("|")[0].split("+")[0].startsWith("active") ? "active" : c.bucket?.split("+")[0] || "cold"}`}>{c.bucket}</span></td>
+                <td><Meter p={c.p} label={`${c.name} coup`} /></td>
+                <td class="n">{pct(c.p, 1)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
 
   <h2>Highest base rates for next year</h2>
   <div class="grid-2">

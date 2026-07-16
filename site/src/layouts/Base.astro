@@ -32,7 +32,9 @@ const current = (p) =>
         <a class="brand" href={url("/")}>WOPR</a>
         <nav class="site-nav">
           <a href={url("/")} aria-current={path === url("/") ? "true" : undefined}>Board</a>
+          <a href={url("/watchfloor")} aria-current={current("/watchfloor")}>Watchfloor</a>
           <a href={url("/countries")} aria-current={current("/countries") || current("/country")}>Countries</a>
+          <a href={url("/dyads")} aria-current={current("/dyads")}>Dyads</a>
           <a href={url("/questions")} aria-current={current("/questions")}>Questions</a>
           <a href={url("/methods")} aria-current={current("/methods")}>Methods</a>
         </nav>

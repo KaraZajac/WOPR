@@ -32,10 +32,12 @@ export const countries = () => load("site/countries.json");
 export const mapJoin = () => load("site/map.json");
 export const questions = () => load("site/questions.json");
 export const backtest = () => load("site/backtest.json");
-export function arena() {
-  const p = path.join(DATA, "site", "benchmark.json");
-  return fs.existsSync(p) ? load("site/benchmark.json") : null;
+function optional(rel) {
+  return fs.existsSync(path.join(DATA, rel)) ? load(rel) : null;
 }
+export const arena = () => optional("site/benchmark.json");
+export const dyads = () => optional("site/dyads.json") || [];
+export const watchfloor = () => optional("site/watchfloor.json") || { units: [] };
 
 /** Countries sorted by current risk, descending. */
 export function countryList() {

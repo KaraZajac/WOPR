@@ -1,0 +1,84 @@
+---
+import Base from "../layouts/Base.astro";
+import { summary, watchfloor } from "../lib/data.js";
+import { num, pct, url } from "../lib/format.js";
+
+const s = summary();
+const board = watchfloor();
+const units = board.units || [];
+const heating = units.filter((u) => u.direction === "heating" || u.direction === "onset");
+const cooling = units.filter((u) => u.direction === "cooling");
+
+const dirColor = { onset: "crit", heating: "serious", cooling: "accent" };
+const acledMark = { rising: "↑ rising", falling: "↓ falling", steady: "→ steady" };
+---
+
+<Base title="Watchfloor" description="Which conflicts are diverging from their own base rate right now.">
+  <h1>The watchfloor</h1>
+  <p class="lede">
+    Not a forecast — a divergence detector. For every country with {board.year} data, this
+    compares the year's annualized pace against its own trailing-five-year baseline and against
+    what the base rate expects. The places at the top are the ones moving fastest relative to
+    their own history: <b>heating up faster than the record says they should</b>, cooling below
+    it, or crossing from quiet into conflict (<b>onset</b>). ACLED's weekly data — running two
+    months more current than the UCDP figures — supplies an independent direction check.
+  </p>
+
+  <div class="notice">
+    {board.year} pace annualized from {board.months} preliminary candidate months; baselines are
+    the median of 2021–2025. Divergence is a tempo signal, not a prediction — a spike can be one
+    event, and candidate data is provisional. Read it next to the base rate, never instead of it.
+  </div>
+
+  <h2>Heating up ({heating.length})</h2>
+  <div class="card viz">
+    <table class="data">
+      <thead>
+        <tr><th>country</th><th>signal</th><th class="n">baseline/yr</th><th class="n">{board.year} pace</th>
+          <th class="n">vs base</th><th class="n">P(≥25)</th><th>ACLED 8-wk</th></tr>
+      </thead>
+      <tbody>
+        {heating.map((u) => (
+          <tr>
+            <td><a href={url(`/country/${u.gwno}`)}>{u.name}</a></td>
+            <td><span class="badge" style={`color:var(--${dirColor[u.direction]})`}>{u.direction}</span></td>
+            <td class="n">{num(u.baseline)}</td>
+            <td class="n">{num(u.annualized)}</td>
+            <td class="n"><b>{u.ratio}×</b></td>
+            <td class="n">{u.p != null ? pct(u.p, 0) : "—"}</td>
+            <td style="font-size:12px;color:var(--muted)">{u.acled ? acledMark[u.acled] : "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Cooling down ({cooling.length})</h2>
+  <div class="card viz">
+    <table class="data">
+      <thead>
+        <tr><th>country</th><th>signal</th><th class="n">baseline/yr</th><th class="n">{board.year} pace</th>
+          <th class="n">vs base</th><th class="n">P(≥25)</th><th>ACLED 8-wk</th></tr>
+      </thead>
+      <tbody>
+        {cooling.map((u) => (
+          <tr>
+            <td><a href={url(`/country/${u.gwno}`)}>{u.name}</a></td>
+            <td><span class="badge" style={`color:var(--${dirColor[u.direction]})`}>{u.direction}</span></td>
+            <td class="n">{num(u.baseline)}</td>
+            <td class="n">{num(u.annualized)}</td>
+            <td class="n"><b>{u.ratio}×</b></td>
+            <td class="n">{u.p != null ? pct(u.p, 0) : "—"}</td>
+            <td style="font-size:12px;color:var(--muted)">{u.acled ? acledMark[u.acled] : "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <p class="lede" style="margin-top:24px">
+    The watchfloor refreshes with each monthly data pull. When one of these divergences becomes a
+    resolved question, it moves from here to the <a href={url("/questions")}>journal</a> and the
+    <a href={url("/methods")}>scorecard</a>.
+  </p>
+</Base>

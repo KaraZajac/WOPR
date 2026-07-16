@@ -59,10 +59,12 @@
 
 ## V2 — the watchfloor
 
-- **Early-warning board**: dyads/countries whose current-month tempo (from
-  the UCDP candidate feed + ACLED weekly Admin-1 aggregates, already pulled
-  by `wopr acled`) diverges hardest from their bucket-conditional base rate —
-  "heating up faster than history says it should".
+- ~~Early-warning board~~ **done** (the watchfloor): country tempo this year
+  (annualized candidate months) vs the trailing-5-year baseline and the base
+  rate, ranked by magnitude-weighted surprise, with heating/cooling/onset
+  flags and an independent ACLED 8-week direction check (derived flag only,
+  no raw ACLED series — Content Usage Terms). `wopr watchfloor`, `/watchfloor`.
+  Next: dyad-grain watchfloor, coup/termination tempo, thresholded alerts.
 - ACLED event-level API as a second resolution authority (protest/riot
   classes UCDP doesn't cover). **Blocked on access level**: the account's
   automatic *Open* myACLED tier covers aggregates only; event-level needs an
