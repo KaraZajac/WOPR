@@ -48,9 +48,13 @@
   **built** (`wopr protocol`) — the discipline machine that lets a covariate
   earn in on held-out vantages. ~~Youth conditioning~~ **tested and
   REJECTED** through it (0/4 tune cuts beat baseline; noise-level validate
-  edge — recency already captures youth's descriptive lift). Still open:
-  run the protocol on ethnic exclusion and continuous tempo; self-level
-  horizon decay curves; ACLED weeklies as a tempo input.
+  edge — recency already captures youth's descriptive lift). ~~Ethnic exclusion + joint covariates~~ **tested and
+  REJECTED** (`--study joint`, the FINAL read of the 2007 split: 0/3 beat
+  tune baseline; exclusion −1.0% on validate; even young∧excluded — the
+  strongest descriptive cell — lost on tune). **The 2007 vantage split is
+  retired; future covariate studies must pre-register on a fresh era
+  (2026+).** Still open: continuous tempo (needs the fresh era), self-level
+  horizon decay curves, ACLED weeklies as a tempo input.
 - **Proper hierarchical model** replacing the moment-matched EB (partial
   pooling over region × bucket, fitted once at build time).
 - **Conflict-scope priors** (aggregate dyad substrate per conflict id).

@@ -449,7 +449,7 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--force-pull", action="store_true", help="re-fetch cached VIEWS runs")
 
     p = sub.add_parser("protocol", help="tune/validate candidate covariates on held-out vantages")
-    p.add_argument("--study", choices=("youth", "pair", "all"), default="all", help="which covariate study to run")
+    p.add_argument("--study", choices=("youth", "pair", "joint", "all"), default="all", help="which covariate study to run")
 
     sub.add_parser("watchfloor", help="tempo divergence board — heating/cooling/onsets")
     sub.add_parser("list", help="all questions, one line each")
@@ -496,6 +496,10 @@ def main(argv: list[str] | None = None) -> None:
             print()
         if args.study in ("pair", "all"):
             print(protocol.render_pair(protocol.run_pair()))
+        if args.study == "all":
+            print()
+        if args.study in ("joint", "all"):
+            print(protocol.render_joint(protocol.run_joint()))
     else:
         {
             "rate": cmd_rate,

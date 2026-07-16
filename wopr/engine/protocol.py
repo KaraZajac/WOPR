@@ -199,6 +199,102 @@ def run_pair() -> dict:
     }
 
 
+def run_joint() -> dict:
+    """The joint study — "what if the covariates were combined?" Answered
+    narrowly and finally: the one untested, descriptively-motivated
+    combination is youth × ethnic exclusion (the 2×2 showed 8.6% onset for
+    young+excluded vs 2.9% for older/low-exclusion). Pre-registered
+    candidates, all cuts at the top-third computed on TUNE years only:
+
+      excluded        top-third excluded_share alone (never tested solo)
+      young+excluded  AND of the two flags — a 2-cell split, deliberately
+                      NOT a cross-product, to avoid regime-style
+                      fragmentation
+      young|excluded  OR of the two (the broad version)
+
+    Combinations excluded a priori: anything at pair grain (Brier is blind
+    there regardless — see the COW study), and regime × anything (regime
+    fragmented cells and measured worse everywhere).
+
+    THIS IS THE LAST STUDY ON THE 2007 VANTAGE SPLIT. Country-grain validate
+    has now been consulted twice (youth, this); further covariate work must
+    pre-register on a fresh era (2026+ outcomes) or the split stops meaning
+    anything."""
+    substrate = baserate.load_substrate()
+    youth, excluded = substrate["youth"], substrate["excluded"]
+    if not excluded:
+        raise SystemExit("no covariates built — run `wopr pull && wopr build` first")
+    grain, measure, types, threshold = SUITE
+
+    young = young_set(youth, 0.66, SPLIT)
+    excl = young_set(excluded, 0.66, SPLIT)
+    candidates = {
+        "excluded": excl,
+        "young+excluded": young & excl,
+        "young|excluded": young | excl,
+    }
+
+    baseline = walk(grain, measure, types, threshold, substrate)
+    schemes = {name: walk(grain, measure, types, threshold, substrate, flag=fs) for name, fs in candidates.items()}
+
+    base_tune, n_tune = split_brier(baseline, hi=SPLIT)
+    tune_scores = {name: split_brier(recs, hi=SPLIT)[0] for name, recs in schemes.items()}
+    best = min(tune_scores, key=lambda k: tune_scores[k])
+
+    base_val, n_val = split_brier(baseline, lo=SPLIT + 1)
+    best_val, _ = split_brier(schemes[best], lo=SPLIT + 1)
+    delta = best_val - base_val
+    rel_gain = -delta / base_val if base_val else 0.0
+    helped = sum(1 for v in tune_scores.values() if v < base_tune)
+    adopt = rel_gain >= MIN_REL_GAIN and tune_scores[best] < base_tune
+
+    return {
+        "split": SPLIT,
+        "suite": f"{grain}/{measure}",
+        "min_rel_gain": MIN_REL_GAIN,
+        "flag_sizes": {k: len(v) for k, v in candidates.items()},
+        "tune": {
+            "n": n_tune,
+            "baseline_brier": round(base_tune, 5),
+            "scheme_brier": {k: round(v, 5) for k, v in tune_scores.items()},
+            "selected": best,
+            "candidates_beating_baseline": f"{helped}/{len(tune_scores)}",
+        },
+        "validate": {
+            "n": n_val,
+            "baseline_brier": round(base_val, 5),
+            "selected_brier": round(best_val, 5),
+            "delta_brier": round(delta, 5),
+            "rel_gain": round(rel_gain, 4),
+            "verdict": "ADOPT" if adopt else "REJECT — below the 1% bar / doesn't beat baseline on tune",
+        },
+    }
+
+
+def render_joint(r: dict) -> str:
+    t, v = r["tune"], r["validate"]
+    lines = [
+        f"tune/validate protocol — joint covariates on {r['suite']} (split at {r['split']}; FINAL study on this split)",
+        "",
+        f"TUNE ({t['n']:,} unit-years, ≤{r['split']}): baseline {t['baseline_brier']}",
+        "  candidates (Brier, lower=better):",
+    ]
+    for name, b in sorted(t["scheme_brier"].items(), key=lambda kv: kv[1]):
+        mark = " ← selected" if name == t["selected"] else ""
+        lines.append(f"    {name:<15} {b}  ({r['flag_sizes'][name]:,} flagged unit-years){mark}")
+    lines += [
+        f"  candidates beating baseline on tune: {t['candidates_beating_baseline']}",
+        "",
+        f"VALIDATE ({v['n']:,} unit-years, >{r['split']}) — read once:",
+        f"  baseline           {v['baseline_brier']}",
+        f"  selected           {v['selected_brier']}",
+        f"  ΔBrier             {v['delta_brier']:+}  ({v['rel_gain']:+.1%} relative)",
+        f"  adoption bar       {r['min_rel_gain']:.0%} relative + selected beats baseline on tune",
+        f"  → {v['verdict']}",
+    ]
+    return "\n".join(lines)
+
+
 def render_pair(r: dict) -> str:
     t, v = r["tune"], r["validate"]
     lines = [

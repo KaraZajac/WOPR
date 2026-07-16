@@ -118,19 +118,24 @@ def load_neighbors(tables: Path = TABLES, km: int = 400) -> dict:
 REGIME_BANDS = {0: "aut", 1: "mid", 2: "mid", 3: "dem"}  # Regimes of the World, collapsed a priori
 
 
-def load_youth(tables: Path = TABLES) -> dict:
-    """(gwno, year) -> share of population under 14 (World Bank), the strongest
-    single onset covariate in the descriptive test. Kept separate from the
-    engine's live path — only the tune/validate protocol reads it."""
+def load_covariate(col: str, tables: Path = TABLES) -> dict:
+    """(gwno, year) -> value for one covariates.csv column. Kept separate from
+    the engine's live path — only the tune/validate protocol reads these."""
     path = tables / "covariates.csv"
     if not path.exists():
         return {}
     out = {}
     with open(path, newline="") as f:
         for r in csv.DictReader(f):
-            if r["pop_0014"]:
-                out[(int(r["gwno"]), int(r["year"]))] = float(r["pop_0014"])
+            if r[col]:
+                out[(int(r["gwno"]), int(r["year"]))] = float(r[col])
     return out
+
+
+def load_youth(tables: Path = TABLES) -> dict:
+    """Share of population under 14 (World Bank) — the strongest single onset
+    covariate in the descriptive test (protocol verdict: rejected)."""
+    return load_covariate("pop_0014", tables)
 
 
 def load_mids(tables: Path = TABLES) -> dict:
@@ -296,6 +301,7 @@ def load_substrate(tables: Path = TABLES) -> dict:
         "nbr_active": _nbr_active(countries, neighbors),
         "regime": load_regime(tables),
         "youth": load_youth(tables),
+        "excluded": load_covariate("excluded_share", tables),
         "pair_ids": pair_ids,
         "mids": load_mids(tables),
         "alliances": load_alliances(tables),

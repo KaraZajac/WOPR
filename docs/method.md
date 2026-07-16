@@ -296,10 +296,36 @@ pair grain ever deserves its own adoption metric (log-loss would see this
 signal), it must be pre-registered before the *next* vantage era so the
 validate years are genuinely fresh.
 
-Protocol scoreboard: regime REJECTED, horizon-decay REJECTED, youth
-REJECTED, COW pair features REJECTED. Four for four — the recency-structured
-base rate keeps absorbing everything thrown at it, which is itself the
-strongest evidence yet for the Cederman–Weidmann position.
+### The joint study: combinations don't rescue rejected covariates
+
+"What if the covariates were combined?" was answered narrowly and finally
+(`wopr protocol --study joint`). Combinations excluded a priori: anything at
+pair grain (Brier-blind regardless) and regime × anything (fragmentation
+already measured harmful). The one descriptively-motivated untested
+combination was youth × ethnic exclusion (the 2×2 had shown young+excluded
+onset at 8.6% vs 2.9%), plus exclusion solo, plus the OR. Result: **0/3 beat
+baseline on tune; the selected (exclusion alone) was −1.0% relative on
+validate — the worst validate read of any study.** The compound flag
+young∧excluded, the strongest descriptive cell in the whole covariate
+program, still lost to the plain engine on tune.
+
+Why combining fails: each covariate's descriptive lift is *absorbed* by
+recency conditioning (the risk it flags is already priced by "how recently
+did this country fight"), and ANDing flags shrinks the flagged class (895
+unit-years), so empirical-Bayes shrinkage pulls its split rate back toward
+the parent — the signal survives as sociology but not as forecast
+improvement.
+
+**The 2007 vantage split is now retired.** Country-grain validate has been
+consulted twice (youth, joint), pair-grain once (COW). Per the
+pre-registration in `run_joint`, any future covariate study must use a fresh
+era (2026+ outcomes) — this history has been spent.
+
+Protocol scoreboard: regime, horizon-decay, youth, COW pair features, joint
+covariates — **five for five REJECTED.** The recency-structured base rate
+absorbs everything the conflict literature says should help, which is itself
+the strongest evidence yet for the Cederman–Weidmann position — and the
+project's central empirical claim when written up.
 
 ## Known approximations (read before trusting a prior)
 
