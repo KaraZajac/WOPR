@@ -33,9 +33,13 @@
   country +nbr; additive backtest gains on death-threshold suites, mixed
   cells documented). ~~V-Dem covariate classes~~ **built, backtested,
   rejected** (worse on every country suite — cell fragmentation; capability
-  and the regime table retained; docs/method.md). Still open: continuous
-  tempo AND regime variants behind a proper tune/validate vantage split,
-  self-level horizon decay curves, ACLED weeklies as a tempo input.
+  and the regime table retained; docs/method.md). ~~Tune/validate protocol~~
+  **built** (`wopr protocol`) — the discipline machine that lets a covariate
+  earn in on held-out vantages. ~~Youth conditioning~~ **tested and
+  REJECTED** through it (0/4 tune cuts beat baseline; noise-level validate
+  edge — recency already captures youth's descriptive lift). Still open:
+  run the protocol on ethnic exclusion and continuous tempo; self-level
+  horizon decay curves; ACLED weeklies as a tempo input.
 - **Proper hierarchical model** replacing the moment-matched EB (partial
   pooling over region × bucket, fitted once at build time).
 - **Conflict-scope priors** (aggregate dyad substrate per conflict id).

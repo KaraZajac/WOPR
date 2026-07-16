@@ -242,11 +242,31 @@ way one might expect** — the young/high-inflation cell (5.4%) is actually
 (inflation + a young population → more onsets) and the honest answer was:
 youth yes, exclusion yes, inflation no.
 
-This is descriptive, not yet in the engine. Wiring youth/exclusion in as
-conditioning is a covariate change which — per the reverted regime result —
-needs the **tune/validate vantage split** first (fitting bins on the same
-history we score is p-hacking). The data and finding are committed; the
-engine change is gated behind that protocol.
+## The tune/validate protocol (how a covariate earns in)
+
+The descriptive lift above is *not* permission to add youth to the engine —
+fitting a scheme on the same history you score it on is p-hacking, the exact
+error that made the reverted regime result look tempting. `wopr protocol`
+enforces the discipline: split the scored years into **tune** (≤2007, where
+candidate schemes compete) and **validate** (≥2008, read exactly once); pick
+the best youth cut on tune; compare it to the baseline on validate a single
+time. A covariate is adopted only if it beats baseline on validate by a
+pre-registered margin (≥1% relative) *and* helps a majority of cuts on tune.
+
+**Result for youth: REJECTED.** On the tune set, **0 of 4** youth cuts even
+beat the plain engine, and the least-bad one carried only a +0.4% (noise-
+level) edge to validate — below the bar. The lesson is the deeper finding:
+youth's strong *descriptive* onset lift adds essentially nothing *once the
+engine already conditions on conflict recency and history* — the recency
+buckets already capture what youth was proxying. This is the third covariate
+(after regime, and horizon-decay) that looked promising and did not survive
+honest out-of-sample testing, and it is direct support for the field's
+"simple base rates are hard to beat" result (Cederman & Weidmann 2017).
+
+The naive threshold (`ΔBrier < −0.0001`) would have *adopted* youth — a
+covariate 0/4 cuts could beat on their own tuning data. That gap is the
+whole reason the protocol exists. The data stays committed (it's real and
+useful context on country pages); the live engine is unchanged.
 
 ## Known approximations (read before trusting a prior)
 

@@ -118,6 +118,21 @@ def load_neighbors(tables: Path = TABLES, km: int = 400) -> dict:
 REGIME_BANDS = {0: "aut", 1: "mid", 2: "mid", 3: "dem"}  # Regimes of the World, collapsed a priori
 
 
+def load_youth(tables: Path = TABLES) -> dict:
+    """(gwno, year) -> share of population under 14 (World Bank), the strongest
+    single onset covariate in the descriptive test. Kept separate from the
+    engine's live path — only the tune/validate protocol reads it."""
+    path = tables / "covariates.csv"
+    if not path.exists():
+        return {}
+    out = {}
+    with open(path, newline="") as f:
+        for r in csv.DictReader(f):
+            if r["pop_0014"]:
+                out[(int(r["gwno"]), int(r["year"]))] = float(r["pop_0014"])
+    return out
+
+
 def load_regime(tables: Path = TABLES) -> dict:
     """(gwno, year) -> 'aut'|'mid'|'dem' from the committed V-Dem/OWID table.
     The middle band (electoral autocracies + electoral democracies) is the
@@ -249,6 +264,7 @@ def load_substrate(tables: Path = TABLES) -> dict:
         "neighbors": neighbors,
         "nbr_active": _nbr_active(countries, neighbors),
         "regime": load_regime(tables),
+        "youth": load_youth(tables),
     }
 
 
@@ -307,7 +323,14 @@ def war_year(u: Unit, year: int, spec: Spec) -> bool:
     return sum(row.get(t) or 0 for t in spec.types) >= WAR_DEATHS
 
 
-def bucket_of(u: Unit, year: int, spec: Spec, nbr: set | None = None, regime: dict | None = None) -> str | None:
+def bucket_of(
+    u: Unit,
+    year: int,
+    spec: Spec,
+    nbr: set | None = None,
+    regime: dict | None = None,
+    youth: set | None = None,
+) -> str | None:
     """Recency/episode-age bucket entering `year`, from history strictly
     before it. Active units are banded by consecutive hit-years (episode
     age) and by last year's intensity (|minor / |war). Non-active units get
@@ -348,18 +371,21 @@ def bucket_of(u: Unit, year: int, spec: Spec, nbr: set | None = None, regime: di
         band = regime.get((u.id, year - 1))
         if band:
             base = f"{base}~{band}"
+    if youth is not None and not base.startswith("active"):
+        # youth predicts ONSET, so it refines non-active buckets only
+        base = f"{base}%y" if (u.id, year - 1) in youth else f"{base}%o"
     return base
 
 
 def unit_bucket_years(
-    u: Unit, spec: Spec, bucket: str, nbr: set | None = None, regime: dict | None = None
+    u: Unit, spec: Spec, bucket: str, nbr: set | None = None, regime: dict | None = None, youth: set | None = None
 ) -> tuple[int, int]:
     """(hits k, exposure years n) for u restricted to years entered in `bucket`."""
     lo, hi = spec.period
     k = n = 0
     for y in range(lo + 1, hi + 1):
         h = hit(u, y, spec)
-        if h is None or bucket_of(u, y, spec, nbr, regime) != bucket:
+        if h is None or bucket_of(u, y, spec, nbr, regime, youth) != bucket:
             continue
         n += 1
         k += int(h)

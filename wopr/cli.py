@@ -448,6 +448,8 @@ def main(argv: list[str] | None = None) -> None:
     p = sub.add_parser("benchmark", help="the arena: WOPR vs VIEWS vs baselines, retrospectively")
     p.add_argument("--force-pull", action="store_true", help="re-fetch cached VIEWS runs")
 
+    sub.add_parser("protocol", help="tune/validate a covariate (youth) on held-out vantages")
+
     sub.add_parser("watchfloor", help="tempo divergence board — heating/cooling/onsets")
     sub.add_parser("list", help="all questions, one line each")
     p = sub.add_parser("show", help="one question in full")
@@ -484,6 +486,10 @@ def main(argv: list[str] | None = None) -> None:
         from wopr.pipeline import benchmark
 
         benchmark.main(force_pull=args.force_pull)
+    elif args.cmd == "protocol":
+        from wopr.engine import protocol
+
+        print(protocol.render(protocol.run()))
     else:
         {
             "rate": cmd_rate,
