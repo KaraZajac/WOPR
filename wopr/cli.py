@@ -391,6 +391,7 @@ def main(argv: list[str] | None = None) -> None:
     sub.add_parser("pull", help="download UCDP sources").add_argument("--force", action="store_true")
     sub.add_parser("build", help="build data/ from sources/")
     sub.add_parser("verify", help="run the validation gate")
+    sub.add_parser("release", help="assemble the redistributable CC BY dataset bundle (dist/)")
     p = sub.add_parser("acled", help="pull ACLED aggregate files (needs .env credentials)")
     p.add_argument("--force", action="store_true")
     p.add_argument("--api-check", action="store_true", help="probe event-level API entitlement")
@@ -471,6 +472,10 @@ def main(argv: list[str] | None = None) -> None:
         from wopr.pipeline import validate
 
         validate.main()
+    elif args.cmd == "release":
+        from wopr.pipeline import release
+
+        release.main()
     elif args.cmd == "acled":
         from wopr.pipeline import acled
 

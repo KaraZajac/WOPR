@@ -131,5 +131,9 @@ watchfloor, not resolution authorities (different ontology than UCDP; see
 docs/data-model.md).
 
 *WOPR: the War Operation Plan Response computer from* WarGames *(1983), which
-learned about unwinnable games by playing itself. The name will probably
-change; the scoring loop is the point.*
+learned about unwinnable games by playing itself. The name stays: five
+covariate families tested against held-out history, five absorbed by the
+base rates — a system whose central finding is its own humility might as
+well be named for the machine that concluded the only winning move is not
+to play. The scoring loop is the point. Live at
+[wopr.karazajac.io](https://wopr.karazajac.io).*
