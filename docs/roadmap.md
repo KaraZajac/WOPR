@@ -10,9 +10,11 @@
 - ~~Trends & timeline pages~~ **done**: /trends (the long peace, per-capita
   battle deaths, deaths by region, coup decline, regime shift, conflict
   survival + how-wars-end) and /timeline (layered conflict timeline with era
-  bands). Population added (OWID) for per-capita normalization. Next trend
-  ideas: pre-1989 battle deaths (PRIO) to extend death series to 1946,
-  small-multiple country trajectories, protest trends.
+  bands). Population added (OWID) for per-capita normalization.
+  ~~pre-1989 battle deaths (PRIO)~~ **done** (v3.1 1946–2008, converted from
+  legacy .xls via libreoffice, stitched onto GED at 1989 — pre-1989 total
+  ~3× the whole post–Cold-War era). Next trend ideas: small-multiple country
+  trajectories, protest trends, Maddison historical GDP via OWID.
 - **Covariate-widened reference classes**: regime type (V-Dem/Polity),
   GDP/capita, ethnic fractionalization — class = "countries like this one",
   not just "countries near this one". Sensitivity across class definitions in

@@ -34,6 +34,11 @@ sources live only in the gitignored `sources/` directory (regenerable via
   Event Dataset. *Journal of Peace Research* 50(4): 523–532. (GED)
 - Sundberg, Ralph, Kristine Eck & Joakim Kreutz (2012) Introducing the UCDP
   Non-State Conflict Dataset. *Journal of Peace Research* 49(2): 351–362.
+- Lacina, Bethany & Nils Petter Gleditsch (2005) Monitoring Trends in Global
+  Combat: A New Dataset of Battle Deaths. *European Journal of Population*
+  21(2–3): 145–166. (PRIO Battle Deaths Dataset v3.1, extending state-based
+  battle deaths to 1946; `data/tables/battle-deaths-history.csv`, freely
+  published academic data)
 - Eck, Kristine & Lisa Hultman (2007) One-Sided Violence Against Civilians in
   War. *Journal of Peace Research* 44(2): 233–246.
 - Kreutz, Joakim (2010) How and When Armed Conflicts End: Introducing the

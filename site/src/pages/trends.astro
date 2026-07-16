@@ -52,6 +52,20 @@ const eraTotal = era.reduce((a, b) => a + b, 0);
     w={1040}
   />
 
+  {t.battle_deaths_long && (
+    <div style="margin-top:14px">
+      <LineChart
+        title="State-based battle deaths, 1946–present"
+        sub="PRIO Battle Deaths before 1989, UCDP GED from 1989 (source seam at 1989); the Korea, Vietnam, and Iran–Iraq peaks dwarf the post–Cold War era"
+        series={t.battle_deaths_long}
+        fmt={(v) => num(v)}
+        unit="battle deaths"
+        w={1040}
+        wash={true}
+      />
+    </div>
+  )}
+
   <div class="grid-2" style="margin-top:14px">
     <LineChart
       title="Global battle deaths per million people"

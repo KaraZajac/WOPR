@@ -726,6 +726,33 @@ OWID_NAMES = {
 }
 
 
+def build_battle_deaths_history() -> list[list]:
+    """data/tables/battle-deaths-history.csv: state-based battle deaths per
+    country-year 1946–2008 from PRIO Battle Deaths (best estimate, by
+    location). Stitches onto GED sb deaths (1989+) to give a continuous
+    1946–present series — GED is authoritative from 1989, so this table is
+    the pre-GED extension only."""
+    path = SOURCES / "prio-battle-deaths.csv"
+    if not path.exists():
+        return [["gwno", "year", "battle_deaths"]]
+    totals: dict[tuple, int] = defaultdict(int)
+    for r in read_csv(path):
+        if not r["bdeadbes"] or not r["bdeadbes"].lstrip("-").isdigit():
+            continue
+        best = int(r["bdeadbes"])
+        if best < 0:
+            continue
+        year = int(r["year"])
+        locs = gwno_list(r["gwnoloc"]) or gwno_list(r["gwnoa"])
+        if not locs:
+            continue
+        share = best // len(locs)  # split a multi-country conflict evenly
+        for g in locs:
+            totals[(to_gw(g, year), year)] += share
+    rows = [[g, y, d] for (g, y), d in sorted(totals.items())]
+    return [["gwno", "year", "battle_deaths"]] + rows
+
+
 def build_population(states, last_year: int) -> list[list]:
     """data/tables/population.csv: gwno-year population from the OWID extract,
     YEAR_MIN–present, name-matched. The per-capita denominator for trends."""
@@ -948,6 +975,7 @@ def main() -> None:
     coup_table = build_coups(states, last_year)
     population_table = build_population(states, last_year)
     covariate_table = build_covariates(states, last_year)
+    bdh_table = build_battle_deaths_history()
     peace = build_peace_agreements(states)
     if peace:
         dump_yaml(REGISTRY / "peace-agreements.yaml", peace)
@@ -961,6 +989,8 @@ def main() -> None:
     write_csv(TABLES / "coup.csv", coup_table[0], coup_table[1:])
     write_csv(TABLES / "population.csv", population_table[0], population_table[1:])
     write_csv(TABLES / "covariates.csv", covariate_table[0], covariate_table[1:])
+    if len(bdh_table) > 1:
+        write_csv(TABLES / "battle-deaths-history.csv", bdh_table[0], bdh_table[1:])
 
     meta = {
         "ucdp_release": manifest["ucdp_release"],

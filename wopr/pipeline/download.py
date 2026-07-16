@@ -151,6 +151,33 @@ def main() -> None:
             continue
         fetch_file(url, dest)
 
+    # PRIO Battle Deaths (1946–2008) — extends state-based deaths back before
+    # GED's 1989 start. Published only as legacy binary .xls; converted to CSV
+    # with libreoffice (a system tool, like curl/unzip — no Python dep). If
+    # libreoffice is absent the build simply skips the pre-1989 death history.
+    import shutil
+    import subprocess
+
+    pbd = SOURCES / "prio-battle-deaths.csv"
+    manifest["files"]["prio-battle-deaths"] = pbd.name
+    if (not pbd.exists() or force) and shutil.which("libreoffice"):
+        xls_url = (
+            "https://cdn.cloud.prio.org/files/d21ef702-a546-45a8-b3c9-5b520dcc1239/"
+            "PRIO%20Battle%20Deaths%20Dataset%2031.xls?inline=true"
+        )
+        tmp_xls = SOURCES / "prio-battle-deaths.xls"
+        fetch_file(xls_url, tmp_xls)
+        profile = SOURCES / ".lo-profile"
+        subprocess.run(
+            ["libreoffice", "--headless", f"-env:UserInstallation=file://{profile}",
+             "--convert-to", "csv", "--outdir", str(SOURCES), str(tmp_xls)],
+            check=True, capture_output=True, timeout=120,
+        )
+        tmp_xls.unlink(missing_ok=True)
+        print(f"  -> {pbd.relative_to(ROOT)} (converted from .xls)")
+    elif not pbd.exists():
+        print("  ! PRIO Battle Deaths needs libreoffice to convert its .xls — skipping (pre-1989 deaths)")
+
     for name, url in tail.items():
         if url is None:
             print(f"  ! no link found for {name} on the downloads page")

@@ -150,6 +150,13 @@ def main() -> None:
         cov = len(recent & cy_recent) / max(len(cy_recent), 1)
         check(cov > 0.9, f"population covers 2023 main-system states ({cov:.0%})")
 
+    bdh_path = TABLES / "battle-deaths-history.csv"
+    if bdh_path.exists():
+        bdh = rows_of("battle-deaths-history.csv")
+        yrs = [int(r["year"]) for r in bdh]
+        check(min(yrs) <= 1950, f"battle-deaths history reaches the pre-GED era (from {min(yrs)})")
+        check(all(int(r["battle_deaths"]) >= 0 for r in bdh), "historical battle deaths non-negative")
+
     cov_path = TABLES / "covariates.csv"
     if cov_path.exists():
         cov = rows_of("covariates.csv")

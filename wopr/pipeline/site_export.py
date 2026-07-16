@@ -508,6 +508,21 @@ def build_trends(conflicts, dyads):
         for y in range(1946, max(active_by_type) + 1)
     ]
 
+    # 1b. state-based battle deaths stitched 1946– (PRIO pre-1989 + GED 1989+)
+    prio = defaultdict(int)
+    bdh_path = TABLES / "battle-deaths-history.csv"
+    if bdh_path.exists():
+        for r in rows_of("battle-deaths-history.csv"):
+            prio[int(r["year"])] += int(r["battle_deaths"])
+    ged_sb = defaultdict(int)
+    for r in cy:
+        if r["sb_deaths"] != "":
+            ged_sb[int(r["year"])] += int(r["sb_deaths"])
+    battle_long = [
+        [y, ged_sb[y] if y >= 1989 else prio.get(y, 0)]
+        for y in range(1946, max(ged_sb) + 1)
+    ]
+
     # 2. deaths by region over time (1989–), + global per-capita
     region_year = defaultdict(lambda: defaultdict(int))
     global_deaths = defaultdict(int)
@@ -565,6 +580,7 @@ def build_trends(conflicts, dyads):
 
     return {
         "long_peace": long_peace,
+        "battle_deaths_long": battle_long,
         "deaths_by_region": {"regions": regions, "series": deaths_region},
         "per_capita": per_capita,
         "coups_decade": coups_decade,
