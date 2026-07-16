@@ -51,6 +51,7 @@ class RollingSpec:
     threshold: int = 25
     window: int = 12  # months
     start: int = 0  # month index of the window's first month
+    class_end: int = 0  # walk-forward clamp: use no data past this month (0 = all)
 
 
 def load_monthly(substrate: dict, tables=TABLES) -> dict:
@@ -173,6 +174,9 @@ def rate(spec: RollingSpec, substrate: dict, monthly: dict) -> dict:
         raise KeyError(f"unknown {spec.grain} id {spec.unit}")
     me = units[spec.unit]
     final_end, data_end = monthly["final_end"], monthly["data_end"]
+    if spec.class_end:  # retrospective vantage: nothing after class_end exists
+        final_end = min(final_end, spec.class_end)
+        data_end = min(data_end, spec.class_end)
     last_start = final_end - spec.window + 1  # class windows stay inside final data
 
     csums: dict[int, list] = {}

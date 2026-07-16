@@ -32,6 +32,10 @@ export const countries = () => load("site/countries.json");
 export const mapJoin = () => load("site/map.json");
 export const questions = () => load("site/questions.json");
 export const backtest = () => load("site/backtest.json");
+export function arena() {
+  const p = path.join(DATA, "site", "benchmark.json");
+  return fs.existsSync(p) ? load("site/benchmark.json") : null;
+}
 
 /** Countries sorted by current risk, descending. */
 export function countryList() {

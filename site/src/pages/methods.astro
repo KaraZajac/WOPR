@@ -1,14 +1,21 @@
 ---
 import Base from "../layouts/Base.astro";
 import Calibration from "../components/Calibration.astro";
-import { backtest, summary } from "../lib/data.js";
+import { arena, backtest, summary } from "../lib/data.js";
 import { num, pct } from "../lib/format.js";
 
 const s = summary();
 const bt = backtest();
+const ar = arena();
 const w = s.wwiii;
 const suites = Object.entries(bt);
 const countrySuite = bt["country/deaths/sb≥25"];
+const MODEL_NOTES = {
+  views: "Uppsala VIEWS, main_dich at each horizon",
+  wopr: "this engine, walk-forward-clamped, one-step",
+  persistence: "country's trailing-12-month hit rate",
+  climatology: "country's full-history monthly rate",
+};
 ---
 
 <Base title="Methods" description="How the base rates are computed, and how well they calibrate.">
@@ -95,6 +102,48 @@ const countrySuite = bt["country/deaths/sb≥25"];
       {w.notes.map((n) => <span>· {n}</span>)}
     </div>
   </div>
+
+  {ar && (
+    <>
+      <h2>The arena — WOPR vs other models</h2>
+      <p class="lede">
+        Retrospective head-to-head on VIEWS's native target — {ar.target} — with every model
+        predicting the next 12 months from the same historical vantages using only
+        information available then. {num(ar.n)} scored country-months across
+        {" " + ar.vantages.length} vantages; VIEWS numbers are used untransformed
+        (their main_dich calibrates against the ≥25 threshold: detected, not assumed).
+      </p>
+      <div class="card viz">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>model</th><th></th><th class="n">Brier</th><th class="n">skill</th>
+              <th class="n">h1–3</th><th class="n">h4–6</th><th class="n">h7–12</th>
+            </tr>
+          </thead>
+          <tbody>
+            {["views", "wopr", "persistence", "climatology"].map((m) => (
+              <tr>
+                <td><b>{m}</b></td>
+                <td style="font-size:12px;color:var(--muted)">{MODEL_NOTES[m]}</td>
+                <td class="n">{ar.models[m].brier}</td>
+                <td class="n">{pct(ar.models[m].skill_vs_climatology, 1)}</td>
+                <td class="n">{ar.by_horizon["h1-3"][m]}</td>
+                <td class="n">{ar.by_horizon["h4-6"][m]}</td>
+                <td class="n">{ar.by_horizon["h7-12"][m]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div class="viz-legend" style="margin-top:12px">
+          <span>· VIEWS leads on aggregate Brier; WOPR is better on {num(ar.head_to_head.wopr_better_on)} of {num(ar.n)} months
+            (the quiet mass) but pays more on transitions — the tempo gap, priced</span>
+          <span>· persistence nearly ties VIEWS: the standing result of this field, reproduced</span>
+          <span>· {pct(ar.provisional_share, 0)} of outcomes are candidate-month provisional</span>
+        </div>
+      </div>
+    </>
+  )}
 
   <h2>The journal's rules</h2>
   <p class="lede">

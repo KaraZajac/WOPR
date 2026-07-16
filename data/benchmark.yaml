@@ -1,0 +1,210 @@
+target: P(>=25 state-based deaths in a country-month), UCDP best estimate
+dich_semantics:
+  n: 1920
+  mean_dich: 0.1415
+  freq_ge1: 0.251
+  freq_ge25: 0.1365
+  threshold: 25
+vantages:
+- fatalities002_2023_04_t01
+- fatalities002_2023_10_t01
+- fatalities002_2024_04_t01
+- fatalities002_2024_10_t01
+- fatalities002_2025_04_t01
+n: 7680
+provisional_share: 0.067
+models:
+  views:
+    brier: 0.04123
+    skill_vs_climatology: 0.5528
+    calibration:
+    - bin: 0–10%
+      n: 6216
+      mean_p: 0.01
+      observed: 0.015
+    - bin: 10–20%
+      n: 102
+      mean_p: 0.14
+      observed: 0.343
+    - bin: 20–30%
+      n: 78
+      mean_p: 0.249
+      observed: 0.385
+    - bin: 30–40%
+      n: 71
+      mean_p: 0.351
+      observed: 0.338
+    - bin: 40–50%
+      n: 86
+      mean_p: 0.454
+      observed: 0.36
+    - bin: 50–60%
+      n: 115
+      mean_p: 0.549
+      observed: 0.357
+    - bin: 60–70%
+      n: 109
+      mean_p: 0.649
+      observed: 0.532
+    - bin: 70–80%
+      n: 91
+      mean_p: 0.745
+      observed: 0.692
+    - bin: 80–90%
+      n: 158
+      mean_p: 0.857
+      observed: 0.747
+    - bin: 90–100%
+      n: 654
+      mean_p: 0.971
+      observed: 0.946
+  wopr:
+    brier: 0.06111
+    skill_vs_climatology: 0.3371
+    calibration:
+    - bin: 0–10%
+      n: 5832
+      mean_p: 0.005
+      observed: 0.012
+    - bin: 10–20%
+      n: 168
+      mean_p: 0.157
+      observed: 0.274
+    - bin: 20–30%
+      n: 240
+      mean_p: 0.241
+      observed: 0.4
+    - bin: 30–40%
+      n: 276
+      mean_p: 0.351
+      observed: 0.464
+    - bin: 40–50%
+      n: 180
+      mean_p: 0.447
+      observed: 0.4
+    - bin: 50–60%
+      n: 168
+      mean_p: 0.562
+      observed: 0.44
+    - bin: 60–70%
+      n: 96
+      mean_p: 0.639
+      observed: 0.458
+    - bin: 70–80%
+      n: 108
+      mean_p: 0.778
+      observed: 0.75
+    - bin: 80–90%
+      n: 240
+      mean_p: 0.859
+      observed: 0.85
+    - bin: 90–100%
+      n: 372
+      mean_p: 0.944
+      observed: 0.804
+  persistence:
+    brier: 0.04326
+    skill_vs_climatology: 0.5308
+    calibration:
+    - bin: 0–10%
+      n: 5988
+      mean_p: 0.071
+      observed: 0.009
+    - bin: 10–20%
+      n: 264
+      mean_p: 0.143
+      observed: 0.208
+    - bin: 20–30%
+      n: 300
+      mean_p: 0.249
+      observed: 0.34
+    - bin: 30–40%
+      n: 48
+      mean_p: 0.357
+      observed: 0.188
+    - bin: 40–50%
+      n: 24
+      mean_p: 0.429
+      observed: 0.333
+    - bin: 50–60%
+      n: 144
+      mean_p: 0.518
+      observed: 0.59
+    - bin: 60–70%
+      n: 84
+      mean_p: 0.643
+      observed: 0.857
+    - bin: 70–80%
+      n: 144
+      mean_p: 0.768
+      observed: 0.653
+    - bin: 80–90%
+      n: 168
+      mean_p: 0.857
+      observed: 0.857
+    - bin: 90–100%
+      n: 516
+      mean_p: 0.929
+      observed: 0.955
+  climatology:
+    brier: 0.09219
+    skill_vs_climatology: 0.0
+    calibration:
+    - bin: 0–10%
+      n: 5508
+      mean_p: 0.013
+      observed: 0.025
+    - bin: 10–20%
+      n: 840
+      mean_p: 0.136
+      observed: 0.276
+    - bin: 20–30%
+      n: 312
+      mean_p: 0.232
+      observed: 0.42
+    - bin: 30–40%
+      n: 264
+      mean_p: 0.364
+      observed: 0.811
+    - bin: 40–50%
+      n: 384
+      mean_p: 0.441
+      observed: 0.581
+    - bin: 50–60%
+      n: 192
+      mean_p: 0.547
+      observed: 0.474
+    - bin: 60–70%
+      n: 60
+      mean_p: 0.659
+      observed: 0.583
+    - bin: 80–90%
+      n: 84
+      mean_p: 0.882
+      observed: 0.5
+    - bin: 90–100%
+      n: 36
+      mean_p: 0.911
+      observed: 0.194
+by_horizon:
+  h1-3:
+    views: 0.03371
+    wopr: 0.05815
+    persistence: 0.03887
+    climatology: 0.08774
+  h4-6:
+    views: 0.03962
+    wopr: 0.05966
+    persistence: 0.04006
+    climatology: 0.09294
+  h7-12:
+    views: 0.04579
+    wopr: 0.06332
+    persistence: 0.04705
+    climatology: 0.09404
+head_to_head:
+  wopr_better_on: 5241
+  views_better_on: 2411
+  delta_brier_wopr_minus_views: 0.01988
+generated_from:
+  records: 7680

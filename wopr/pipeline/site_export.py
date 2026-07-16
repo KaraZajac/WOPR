@@ -459,6 +459,9 @@ def main() -> None:
     backtest_path = DATA / "backtest.yaml"
     if backtest_path.exists():
         dump("backtest.json", yaml.safe_load(backtest_path.read_text()))
+    benchmark_path = DATA / "benchmark.yaml"
+    if benchmark_path.exists():
+        dump("benchmark.json", yaml.safe_load(benchmark_path.read_text()))
     print("export complete")
 
 

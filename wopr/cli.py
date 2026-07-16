@@ -414,6 +414,9 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--burn-in", type=int, default=5, help="years of history before scoring starts")
     p.add_argument("--write", action="store_true", help="also write data/backtest.yaml")
 
+    p = sub.add_parser("benchmark", help="the arena: WOPR vs VIEWS vs baselines, retrospectively")
+    p.add_argument("--force-pull", action="store_true", help="re-fetch cached VIEWS runs")
+
     sub.add_parser("list", help="all questions, one line each")
     p = sub.add_parser("show", help="one question in full")
     p.add_argument("id")
@@ -445,6 +448,10 @@ def main(argv: list[str] | None = None) -> None:
             with open(DATA / "backtest.yaml", "w") as f:
                 yaml.safe_dump(report, f, sort_keys=False, allow_unicode=True)
             print(f"wrote {DATA / 'backtest.yaml'}")
+    elif args.cmd == "benchmark":
+        from wopr.pipeline import benchmark
+
+        benchmark.main(force_pull=args.force_pull)
     else:
         {
             "rate": cmd_rate,

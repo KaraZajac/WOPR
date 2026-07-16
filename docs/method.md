@@ -153,6 +153,31 @@ dyad grain, and fresh onsets (`active-1`) are the least predictable class
   territory* (UCDP location), not violence *involving its government*.
   Interstate questions belong at dyad grain.
 
+## The arena (model-vs-model benchmarking)
+
+`wopr benchmark` races WOPR against named challengers retrospectively on a
+common target: **P(≥25 state-based deaths in a country-month)** — VIEWS's
+native output. Their `main_dich` was verified to mean exactly that by
+calibrating old runs against realized outcomes (mean prediction .138 vs
+realized ≥25 frequency .136; the ≥1 frequency is .251 — detected, never
+assumed). Every model predicts 12 months ahead from identical historical
+vantages using only information available then; WOPR runs walk-forward-
+clamped (`class_end`), one-step by design. Baselines: persistence (trailing-
+12-month rate) and climatology (full-history rate).
+
+First result (5 vantages, 7,680 country-months, UCDP 26.1): **VIEWS 0.0412,
+persistence 0.0433, WOPR 0.0611, climatology 0.0922** (Brier, lower better).
+Readings: (1) VIEWS leads, earning its covariates on transition cases — but
+only ~5% ahead of naive persistence, the standing embarrassment of this
+field, reproduced here independently. (2) WOPR wins 68% of individual months
+(the quiet mass) yet pays heavily on transitions: at month grain, a
+country's own tempo is the signal, and our buckets deliberately condition on
+threshold-recency instead — that design gap is now priced at ~0.017 Brier vs
+persistence. Tempo conditioning is the top engine item. (3) WOPR's
+annual/structural questions (its home turf) are *not* what this target
+measures; the arena needs an annual-grain event too, once enough journal
+questions resolve.
+
 ## Scoring rules
 
 Brier `(p−o)²` and log score `ln p(outcome)`; calibration in decile bins; the

@@ -22,7 +22,13 @@
 - **Proper hierarchical model** replacing the moment-matched EB (partial
   pooling over region × bucket, fitted once at build time).
 - **Conflict-scope priors** (aggregate dyad substrate per conflict id).
-- Benchmark the engine against **VIEWS** predictions where questions overlap.
+- ~~Benchmark against VIEWS~~ **done** (`wopr benchmark`, data/benchmark.yaml):
+  retrospective month-grain arena, VIEWS ahead on aggregate, persistence
+  nearly ties it, WOPR's tempo gap priced at ~0.017 Brier. Follow-ups:
+  **tempo-conditioned buckets** (now the top engine item — the arena showed
+  it costs more than anything else), annual-grain arena once journal
+  questions resolve, VIEWS numbers as live challengers when a month-shaped
+  question type lands.
 
 ## V1 — make the journal richer
 
