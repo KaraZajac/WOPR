@@ -47,6 +47,27 @@ nobody has observed. If candidate months show the partial current year
 candidate months can't prove a quiet year). A question about the partial year
 itself never sees that year's own data in its prior.
 
+## Rolling windows (month grain)
+
+Month-aligned windows that aren't calendar years — "next 12 months", "H2
+2026" — are priced by the rolling engine (`wopr/engine/rolling.py`) instead
+of the calendar-year approximation: P(≥T deaths within the W months from
+m₀), estimated over class member window-starts on the monthly substrate
+(1989–). The bucket machinery ports intact: a unit's status entering month m
+is its trailing-12-month record, age bands count consecutive trailing-hit
+months (÷12 → the annual bands), and the recency cutoffs sit 12 months under
+the annual ones because trailing windows lag activity by up to a year — with
+that shift, January-start buckets provably equal the annual engine's (tested).
+Candidate months feed the target's bucket naturally (noted as provisional).
+
+Caveats: window-starts overlap, so class counts are not independent — rates
+and calibration read fine, but shrinkage/floors modestly overstate certainty.
+Buckets still condition on threshold-recency, not current intensity: a
+country at full war tempo gets its whole-history class rate for short
+windows (Ethiopia, 6-month, reads ~0.63 despite current tempo making it
+near-certain) — tempo conditioning is the next covariate. Country and dyad
+grains only; pairs stay annual.
+
 ## The pair universe (every country against every country)
 
 Observed dyads answer "will this conflict recur?" — they cannot price a pair

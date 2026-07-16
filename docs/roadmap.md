@@ -11,9 +11,11 @@
   GDP/capita, ethnic fractionalization — class = "countries like this one",
   not just "countries near this one". Sensitivity across class definitions in
   every prior.
-- **Rolling sub-annual rates** from the month tables (P(threshold in next 12
-  months) computed from rolling windows rather than calendar-year
-  approximation).
+- ~~Rolling sub-annual rates~~ **done** (engine 0.3.0): month-aligned
+  windows priced exactly on the monthly substrate; ask/rate route to it
+  automatically. Follow-ups: tempo-conditioned buckets (current intensity,
+  not just threshold-recency — the Ethiopia-short-window blind spot), a
+  rolling walk-forward backtest, pair grain at month grain.
 - **Bucket nowcasting**: use candidate months (and ACLED weeklies) to update
   a unit's recency bucket for the current partial year, instead of taking
   status at the annual data edge.

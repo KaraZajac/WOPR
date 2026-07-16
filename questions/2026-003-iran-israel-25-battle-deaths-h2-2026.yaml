@@ -24,8 +24,8 @@ resolution_policy:
   method: auto
 forecasts: []
 prior:
-  p: 0.9339
-  computed: '2026-07-16T12:42:33Z'
+  p: 0.7692
+  computed: '2026-07-16T13:33:16Z'
   engine: 0.2.0
   detail:
     spec:
@@ -35,50 +35,36 @@ prior:
       types:
       - sb
       threshold: 25
-      as_of: 2026
-      period:
-      - 1989
-      - 2025
+      window_months: 5
+      start_month: 2026-08
     unit_name: Government of Iran - Government of Israel
     bucket: active-4-9
     bucket_coarse: active
-    bucket_data_end: 2025
+    bucket_data_end: 2026-05
     levels:
       self:
         units: 1
-        years: 4
-        hits: 4
-        rate: 1.0
+        months: 52
+        hits: 40
+        rate: 0.7692
       region:
         units: 96
-        years: 84
-        hits: 74
-        rate: 0.881
+        months: 910
+        hits: 700
+        rate: 0.7692
         M: 5.0
-        posterior: 0.9339
+        posterior: 0.7692
       global:
         units: 697
-        years: 528
-        hits: 433
-        rate: 0.8201
-        M: 5.3
-        posterior: 0.8974
-    unconditional:
-      self:
-        years: 9
-        hits: 8
-        rate: 0.8889
-      region:
-        years: 2644
-        hits: 320
-        rate: 0.121
-      global:
-        years: 19495
-        hits: 2081
-        rate: 0.1067
-    headline_level: region
-    p: 0.9339
+        months: 5131
+        hits: 3592
+        rate: 0.7001
+        M: 5.0
+        posterior: 0.7632
     notes:
-    - annual-hit probability; sub-annual or cross-year windows approximated by the calendar-year rate
-    - dyad universe = dyads UCDP ever observed; this is a recurrence rate, not a rate for arbitrary pairs
-    - death counts begin 1989 (GED); earlier history invisible to this measure
+    - rolling 5-month window from 2026-08; class counts are overlapping window-starts (rates read fine;
+      dispersion slightly overstated)
+    - target bucket uses preliminary candidate months
+    - dyad universe = dyads UCDP ever observed; recurrence rate, not an arbitrary-pair rate
+    headline_level: region
+    p: 0.7692
