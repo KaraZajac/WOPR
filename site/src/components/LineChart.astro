@@ -1,0 +1,88 @@
+---
+// Single-series line over uniform x steps (years or months) with an optional
+// 10%-wash underfill, hairline grid, clean ticks, endpoint direct label, and
+// per-step hover targets feeding the shared tooltip. Values are also in the
+// table view (tooltips enhance, never gate).
+import { linePath, scale, ticks } from "../lib/scale.js";
+
+const {
+  title,
+  sub = "",
+  series = [],            // [[label, value], …]
+  yMax = null,            // e.g. 1 for probabilities
+  fmt = (v) => String(v), // value formatter (tooltip, ticks, table)
+  wash = true,
+  w = 520,
+  h = 190,
+  unit = "",
+  markLast = true,
+} = Astro.props;
+
+const PAD = { l: 44, r: 46, t: 10, b: 22 };
+const vals = series.map((d) => d[1]);
+const top = yMax ?? Math.max(...vals, 1e-9) * 1.05;
+const tks = yMax === 1 ? [0, 0.25, 0.5, 0.75, 1] : ticks(top);
+const x = scale(0, Math.max(series.length - 1, 1), PAD.l, w - PAD.r);
+const y = scale(0, yMax ?? tks[tks.length - 1], h - PAD.b, PAD.t);
+const pts = series.map((d, i) => [x(i), y(d[1])]);
+const last = pts[pts.length - 1];
+const step = series.length > 1 ? x(1) - x(0) : w;
+const nLabels = Math.min(series.length, 6);
+const labelEvery = Math.max(1, Math.round(series.length / nLabels));
+---
+
+<div class="card viz">
+  <h3>{title}</h3>
+  {sub && <p class="viz-sub">{sub}</p>}
+  <div class="viz-scroll">
+    <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} role="img" aria-label={title}>
+      {tks.map((t) => (
+        <>
+          <line class="gridline" x1={PAD.l} x2={w - PAD.r} y1={y(t)} y2={y(t)} />
+          <text class="tick-text" x={PAD.l - 6} y={y(t) + 3} text-anchor="end">{fmt(t)}</text>
+        </>
+      ))}
+      {series.map((d, i) =>
+        i % labelEvery === 0 ? (
+          <text class="tick-text" x={x(i)} y={h - 6} text-anchor="middle">{String(d[0])}</text>
+        ) : null
+      )}
+      {wash && pts.length > 1 && (
+        <path
+          class="area-wash"
+          d={`${linePath(pts)}L${last[0]},${y(0)}L${pts[0][0]},${y(0)}Z`}
+        />
+      )}
+      {pts.length > 1 && <path class="line-accent" d={linePath(pts)} />}
+      {markLast && last && (
+        <>
+          <circle class="mark-accent dot-ring" cx={last[0]} cy={last[1]} r="4.5" />
+          <text class="end-label" x={last[0] + 8} y={last[1] + 4}>{fmt(series[series.length - 1][1])}</text>
+        </>
+      )}
+      {series.map((d, i) => (
+        <rect
+          class="hit"
+          x={x(i) - step / 2}
+          y={PAD.t}
+          width={step}
+          height={h - PAD.t - PAD.b}
+          tabindex="0"
+          data-tip-value={fmt(d[1]) + (unit ? ` ${unit}` : "")}
+          data-tip-label={String(d[0])}
+        />
+      ))}
+    </svg>
+  </div>
+  <details class="tableview">
+    <summary>table view</summary>
+    <table class="data">
+      <thead><tr><th>period</th><th class="n">{unit || "value"}</th></tr></thead>
+      <tbody>
+        {series.map((d) => (
+          <tr><td>{String(d[0])}</td><td class="n">{fmt(d[1])}</td></tr>
+        ))}
+      </tbody>
+    </table>
+  </details>
+</div>

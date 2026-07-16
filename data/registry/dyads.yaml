@@ -10,6 +10,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 145
+    b: []
   acd: true
   active_years:
   - 1946
@@ -25,6 +29,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 145
+    b: []
   acd: true
   active_years:
   - 1949
@@ -41,6 +49,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 145
+    b: []
   acd: true
   active_years:
   - 1967
@@ -56,6 +68,10 @@
   type: extrasystemic
   region:
   - Asia
+  gwno:
+    a:
+    - 220
+    b: []
   acd: true
   active_years:
   - 1946
@@ -78,6 +94,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 710
+    b: []
   acd: true
   active_years:
   - 1946
@@ -96,6 +116,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 350
+    b: []
   acd: true
   active_years:
   - 1946
@@ -114,6 +138,10 @@
   type: extrasystemic
   region:
   - Asia
+  gwno:
+    a:
+    - 210
+    b: []
   acd: true
   active_years:
   - 1946
@@ -132,6 +160,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 630
+    b: []
   acd: true
   active_years:
   - 1946
@@ -165,6 +197,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 630
+    b: []
   acd: true
   active_years:
   - 1946
@@ -180,6 +216,10 @@
   type: extrasystemic
   region:
   - Middle East
+  gwno:
+    a:
+    - 200
+    b: []
   acd: true
   active_years:
   - 1946
@@ -195,6 +235,10 @@
   type: extrasystemic
   region:
   - Asia
+  gwno:
+    a:
+    - 220
+    b: []
   acd: true
   active_years:
   - 1946
@@ -217,6 +261,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 1946
@@ -240,6 +288,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 1969
@@ -309,6 +361,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 1987
@@ -326,6 +382,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 1946
@@ -343,6 +403,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 1946
@@ -358,6 +422,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 1946
@@ -373,6 +441,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 1946
@@ -390,6 +462,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 1946
@@ -410,6 +486,11 @@
   region:
   - Europe
   - Asia
+  gwno:
+    a:
+    - 220
+    b:
+    - 800
   acd: true
   active_years:
   - 1946
@@ -425,6 +506,11 @@
   type: interstate
   region:
   - Europe
+  gwno:
+    a:
+    - 339
+    b:
+    - 200
   acd: true
   active_years:
   - 1946
@@ -440,6 +526,10 @@
   type: extrasystemic
   region:
   - Asia
+  gwno:
+    a:
+    - 220
+    b: []
   acd: true
   active_years:
   - 1946
@@ -463,6 +553,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 710
+    b: []
   acd: true
   active_years:
   - 1947
@@ -478,6 +572,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b:
+    - 770
   acd: true
   active_years:
   - 1948
@@ -520,6 +619,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 220
+    b: []
   acd: true
   active_years:
   - 1947
@@ -535,6 +638,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 150
+    b: []
   acd: true
   active_years:
   - 1947
@@ -550,6 +657,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 150
+    b: []
   acd: true
   active_years:
   - 1954
@@ -565,6 +676,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 150
+    b: []
   acd: true
   active_years:
   - 1989
@@ -580,6 +695,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1949
@@ -621,6 +740,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1966
@@ -683,6 +806,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 2000
@@ -698,6 +825,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 2010
@@ -715,6 +846,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1948
@@ -770,6 +905,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1948
@@ -788,6 +927,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1948
@@ -808,6 +951,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1990
@@ -826,6 +973,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1948
@@ -850,6 +1001,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1948
@@ -878,6 +1033,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1964
@@ -901,6 +1060,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1964
@@ -925,6 +1088,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1973
@@ -945,6 +1112,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1977
@@ -960,6 +1131,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1991
@@ -976,6 +1151,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1949
@@ -993,6 +1172,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1952
@@ -1014,6 +1197,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1959
@@ -1034,6 +1221,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1996
@@ -1049,6 +1240,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 94
+    b: []
   acd: true
   active_years:
   - 1948
@@ -1064,6 +1259,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 751
+    b:
+    - 750
   acd: true
   active_years:
   - 1948
@@ -1079,6 +1279,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1948
@@ -1097,6 +1301,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1969
@@ -1114,6 +1322,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1991
@@ -1141,6 +1353,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1999
@@ -1161,6 +1377,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 2005
@@ -1201,6 +1421,15 @@
   type: interstate
   region:
   - Middle East
+  gwno:
+    a:
+    - 651
+    - 645
+    - 663
+    - 660
+    - 652
+    b:
+    - 666
   acd: true
   active_years:
   - 1948
@@ -1217,6 +1446,10 @@
   type: extrasystemic
   region:
   - Asia
+  gwno:
+    a:
+    - 200
+    b: []
   acd: true
   active_years:
   - 1948
@@ -1241,6 +1474,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 1948
@@ -1256,6 +1493,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 1962
@@ -1279,6 +1520,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 1979
@@ -1297,6 +1542,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 2009
@@ -1321,6 +1570,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1949
@@ -1337,6 +1590,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1961
@@ -1397,6 +1654,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 710
+    b:
+    - 713
   acd: true
   active_years:
   - 1949
@@ -1415,6 +1677,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 90
+    b: []
   acd: true
   active_years:
   - 1949
@@ -1430,6 +1696,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 90
+    b: []
   acd: true
   active_years:
   - 1954
@@ -1445,6 +1715,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 90
+    b: []
   acd: true
   active_years:
   - 1963
@@ -1471,6 +1745,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 90
+    b: []
   acd: true
   active_years:
   - 1970
@@ -1497,6 +1775,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 90
+    b: []
   acd: true
   active_years:
   - 1975
@@ -1518,6 +1800,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 90
+    b: []
   acd: true
   active_years:
   - 1979
@@ -1535,6 +1821,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 90
+    b: []
   acd: true
   active_years:
   - 1982
@@ -1563,6 +1853,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 1949
@@ -1593,6 +1887,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 1965
@@ -1616,6 +1914,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 1965
@@ -1654,6 +1956,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 1974
@@ -1683,6 +1989,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 1989
@@ -1699,6 +2009,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 1989
@@ -1714,6 +2028,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 1990
@@ -1740,6 +2058,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 1993
@@ -1773,6 +2095,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 1995
@@ -1807,6 +2133,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 1996
@@ -1825,6 +2155,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 2002
@@ -1842,6 +2176,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 2006
@@ -1859,6 +2197,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 731
+    b:
+    - 732
   acd: true
   active_years:
   - 1949
@@ -1878,6 +2221,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 710
+    b: []
   acd: true
   active_years:
   - 1950
@@ -1895,6 +2242,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 850
+    b: []
   acd: true
   active_years:
   - 1950
@@ -1910,6 +2261,10 @@
   type: extrasystemic
   region:
   - Americas
+  gwno:
+    a:
+    - 2
+    b: []
   acd: true
   active_years:
   - 1950
@@ -1926,6 +2281,11 @@
   region:
   - Europe
   - Middle East
+  gwno:
+    a:
+    - 651
+    b:
+    - 200
   acd: true
   active_years:
   - 1951
@@ -1942,6 +2302,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 800
+    b: []
   acd: true
   active_years:
   - 1951
@@ -1957,6 +2321,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 800
+    b: []
   acd: true
   active_years:
   - 1974
@@ -1980,6 +2348,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 200
+    b: []
   acd: true
   active_years:
   - 1952
@@ -1999,6 +2371,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 40
+    b: []
   acd: true
   active_years:
   - 1953
@@ -2017,6 +2393,10 @@
   type: internationalized-intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 40
+    b: []
   acd: true
   active_years:
   - 1961
@@ -2032,6 +2412,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 850
+    b: []
   acd: true
   active_years:
   - 1953
@@ -2051,6 +2435,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 850
+    b: []
   acd: true
   active_years:
   - 1958
@@ -2069,6 +2457,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 850
+    b: []
   acd: true
   active_years:
   - 1958
@@ -2087,6 +2479,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 220
+    b: []
   acd: true
   active_years:
   - 1953
@@ -2105,6 +2501,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 220
+    b: []
   acd: true
   active_years:
   - 1953
@@ -2123,6 +2523,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 220
+    b: []
   acd: true
   active_years:
   - 1954
@@ -2146,6 +2550,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 220
+    b: []
   acd: true
   active_years:
   - 1955
@@ -2163,6 +2571,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 160
+    b: []
   acd: true
   active_years:
   - 1955
@@ -2178,6 +2590,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 160
+    b: []
   acd: true
   active_years:
   - 1955
@@ -2193,6 +2609,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 160
+    b: []
   acd: true
   active_years:
   - 1963
@@ -2208,6 +2628,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 160
+    b: []
   acd: true
   active_years:
   - 1974
@@ -2226,6 +2650,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 160
+    b: []
   acd: true
   active_years:
   - 1975
@@ -2243,6 +2671,10 @@
   type: extrasystemic
   region:
   - Europe
+  gwno:
+    a:
+    - 200
+    b: []
   acd: true
   active_years:
   - 1955
@@ -2262,6 +2694,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 817
+    b: []
   acd: true
   active_years:
   - 1955
@@ -2286,6 +2722,11 @@
   type: interstate
   region:
   - Europe
+  gwno:
+    a:
+    - 310
+    b:
+    - 365
   acd: true
   active_years:
   - 1956
@@ -2301,6 +2742,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1956
@@ -2327,6 +2772,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1992
@@ -2351,6 +2800,13 @@
   region:
   - Europe
   - Middle East
+  gwno:
+    a:
+    - 651
+    b:
+    - 220
+    - 666
+    - 200
   acd: true
   active_years:
   - 1956
@@ -2366,6 +2822,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1957
@@ -2390,6 +2850,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 220
+    b: []
   acd: true
   active_years:
   - 1957
@@ -2407,6 +2871,11 @@
   type: interstate
   region:
   - Americas
+  gwno:
+    a:
+    - 91
+    b:
+    - 93
   acd: true
   active_years:
   - 1957
@@ -2422,6 +2891,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 220
+    b: []
   acd: true
   active_years:
   - 1957
@@ -2438,6 +2911,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 230
+    b: []
   acd: true
   active_years:
   - 1957
@@ -2454,6 +2931,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 698
+    b: []
   acd: true
   active_years:
   - 1957
@@ -2469,6 +2950,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b: []
   acd: true
   active_years:
   - 1958
@@ -2484,6 +2969,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b: []
   acd: true
   active_years:
   - 1959
@@ -2499,6 +2988,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b: []
   acd: true
   active_years:
   - 1963
@@ -2514,6 +3007,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b: []
   acd: true
   active_years:
   - 1963
@@ -2529,6 +3026,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b: []
   acd: true
   active_years:
   - 1982
@@ -2553,6 +3054,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b: []
   acd: true
   active_years:
   - 2004
@@ -2572,6 +3077,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b: []
   acd: true
   active_years:
   - 2004
@@ -2608,6 +3117,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b: []
   acd: true
   active_years:
   - 2005
@@ -2625,6 +3138,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 660
+    b: []
   acd: true
   active_years:
   - 1958
@@ -2640,6 +3157,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 660
+    b: []
   acd: true
   active_years:
   - 1975
@@ -2659,6 +3180,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 660
+    b: []
   acd: true
   active_years:
   - 1976
@@ -2674,6 +3199,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 660
+    b: []
   acd: true
   active_years:
   - 1983
@@ -2690,6 +3219,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 660
+    b: []
   acd: true
   active_years:
   - 1985
@@ -2706,6 +3239,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 660
+    b: []
   acd: true
   active_years:
   - 1986
@@ -2721,6 +3258,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 660
+    b: []
   acd: true
   active_years:
   - 1989
@@ -2737,6 +3278,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 660
+    b: []
   acd: true
   active_years:
   - 1989
@@ -2752,6 +3297,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 820
+    b: []
   acd: true
   active_years:
   - 1958
@@ -2772,6 +3321,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 812
+    b: []
   acd: true
   active_years:
   - 1959
@@ -2800,6 +3353,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 812
+    b: []
   acd: true
   active_years:
   - 1960
@@ -2815,6 +3372,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 812
+    b: []
   acd: true
   active_years:
   - 1989
@@ -2831,6 +3392,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 235
+    b: []
   acd: true
   active_years:
   - 1961
@@ -2858,6 +3423,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 235
+    b: []
   acd: true
   active_years:
   - 1961
@@ -2885,6 +3454,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 235
+    b: []
   acd: true
   active_years:
   - 1966
@@ -2901,6 +3474,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1959
@@ -2916,6 +3493,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1960
@@ -2932,6 +3513,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1962
@@ -2948,6 +3533,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1964
@@ -2971,6 +3560,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1969
@@ -2987,6 +3580,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1969
@@ -3011,6 +3608,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1976
@@ -3026,6 +3627,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1984
@@ -3041,6 +3646,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1985
@@ -3062,6 +3671,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1996
@@ -3091,6 +3704,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 1961
@@ -3107,6 +3724,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 1960
@@ -3124,6 +3745,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1960
@@ -3139,6 +3764,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1976
@@ -3159,6 +3788,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1976
@@ -3188,6 +3821,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1977
@@ -3204,6 +3841,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1983
@@ -3221,6 +3862,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1989
@@ -3238,6 +3883,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1989
@@ -3253,6 +3902,11 @@
   type: interstate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b:
+    - 520
   acd: true
   active_years:
   - 1964
@@ -3271,6 +3925,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 790
+    b: []
   acd: true
   active_years:
   - 1960
@@ -3288,6 +3946,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 790
+    b: []
   acd: true
   active_years:
   - 1996
@@ -3313,6 +3975,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 220
+    b: []
   acd: true
   active_years:
   - 1961
@@ -3329,6 +3995,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b: []
   acd: true
   active_years:
   - 1961
@@ -3368,6 +4038,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b: []
   acd: true
   active_years:
   - 1976
@@ -3399,6 +4073,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b: []
   acd: true
   active_years:
   - 1977
@@ -3416,6 +4094,11 @@
   region:
   - Europe
   - Africa
+  gwno:
+    a:
+    - 220
+    b:
+    - 616
   acd: true
   active_years:
   - 1961
@@ -3431,6 +4114,10 @@
   type: extrasystemic
   region:
   - Asia
+  gwno:
+    a:
+    - 200
+    b: []
   acd: true
   active_years:
   - 1962
@@ -3446,6 +4133,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 710
+    b:
+    - 750
   acd: true
   active_years:
   - 1962
@@ -3463,6 +4155,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1964
@@ -3494,6 +4190,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1973
@@ -3527,6 +4227,11 @@
   region:
   - Europe
   - Asia
+  gwno:
+    a:
+    - 850
+    b:
+    - 210
   acd: true
   active_years:
   - 1962
@@ -3542,6 +4247,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 101
+    b: []
   acd: true
   active_years:
   - 1962
@@ -3557,6 +4266,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 101
+    b: []
   acd: true
   active_years:
   - 1982
@@ -3572,6 +4285,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 101
+    b: []
   acd: true
   active_years:
   - 1992
@@ -3587,6 +4304,11 @@
   type: interstate
   region:
   - Africa
+  gwno:
+    a:
+    - 615
+    b:
+    - 600
   acd: true
   active_years:
   - 1963
@@ -3602,6 +4324,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 235
+    b: []
   acd: true
   active_years:
   - 1963
@@ -3627,6 +4353,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 820
+    b: []
   acd: true
   active_years:
   - 1963
@@ -3645,6 +4375,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 850
+    b:
+    - 820
   acd: true
   active_years:
   - 1963
@@ -3663,6 +4398,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 1963
@@ -3687,6 +4426,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 1964
@@ -3703,6 +4446,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 1967
@@ -3718,6 +4465,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 1977
@@ -3734,6 +4485,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 1996
@@ -3750,6 +4505,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 1998
@@ -3767,6 +4526,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 1998
@@ -3785,6 +4548,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2006
@@ -3802,6 +4569,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 481
+    b: []
   acd: true
   active_years:
   - 1964
@@ -3817,6 +4588,10 @@
   type: extrasystemic
   region:
   - Africa
+  gwno:
+    a:
+    - 235
+    b: []
   acd: true
   active_years:
   - 1964
@@ -3842,6 +4617,10 @@
   type: extrasystemic
   region:
   - Middle East
+  gwno:
+    a:
+    - 200
+    b: []
   acd: true
   active_years:
   - 1964
@@ -3860,6 +4639,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 516
+    b: []
   acd: true
   active_years:
   - 1965
@@ -3875,6 +4658,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 516
+    b: []
   acd: true
   active_years:
   - 1991
@@ -3891,6 +4678,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 516
+    b: []
   acd: true
   active_years:
   - 1994
@@ -3910,6 +4701,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 516
+    b: []
   acd: true
   active_years:
   - 1997
@@ -3925,6 +4720,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 516
+    b: []
   acd: true
   active_years:
   - 1995
@@ -3952,6 +4751,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 516
+    b: []
   acd: true
   active_years:
   - 1998
@@ -3972,6 +4775,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1966
@@ -3991,6 +4798,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1971
@@ -4007,6 +4818,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1971
@@ -4022,6 +4837,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1976
@@ -4042,6 +4861,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1977
@@ -4059,6 +4882,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1982
@@ -4074,6 +4901,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1983
@@ -4091,6 +4922,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1987
@@ -4106,6 +4941,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1989
@@ -4122,6 +4961,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1989
@@ -4137,6 +4980,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1989
@@ -4152,6 +4999,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1990
@@ -4167,6 +5018,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1991
@@ -4185,6 +5040,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1991
@@ -4200,6 +5059,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1992
@@ -4217,6 +5080,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1992
@@ -4234,6 +5101,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1992
@@ -4251,6 +5122,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1997
@@ -4267,6 +5142,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 1999
@@ -4286,6 +5165,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 2005
@@ -4302,6 +5185,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 2006
@@ -4317,6 +5204,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 2006
@@ -4333,6 +5224,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 2008
@@ -4348,6 +5243,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 2009
@@ -4363,6 +5262,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 2010
@@ -4378,6 +5281,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 100
+    b: []
   acd: true
   active_years:
   - 1964
@@ -4441,6 +5348,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 100
+    b: []
   acd: true
   active_years:
   - 1966
@@ -4495,6 +5406,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 100
+    b: []
   acd: true
   active_years:
   - 1978
@@ -4518,6 +5433,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 100
+    b: []
   acd: true
   active_years:
   - 1984
@@ -4537,6 +5456,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 42
+    b: []
   acd: true
   active_years:
   - 1965
@@ -4552,6 +5475,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 850
+    b: []
   acd: true
   active_years:
   - 1965
@@ -4583,6 +5510,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 135
+    b: []
   acd: true
   active_years:
   - 1965
@@ -4598,6 +5529,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 135
+    b: []
   acd: true
   active_years:
   - 1965
@@ -4613,6 +5548,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 135
+    b: []
   acd: true
   active_years:
   - 1982
@@ -4649,6 +5588,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 135
+    b: []
   acd: true
   active_years:
   - 1989
@@ -4668,6 +5611,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 817
+    b:
+    - 816
   acd: true
   active_years:
   - 1965
@@ -4693,6 +5641,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 811
+    b:
+    - 800
   acd: true
   active_years:
   - 1977
@@ -4711,6 +5664,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 452
+    b: []
   acd: true
   active_years:
   - 1966
@@ -4726,6 +5683,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 452
+    b: []
   acd: true
   active_years:
   - 1981
@@ -4741,6 +5702,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 452
+    b: []
   acd: true
   active_years:
   - 1983
@@ -4756,6 +5721,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1966
@@ -4773,6 +5742,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 475
+    b: []
   acd: true
   active_years:
   - 1966
@@ -4788,6 +5761,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 475
+    b: []
   acd: true
   active_years:
   - 2009
@@ -4818,6 +5795,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 560
+    b: []
   acd: true
   active_years:
   - 1966
@@ -4856,6 +5837,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 652
+    b: []
   acd: true
   active_years:
   - 1966
@@ -4871,6 +5856,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 652
+    b: []
   acd: true
   active_years:
   - 1979
@@ -4889,6 +5878,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 811
+    b: []
   acd: true
   active_years:
   - 1967
@@ -4932,6 +5925,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 811
+    b: []
   acd: true
   active_years:
   - 1978
@@ -4948,6 +5945,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 811
+    b: []
   acd: true
   active_years:
   - 1979
@@ -4975,6 +5976,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 811
+    b: []
   acd: true
   active_years:
   - 1982
@@ -4998,6 +6003,11 @@
   type: interstate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b:
+    - 663
   acd: true
   active_years:
   - 1967
@@ -5013,6 +6023,11 @@
   type: interstate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b:
+    - 652
   acd: true
   active_years:
   - 1967
@@ -5030,6 +6045,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 475
+    b: []
   acd: true
   active_years:
   - 1967
@@ -5048,6 +6067,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 710
+    b:
+    - 775
   acd: true
   active_years:
   - 1969
@@ -5064,6 +6088,11 @@
   region:
   - Europe
   - Asia
+  gwno:
+    a:
+    - 710
+    b:
+    - 365
   acd: true
   active_years:
   - 1969
@@ -5079,6 +6108,11 @@
   type: interstate
   region:
   - Americas
+  gwno:
+    a:
+    - 92
+    b:
+    - 91
   acd: true
   active_years:
   - 1969
@@ -5094,6 +6128,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 438
+    b: []
   acd: true
   active_years:
   - 2000
@@ -5110,6 +6148,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 1970
@@ -5126,6 +6168,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 1972
@@ -5160,6 +6206,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 1990
@@ -5191,6 +6241,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 1993
@@ -5231,6 +6285,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 2001
@@ -5248,6 +6306,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 2007
@@ -5263,6 +6325,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 1971
@@ -5278,6 +6344,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 1976
@@ -5293,6 +6363,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 1983
@@ -5329,6 +6403,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 1996
@@ -5349,6 +6427,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2003
@@ -5370,6 +6452,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2003
@@ -5397,6 +6483,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2006
@@ -5412,6 +6502,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2006
@@ -5427,6 +6521,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2007
@@ -5443,6 +6541,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2010
@@ -5459,6 +6561,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 580
+    b: []
   acd: true
   active_years:
   - 1971
@@ -5474,6 +6580,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 600
+    b: []
   acd: true
   active_years:
   - 1971
@@ -5489,6 +6599,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 1971
@@ -5504,6 +6618,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 780
+    b: []
   acd: true
   active_years:
   - 1971
@@ -5521,6 +6639,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1971
@@ -5536,6 +6658,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1972
@@ -5552,6 +6678,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1974
@@ -5567,6 +6697,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1979
@@ -5582,6 +6716,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1979
@@ -5597,6 +6735,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1980
@@ -5613,6 +6755,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1981
@@ -5633,6 +6779,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1981
@@ -5650,6 +6800,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1982
@@ -5665,6 +6819,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1986
@@ -5681,6 +6839,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1986
@@ -5697,6 +6859,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1987
@@ -5717,6 +6883,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1988
@@ -5732,6 +6902,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1988
@@ -5768,6 +6942,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1996
@@ -5797,6 +6975,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1996
@@ -5812,6 +6994,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 1997
@@ -5827,6 +7013,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 200
+    b: []
   acd: true
   active_years:
   - 1971
@@ -5862,6 +7052,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 200
+    b: []
   acd: true
   active_years:
   - 1998
@@ -5877,6 +7071,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 92
+    b: []
   acd: true
   active_years:
   - 1972
@@ -5892,6 +7090,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 92
+    b: []
   acd: true
   active_years:
   - 1979
@@ -5907,6 +7109,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 92
+    b: []
   acd: true
   active_years:
   - 1979
@@ -5922,6 +7128,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 92
+    b: []
   acd: true
   active_years:
   - 1980
@@ -5948,6 +7158,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 698
+    b: []
   acd: true
   active_years:
   - 1969
@@ -5969,6 +7183,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 552
+    b: []
   acd: true
   active_years:
   - 1967
@@ -5987,6 +7205,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 552
+    b: []
   acd: true
   active_years:
   - 1973
@@ -6005,6 +7227,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 552
+    b: []
   acd: true
   active_years:
   - 1976
@@ -6023,6 +7249,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 165
+    b: []
   acd: true
   active_years:
   - 1972
@@ -6038,6 +7268,11 @@
   type: interstate
   region:
   - Middle East
+  gwno:
+    a:
+    - 680
+    b:
+    - 678
   acd: true
   active_years:
   - 1972
@@ -6054,6 +7289,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 155
+    b: []
   acd: true
   active_years:
   - 1973
@@ -6069,6 +7308,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 771
+    b: []
   acd: true
   active_years:
   - 1975
@@ -6101,6 +7344,11 @@
   region:
   - Europe
   - Middle East
+  gwno:
+    a:
+    - 352
+    b:
+    - 640
   acd: true
   active_years:
   - 1974
@@ -6116,6 +7364,11 @@
   type: interstate
   region:
   - Middle East
+  gwno:
+    a:
+    - 630
+    b:
+    - 645
   acd: true
   active_years:
   - 1974
@@ -6140,6 +7393,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 1974
@@ -6160,6 +7417,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2004
@@ -6185,6 +7446,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2006
@@ -6200,6 +7465,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2008
@@ -6219,6 +7488,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 531
+    b: []
   acd: true
   active_years:
   - 1997
@@ -6236,6 +7509,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 540
+    b: []
   acd: true
   active_years:
   - 1975
@@ -6255,6 +7532,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 540
+    b: []
   acd: true
   active_years:
   - 1975
@@ -6295,6 +7576,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 811
+    b:
+    - 816
   acd: true
   active_years:
   - 1975
@@ -6312,6 +7598,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1964
@@ -6327,6 +7617,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1976
@@ -6349,6 +7643,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1993
@@ -6366,6 +7664,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1994
@@ -6401,6 +7703,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 850
+    b: []
   acd: true
   active_years:
   - 1975
@@ -6433,6 +7739,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 600
+    b: []
   acd: true
   active_years:
   - 1975
@@ -6462,6 +7772,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 541
+    b: []
   acd: true
   active_years:
   - 1977
@@ -6495,6 +7809,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1978
@@ -6510,6 +7828,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1979
@@ -6539,6 +7861,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1980
@@ -6562,6 +7888,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1980
@@ -6600,6 +7930,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1980
@@ -6626,6 +7960,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1980
@@ -6649,6 +7987,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1980
@@ -6673,6 +8015,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1981
@@ -6695,6 +8041,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1984
@@ -6710,6 +8060,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1989
@@ -6731,6 +8085,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1990
@@ -6746,6 +8104,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1993
@@ -6763,6 +8125,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1995
@@ -6798,6 +8164,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 1996
@@ -6818,6 +8188,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 710
+    b:
+    - 816
   acd: true
   active_years:
   - 1974
@@ -6842,6 +8217,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1979
@@ -6866,6 +8245,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1992
@@ -6882,6 +8265,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1997
@@ -6902,6 +8289,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 93
+    b: []
   acd: true
   active_years:
   - 1977
@@ -6919,6 +8310,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 93
+    b: []
   acd: true
   active_years:
   - 1982
@@ -6942,6 +8337,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 520
+    b: []
   acd: true
   active_years:
   - 1982
@@ -6959,6 +8358,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 520
+    b: []
   acd: true
   active_years:
   - 1983
@@ -6981,6 +8384,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 520
+    b: []
   acd: true
   active_years:
   - 1989
@@ -6998,6 +8405,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 520
+    b: []
   acd: true
   active_years:
   - 1990
@@ -7014,6 +8425,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 520
+    b: []
   acd: true
   active_years:
   - 1991
@@ -7034,6 +8449,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 520
+    b: []
   acd: true
   active_years:
   - 2001
@@ -7050,6 +8469,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 520
+    b: []
   acd: true
   active_years:
   - 2006
@@ -7067,6 +8490,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 520
+    b: []
   acd: true
   active_years:
   - 2008
@@ -7099,6 +8526,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 520
+    b: []
   acd: true
   active_years:
   - 2009
@@ -7115,6 +8546,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 630
+    b: []
   acd: true
   active_years:
   - 1979
@@ -7142,6 +8577,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 630
+    b: []
   acd: true
   active_years:
   - 2005
@@ -7165,6 +8604,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 630
+    b: []
   acd: true
   active_years:
   - 2006
@@ -7184,6 +8627,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 630
+    b: []
   acd: true
   active_years:
   - 1979
@@ -7200,6 +8647,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 670
+    b: []
   acd: true
   active_years:
   - 1979
@@ -7215,6 +8666,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 450
+    b: []
   acd: true
   active_years:
   - 1980
@@ -7230,6 +8685,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 450
+    b: []
   acd: true
   active_years:
   - 1989
@@ -7246,6 +8705,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 450
+    b: []
   acd: true
   active_years:
   - 1990
@@ -7261,6 +8724,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 450
+    b: []
   acd: true
   active_years:
   - 2000
@@ -7279,6 +8746,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 450
+    b: []
   acd: true
   active_years:
   - 2003
@@ -7294,6 +8765,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 230
+    b: []
   acd: true
   active_years:
   - 1978
@@ -7317,6 +8792,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 616
+    b: []
   acd: true
   active_years:
   - 1980
@@ -7332,6 +8811,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 420
+    b: []
   acd: true
   active_years:
   - 1981
@@ -7347,6 +8830,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 560
+    b: []
   acd: true
   active_years:
   - 1981
@@ -7369,6 +8856,11 @@
   region:
   - Europe
   - Americas
+  gwno:
+    a:
+    - 160
+    b:
+    - 200
   acd: true
   active_years:
   - 1982
@@ -7384,6 +8876,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1982
@@ -7411,6 +8907,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1993
@@ -7435,6 +8935,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 2008
@@ -7451,6 +8955,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 2008
@@ -7467,6 +8975,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 501
+    b: []
   acd: true
   active_years:
   - 1982
@@ -7482,6 +8994,11 @@
   type: interstate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b:
+    - 475
   acd: true
   active_years:
   - 1983
@@ -7497,6 +9014,11 @@
   type: interstate
   region:
   - Americas
+  gwno:
+    a:
+    - 55
+    b:
+    - 2
   acd: true
   active_years:
   - 1983
@@ -7512,6 +9034,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1983
@@ -7537,6 +9063,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 780
+    b: []
   acd: true
   active_years:
   - 1984
@@ -7575,6 +9105,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 780
+    b: []
   acd: true
   active_years:
   - 1984
@@ -7591,6 +9125,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 780
+    b: []
   acd: true
   active_years:
   - 1985
@@ -7607,6 +9145,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 471
+    b: []
   acd: true
   active_years:
   - 1960
@@ -7623,6 +9165,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 471
+    b: []
   acd: true
   active_years:
   - 1984
@@ -7638,6 +9184,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 640
+    b: []
   acd: true
   active_years:
   - 1984
@@ -7693,6 +9243,11 @@
   type: interstate
   region:
   - Africa
+  gwno:
+    a:
+    - 439
+    b:
+    - 432
   acd: true
   active_years:
   - 1985
@@ -7708,6 +9263,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 812
+    b:
+    - 800
   acd: true
   active_years:
   - 1986
@@ -7725,6 +9285,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 115
+    b: []
   acd: true
   active_years:
   - 1987
@@ -7740,6 +9304,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 461
+    b: []
   acd: true
   active_years:
   - 1986
@@ -7755,6 +9323,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 680
+    b: []
   acd: true
   active_years:
   - 1986
@@ -7770,6 +9342,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 439
+    b: []
   acd: true
   active_years:
   - 1987
@@ -7785,6 +9361,11 @@
   type: interstate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b:
+    - 620
   acd: true
   active_years:
   - 1987
@@ -7800,6 +9381,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 581
+    b: []
   acd: true
   active_years:
   - 1989
@@ -7815,6 +9400,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1975
@@ -7831,6 +9420,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1996
@@ -7846,6 +9439,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1990
@@ -7896,6 +9493,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1990
@@ -7928,6 +9529,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 850
+    b: []
   acd: true
   active_years:
   - 1990
@@ -7951,6 +9556,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 95
+    b: []
   acd: true
   active_years:
   - 1989
@@ -7966,6 +9575,11 @@
   type: interstate
   region:
   - Americas
+  gwno:
+    a:
+    - 95
+    b:
+    - 2
   acd: true
   active_years:
   - 1989
@@ -7981,6 +9595,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 910
+    b: []
   acd: true
   active_years:
   - 1990
@@ -8001,6 +9619,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 360
+    b: []
   acd: true
   active_years:
   - 1989
@@ -8016,6 +9638,11 @@
   type: interstate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b:
+    - 690
   acd: true
   active_years:
   - 1990
@@ -8032,6 +9659,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 1990
@@ -8047,6 +9678,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 1994
@@ -8062,6 +9697,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 2007
@@ -8079,6 +9718,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 436
+    b: []
   acd: true
   active_years:
   - 1994
@@ -8094,6 +9737,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 517
+    b: []
   acd: true
   active_years:
   - 1990
@@ -8113,6 +9760,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 517
+    b: []
   acd: true
   active_years:
   - 1996
@@ -8132,6 +9783,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 433
+    b: []
   acd: true
   active_years:
   - 1990
@@ -8155,6 +9810,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 1990
@@ -8171,6 +9830,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 1990
@@ -8186,6 +9849,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 52
+    b: []
   acd: true
   active_years:
   - 1990
@@ -8201,6 +9868,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 522
+    b: []
   acd: true
   active_years:
   - 1991
@@ -8219,6 +9890,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 522
+    b: []
   acd: true
   active_years:
   - 1999
@@ -8234,6 +9909,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 372
+    b: []
   acd: true
   active_years:
   - 1991
@@ -8249,6 +9928,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 372
+    b: []
   acd: true
   active_years:
   - 1992
@@ -8265,6 +9948,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 41
+    b: []
   acd: true
   active_years:
   - 1989
@@ -8280,6 +9967,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 41
+    b: []
   acd: true
   active_years:
   - 1991
@@ -8295,6 +9986,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 41
+    b: []
   acd: true
   active_years:
   - 2004
@@ -8310,6 +10005,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 41
+    b: []
   acd: true
   active_years:
   - 2004
@@ -8325,6 +10024,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 451
+    b: []
   acd: true
   active_years:
   - 1991
@@ -8350,6 +10053,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 451
+    b: []
   acd: true
   active_years:
   - 1997
@@ -8367,6 +10074,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 451
+    b: []
   acd: true
   active_years:
   - 1997
@@ -8383,6 +10094,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 451
+    b: []
   acd: true
   active_years:
   - 2000
@@ -8398,6 +10113,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 640
+    b: []
   acd: true
   active_years:
   - 1991
@@ -8415,6 +10134,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 640
+    b: []
   acd: true
   active_years:
   - 2005
@@ -8430,6 +10153,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 345
+    b: []
   acd: true
   active_years:
   - 1991
@@ -8445,6 +10172,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 345
+    b: []
   acd: true
   active_years:
   - 1991
@@ -8460,6 +10191,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 345
+    b: []
   acd: true
   active_years:
   - 1991
@@ -8476,6 +10211,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 615
+    b: []
   acd: true
   active_years:
   - 1991
@@ -8491,6 +10230,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 615
+    b: []
   acd: true
   active_years:
   - 1992
@@ -8511,6 +10254,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 615
+    b: []
   acd: true
   active_years:
   - 1993
@@ -8536,6 +10283,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 615
+    b: []
   acd: true
   active_years:
   - 1999
@@ -8571,6 +10322,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 540
+    b: []
   acd: true
   active_years:
   - 1991
@@ -8589,6 +10344,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 540
+    b: []
   acd: true
   active_years:
   - 1992
@@ -8614,6 +10373,10 @@
   type: internationalized-intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 373
+    b: []
   acd: true
   active_years:
   - 1991
@@ -8645,6 +10408,10 @@
   type: internationalized-intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 346
+    b: []
   acd: true
   active_years:
   - 1992
@@ -8663,6 +10430,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 346
+    b: []
   acd: true
   active_years:
   - 1992
@@ -8681,6 +10452,10 @@
   type: internationalized-intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 344
+    b: []
   acd: true
   active_years:
   - 1992
@@ -8696,6 +10471,10 @@
   type: internationalized-intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 344
+    b: []
   acd: true
   active_years:
   - 1992
@@ -8714,6 +10493,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 651
+    b: []
   acd: true
   active_years:
   - 1993
@@ -8734,6 +10517,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 372
+    b: []
   acd: true
   active_years:
   - 1992
@@ -8750,6 +10537,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 372
+    b: []
   acd: true
   active_years:
   - 1992
@@ -8767,6 +10558,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 359
+    b: []
   acd: true
   active_years:
   - 1992
@@ -8782,6 +10577,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 702
+    b: []
   acd: true
   active_years:
   - 1992
@@ -8802,6 +10601,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 702
+    b: []
   acd: true
   active_years:
   - 1997
@@ -8818,6 +10621,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 373
+    b: []
   acd: true
   active_years:
   - 1993
@@ -8833,6 +10640,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 373
+    b: []
   acd: true
   active_years:
   - 1995
@@ -8848,6 +10659,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 346
+    b: []
   acd: true
   active_years:
   - 1993
@@ -8865,6 +10680,10 @@
   type: internationalized-intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 346
+    b: []
   acd: true
   active_years:
   - 1993
@@ -8881,6 +10700,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 346
+    b: []
   acd: true
   active_years:
   - 1992
@@ -8898,6 +10721,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 1993
@@ -8913,6 +10740,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 70
+    b: []
   acd: true
   active_years:
   - 1994
@@ -8928,6 +10759,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 70
+    b: []
   acd: true
   active_years:
   - 1996
@@ -8943,6 +10778,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 1994
@@ -8969,6 +10808,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 1994
@@ -8984,6 +10827,11 @@
   type: interstate
   region:
   - Americas
+  gwno:
+    a:
+    - 130
+    b:
+    - 135
   acd: true
   active_years:
   - 1995
@@ -8999,6 +10847,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 1990
@@ -9017,6 +10869,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2007
@@ -9050,6 +10906,11 @@
   type: interstate
   region:
   - Africa
+  gwno:
+    a:
+    - 471
+    b:
+    - 475
   acd: true
   active_years:
   - 1996
@@ -9065,6 +10926,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 436
+    b: []
   acd: true
   active_years:
   - 1995
@@ -9080,6 +10945,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 581
+    b: []
   acd: true
   active_years:
   - 1997
@@ -9095,6 +10964,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 484
+    b: []
   acd: true
   active_years:
   - 1993
@@ -9111,6 +10984,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 484
+    b: []
   acd: true
   active_years:
   - 1997
@@ -9126,6 +11003,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 484
+    b: []
   acd: true
   active_years:
   - 1997
@@ -9143,6 +11024,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 484
+    b: []
   acd: true
   active_years:
   - 1998
@@ -9161,6 +11046,11 @@
   type: interstate
   region:
   - Africa
+  gwno:
+    a:
+    - 531
+    b:
+    - 530
   acd: true
   active_years:
   - 1998
@@ -9179,6 +11069,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 404
+    b: []
   acd: true
   active_years:
   - 1998
@@ -9195,6 +11089,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 570
+    b: []
   acd: true
   active_years:
   - 1998
@@ -9210,6 +11108,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 345
+    b: []
   acd: true
   active_years:
   - 1998
@@ -9226,6 +11128,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1977
@@ -9274,6 +11180,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 1999
@@ -9289,6 +11199,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 704
+    b: []
   acd: true
   active_years:
   - 1999
@@ -9305,6 +11219,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 704
+    b: []
   acd: true
   active_years:
   - 2004
@@ -9320,6 +11238,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 482
+    b: []
   acd: true
   active_years:
   - 2001
@@ -9335,6 +11257,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 482
+    b: []
   acd: true
   active_years:
   - 2002
@@ -9350,6 +11276,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 482
+    b: []
   acd: true
   active_years:
   - 2006
@@ -9367,6 +11297,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 482
+    b: []
   acd: true
   active_years:
   - 2009
@@ -9384,6 +11318,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 343
+    b: []
   acd: true
   active_years:
   - 2001
@@ -9399,6 +11337,10 @@
   type: internationalized-intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 2
+    b: []
   acd: true
   active_years:
   - 2001
@@ -9431,6 +11373,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 437
+    b: []
   acd: true
   active_years:
   - 2002
@@ -9446,6 +11392,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 437
+    b: []
   acd: true
   active_years:
   - 2002
@@ -9462,6 +11412,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 437
+    b: []
   acd: true
   active_years:
   - 2003
@@ -9477,6 +11431,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 437
+    b: []
   acd: true
   active_years:
   - 2004
@@ -9498,6 +11456,13 @@
   - Middle East
   - Asia
   - Americas
+  gwno:
+    a:
+    - 900
+    - 200
+    - 2
+    b:
+    - 645
   acd: true
   active_years:
   - 2003
@@ -9513,6 +11478,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1989
@@ -9529,6 +11498,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 1994
@@ -9552,6 +11525,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 2009
@@ -9568,6 +11545,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1997
@@ -9583,6 +11564,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 800
+    b: []
   acd: true
   active_years:
   - 2003
@@ -9620,6 +11605,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 475
+    b: []
   acd: true
   active_years:
   - 2004
@@ -9635,6 +11624,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 475
+    b: []
   acd: true
   active_years:
   - 2004
@@ -9650,6 +11643,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 1990
@@ -9679,6 +11676,11 @@
   type: interstate
   region:
   - Africa
+  gwno:
+    a:
+    - 510
+    b:
+    - 500
   acd: true
   active_years:
   - 1978
@@ -9694,6 +11696,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 435
+    b: []
   acd: true
   active_years:
   - 1975
@@ -9712,6 +11718,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2007
@@ -9730,6 +11740,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 436
+    b: []
   acd: true
   active_years:
   - 1991
@@ -9746,6 +11760,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 436
+    b: []
   acd: true
   active_years:
   - 1997
@@ -9761,6 +11779,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 436
+    b: []
   acd: true
   active_years:
   - 2007
@@ -9778,6 +11800,11 @@
   region:
   - Europe
   - Asia
+  gwno:
+    a:
+    - 700
+    b:
+    - 365
   acd: true
   active_years:
   - 1979
@@ -9793,6 +11820,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 2007
@@ -9816,6 +11847,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 2008
@@ -9831,6 +11866,11 @@
   type: interstate
   region:
   - Africa
+  gwno:
+    a:
+    - 522
+    b:
+    - 531
   acd: true
   active_years:
   - 2008
@@ -9846,6 +11886,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1977
@@ -9864,6 +11908,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1981
@@ -9880,6 +11928,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 2009
@@ -9901,6 +11953,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1973
@@ -9925,6 +11981,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 702
+    b: []
   acd: true
   active_years:
   - 2010
@@ -9941,6 +12001,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 435
+    b: []
   acd: true
   active_years:
   - 2010
@@ -9956,6 +12020,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1991
@@ -9971,6 +12039,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 1991
@@ -9986,6 +12058,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2013
@@ -10004,6 +12080,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 640
+    b: []
   acd: true
   active_years:
   - 2016
@@ -10019,6 +12099,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 501
+    b: []
   acd: true
   active_years:
   - 2015
@@ -10044,6 +12128,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 437
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10059,6 +12147,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 2008
@@ -10079,6 +12171,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10094,6 +12190,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 616
+    b: []
   acd: true
   active_years:
   - 2013
@@ -10111,6 +12211,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 620
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10126,6 +12230,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2014
@@ -10141,6 +12249,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 771
+    b: []
   acd: true
   active_years:
   - 2005
@@ -10156,6 +12268,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 2023
@@ -10171,6 +12287,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 1991
@@ -10195,6 +12315,12 @@
   - Europe
   - Asia
   - Americas
+  gwno:
+    a:
+    - 700
+    b:
+    - 200
+    - 2
   acd: true
   active_years:
   - 2001
@@ -10210,6 +12336,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 2012
@@ -10229,6 +12359,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 2004
@@ -10244,6 +12378,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2009
@@ -10263,6 +12401,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10286,6 +12428,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 2018
@@ -10307,6 +12453,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2012
@@ -10322,6 +12472,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2016
@@ -10337,6 +12491,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 520
+    b: []
   acd: true
   active_years:
   - 2018
@@ -10352,6 +12510,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10367,6 +12529,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 516
+    b: []
   acd: true
   active_years:
   - 2020
@@ -10383,6 +12549,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 626
+    b: []
   acd: true
   active_years:
   - 2013
@@ -10398,6 +12568,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 2000
@@ -10413,6 +12587,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 2012
@@ -10429,6 +12607,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10446,6 +12628,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 652
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10474,6 +12660,11 @@
   type: interstate
   region:
   - Middle East
+  gwno:
+    a:
+    - 651
+    b:
+    - 666
   acd: true
   active_years:
   - 1967
@@ -10492,6 +12683,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10511,6 +12706,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10526,6 +12725,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10541,6 +12744,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 626
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10556,6 +12763,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 626
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10572,6 +12783,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 620
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10587,6 +12802,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2012
@@ -10607,6 +12826,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 615
+    b: []
   acd: true
   active_years:
   - 2012
@@ -10622,6 +12845,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 2012
@@ -10639,6 +12866,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 2012
@@ -10657,6 +12888,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 2012
@@ -10672,6 +12907,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2011
@@ -10693,6 +12932,11 @@
   type: interstate
   region:
   - Africa
+  gwno:
+    a:
+    - 626
+    b:
+    - 625
   acd: true
   active_years:
   - 2012
@@ -10708,6 +12952,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 710
+    b: []
   acd: true
   active_years:
   - 2008
@@ -10723,6 +12971,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 771
+    b: []
   acd: true
   active_years:
   - 2005
@@ -10739,6 +12991,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2013
@@ -10756,6 +13012,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 517
+    b: []
   acd: true
   active_years:
   - 2001
@@ -10783,6 +13043,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 1991
@@ -10798,6 +13062,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 820
+    b: []
   acd: true
   active_years:
   - 2013
@@ -10813,6 +13081,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2023
@@ -10830,6 +13102,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b:
+    - 770
   acd: true
   active_years:
   - 2024
@@ -10846,6 +13123,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 702
+    b: []
   acd: true
   active_years:
   - 1992
@@ -10861,6 +13142,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 702
+    b: []
   acd: true
   active_years:
   - 2000
@@ -10877,6 +13162,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 482
+    b: []
   acd: true
   active_years:
   - 2013
@@ -10895,6 +13184,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 482
+    b: []
   acd: true
   active_years:
   - 2015
@@ -10910,6 +13203,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 626
+    b: []
   acd: true
   active_years:
   - 2013
@@ -10931,6 +13228,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 471
+    b: []
   acd: true
   active_years:
   - 2015
@@ -10953,6 +13254,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2013
@@ -10968,6 +13273,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 651
+    b: []
   acd: true
   active_years:
   - 2014
@@ -10983,6 +13292,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 630
+    b: []
   acd: true
   active_years:
   - 2019
@@ -11001,6 +13314,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 2013
@@ -11016,6 +13333,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 2009
@@ -11036,6 +13357,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 2013
@@ -11051,6 +13376,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 2014
@@ -11066,6 +13395,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 751
+    b: []
   acd: true
   active_years:
   - 1947
@@ -11082,6 +13415,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 652
+    b: []
   acd: true
   active_years:
   - 2012
@@ -11100,6 +13437,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 645
+    b: []
   acd: true
   active_years:
   - 2004
@@ -11117,6 +13458,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 620
+    b: []
   acd: true
   active_years:
   - 2014
@@ -11136,6 +13481,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 369
+    b: []
   acd: true
   active_years:
   - 2014
@@ -11151,6 +13500,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 2013
@@ -11167,6 +13520,11 @@
   type: interstate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b:
+    - 369
   acd: true
   active_years:
   - 2022
@@ -11185,6 +13543,10 @@
   type: internationalized-intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 369
+    b: []
   acd: true
   active_years:
   - 2014
@@ -11200,6 +13562,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2014
@@ -11216,6 +13582,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2014
@@ -11232,6 +13602,10 @@
   type: internationalized-intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 369
+    b: []
   acd: true
   active_years:
   - 2014
@@ -11247,6 +13621,10 @@
   type: internationalized-intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 369
+    b: []
   acd: true
   active_years:
   - 2014
@@ -11263,6 +13641,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2014
@@ -11278,6 +13660,11 @@
   type: interstate
   region:
   - Asia
+  gwno:
+    a:
+    - 703
+    b:
+    - 702
   acd: true
   active_years:
   - 2021
@@ -11294,6 +13681,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 660
+    b: []
   acd: true
   active_years:
   - 2014
@@ -11311,6 +13702,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 620
+    b: []
   acd: true
   active_years:
   - 2014
@@ -11326,6 +13721,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 2013
@@ -11350,6 +13749,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2016
@@ -11372,6 +13775,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11397,6 +13804,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 360
+    b: []
   acd: true
   active_years:
   - 1989
@@ -11412,6 +13823,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 516
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11427,6 +13842,10 @@
   type: internationalized-intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11452,6 +13871,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11469,6 +13892,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11484,6 +13911,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11505,6 +13936,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 652
+    b: []
   acd: true
   active_years:
   - 2013
@@ -11532,6 +13967,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 475
+    b: []
   acd: true
   active_years:
   - 2021
@@ -11551,6 +13990,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 516
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11566,6 +14009,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 471
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11586,6 +14033,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11607,6 +14058,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 436
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11632,6 +14087,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 475
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11657,6 +14116,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 651
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11679,6 +14142,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 750
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11698,6 +14165,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 640
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11715,6 +14186,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 771
+    b: []
   acd: true
   active_years:
   - 2016
@@ -11731,6 +14206,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 663
+    b: []
   acd: true
   active_years:
   - 2016
@@ -11746,6 +14225,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 616
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11761,6 +14244,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 620
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11780,6 +14267,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 616
+    b: []
   acd: true
   active_years:
   - 2016
@@ -11795,6 +14286,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 652
+    b: []
   acd: true
   active_years:
   - 2016
@@ -11814,6 +14309,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2012
@@ -11829,6 +14328,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 516
+    b: []
   acd: true
   active_years:
   - 2014
@@ -11851,6 +14354,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 615
+    b: []
   acd: true
   active_years:
   - 2015
@@ -11866,6 +14373,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 630
+    b: []
   acd: true
   active_years:
   - 2017
@@ -11881,6 +14392,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 2016
@@ -11896,6 +14411,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2016
@@ -11913,6 +14432,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 439
+    b: []
   acd: true
   active_years:
   - 2019
@@ -11934,6 +14457,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 651
+    b: []
   acd: true
   active_years:
   - 2017
@@ -11951,6 +14478,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 640
+    b: []
   acd: true
   active_years:
   - 2016
@@ -11966,6 +14497,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 2016
@@ -11982,6 +14517,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 520
+    b: []
   acd: true
   active_years:
   - 2019
@@ -12000,6 +14539,10 @@
   type: internationalized-intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 369
+    b: []
   acd: true
   active_years:
   - 2015
@@ -12022,6 +14565,10 @@
   type: internationalized-intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 369
+    b: []
   acd: true
   active_years:
   - 2015
@@ -12043,6 +14590,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 2017
@@ -12066,6 +14617,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2017
@@ -12081,6 +14636,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 436
+    b: []
   acd: true
   active_years:
   - 2021
@@ -12100,6 +14659,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 439
+    b: []
   acd: true
   active_years:
   - 2018
@@ -12122,6 +14685,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 626
+    b: []
   acd: true
   active_years:
   - 2019
@@ -12139,6 +14706,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 620
+    b: []
   acd: true
   active_years:
   - 2017
@@ -12154,6 +14725,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 2017
@@ -12177,6 +14752,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 651
+    b: []
   acd: true
   active_years:
   - 2017
@@ -12192,6 +14771,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 2017
@@ -12207,6 +14790,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 620
+    b: []
   acd: true
   active_years:
   - 2017
@@ -12222,6 +14809,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2018
@@ -12238,6 +14829,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2018
@@ -12256,6 +14851,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 2016
@@ -12279,6 +14878,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 2016
@@ -12294,6 +14897,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 840
+    b: []
   acd: true
   active_years:
   - 2018
@@ -12309,6 +14916,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 541
+    b: []
   acd: true
   active_years:
   - 2018
@@ -12325,6 +14936,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 620
+    b: []
   acd: true
   active_years:
   - 2013
@@ -12340,6 +14955,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 517
+    b: []
   acd: true
   active_years:
   - 2019
@@ -12356,6 +14975,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 100
+    b: []
   acd: true
   active_years:
   - 2000
@@ -12373,6 +14996,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 482
+    b: []
   acd: true
   active_years:
   - 2018
@@ -12391,6 +15018,11 @@
   type: interstate
   region:
   - Middle East
+  gwno:
+    a:
+    - 630
+    b:
+    - 666
   acd: true
   active_years:
   - 2018
@@ -12413,6 +15045,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 702
+    b: []
   acd: true
   active_years:
   - 2018
@@ -12429,6 +15065,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 2018
@@ -12446,6 +15086,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 811
+    b: []
   acd: true
   active_years:
   - 1997
@@ -12462,6 +15106,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 811
+    b: []
   acd: true
   active_years:
   - 1997
@@ -12477,6 +15125,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 471
+    b: []
   acd: true
   active_years:
   - 2017
@@ -12500,6 +15152,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 540
+    b: []
   acd: true
   active_years:
   - 2016
@@ -12521,6 +15177,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2017
@@ -12544,6 +15204,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 541
+    b: []
   acd: true
   active_years:
   - 2019
@@ -12565,6 +15229,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 2019
@@ -12580,6 +15248,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 517
+    b: []
   acd: true
   active_years:
   - 2019
@@ -12596,6 +15268,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2022
@@ -12611,6 +15287,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 482
+    b: []
   acd: true
   active_years:
   - 2023
@@ -12626,6 +15306,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2019
@@ -12647,6 +15331,10 @@
   type: internationalized-intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 2020
@@ -12662,6 +15350,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 2019
@@ -12683,6 +15375,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2005
@@ -12701,6 +15397,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 510
+    b: []
   acd: true
   active_years:
   - 2020
@@ -12716,6 +15416,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 482
+    b: []
   acd: true
   active_years:
   - 2020
@@ -12736,6 +15440,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 2025
@@ -12751,6 +15459,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 434
+    b: []
   acd: true
   active_years:
   - 2022
@@ -12769,6 +15481,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 483
+    b: []
   acd: true
   active_years:
   - 2021
@@ -12784,6 +15500,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 2021
@@ -12803,6 +15523,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2022
@@ -12818,6 +15542,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 2021
@@ -12837,6 +15565,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 640
+    b: []
   acd: true
   active_years:
   - 2000
@@ -12852,6 +15584,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 2022
@@ -12867,6 +15603,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 500
+    b: []
   acd: true
   active_years:
   - 2022
@@ -12882,6 +15622,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 461
+    b: []
   acd: true
   active_years:
   - 2022
@@ -12900,6 +15644,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 626
+    b: []
   acd: true
   active_years:
   - 2021
@@ -12915,6 +15663,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 700
+    b: []
   acd: true
   active_years:
   - 2022
@@ -12931,6 +15683,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 530
+    b: []
   acd: true
   active_years:
   - 2023
@@ -12948,6 +15704,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 100
+    b: []
   acd: true
   active_years:
   - 2018
@@ -12970,6 +15730,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 100
+    b: []
   acd: true
   active_years:
   - 2024
@@ -12985,6 +15749,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 678
+    b: []
   acd: true
   active_years:
   - 2011
@@ -13000,6 +15768,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2023
@@ -13017,6 +15789,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 2023
@@ -13032,6 +15808,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 2023
@@ -13048,6 +15828,10 @@
   type: intrastate
   region:
   - Europe
+  gwno:
+    a:
+    - 365
+    b: []
   acd: true
   active_years:
   - 2023
@@ -13063,6 +15847,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2023
@@ -13078,6 +15866,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 432
+    b: []
   acd: true
   active_years:
   - 2023
@@ -13098,6 +15890,12 @@
   - Europe
   - Middle East
   - Americas
+  gwno:
+    a:
+    - 200
+    - 2
+    b:
+    - 678
   acd: true
   active_years:
   - 2024
@@ -13114,6 +15912,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2024
@@ -13130,6 +15932,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 775
+    b: []
   acd: true
   active_years:
   - 2024
@@ -13145,6 +15951,10 @@
   type: internationalized-intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 41
+    b: []
   acd: true
   active_years:
   - 2024
@@ -13161,6 +15971,10 @@
   type: intrastate
   region:
   - Americas
+  gwno:
+    a:
+    - 100
+    b: []
   acd: true
   active_years:
   - 2025
@@ -13176,6 +15990,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 541
+    b: []
   acd: true
   active_years:
   - 2025
@@ -13191,6 +16009,11 @@
   type: interstate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b:
+    - 678
   acd: true
   active_years:
   - 2025
@@ -13206,6 +16029,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 482
+    b: []
   acd: true
   active_years:
   - 2025
@@ -13221,6 +16048,10 @@
   type: internationalized-intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 482
+    b: []
   acd: true
   active_years:
   - 2025
@@ -13236,6 +16067,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 652
+    b: []
   acd: true
   active_years:
   - 2025
@@ -13251,6 +16086,10 @@
   type: intrastate
   region:
   - Asia
+  gwno:
+    a:
+    - 770
+    b: []
   acd: true
   active_years:
   - 2025
@@ -13266,6 +16105,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 490
+    b: []
   acd: true
   active_years:
   - 2025
@@ -13281,6 +16124,10 @@
   type: intrastate
   region:
   - Africa
+  gwno:
+    a:
+    - 625
+    b: []
   acd: true
   active_years:
   - 2025
@@ -13296,6 +16143,10 @@
   type: intrastate
   region:
   - Middle East
+  gwno:
+    a:
+    - 666
+    b: []
   acd: true
   active_years:
   - 2023

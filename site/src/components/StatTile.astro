@@ -1,0 +1,10 @@
+---
+const { label, value, sub, hero = false } = Astro.props;
+---
+
+<div class="card">
+  <div class="stat-label">{label}</div>
+  <div class={hero ? "hero-value" : "stat-value"}>{value}</div>
+  {sub && <div class="stat-sub">{sub}</div>}
+  <slot />
+</div>

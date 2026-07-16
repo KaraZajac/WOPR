@@ -40,16 +40,34 @@ a model (spit out risk numbers). WOPR is the seam between them:
 ```
 wopr/
 ├── pipeline/          pull (UCDP + G-W) → build (tables, registries) → validate
-├── engine/            reference-class ladder, recency buckets, EB shrinkage
+│                        + acled (aggregates) + site_export (render-ready JSON)
+├── engine/            reference-class ladder, recency buckets, EB shrinkage,
+│                        walk-forward backtest
 └── journal/           question store, auto-resolution, Brier/log/calibration
 data/
 ├── meta.yaml          release + coverage bounds (annual vs candidate)
 ├── registry/          states, conflicts, dyads, non-state, one-sided (YAML)
-└── tables/            country-year, dyad-year, country-month, dyad-month (CSV)
+├── tables/            country-year, dyad-year, country-month, dyad-month (CSV)
+├── backtest.yaml      the engine's own measured reliability
+└── site/              JSON exported for the site (`wopr export`)
 questions/             the journal: one YAML per question, git-timestamped
+site/                  Astro site: world risk map, Global War Index, WWIII panel,
+                         country pages, the journal — Catppuccin Latte/Mocha
 docs/                  method (read the caveats), data model, roadmap
 tests/                 stdlib unittest; `make verify` gates data + journal
 ```
+
+## The site
+
+`make site-dev` (or `make site` for the static build; needs `npm install` in
+`site/` once). A dashboard with the Global War Index (percentile of global
+organized-violence deaths), a world map of engine priors, the operationally
+defined WWIII panel (P5-war base rates — the long peace, quantified), per-
+country pages with walk-forward prior histories, deaths, monthly tempo and
+80-year activity strips, the journal, and the engine's reliability curves.
+Catppuccin Latte/Mocha with a toggle; every chart has tooltips and a table
+view; all SVG is rendered at build time — zero client JS beyond the tooltip
+layer and theme switch.
 
 ## The loop
 

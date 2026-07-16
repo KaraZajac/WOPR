@@ -1,0 +1,26 @@
+---
+// Prior (outside view) vs latest call (inside view) on a 0–1 track, with the
+// resolved outcome as a vertical marker at 0 or 1.
+import { pct } from "../lib/format.js";
+const { prior = null, you = null, outcome = null } = Astro.props;
+const x = (p) => `${(p * 100).toFixed(1)}%`;
+---
+
+<div class="dumbbell" role="img" aria-label={`prior ${pct(prior, 1)}, your call ${pct(you, 1)}`}>
+  <div class="track"></div>
+  {prior != null && you != null && (
+    <div
+      class="link"
+      style={`left:${x(Math.min(prior, you))};width:${x(Math.abs(you - prior))}`}
+    ></div>
+  )}
+  {outcome != null && (
+    <div class="outcome-line" style={`left:${outcome ? "100%" : "0%"}`} data-tip-value={outcome ? "resolved YES" : "resolved no"}></div>
+  )}
+  {prior != null && (
+    <div class="pt prior" style={`left:${x(prior)}`} tabindex="0" data-tip-value={`prior ${pct(prior, 1)}`} data-tip-label="engine base rate at ask-time"></div>
+  )}
+  {you != null && (
+    <div class="pt you" style={`left:${x(you)}`} tabindex="0" data-tip-value={`you ${pct(you, 1)}`} data-tip-label="latest logged forecast"></div>
+  )}
+</div>

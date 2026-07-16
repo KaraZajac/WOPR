@@ -1,0 +1,67 @@
+---
+import Base from "../layouts/Base.astro";
+import Meter from "../components/Meter.astro";
+import Sparkline from "../components/Sparkline.astro";
+import { countryList, summary } from "../lib/data.js";
+import { num, pct, url } from "../lib/format.js";
+
+const s = summary();
+const list = countryList();
+const nextYear = Number(s.annual_end.slice(0, 4)) + 1;
+---
+
+<Base title="Countries" description="Engine base rates for every country in the state system.">
+  <h1>Countries</h1>
+  <p class="lede">
+    All {list.length} current members of the Gleditsch–Ward state system, ranked by the
+    engine's headline prior: P(≥25 state-based battle deaths on their territory in {nextYear}),
+    conditioned on each country's recency bucket. The sparkline is the walk-forward prior since 1995.
+  </p>
+
+  <input
+    id="filter"
+    type="search"
+    placeholder="filter countries…"
+    style="font:inherit;padding:6px 12px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--ink);width:min(340px,100%);margin-bottom:14px"
+  />
+
+  <div class="card viz">
+    <table class="data" id="country-table">
+      <thead>
+        <tr>
+          <th>country</th><th>region</th><th>bucket</th>
+          <th>P(sb ≥25) {nextYear}</th><th class="n"></th>
+          <th>prior over time</th>
+          <th class="n">deaths {s.annual_end.slice(0, 4)}</th>
+          <th class="n">conflicts</th>
+        </tr>
+      </thead>
+      <tbody>
+        {list.map((c) => {
+          const lastDeaths = c.deaths.at(-1);
+          return (
+            <tr data-name={`${c.name} ${c.region} ${c.abbrev}`.toLowerCase()}>
+              <td><a href={url(`/country/${c.gwno}`)}>{c.name}</a></td>
+              <td>{c.region}</td>
+              <td><span class={`badge bucket-${c.bucket}`}>{c.bucket}</span></td>
+              <td><Meter p={c.p} label={c.name} /></td>
+              <td class="n">{pct(c.p, 1)}</td>
+              <td><Sparkline series={c.p_series} max={1} /></td>
+              <td class="n">{lastDeaths ? num(lastDeaths[1] + lastDeaths[2] + lastDeaths[3]) : "—"}</td>
+              <td class="n">{c.conflicts.length || "—"}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+
+  <script is:inline>
+    document.getElementById("filter").addEventListener("input", function () {
+      var q = this.value.trim().toLowerCase();
+      document.querySelectorAll("#country-table tbody tr").forEach(function (tr) {
+        tr.style.display = !q || tr.dataset.name.includes(q) ? "" : "none";
+      });
+    });
+  </script>
+</Base>

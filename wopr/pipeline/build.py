@@ -201,6 +201,7 @@ def build_dyads(dyadic_rows: list[dict], ged_dyad_years: dict, ged_dyad_info: di
                 "side_b_id": gwno_list(r["side_b_id"]),
                 "type": CONFLICT_TYPES[r["type_of_conflict"]],
                 "region": region_names(r["region"]),
+                "gwno": {"a": gwno_list(r["gwno_a"]), "b": gwno_list(r["gwno_b"])},
                 "acd": True,
                 "active_years": [],
             },
@@ -220,6 +221,7 @@ def build_dyads(dyadic_rows: list[dict], ged_dyad_years: dict, ged_dyad_info: di
             "side_b_id": [info["side_b_id"]],
             "type": "",
             "region": info["region"],
+            "gwno": {"a": [], "b": []},
             "acd": False,  # never reached ACD inclusion (sub-threshold)
             "active_years": [],
         }
@@ -419,25 +421,37 @@ def build_country_year(states, cy_rows, acd_rows, last_year: int) -> list[list]:
 
 def build_dyad_year(dyadic_rows, ged_dyad_year, dyads) -> list[list]:
     dyad_by_id = {d["id"]: d for d in dyads}
-    acd = {(int(r["dyad_id"]), int(r["year"])): int(r["intensity_level"]) for r in dyadic_rows}
+    acd = {(int(r["dyad_id"]), int(r["year"])): r for r in dyadic_rows}
     keys = sorted(set(acd) | set(ged_dyad_year))
+
+    def side(r, col):  # secondary parties vary by year, so they live here
+        return ";".join(str(x) for x in gwno_list(r[col]))
+
     rows = []
     for did, y in keys:
         d = dyad_by_id.get(did, {})
         g = ged_dyad_year.get((did, y), {})
+        a = acd.get((did, y))
         rows.append(
             [
                 did,
                 d.get("conflict", ""),
                 y,
-                acd.get((did, y), 0),
+                int(a["intensity_level"]) if a else 0,
                 d.get("type", ""),
                 "; ".join(d.get("region", [])),
+                side(a, "gwno_a") if a else "",
+                side(a, "gwno_b") if a else "",
+                side(a, "gwno_a_2nd") if a else "",
+                side(a, "gwno_b_2nd") if a else "",
                 g.get("events", "") if g else "",
                 g.get("deaths", "") if g else "",
             ]
         )
-    header = ["dyad_id", "conflict_id", "year", "acd_intensity", "type", "region", "ged_events", "ged_deaths"]
+    header = [
+        "dyad_id", "conflict_id", "year", "acd_intensity", "type", "region",
+        "gwno_a", "gwno_b", "gwno_a2", "gwno_b2", "ged_events", "ged_deaths",
+    ]
     return [header] + rows
 
 

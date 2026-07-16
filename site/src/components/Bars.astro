@@ -1,0 +1,79 @@
+---
+// Single-series columns (one hue — the title names the series, no legend box
+// unless provisional marks need explaining). Rounded data-ends, tooltips,
+// table view.
+import { column, scale, ticks } from "../lib/scale.js";
+import { num } from "../lib/format.js";
+
+const {
+  title,
+  sub = "",
+  rows = [],               // [[label, value, provisional?], …]
+  w = 520,
+  h = 180,
+  fmt = num,
+} = Astro.props;
+
+const PAD = { l: 48, r: 10, t: 10, b: 22 };
+const tks = ticks(Math.max(...rows.map((r) => r[1]), 1));
+const y = scale(0, tks[tks.length - 1], h - PAD.b, PAD.t);
+const slotW = (w - PAD.l - PAD.r) / Math.max(rows.length, 1);
+const barW = Math.min(24, Math.max(3, slotW - 3));
+const labelEvery = Math.max(1, Math.round(rows.length / 6));
+const anyProvisional = rows.some((r) => r[2]);
+---
+
+<div class="card viz">
+  <h3>{title}</h3>
+  {sub && <p class="viz-sub">{sub}</p>}
+  <div class="viz-scroll">
+    <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} role="img" aria-label={title}>
+      {tks.map((t) => (
+        <>
+          <line class="gridline" x1={PAD.l} x2={w - PAD.r} y1={y(t)} y2={y(t)} />
+          <text class="tick-text" x={PAD.l - 6} y={y(t) + 3} text-anchor="end">{fmt(t)}</text>
+        </>
+      ))}
+      {rows.map((r, i) => (
+        <g class={`slot${r[2] ? " provisional-mark" : ""}`}>
+          <path
+            class="mark mark-sb"
+            d={column(PAD.l + i * slotW + (slotW - barW) / 2, y(r[1]), barW, y(0))}
+          />
+          <rect
+            class="hit"
+            x={PAD.l + i * slotW}
+            y={PAD.t}
+            width={slotW}
+            height={h - PAD.t - PAD.b}
+            tabindex="0"
+            data-tip-value={fmt(r[1])}
+            data-tip-label={`${r[0]}${r[2] ? " (provisional)" : ""}`}
+          />
+          {i % labelEvery === 0 && (
+            <text class="tick-text" x={PAD.l + i * slotW + slotW / 2} y={h - 6} text-anchor="middle">
+              {String(r[0])}
+            </text>
+          )}
+        </g>
+      ))}
+    </svg>
+  </div>
+  {anyProvisional && (
+    <div class="viz-legend">
+      <span class="key"><span class="swatch sb"></span> UCDP annual</span>
+      <span class="key"><span class="swatch provisional"></span> provisional (candidate months)</span>
+    </div>
+  )}
+  <details class="tableview">
+    <summary>table view</summary>
+    <table class="data">
+      <thead><tr><th>period</th><th class="n">value</th></tr></thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr><td>{String(r[0])}{r[2] ? " *" : ""}</td><td class="n">{fmt(r[1])}</td></tr>
+        ))}
+      </tbody>
+    </table>
+  </details>
+</div>

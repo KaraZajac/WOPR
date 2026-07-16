@@ -1,0 +1,50 @@
+---
+// One cell per year, 1946–present: empty / minor conflict / war. The
+// timeline at a glance; tooltips carry the year detail.
+const {
+  years = [],          // [[year, intensity], …] — only nonzero years
+  from = 1946,
+  to = 2025,
+  label = "UCDP state-based activity",
+} = Astro.props;
+
+const level = new Map(years.map(([y, i]) => [y, i]));
+const span = to - from + 1;
+const CELL = 12, GAP = 2, H = 16;
+const w = span * (CELL + GAP);
+const words = { 1: "minor conflict (25–999 deaths)", 2: "war (≥1,000 deaths)" };
+---
+
+<div class="viz">
+  <div class="viz-scroll">
+    <svg width={w} height={H + 16} viewBox={`0 0 ${w} ${H + 16}`} role="img" aria-label={label}>
+      {Array.from({ length: span }, (_, i) => {
+        const yr = from + i;
+        const lv = level.get(yr) || 0;
+        return (
+          <g>
+            <rect
+              class={`strip-year${lv === 2 ? " war" : lv === 1 ? " minor" : ""}`}
+              x={i * (CELL + GAP)}
+              y="0"
+              width={CELL}
+              height={H}
+              rx="2"
+              tabindex="0"
+              data-tip-value={String(yr)}
+              data-tip-label={lv ? words[lv] : "no UCDP-recorded state-based conflict"}
+            />
+            {yr % 10 === 0 && (
+              <text class="tick-text" x={i * (CELL + GAP)} y={H + 12}>{yr}</text>
+            )}
+          </g>
+        );
+      })}
+    </svg>
+  </div>
+  <div class="viz-legend">
+    <span class="key"><span class="swatch" style="background:var(--surface-2)"></span> none</span>
+    <span class="key"><span class="swatch ns"></span> minor (25–999)</span>
+    <span class="key"><span class="swatch" style="background:var(--crit)"></span> war (≥1,000)</span>
+  </div>
+</div>

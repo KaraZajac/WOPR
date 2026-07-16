@@ -45,10 +45,11 @@ jobs:
           python3 -m wopr verify
           python3 -m unittest discover -s tests -q
 
-      - name: Refresh scorecard and backtest
+      - name: Refresh scorecard, backtest, and site data
         run: |
           python3 -m wopr score --write
           python3 -m wopr backtest --write
+          python3 -m wopr.pipeline.site_export
 
       - name: Commit changes
         run: |

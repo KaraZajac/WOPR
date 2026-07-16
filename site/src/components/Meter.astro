@@ -1,0 +1,9 @@
+---
+// Probability fill on a lighter track of the same hue.
+import { pct } from "../lib/format.js";
+const { p = 0, label = null } = Astro.props;
+---
+
+<span class="meter" data-tip-value={pct(p, 1)} data-tip-label={label}>
+  <span class="fill" style={`width:${(p * 100).toFixed(1)}%`}></span>
+</span>

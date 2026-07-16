@@ -1,0 +1,81 @@
+---
+import Base from "../layouts/Base.astro";
+import Dumbbell from "../components/Dumbbell.astro";
+import { questions, summary } from "../lib/data.js";
+import { fmtDate, num, pct } from "../lib/format.js";
+
+const s = summary();
+const qs = questions();
+const open = qs.filter((q) => q.status === "open");
+const resolved = qs.filter((q) => q.status === "resolved");
+const order = { open: 0, resolved: 1, void: 2 };
+const sorted = [...qs].sort(
+  (a, b) => order[a.status] - order[b.status] || String(a.criteria.window.end).localeCompare(String(b.criteria.window.end))
+);
+
+const lastCall = (q) => (q.forecasts.length ? q.forecasts.at(-1).p : null);
+const typeWords = { sb: "state-based", ns: "non-state", os: "one-sided" };
+---
+
+<Base title="Questions" description="The forecast journal: operational questions, engine priors, logged calls.">
+  <h1>The journal</h1>
+  <p class="lede">
+    Every question is pinned to a UCDP measure, scope, threshold, and window, so it resolves
+    mechanically from the data. The gray dot is the engine's prior at ask-time; the blue dot is
+    the logged call. When enough of these resolve, the scorecard shows whether the inside view
+    beats the base rate.
+  </p>
+
+  <div class="chips" style="margin-bottom:20px">
+    <span class="chip"><b>{num(open.length)}</b> open</span>
+    <span class="chip"><b>{num(resolved.length)}</b> resolved</span>
+    <span class="chip">data through <b>{s.data_through}</b></span>
+  </div>
+
+  <div style="display:grid;gap:14px">
+    {sorted.map((q) => {
+      const you = lastCall(q);
+      const res = q.resolution;
+      const outcome = res && q.status === "resolved" ? (res.outcome === "yes" ? 1 : 0) : null;
+      return (
+        <div class="card q-card">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:baseline">
+            <b>{q.id}</b>
+            <span style="font-weight:600">{q.title}</span>
+            <span class={`badge status-${q.status === "resolved" ? res.outcome : q.status}`}>
+              {q.status === "resolved" ? res.outcome.toUpperCase() : q.status}
+              {res?.provisional ? " · provisional" : ""}
+            </span>
+            {q.prior?.bucket && <span class={`badge bucket-${q.prior.bucket}`}>{q.prior.bucket}</span>}
+            {q.tags.map((t) => <span class="chip">{t}</span>)}
+          </div>
+          <div style="font-size:13.5px;color:var(--ink-2);max-width:86ch">{q.question}</div>
+          <div style="font-size:12.5px;color:var(--muted)">
+            {typeWords[q.criteria.types[0]] ?? q.criteria.types.join("/")} · threshold ≥{num(q.criteria.threshold)} ·
+            window {fmtDate(q.criteria.window.start)} → {fmtDate(q.criteria.window.end)}
+            {res ? ` · decided ${fmtDate(res.decided_on)} (${res.method})` : ""}
+          </div>
+          <Dumbbell prior={q.prior?.p ?? null} you={you} outcome={outcome} />
+          <div style="display:flex;gap:18px;font-size:12.5px;color:var(--ink-2);flex-wrap:wrap">
+            <span><span class="swatch baseline" style="display:inline-block;vertical-align:middle"></span> prior {pct(q.prior?.p ?? null, 1)}</span>
+            <span><span class="swatch accent" style="display:inline-block;vertical-align:middle"></span> you {you == null ? "— no call logged yet" : pct(you, 1)}</span>
+            {res?.basis && <span>basis: {num(res.basis.total)} {q.criteria.measure} in window</span>}
+          </div>
+          {q.forecasts.length > 1 && (
+            <details class="tableview">
+              <summary>forecast history ({q.forecasts.length})</summary>
+              <table class="data">
+                <thead><tr><th>logged</th><th class="n">p</th><th>note</th></tr></thead>
+                <tbody>
+                  {q.forecasts.map((f) => (
+                    <tr><td>{f.t}</td><td class="n">{pct(f.p, 1)}</td><td>{f.note ?? ""}</td></tr>
+                  ))}
+                </tbody>
+              </table>
+            </details>
+          )}
+        </div>
+      );
+    })}
+  </div>
+</Base>

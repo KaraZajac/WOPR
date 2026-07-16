@@ -1,0 +1,52 @@
+---
+// Reliability plot for one backtest suite: predicted (bin mean) vs observed
+// frequency, dots on a y=x diagonal. Perfect calibration = dots on the line.
+const { name, suite, w = 250, h = 250 } = Astro.props;
+const PAD = 34;
+const sc = (v, lo, hi) => lo + v * (hi - lo);
+const px = (v) => sc(v, PAD, w - 10);
+const py = (v) => sc(v, h - PAD, 10);
+---
+
+<div class="card viz">
+  <h3>{name}</h3>
+  <p class="viz-sub">
+    n={suite.n.toLocaleString("en-US")} · Brier {suite.brier_engine} vs climatology {suite.brier_climatology}
+    · skill {(suite.skill_vs_climatology * 100).toFixed(0)}%
+  </p>
+  <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} role="img" aria-label={`Reliability: ${name}`}>
+    {[0, 0.25, 0.5, 0.75, 1].map((t) => (
+      <>
+        <line class="gridline" x1={px(t)} x2={px(t)} y1={py(0)} y2={py(1)} />
+        <line class="gridline" x1={px(0)} x2={px(1)} y1={py(t)} y2={py(t)} />
+        <text class="tick-text" x={px(t)} y={h - PAD + 14} text-anchor="middle">{t}</text>
+        <text class="tick-text" x={PAD - 6} y={py(t) + 3} text-anchor="end">{t}</text>
+      </>
+    ))}
+    <line class="diagonal" x1={px(0)} y1={py(0)} x2={px(1)} y2={py(1)} />
+    {suite.calibration.map((b) => (
+      <circle
+        class="mark-accent dot-ring"
+        cx={px(b.mean_p)}
+        cy={py(b.observed)}
+        r={Math.max(4, Math.min(9, Math.sqrt(b.n) / 4))}
+        tabindex="0"
+        data-tip-value={`predicted ${b.mean_p} → observed ${b.observed}`}
+        data-tip-label={`${b.bin} · n=${b.n.toLocaleString("en-US")}`}
+      />
+    ))}
+    <text class="tick-text" x={(w + PAD) / 2 - 5} y={h - 6} text-anchor="middle">predicted</text>
+    <text class="tick-text" transform={`translate(11 ${(h - PAD) / 2 + 5}) rotate(-90)`} text-anchor="middle">observed</text>
+  </svg>
+  <details class="tableview">
+    <summary>table view</summary>
+    <table class="data">
+      <thead><tr><th>bin</th><th class="n">n</th><th class="n">mean p</th><th class="n">observed</th></tr></thead>
+      <tbody>
+        {suite.calibration.map((b) => (
+          <tr><td>{b.bin}</td><td class="n">{b.n.toLocaleString("en-US")}</td><td class="n">{b.mean_p}</td><td class="n">{b.observed}</td></tr>
+        ))}
+      </tbody>
+    </table>
+  </details>
+</div>

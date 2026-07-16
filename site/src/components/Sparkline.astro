@@ -1,0 +1,19 @@
+---
+// Tiny inline trend line: series = [[x, y], …], y clamped to [0, max(y)].
+import { linePath, scale } from "../lib/scale.js";
+
+const { series = [], w = 110, h = 26, max = null } = Astro.props;
+const ys = series.map((d) => d[1]);
+const yMax = max ?? Math.max(...ys, 1e-9);
+const x = scale(0, Math.max(series.length - 1, 1), 2, w - 6);
+const y = scale(0, yMax, h - 3, 3);
+const pts = series.map((d, i) => [x(i), y(d[1])]);
+const last = pts[pts.length - 1];
+---
+
+{series.length > 1 && (
+  <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} aria-hidden="true">
+    <path class="line-baseline" style="stroke-width:1.5" d={linePath(pts)} />
+    <circle class="mark-accent dot-ring" cx={last[0]} cy={last[1]} r="3" />
+  </svg>
+)}

@@ -1,0 +1,83 @@
+---
+import "../styles/global.css";
+import { summary } from "../lib/data.js";
+import { num, url } from "../lib/format.js";
+
+const { title = "WOPR", description = "" } = Astro.props;
+const s = summary();
+const path = Astro.url.pathname;
+const current = (p) =>
+  (path === url(p) || (p !== "/" && path.startsWith(url(p) + "/")) ? "true" : undefined);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    {description && <meta name="description" content={description} />}
+    <title>{title} · WOPR</title>
+    <script is:inline>
+      // pre-paint theme apply: explicit choice wins, else system preference
+      (function () {
+        var t = localStorage.getItem("wopr-theme");
+        if (t === "latte" || t === "mocha") document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <script is:inline src={url("/tooltip.js")} defer></script>
+  </head>
+  <body>
+    <header class="site-head">
+      <div class="wrap">
+        <a class="brand" href={url("/")}>WOPR</a>
+        <nav class="site-nav">
+          <a href={url("/")} aria-current={path === url("/") ? "true" : undefined}>Board</a>
+          <a href={url("/countries")} aria-current={current("/countries") || current("/country")}>Countries</a>
+          <a href={url("/questions")} aria-current={current("/questions")}>Questions</a>
+          <a href={url("/methods")} aria-current={current("/methods")}>Methods</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch color theme">theme</button>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <slot />
+    </main>
+
+    <footer class="site-foot">
+      <div class="wrap">
+        <div>
+          UCDP {s.release} · annual through {s.annual_end} · candidate through {s.data_through} ·
+          {num(s.counts.ged_events)} events · {num(s.counts.conflicts)} conflicts · {num(s.counts.dyads)} dyads
+        </div>
+        <div>
+          Data derived from the Uppsala Conflict Data Program (UCDP/PRIO) and the Gleditsch–Ward
+          state list — free for research use with attribution; candidate-month figures are
+          preliminary. Probabilities are reference-class base rates, not predictions of intent.
+          Research/educational use only.
+        </div>
+      </div>
+    </footer>
+
+    <script is:inline>
+      (function () {
+        var btn = document.getElementById("theme-toggle");
+        function mode() {
+          var explicit = document.documentElement.dataset.theme;
+          if (explicit) return explicit;
+          return matchMedia("(prefers-color-scheme: dark)").matches ? "mocha" : "latte";
+        }
+        function label() {
+          btn.textContent = mode() === "mocha" ? "☾ mocha" : "☼ latte";
+        }
+        btn.addEventListener("click", function () {
+          var next = mode() === "mocha" ? "latte" : "mocha";
+          document.documentElement.dataset.theme = next;
+          localStorage.setItem("wopr-theme", next);
+          label();
+        });
+        label();
+      })();
+    </script>
+  </body>
+</html>

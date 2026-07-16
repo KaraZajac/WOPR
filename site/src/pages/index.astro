@@ -1,0 +1,187 @@
+---
+import Base from "../layouts/Base.astro";
+import StatTile from "../components/StatTile.astro";
+import WorldMap from "../components/WorldMap.astro";
+import LineChart from "../components/LineChart.astro";
+import StackedBars from "../components/StackedBars.astro";
+import Bars from "../components/Bars.astro";
+import Meter from "../components/Meter.astro";
+import { summary, questions } from "../lib/data.js";
+import { fmtMonth, num, ordinal, pct, url } from "../lib/format.js";
+
+const s = summary();
+const [gwiYear, gwiDeaths, gwiPct] = s.gwi.latest;
+const partial = s.gwi.partial;
+const w = s.wwiii;
+const qs = questions();
+const open = qs.filter((q) => q.status === "open").length;
+
+const gwiSeries = s.gwi.series.map(([y, _d, p]) => [y, p]);
+const deathRows = s.deaths_series.map(([y, sb, ns, os]) => [y, sb, ns, os]);
+const conflictSeries = s.conflict_series.map(([y, active]) => [y, active]);
+const interstateRows = s.conflict_series
+  .filter(([y]) => y >= 1946)
+  .map(([y, _a, inter, wars]) => [y, inter, false, wars]);
+const tempoRows = s.tempo.map(([m, v, prov]) => [fmtMonth(m), v, prov === 1]);
+const provisionalMonths = new Set(tempoRows.filter((r) => r[2]).map((r) => r[0]));
+---
+
+<Base title="Board" description="Conflict base rates, the Global War Index, and the state of organized violence.">
+  <h1>The board</h1>
+  <p class="lede">
+    Reference-class base rates over the UCDP record — every probability here is a
+    conditional historical frequency with its class shown, not a model's opinion.
+    Annual data through {s.annual_end}; preliminary candidate months through {s.data_through}.
+  </p>
+
+  <div class="kpis">
+    <StatTile
+      hero={true}
+      label={`Global War Index — ${gwiYear}`}
+      value={ordinal(Math.round(gwiPct))}
+      sub={`percentile of global organized-violence deaths, 1989–${gwiYear} · ${num(gwiDeaths)} deaths`}
+    />
+    <StatTile label="Active state-based conflicts" value={num(s.conflict_series.at(-1)[1])} sub={`in ${gwiYear} (UCDP/PRIO)`} />
+    <StatTile label="Interstate dyads at war or active" value={num(s.conflict_series.at(-1)[2])} sub={`${num(s.conflict_series.at(-1)[3])} at war intensity (≥1,000)`} />
+    <StatTile label="Open questions" value={num(open)} sub="in the forecast journal">
+      <a href={url("/questions")} style="font-size:12.5px">journal →</a>
+    </StatTile>
+  </div>
+
+  {partial && (
+    <p class="notice">
+      {partial.year} so far: {num(partial.deaths)} deaths in {partial.months} candidate months —
+      annualized ≈ {num(partial.annualized)}, which would sit at the
+      {" " + ordinal(Math.round(partial.percentile_if_annualized)) + " "}
+      percentile. Candidate data is preliminary and not ranked in the index.
+    </p>
+  )}
+
+  <WorldMap sub={`Engine headline prior for ${Number(s.annual_end.slice(0, 4)) + 1}, bucket-conditional (self → region → global ladder). Click a country for its full ladder.`} />
+
+  <h2>Percentages over time</h2>
+  <div class="grid-2">
+    <LineChart
+      title="Global War Index, 1989–present"
+      sub="percentile rank of each year's global organized-violence deaths within the whole GED era"
+      series={gwiSeries}
+      yMax={null}
+      fmt={(v) => String(Math.round(v))}
+      unit="percentile"
+    />
+    <StackedBars
+      title="Organized-violence deaths by category"
+      sub="UCDP best estimates, global totals per calendar year"
+      rows={deathRows}
+    />
+  </div>
+
+  <div class="grid-2" style="margin-top:14px">
+    <LineChart
+      title="Active state-based conflicts, 1946–present"
+      sub="UCDP/PRIO conflict-years (≥25 battle deaths)"
+      series={conflictSeries}
+      fmt={(v) => String(v)}
+      unit="conflicts"
+    />
+    <Bars
+      title="Interstate dyads active per year"
+      sub="tooltip shows how many reached war intensity (≥1,000 deaths)"
+      rows={interstateRows.map(([y, inter, _p, wars]) => [y, inter, false])}
+      fmt={(v) => String(v)}
+    />
+  </div>
+
+  <div style="margin-top:14px">
+    <Bars
+      title="Monthly tempo — global deaths, last 48 months"
+      sub="all categories; candidate months are preliminary and drawn lighter"
+      rows={tempoRows}
+      w={1040}
+    />
+  </div>
+
+  <h2 id="wwiii">The WWIII panel</h2>
+  <p class="lede">
+    "World war" has no UCDP row, so these are the nearest operational definitions —
+    each number is a historical frequency since 1946, conditioned on the current state
+    (one-step transition). Full definitions on the <a href={url("/methods")}>methods page</a>.
+  </p>
+  <div class="kpis">
+    <StatTile
+      label="≥1 interstate war next year"
+      value={pct(w.hero.conditional.rate, 0)}
+      sub={`given ${gwiYear} had one · ${w.hero.conditional.k}/${w.hero.conditional.n} historically · base rate ${pct(w.hero.unconditional, 0)}`}
+    />
+    <StatTile
+      label="≥1 interstate conflict next year"
+      value={pct(w.any_interstate.conditional.rate, 0)}
+      sub={`any interstate dyad ≥25 deaths · base rate ${pct(w.any_interstate.unconditional, 0)}`}
+    />
+    <StatTile
+      label="Great-power war (Korea pattern)"
+      value={pct(w.p5_war_wide.conditional.rate, 1)}
+      sub={`P5 forces on both sides at war intensity, counting secondary parties — last: ${w.p5_war_wide_years.at(-1) ?? "never"}`}
+    />
+    <StatTile
+      label="Direct P5-vs-P5 war"
+      value={String(w.p5_war.years_true)}
+      sub={`years since 1946 with P5 primaries on both sides at ≥1,000 deaths — the long peace, quantified`}
+    />
+  </div>
+
+  <div class="card viz">
+    <h3>Interstate dyads active now — will they continue?</h3>
+    <p class="viz-sub">engine recurrence prior for next year (bucket-conditional, dyad grain — measured overconfident at the top; see methods)</p>
+    <table class="data">
+      <thead><tr><th>dyad</th><th class="n">active since</th><th>P(active next year)</th><th class="n"></th></tr></thead>
+      <tbody>
+        {w.active_now.map((d) => (
+          <tr>
+            <td>{d.name}</td>
+            <td class="n">{d.since}</td>
+            <td><Meter p={d.p_continue} label={d.name} /></td>
+            <td class="n">{pct(d.p_continue, 1)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Highest base rates for next year</h2>
+  <div class="grid-2">
+    <div class="card viz">
+      <h3>Top risk — P(≥25 state-based deaths)</h3>
+      <p class="viz-sub">headline engine prior; saturated tops are the region-active class ceiling</p>
+      <table class="data">
+        <tbody>
+          {s.top_risk.map((c) => (
+            <tr>
+              <td><a href={url(`/country/${c.gwno}`)}>{c.name}</a></td>
+              <td><span class={`badge bucket-${c.bucket}`}>{c.bucket}</span></td>
+              <td><Meter p={c.p} label={c.name} /></td>
+              <td class="n">{pct(c.p, 1)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <div class="card viz">
+      <h3>Biggest 5-year moves in the prior</h3>
+      <p class="viz-sub">walk-forward engine priors: change vs five years earlier</p>
+      <table class="data">
+        <tbody>
+          {s.movers.map((c) => (
+            <tr>
+              <td><a href={url(`/country/${c.gwno}`)}>{c.name}</a></td>
+              <td class="n">{pct(c.p, 1)}</td>
+              <td class="n" style={`color:${c.delta5y > 0 ? "var(--crit)" : "var(--good)"}`}>
+                {c.delta5y > 0 ? "+" : ""}{(c.delta5y * 100).toFixed(1)} pts
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</Base>

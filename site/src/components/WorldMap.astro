@@ -1,0 +1,60 @@
+---
+// World choropleth of engine priors, rendered to static SVG at build time
+// (d3-geo + topojson never ship to the client). Fills are CSS bin classes so
+// the Latte/Mocha swap restyles the map live. Joined countries link to their
+// pages; disputed/unjoined geometry renders as no-data.
+import { geoNaturalEarth1, geoPath } from "d3-geo";
+import { feature } from "topojson-client";
+import atlas from "../assets/countries-110m.json";
+import { mapJoin } from "../lib/data.js";
+import { pct, url } from "../lib/format.js";
+import { MAP_BIN_LABELS, mapBin } from "../lib/scale.js";
+
+const { title = "P(≥25 state-based battle deaths in a calendar year)", sub = "" } = Astro.props;
+
+const W = 960, H = 470;
+const join = mapJoin();
+const world = feature(atlas, atlas.objects.countries);
+const projection = geoNaturalEarth1().fitExtent([[6, 6], [W - 6, H - 6]], world);
+const path = geoPath(projection);
+
+const shapes = world.features.map((f) => {
+  const j = f.id ? join[f.id] : null;
+  return {
+    d: path(f),
+    name: j ? j.name : f.properties.name,
+    j,
+    bin: j ? mapBin(j.p) : null,
+  };
+});
+---
+
+<div class="card viz">
+  <h3>{title}</h3>
+  {sub && <p class="viz-sub">{sub}</p>}
+  <div class="viz-scroll">
+    <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} role="img" aria-label={title}>
+      {shapes.map((s) =>
+        s.j ? (
+          <a href={url(`/country/${s.j.gwno}`)}>
+            <path
+              class={`map-country bin-${s.bin}`}
+              d={s.d}
+              tabindex="0"
+              data-tip-value={`${s.name} — ${pct(s.j.p, 1)}`}
+              data-tip-label={`bucket: ${s.j.bucket} · click for the full ladder`}
+            />
+          </a>
+        ) : (
+          <path class="map-country nd" d={s.d} data-tip-value={s.name} data-tip-label="no engine prior (not in the current state system, or no geometry join)" />
+        )
+      )}
+    </svg>
+  </div>
+  <div class="viz-legend">
+    {MAP_BIN_LABELS.map((l, i) => (
+      <span class="key"><span class={`swatch map-swatch-${i}`}></span> {l}</span>
+    ))}
+    <span class="key"><span class="swatch map-swatch-nd"></span> no data</span>
+  </div>
+</div>

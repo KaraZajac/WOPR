@@ -40,6 +40,10 @@
   automatic *Open* myACLED tier covers aggregates only; event-level needs an
   upgrade/trial from ACLED's Access Team ("Request further access" in the
   portal, or licensing@). The client (`acled.api_read`) is already wired.
-- Static site (Astro, like JUDGMENT): browsable questions, priors, reliability
-  diagram, public timestamped forecasts.
-- Monthly cron: `wopr pull && wopr build && wopr resolve && wopr score`.
+- ~~Static site~~ **done** (site/): board with the Global War Index, world
+  risk map, WWIII panel, country pages with walk-forward priors, journal,
+  reliability curves — Catppuccin Latte/Mocha. Next for the site: deploy
+  (pick a host once the name settles), a dyads index page, and the
+  early-warning board when the tempo-divergence metric lands.
+- ~~Monthly cron~~ **done** (.github/workflows/refresh.yml): pull → build →
+  resolve → verify → score/backtest/site-export → commit, on the 20th.

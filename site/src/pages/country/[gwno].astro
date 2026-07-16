@@ -1,0 +1,124 @@
+---
+import Base from "../../layouts/Base.astro";
+import StatTile from "../../components/StatTile.astro";
+import LineChart from "../../components/LineChart.astro";
+import StackedBars from "../../components/StackedBars.astro";
+import Bars from "../../components/Bars.astro";
+import ActivityStrip from "../../components/ActivityStrip.astro";
+import Meter from "../../components/Meter.astro";
+import { countries, summary } from "../../lib/data.js";
+import { fmtMonth, num, pct } from "../../lib/format.js";
+
+export function getStaticPaths() {
+  return Object.values(countries()).map((c) => ({ params: { gwno: String(c.gwno) } }));
+}
+
+const s = summary();
+const c = countries()[Astro.params.gwno];
+const nextYear = Number(s.annual_end.slice(0, 4)) + 1;
+const lastYear = Number(s.annual_end.slice(0, 4));
+
+const pSeries = c.p_series.map(([y, p]) => [y, p]);
+const deathRows = c.deaths.map(([y, sb, ns, os]) => [y, sb, ns, os]);
+const lastDeaths = c.deaths.at(-1);
+const tempoRows = c.tempo.map(([m, v, prov]) => [fmtMonth(m), v, prov === 1]);
+const ladderRows = ["self", "region", "global"].map((lvl) => ({ lvl, ...c.ladder[lvl] }));
+---
+
+<Base title={c.name} description={`Base rates and conflict history for ${c.name}.`}>
+  <p class="eyebrow">{c.region} · G-W {c.gwno} · {c.abbrev}</p>
+  <h1>{c.name}</h1>
+  <p class="lede">
+    Everything below is UCDP-recorded history and the reference-class arithmetic on top of it —
+    the outside view for any {c.name} question.
+  </p>
+
+  <div class="kpis">
+    <StatTile label={`P(≥25 sb deaths in ${nextYear})`} value={pct(c.p, 1)} sub={`bucket: ${c.bucket} · ${c.level} posterior`}>
+      <Meter p={c.p} label={c.name} />
+    </StatTile>
+    <StatTile
+      label={`Deaths in ${lastYear}`}
+      value={lastDeaths ? num(lastDeaths[1] + lastDeaths[2] + lastDeaths[3]) : "—"}
+      sub={lastDeaths ? `sb ${num(lastDeaths[1])} · ns ${num(lastDeaths[2])} · os ${num(lastDeaths[3])}` : ""}
+    />
+    <StatTile label="UCDP conflicts on territory" value={num(c.conflicts.length)} sub="state-based, 1946–present" />
+  </div>
+
+  <div class="card viz">
+    <h3>The reference-class ladder</h3>
+    <p class="viz-sub">
+      P(≥25 state-based deaths in a calendar year), conditional on entering a
+      <b> {c.bucket}</b> year — each level shows the class the estimate borrows from
+    </p>
+    <table class="data">
+      <thead><tr><th>level</th><th class="n">units</th><th class="n">unit-years</th><th class="n">hits</th><th class="n">rate</th><th class="n">posterior</th></tr></thead>
+      <tbody>
+        {ladderRows.map((r) => (
+          <tr>
+            <td>{r.lvl}{r.lvl === c.level ? " ←" : ""}</td>
+            <td class="n">{num(r.units)}</td>
+            <td class="n">{num(r.years)}</td>
+            <td class="n">{num(r.hits)}</td>
+            <td class="n">{r.rate ?? "—"}</td>
+            <td class="n">{r.posterior ?? "—"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Percentages over time</h2>
+  <div class="grid-2">
+    <LineChart
+      title="Walk-forward engine prior"
+      sub="what the engine would have said each year, using only earlier data"
+      series={pSeries}
+      yMax={1}
+      fmt={(v) => pct(v, 0)}
+      unit="P(≥25 sb deaths)"
+    />
+    {deathRows.length > 0 && (
+      <StackedBars
+        title="Deaths by category, 1989–present"
+        sub="UCDP best estimates on this territory"
+        rows={deathRows}
+      />
+    )}
+  </div>
+
+  {tempoRows.length > 0 && (
+    <div style="margin-top:14px">
+      <Bars
+        title="Monthly tempo — last 36 months"
+        sub="all categories; candidate months preliminary, drawn lighter"
+        rows={tempoRows}
+        w={1040}
+      />
+    </div>
+  )}
+
+  <h2>Activity timeline</h2>
+  <div class="card viz">
+    <ActivityStrip years={c.activity} to={lastYear} label={`${c.name} state-based conflict activity`} />
+  </div>
+
+  {c.conflicts.length > 0 && (
+    <>
+      <h2>UCDP conflicts</h2>
+      <div class="card viz">
+        <table class="data">
+          <thead><tr><th>conflict</th><th>type</th><th class="n">first</th><th class="n">last</th><th class="n">years active</th></tr></thead>
+          <tbody>
+            {c.conflicts.map((k) => (
+              <tr>
+                <td>{k.name}</td><td>{k.type}</td>
+                <td class="n">{k.first}</td><td class="n">{k.last}</td><td class="n">{k.years_active}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+</Base>
