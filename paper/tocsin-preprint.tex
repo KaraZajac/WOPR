@@ -1,0 +1,646 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage[round]{natbib}
+\usepackage{microtype}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+
+\newcommand{\brier}{\mathrm{Brier}}
+
+\title{Transparent Base Rates Approach the State of the Art\\in Conflict Forecasting\\[6pt]
+\large Evidence from a fully auditable forecasting system, five preregistered\\covariate failures, and equal-weight forecast pooling}
+
+\author{Kara Zajac\thanks{Independent researcher. Email:
+\texttt{kara@soulstone.org}. Code (MIT) and the merged dataset (CC~BY~4.0)
+are public at \url{https://github.com/KaraZajac/TOCSIN}; a continuously
+updating deployment, including all diagnostics reported here, is at
+\url{https://tocsin.karazajac.io}. A single command regenerates every number
+in this paper from primary sources.}}
+
+\date{Preprint \,\textperiodcentered\, July 2026 \,\textperiodcentered\, v1.0}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent Machine-learning systems now define the state of the art in
+armed-conflict forecasting, but their opacity makes them difficult to audit,
+and a recurring finding---that naive baselines are nearly as accurate---has
+never been given a systematic, adversarially honest treatment by a system
+\emph{designed} to be transparent. We present TOCSIN, a conflict-forecasting
+system whose every probability is a reference-class base rate: an empirically
+shrunk historical frequency, conditioned on recency structure, auditable down
+to the individual class counts. Evaluated walk-forward on the same target,
+vantages, and information sets as the Uppsala VIEWS system (7{,}680
+country-months across five historical vantages), TOCSIN attains a Brier score
+of 0.0461 against VIEWS's 0.0412---within 12\% of the state of the art, while
+beating it on 70\% of individual country-months---and naive last-year
+persistence (0.0433) falls between them. We then subject the system to a
+preregistered tune/validate protocol and test five families of theoretically
+motivated covariates: regime type, forecast-horizon decay, youth bulges,
+militarized-dispute and alliance history, and ethnic exclusion (alone and
+interacted). All five fail out-of-sample, despite large descriptive
+associations (youth bulges quadruple onset rates; militarized-dispute history
+marks a 30-fold onset class among long-quiet country pairs). We identify
+three mechanisms---absorption by recency conditioning, class fragmentation
+under shrinkage, and, at rare-event base rates, a formal \emph{metric
+blindness} of the Brier score, for which we give an exact decomposition
+showing that even perfect conditioning cannot move aggregate Brier by more
+than 0.05\% at pair-grain base rates. Finally, zero-parameter equal-weight
+pooling of VIEWS with persistence outperforms every individual model (0.0399,
+$-3.3\%$ versus VIEWS), while adding TOCSIN to that pool \emph{worsens} it:
+the transparent system wins months but duplicates the pool's recency
+information rather than diversifying it. The results sharpen a deflationary
+view of conflict predictability---the practical ceiling on the standard
+occurrence target sits close to what recency alone delivers, and is most
+cheaply approached not by richer models but by pooling diverse ones.\\[4pt]
+\noindent\textbf{Keywords:} conflict forecasting; base rates;
+reference-class forecasting; Brier score; forecast combination;
+preregistration; UCDP; VIEWS
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+Armed-conflict research has taken a decisive predictive turn. Where
+\citet{ward2010perils} diagnosed a field optimizing statistical significance
+at the expense of predictive power, there now exist standing forecast
+systems---most prominently the Uppsala Violence Early-Warning System
+\citep[VIEWS;][]{hegre2019views}---that publish monthly machine-learning
+forecasts of state-based violence for every country, and organized
+competitions that score them \citep{hegre2022lessons,vesco2022united}. The
+predictive turn, however, has produced a persistent embarrassment alongside
+its successes: simple baselines---last year's violence, the country's
+historical rate---come uncomfortably close to the most sophisticated
+ensembles \citep{cederman2017predicting,chadefaux2017limits}. This gap
+between methodological ambition and marginal accuracy gain is usually
+reported in passing, as a caveat. It has rarely been made the \emph{object}
+of study.
+
+This paper does so, from an unusual direction. Rather than build a richer
+model and report its increment, we build the most disciplined possible
+version of the \emph{simple} alternative---a pure reference-class base-rate
+engine in the tradition of clinical-versus-statistical prediction
+\citep{meehl1954clinical,dawes1979robust} and outside-view forecasting
+\citep{kahneman1993timid}---and ask three questions with it:
+
+\begin{enumerate}
+\item \textbf{How close does transparent get?} When every probability is a
+shrunk historical frequency whose class definition, member counts, and
+shrinkage weights are inspectable, how much accuracy is sacrificed relative
+to the covariate-rich state of the art, scored on the state of the art's own
+target?
+\item \textbf{What do covariates actually add, out-of-sample?} The conflict
+literature proposes many structural correlates of onset---regime type
+\citep{goldstone2010global}, development
+\citep{fearon2003ethnicity,collier2004greed}, youth bulges
+\citep{urdal2006clash}, ethnic exclusion \citep{cederman2010why}, and dyadic
+dispute history \citep{maoz2019dyadic}. We test five covariate families under
+a preregistered tune/validate protocol designed to make post-hoc
+rationalization impossible, and report all results, including---especially---
+the failures.
+\item \textbf{Where do the remaining gains live?} If single-model
+improvements are exhausted, the forecast-combination literature
+\citep{bates1969combination,clemen1989combining,timmermann2006forecast}
+predicts that \emph{pooling} diverse forecasters should beat the best of
+them. We test zero-parameter equal-weight pools against every individual
+system, and use the pool's composition to diagnose what information each
+system actually contributes.
+\end{enumerate}
+
+The answers, in brief: transparent gets within 12\% of the state of the art
+(and naive persistence within 5\%); all five covariate families fail
+out-of-sample despite large descriptive associations, for reasons we can
+mechanically identify; and an equal-weight pool of the ML system with naive
+persistence beats everything, while our own system---despite winning 70\% of
+individual months---\emph{subtracts} from that pool because its information
+is already inside it. Together these results locate the practical ceiling of
+the standard conflict-occurrence target close to what recency structure alone
+delivers, and suggest the field's cheapest remaining accuracy lies in
+combination and in target design rather than in additional structure.
+
+A secondary contribution is infrastructural. The entire system---a merged,
+crosswalked, CC~BY-licensed dataset spanning nine sources; the engine; the
+evaluation harness; a self-resolving forecast journal; and a public,
+continuously updating deployment---is open and reproducible. The
+preregistration machinery (\S\ref{sec:protocol}) is, to our knowledge, the
+first covariate-adoption protocol for a conflict-forecasting system that
+mechanically enforces a single consultation of held-out data and the
+retirement of spent validation eras.
+
+\section{Related work}\label{sec:related}
+
+\paragraph{Conflict forecasting systems.} The Political Instability Task
+Force established that parsimonious models with regime-type interactions
+could anticipate instability onsets years ahead \citep{goldstone2010global}.
+VIEWS \citep{hegre2019views,hegre2022lessons} is the current reference
+system: a monthly-updated ensemble over UCDP data producing, among other
+targets, the probability of ${\geq}25$ state-based battle deaths per
+country-month---the target we adopt for head-to-head comparison.
+\citet{blair2020forecasting} argue theory-structured models travel better
+out-of-sample; \citet{muchlinski2016comparing} document large in-sample gains
+from random forests that \citet{colaresi2017robot} show require careful
+out-of-sample discipline to interpret.
+
+\paragraph{The baseline embarrassment.} \citet{cederman2017predicting}
+caution that conflict's rare-event structure and the dominance of
+history-dependence put low ceilings on achievable gains;
+\citet{chadefaux2017limits} surveys the same pattern. Our contribution is to
+\emph{instrument} this claim: we reproduce it independently (persistence
+within 5\% of VIEWS on 7{,}680 scored country-months), quantify the covariate
+increment under preregistration ($\approx 0$), and give an exact scoring-rule
+decomposition for why large class-rate signals can be invisible to aggregate
+Brier at rare-event base rates.
+
+\paragraph{Statistical versus clinical prediction and the outside view.}
+The engine is a deliberate descendant of the actuarial tradition---
+\citet{meehl1954clinical}, \citet{dawes1979robust}, and the reference-class
+forecasting of \citet{kahneman1993timid}. Its wager is that in a domain
+governed by sticky, recurrent processes, a disciplined outside view captures
+most extractable signal. The five covariate failures in
+\S\ref{sec:covariates} are, in effect, a measured defense of that wager.
+
+\paragraph{Forecast combination.} That combinations of diverse forecasts
+outperform their best member is among the most replicated findings in the
+forecasting literature, from \citet{bates1969combination} through
+\citet{clemen1989combining} and the M-competitions \citep{makridakis2000m3}.
+Equal weights are notoriously hard to beat \citep[the ``forecast combination
+puzzle'';][]{timmermann2006forecast}. Section~\ref{sec:pools} imports this
+machinery into the conflict domain with a zero-parameter design that
+forecloses fitting-based objections, and adds a compositional diagnostic:
+which member's \emph{removal} improves the pool.
+
+\paragraph{Scoring rules.} We score with the Brier score
+\citep{brier1950verification}, a strictly proper rule
+\citep{gneiting2007strictly}, and report skill relative to climatology.
+Section~\ref{sec:blindness} formalizes a limitation of unweighted proper
+scores under extreme class imbalance that connects to the literature on
+rare-event verification and weighted scoring \citep{ferro2011extremal}:
+propriety guarantees honest elicitation, not sensitivity to refinements of
+small-mass classes.
+
+\section{Data}\label{sec:data}
+
+All inputs are public. The system merges nine sources onto a common
+spine---Gleditsch--Ward (G-W) country code $\times$ year
+\citep{gleditsch1999interstate}---with year-aware crosswalks and a validation
+gate; the merged product is redistributed under CC~BY~4.0 as
+\texttt{tocsin-dataset-26.1} with a full codebook.
+
+\begin{itemize}
+\item \textbf{UCDP/PRIO} (release 26.1): the Armed Conflict Dataset and its
+dyadic version \citep{gleditsch2002armed,davies2026organized}, the
+Georeferenced Event Dataset \citep{sundberg2013introducing} with monthly
+\emph{candidate} updates, non-state and one-sided tables, and the
+termination/episode coding of \citet{kreutz2010how}. Events with UCDP
+placeholder actors are excluded from dyad grain; candidate files are
+deduplicated by event id with latest-version precedence.
+\item \textbf{Gleditsch--Ward} system membership and minimum distances
+\citep{gleditsch2001measuring}, defining state-system exposure and the
+${\leq}400$\,km proximity relation.
+\item \textbf{PRIO Battle Deaths v3.1} \citep{lacina2005monitoring},
+extending state-based death series to 1946 for descriptive use.
+\item \textbf{Powell--Thyne coups} \citep{powell2011global}: 1950--present
+attempts and outcomes.
+\item \textbf{V-Dem Regimes of the World} \citep{luhrmann2018regimes}, via
+Our World in Data.
+\item \textbf{OWID population} (UN WPP/HYDE composite), carried forward to
+the data edge.
+\item \textbf{World Bank WDI} covariates (income, inflation, age structure,
+urbanization, infant mortality; CC~BY~4.0).
+\item \textbf{Ethnic Power Relations 2021} \citep{vogt2015integrating}:
+politically excluded population shares.
+\item \textbf{Correlates of War}: dyadic militarized interstate disputes 4.03
+\citep{maoz2019dyadic,palmer2022mid5}, National Material Capabilities v7
+\citep{singer1972capability}, and Formal Alliances v4.1
+\citep{gibler2009international}, with a unit-tested COW${\to}$G-W crosswalk
+(unified Germany $255{\to}260$, Yemen $679{\to}678$, Serbia via the
+year-aware $345{\to}340$ alias, and the Pacific microstates remapped
+simultaneously).
+\end{itemize}
+
+Two engineered universes matter below. The \textbf{country universe} counts
+main-system G-W members (12{,}703 country-years, 1946--2025). The
+\textbf{pair universe} operationalizes politically relevant pairs as
+proximity (${\leq}400$\,km) $\cup$ same-region $\cup$ P5-membership: 243{,}609
+undirected pair-years, within which 98.2\% of all UCDP state-based dyadic
+activity occurs---constructed \emph{ex ante}, never by conditioning on
+observed conflict.
+
+\section{The engine}\label{sec:engine}
+
+\subsection{Estimand and reference classes}
+
+For a unit $u$ (country, dyad, or pair), year $t$, and measure $m$ (deaths
+above a threshold; UCDP activity; episode termination; coup attempt), the
+engine estimates $\Pr(m \text{ holds for } u \text{ in } t)$ as a shrunk
+historical frequency over a reference class defined entirely by
+\emph{recency structure} observable before $t$:
+
+\begin{itemize}
+\item \textbf{Active units} are banded by episode age (consecutive
+hit-years: 1, 2--3, 4--9, 10+) $\times$ last-year intensity (below/above the
+UCDP war line of 1{,}000 deaths; for coups, failed/successful).
+\item \textbf{Non-active units} are banded by time since last hit
+(\emph{recent} 2--3, \emph{dormant} 4--10, \emph{cold} 11+/never), with a
+spatial-contagion flag ($+$nbr) when any ${\leq}400$\,km neighbor was in
+state-based conflict the prior year.
+\item At month grain, active units additionally carry a \textbf{tempo band}
+(trailing hit-months 1--3, 4--8, 9--12), and windows that are not
+calendar-aligned are priced on a rolling monthly substrate whose bucket
+construction provably reduces to the annual engine's for January-aligned
+windows.
+\end{itemize}
+
+\subsection{Estimation}
+
+Within bucket $b$ at level $\ell \in \{\text{self}, \text{region},
+\text{global}\}$, with $k$ hits in $n$ class-years, the class rate is the
+Jeffreys-smoothed frequency $\hat p = (k + \tfrac12)/(n + 1)$. Levels are
+combined by empirical-Bayes shrinkage \citep{efron1975data}: the self-level
+posterior is
+\begin{equation}
+\tilde p_{\text{self}} \;=\;
+\frac{k_{\text{self}} + M\,\hat p_{\text{parent}}}{n_{\text{self}} + M},
+\end{equation}
+with the prior strength $M$ moment-matched from the dispersion of class
+rates across units and clamped to $[5, 1000]$; regions falling below 30
+class-years fall back to the global class. The headline probability is the
+deepest level with adequate support, and every output ships the full
+ladder---counts, rates, $M$, and posterior at each level---plus caveat notes
+(left-censoring at the substrate edge, window approximations,
+provisional-data flags).
+
+\subsection{Walk-forward evaluation}
+
+All evaluation is walk-forward: scoring year $t$ uses classes built from
+data strictly before $t$ (five-year burn-in), so every reported score is
+out-of-sample by construction. A class-signature memoization makes the full
+seven-suite backtest ($\approx$290{,}000 unit-year records) run in seconds,
+which is what renders the preregistration protocol of \S\ref{sec:protocol}
+practical. Table~\ref{tab:backtest} reports current walk-forward performance
+(skill $= 1 - \brier/\brier_{\text{climatology}}$).
+
+\begin{table}[t]
+\centering
+\caption{Walk-forward performance across the seven evaluation suites.}
+\label{tab:backtest}
+\begin{tabular}{lrrrr}
+\toprule
+suite & $n$ & base rate & Brier & skill \\
+\midrule
+country, sb deaths ${\geq}25$        & 5{,}547   & .167  & .0411 & $+70.6\%$ \\
+country, all-type deaths ${\geq}100$ & 5{,}547   & .160  & .0366 & $+72.8\%$ \\
+country, UCDP activity               & 11{,}274  & .170  & .0495 & $+65.0\%$ \\
+dyad, UCDP activity                  & 24{,}876  & .115  & .0405 & $+60.6\%$ \\
+dyad, episode termination            & 2{,}797   & .234  & .1668 & $+7.1\%$  \\
+pair, onset/activity                 & 234{,}136 & .0006 & .0005 & $+19.6\%$ \\
+country, coup attempt                & 6{,}145   & .019  & .0197 & $+17.6\%$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two design decisions were themselves settled empirically and are kept as
+negative results: horizon-aware class decay (pricing a forecast $g$ years
+past the data edge by class rates offset $g$) measured \emph{worse}
+($+.003$ Brier; class-level decay pools exiting with persisting units), so
+one-step rates are applied frozen; and a promote-only nowcast lets
+provisional current-year data upgrade but never downgrade a bucket.
+
+\section{The arena: scoring against the state of the art}\label{sec:arena}
+
+\subsection{Design}
+
+We score all systems on VIEWS's native target---$\Pr({\geq}25$ state-based
+battle deaths in a country-month$)$, UCDP best estimate---at each of five
+historical vantages (VIEWS \texttt{fatalities002} runs of April and October
+2023, April and October 2024, April 2025), horizons 1--12 months, using only
+information available at each vantage. TOCSIN runs walk-forward-clamped
+(classes end at the vantage). The VIEWS probability is its published
+\texttt{main\_dich}, whose semantics we verified empirically rather than
+assumed: across pre-2024 runs its mean (.138) matches the realized ${\geq}25$
+frequency (.136), not the ${\geq}1$ frequency (.251). Baselines:
+\textbf{persistence} (country's trailing-12-month hit rate, add-one smoothed)
+and \textbf{climatology} (full-history monthly rate, Jeffreys-smoothed).
+7{,}680 scored country-months; 7\% of outcomes are provisional (candidate
+GED) at scoring time.
+
+\subsection{Results}
+
+\begin{table}[t]
+\centering
+\caption{The arena: Brier scores on $\Pr({\geq}25$ sb deaths per
+country-month$)$, five vantages, horizons 1--12. Pools are equal-weight
+linear opinion pools (zero fitted parameters).}
+\label{tab:arena}
+\begin{tabular}{lrrrrr}
+\toprule
+model & Brier & skill & h1--3 & h4--6 & h7--12 \\
+\midrule
+\textbf{pool: VIEWS + persistence} & \textbf{.03987} & $+56.8\%$ & .0340 & .0376 & .0439 \\
+pool: all three                    & .04087 & $+55.7\%$ & .0354 & .0382 & .0450 \\
+VIEWS                              & .04123 & $+55.3\%$ & .0337 & .0396 & .0458 \\
+persistence                        & .04326 & $+53.1\%$ & .0389 & .0401 & .0471 \\
+TOCSIN                             & .04610 & $+50.0\%$ & .0413 & .0425 & .0503 \\
+climatology                        & .09219 & 0         & .0877 & .0929 & .0940 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:arena} reports the standings. Three readings, before the
+pools (deferred to \S\ref{sec:pools}):
+
+\begin{enumerate}
+\item \textbf{The transparency tax is ${\sim}12\%$.} A pure lookup
+table---auditable to the class counts---concedes .0049 Brier to a
+covariate-rich ML ensemble on the ensemble's home target. Half of an
+initially larger gap was closed by a single recency-structure refinement
+(the tempo band moved TOCSIN from .0611 to .0461), i.e., by \emph{better
+history}, not covariates.
+\item \textbf{The baseline embarrassment replicates.} Persistence sits
+within 5\% of VIEWS. This is an independent reproduction, on a fixed public
+target with verified semantics, of the pattern \citet{cederman2017predicting}
+warned about.
+\item \textbf{Aggregate and disaggregate disagree.} TOCSIN produces the
+better forecast in 5{,}386 of 7{,}657 decided country-months (70\%) yet loses
+on aggregate: it wins small on the quiet mass and pays large on transitions,
+the fingerprint of a system whose errors concentrate exactly where VIEWS's
+covariates earn their keep. The horizon decomposition agrees: the deficit is
+largest at h1--3 (.0413 vs .0337), where fresh signal matters most, and
+smallest at h7--12 (.0503 vs .0458).
+\end{enumerate}
+
+We refrain from formal tests of Brier differences: the 7{,}680 records are
+strongly dependent (overlapping 12-month horizons from five vantages;
+within-country serial correlation), and a clustered Diebold--Mariano
+treatment on five effective vantages would be underpowered theater. The
+differences we interpret---pools versus singles, and the covariate nulls
+below---are either zero-parameter comparisons or preregistered decisions,
+not significance claims.
+
+\section{The covariate program: five preregistered failures}\label{sec:covariates}
+
+\subsection{The tune/validate protocol}\label{sec:protocol}
+
+Walk-forward evaluation removes look-ahead but not \emph{designer
+overfitting}: a researcher who iterates conditioning schemes against the
+full scored history is fitting to it. After one such episode---a V-Dem
+regime conditioning that looked plausible and measured worse on every
+country suite (e.g., sb${\geq}25$ $.0411{\to}.0413$; all-type${\geq}100$
+$.0366{\to}.0371$)---we froze a protocol:
+
+\begin{enumerate}
+\item Split scored years at 2007: \textbf{tune} (${\leq}2007$),
+\textbf{validate} (${>}2007$).
+\item Candidate schemes are enumerated \emph{a priori}; any thresholds are
+computed from tune-era data only.
+\item Candidates compete on tune; the winner is compared to baseline on
+validate \textbf{exactly once}.
+\item Adoption requires ${\geq}1\%$ relative Brier improvement on validate
+\emph{and} a consistency guard on tune (a majority of cuts helping, for
+parametric families; the winner itself beating baseline, for heterogeneous
+sets).
+\item Every consultation of validate is logged; when an era's validate set
+has been consulted for a family of hypotheses, it is \textbf{retired}---
+subsequent studies require genuinely fresh outcome years.
+\end{enumerate}
+
+The 1\% bar was set before any study ran, calibrated to the observed noise
+scale of the validate split (a scheme that lost on tune still swung $+0.4\%$
+on validate; see below). The protocol's output is a verdict, not a p-value;
+its epistemic content is that validate data cannot be shopped.
+
+\subsection{Results}
+
+\paragraph{Study 1 --- youth bulges (country grain).} Descriptively, age
+structure is the strongest single onset covariate we measured: among 6{,}280
+currently-quiet country-years with covariate coverage (base onset rate
+3.3\%), those with ${>}39\%$ of population under 14 onset at 6.5\% versus
+1.7\% for older populations---a ${\sim}4\times$ lift, consistent with
+\citet{urdal2006clash}. Under the protocol (candidate cuts at the
+50th/60th/66th/75th tune-era percentiles): \textbf{zero of four cuts beat
+the baseline engine on tune} (best .05384 vs .0537); the least-bad cut
+carried a $+0.4\%$ relative edge to validate---below the bar, and with the
+tune guard failed. \textbf{Rejected.} A naive adoption threshold
+($\Delta\brier < -.0001$) would have adopted a covariate that could not beat
+its own tuning baseline; the guard exists precisely for this case.
+
+\paragraph{Study 2 --- dispute and alliance history (pair grain).} Four
+candidates on the pair universe: any militarized-dispute history (ever-MID),
+MID within 25 years, fatal-MID history, and a defense-pact flag (COW
+alliances, last observed status carried forward). Descriptively the leading
+candidate is enormous: among pair-years entering the \emph{cold} bucket,
+those with MID history onset at 0.194\% (44/22{,}649) versus 0.006\%
+(14/215{,}855) without---a \textbf{30$\times$} class-rate ratio. Under the
+protocol: \textbf{zero of four candidates beat baseline on tune} (.000574 vs
+.000573); the tune-selected candidate (ever-MID) was 0.7\% relatively
+\emph{worse} on validate. \textbf{Rejected}---for a reason
+\S\ref{sec:blindness} shows is structural rather than empirical.
+
+\paragraph{Study 3 --- exclusion and the joint hypothesis (country grain;
+final consultation of the 2007 era).} The one descriptively motivated
+interaction not yet tested: ethnic exclusion alone, youth$\wedge$exclusion
+(the compound cell onsets at 8.6\% versus 2.9\% for older/low-exclusion
+years), and youth$\vee$exclusion---deliberately two-cell flags rather than
+fragmenting cross-products. \textbf{Zero of three beat baseline on tune};
+the tune-selected candidate (exclusion alone) was 1.0\% relatively worse on
+validate---the worst held-out reading of any study. \textbf{Rejected}, and
+the 2007 validation era was retired as preregistered (country validate
+consulted twice, pair once).
+
+Together with the two pre-protocol ablations (regime conditioning; horizon
+decay), the scoreboard is \textbf{five families proposed, five rejected},
+while the engine's own recency refinements (episode age, intensity, tempo,
+neighbor) were adopted on the same walk-forward evidence. The pattern is not
+that structural covariates are uninformative---descriptively they are
+strong---but that they are informative \emph{about the same thing recency
+already measures}. A young, exclusionary state that has been at peace for
+thirty years is, empirically, at low risk; a middle-aged democracy one year
+out of civil war is not. Conflict history is not a proxy to be improved
+upon; it is the sufficient statistic the covariates approximate.
+
+Two mechanisms recur. \textbf{Absorption}: conditional on bucket, the
+covariate's class-rate difference shrinks toward zero (youth's $4\times$
+marginal lift is mostly the young-countries-fight-recently composition
+effect). \textbf{Fragmentation under shrinkage}: splitting a bucket cuts
+class support; moment-matched shrinkage then pulls both children toward the
+parent, so even a real difference buys little resolution while adding
+estimator variance---the measured regime failure, and the reason the joint
+study used two-cell flags. The third mechanism deserves its own subsection.
+
+\subsection{Metric blindness at rare-event base rates}\label{sec:blindness}
+
+The pair-grain rejection is \emph{not} evidence that dispute history is
+uninformative---the $30\times$ class ratio is real and walk-forward. It is
+evidence about the scoring rule. Decompose the maximum possible Brier
+improvement from any refinement of a class with pooled rate $\bar p$ into
+subclasses $c$ with masses $w_c$ and true rates $\pi_c$ (this is the
+resolution term of Murphy's decomposition; \citealp{murphy1973new}):
+\begin{equation}
+\Delta\brier_{\max} \;=\; \sum_c w_c\,(\pi_c - \bar p)^2 .
+\label{eq:blindness}
+\end{equation}
+For the cold-pair class (238{,}504 pair-years entering \emph{cold}):
+$w_1 = 0.095$, $\pi_1 = .00194$; $w_0 = 0.905$, $\pi_0 = .000065$;
+$\bar p = .000243$. Then $\Delta\brier_{\max} = 0.095 \cdot (.00170)^2 +
+0.905 \cdot (.00018)^2 \approx 3.0 \times 10^{-7}$---\textbf{0.05\% of the
+.000573 tune-era baseline}, twenty times below the preregistered 1\% bar. At
+these base rates, \emph{perfect} conditioning is invisible to aggregate
+Brier: the quiet mass is already scored nearly perfectly, and the flagged
+class is too small for its (large, real) improvement to register. The same
+arithmetic explains why the engine's $7\times$ neighbor-contagion signal
+barely moves month-grain Brier, and why pair-grain skill ($+19.6\%$) looks
+modest despite genuine discrimination.
+
+The methodological point generalizes: \textbf{strictly proper scores
+guarantee honest elicitation, not sensitivity to policy-relevant refinements
+under extreme class imbalance.} A field that selects covariates by aggregate
+Brier on rare-event targets will systematically discard its strongest onset
+signals. Candidate remedies---weighted proper scores
+\citep{ferro2011extremal}, the log score (which diverges precisely where
+Brier saturates), or class-conditional evaluation---must be
+\emph{preregistered}, because switching metrics after observing results
+reintroduces the shopping the protocol exists to prevent. In our own system
+the verdict stands (the era is spent); the $30\times$ signal ships as
+displayed context on pair forecasts, labeled as having failed the adoption
+bar. A log-loss bar for the pair grain is preregistered here for the next
+evaluation era (outcome years ${\geq}2026$).
+
+\section{Pooling: the best forecast is nobody's model}\label{sec:pools}
+
+The head-to-head structure of \S\ref{sec:arena}---TOCSIN better on 70\% of
+months, worse on aggregate---is the textbook precondition for combination
+gains: the systems' errors are differently shaped. We therefore score
+equal-weight linear opinion pools. Equal weights involve zero fitted
+parameters, so scoring them on the same vantages is measurement, not tuning;
+the adoption criterion (beat the best member) was fixed in advance, and all
+four candidate pools are reported (Table~\ref{tab:pools}).
+
+\begin{table}[t]
+\centering
+\caption{Equal-weight pools versus the best single model.}
+\label{tab:pools}
+\begin{tabular}{lrr}
+\toprule
+pool & Brier & vs best single \\
+\midrule
+VIEWS + persistence          & \textbf{.03987} & $\mathbf{-3.3\%}$ \\
+VIEWS + persistence + TOCSIN & .04087 & $-0.9\%$ \\
+VIEWS + TOCSIN               & .04144 & $+0.5\%$ \\
+persistence + TOCSIN         & .04329 & $+5.0\%$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two results. First, the field's cheapest available accuracy gain on this
+target is not a model at all: averaging the ML system with naive persistence
+beats everything, at every horizon band, for free. This is the
+Bates--Granger result landing in the conflict domain with unusual force, and
+it should discipline how single-model improvements are marketed: a new
+system that does not beat the \emph{pool} has not advanced the frontier.
+
+Second, the pool is a diagnostic instrument. Adding TOCSIN to
+VIEWS$+$persistence \emph{worsens} it (.03987${\to}$.04087) despite TOCSIN's
+70\% month-wise win rate, and TOCSIN$+$persistence is barely better than
+persistence alone. The inference is sharp: at month grain, TOCSIN's forecast
+is (approximately) a recalibrated persistence---its information is already
+inside the pool, so it adds redundancy, not diversity. Pools pay for
+\emph{orthogonal} error, and VIEWS's covariate machinery is the orthogonal
+ingredient. This reframes the transparency tax of \S\ref{sec:arena}: the
+transparent system's residual value on this target is not incremental
+accuracy (persistence supplies its signal more cheaply) but
+auditability---and its \emph{distinct} value lies on targets no other system
+prices, to which we return below.
+
+\section{Discussion}\label{sec:discussion}
+
+\paragraph{A deflationary synthesis.} Assembled, the results argue that the
+standard country-month occurrence target is close to its practical
+predictability ceiling: (i) a pure recency machine reaches within 12\% of
+the state of the art; (ii) naive persistence reaches within 5\%; (iii) five
+theoretically central covariate families add nothing out-of-sample once
+recency is conditioned on; (iv) the cheapest remaining gain is a
+zero-parameter average. None of this says conflict is
+unpredictable---skill versus climatology is $+50$--$57\%$ throughout---it
+says the \emph{predictable part is mostly history}, and that the marginal
+covariate, however strong its bivariate association, is purchasing
+information the forecast already owns. This is the caution of
+\citet{cederman2017predicting}, converted from warning into measurement.
+
+\paragraph{What transparency bought.} The auditable design is not (on this
+target) an accuracy strategy; it is an epistemics strategy. Because every
+probability decomposes into named classes and counts, failures localize: we
+can state \emph{why} youth fails (absorption), why regime fails
+(fragmentation), why dispute history fails (metric blindness)---mechanisms,
+not shrugs. The same architecture made the preregistration protocol cheap
+enough to actually follow, and the negative results reportable at
+publication grade. We suggest the field's forecasting systems adopt
+adoption-protocols of this shape: enumerated candidates, tune/validate
+separation, single consultation, retirement of spent eras, and published
+rejections.
+
+\paragraph{Rare events need preregistered metrics.} The decomposition of
+\S\ref{sec:blindness} implies that aggregate Brier is the wrong adoption
+criterion wherever base rates are far from the forecast probabilities'
+working range---dyadic onset, interstate war, mass-atrocity onset. Weighted
+or logarithmic criteria see what Brier cannot, but only preregistration
+keeps them honest.
+
+\paragraph{Limitations.} (1) The arena scores one target at one
+grain---VIEWS's home turf; TOCSIN's design center (annual horizons,
+arbitrary thresholds, termination, coups---the operational questions in its
+journal) has no external comparator yet, and our claims are correspondingly
+scoped. (2) Five vantages with overlapping horizons preclude meaningful
+significance testing on Brier differences; our decisive comparisons are
+zero-parameter or preregistered instead. (3) Seven percent of arena outcomes
+were provisional (candidate GED) at scoring time; UCDP revisions could shift
+third-decimal values. (4) VIEWS is represented by its published dichotomous
+output under empirically verified semantics; other VIEWS surfaces (expected
+fatalities) are not evaluated. (5) The covariate verdicts are specific to
+this engine's conditioning structure and adoption bar; they bound the
+\emph{increment over recency}, not the covariates' scientific relevance.
+(6) The 2007-split era is spent; our own future covariate work must wait for
+fresh outcome years, and we commit here to the preregistered log-loss bar
+for the pair grain.
+
+\paragraph{Future work.} The deployed system accumulates the missing
+evidence automatically: a journal of operational forecasts resolves monthly
+against UCDP updates, building both an annual-grain arena on TOCSIN's own
+targets and the fresh validation era (outcomes ${\geq}2026$) that the next
+covariate---a continuous tempo input aimed at the measured h1--3
+deficit---must clear. The combination result suggests a standing published
+pool alongside; the metric result suggests the community converge on
+preregistered rare-event scoring before, not after, the next generation of
+systems reports its gains.
+
+\section{Reproducibility}\label{sec:repro}
+
+Everything is public. Code (MIT) and the merged dataset (CC~BY~4.0, with
+per-source attribution chains and codebook) are at
+\url{https://github.com/KaraZajac/TOCSIN}; the live system, including the
+arena table, all walk-forward calibration diagnostics, and every forecast
+with its full reference-class ladder, is at
+\url{https://tocsin.karazajac.io}. A single command (\texttt{tocsin pull \&\&
+tocsin build \&\& tocsin backtest \&\& tocsin benchmark}) regenerates every
+number in this paper from primary sources; the preregistration protocol is
+\texttt{tocsin protocol}. The five-vantage arena pins the exact VIEWS runs
+consumed. Raw ACLED data informs a display-only divergence indicator on the
+site and is neither redistributed nor used in any result reported here.
+
+\section*{Acknowledgments}
+
+The system was designed, built, and audited by the author in an intensive
+pair-collaboration with an AI assistant (Claude, Anthropic), which drafted
+code and this manuscript under the author's direction; all design decisions,
+verdicts, and errors are the author's. The author thanks the maintainers of
+UCDP, VIEWS, the Correlates of War project, V-Dem, EPR, PRIO, Powell \&
+Thyne, Gleditsch \& Ward, Our World in Data, and the World Bank for decades
+of public data stewardship.
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document}
